@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mannalkorean.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background: #1a1a2e;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: #16213e;
+      border: 1px solid #0f3460;
+      border-radius: 16px;
+      padding: 48px 40px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .emoji {
+      font-size: 40px;
+      display: block;
+      margin-bottom: 20px;
+      letter-spacing: 6px;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #e2e8f0;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: #94a3b8;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: #0f3460;
+      margin: 0 auto 32px;
+    }
+
+    .input-wrap {
+      position: relative;
+      margin-bottom: 12px;
+    }
+
+    input[type="password"] {
+      width: 100%;
+      padding: 13px 16px;
+      background: #0d1b2a;
+      border: 1px solid #1e3a5f;
+      border-radius: 10px;
+      color: #e2e8f0;
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.2s;
+      letter-spacing: 0.05em;
+    }
+
+    input[type="password"]::placeholder {
+      color: #475569;
+      letter-spacing: 0;
+    }
+
+    input[type="password"]:focus {
+      border-color: #3b82f6;
+    }
+
+    input[type="password"].error {
+      border-color: #ef4444;
+    }
+
+    button {
+      width: 100%;
+      padding: 13px;
+      background: #3b82f6;
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      margin-top: 4px;
+    }
+
+    button:hover { background: #2563eb; }
+    button:active { transform: scale(0.98); }
+
+    .error-msg {
+      font-size: 12.5px;
+      color: #f87171;
+      margin-top: 10px;
+      min-height: 18px;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .error-msg.visible { opacity: 1; }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 11px;
+      color: #334155;
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 36px 24px; }
+      h1 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <span class="emoji">🚧</span>
+  <h1>인테리어 중입니다 🚧</h1>
+  <p class="subtitle">준비 중인 공간입니다.<br>관리자만 입장 가능합니다.</p>
+  <div class="divider"></div>
+
+  <div class="input-wrap">
+    <input
+      type="password"
+      id="pw"
+      placeholder="비밀번호를 입력하세요"
+      autocomplete="current-password"
+    >
+  </div>
+
+  <button id="btn" onclick="checkPw()">입장하기</button>
+  <div class="error-msg" id="errmsg">비밀번호가 틀렸습니다.</div>
+
+  <p class="footer">mannalkorean.com</p>
+</div>
+
+<script>
+  const CORRECT = 'mannal2025';
+  const KEY = 'mc_auth';
+
+  // 이미 인증됐으면 바로 이동
+  if (sessionStorage.getItem(KEY) === '1') {
+    location.replace('/chart_viewer.html');
+  }
+
+  function checkPw() {
+    const input = document.getElementById('pw');
+    const err = document.getElementById('errmsg');
+
+    if (input.value === CORRECT) {
+      sessionStorage.setItem(KEY, '1');
+      location.replace('/chart_viewer.html');
+    } else {
+      input.classList.add('error');
+      err.classList.add('visible');
+      input.value = '';
+      input.focus();
+      setTimeout(() => {
+        input.classList.remove('error');
+        err.classList.remove('visible');
+      }, 2500);
+    }
+  }
+
+  // Enter 키 지원
+  document.getElementById('pw').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') checkPw();
+  });
+
+  // 자동 포커스
+  window.addEventListener('load', () => document.getElementById('pw').focus());
+</script>
+
+</body>
+</html>
