@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>Log of Choices — 데이터 시각화 스튜디오</title>
+<title>현황</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#1a1a2e;color:#eee;overflow-x:hidden;}
@@ -337,6 +337,134 @@ tr:last-child td{border-bottom:none;}
 }
 .json-drop:hover,.json-drop.over{border-color:#1E88E5;background:rgba(30,136,229,.06);color:#90CAF9;}
 .json-drop.over{background:rgba(30,136,229,.1);}
+
+/* ════ 벤토 그리드 2.0 — 현황 시트 ════ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+.bento-container{
+  background:#0a0a0f;
+  min-height:calc(100vh - 120px);
+  padding:16px;
+}
+.bento-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:12px;
+  max-width:700px;
+  margin:0 auto;
+}
+
+/* ── 페이드인 키프레임 ── */
+@keyframes bentoFadeUp{
+  from{opacity:0;transform:translateY(22px);}
+  to  {opacity:1;transform:translateY(0);}
+}
+
+/* ── 카드 기본 ── */
+.b-card{
+  background:#13131a;
+  border:1px solid #1e1e2e;
+  border-radius:20px;
+  padding:20px;
+  box-shadow:0 4px 24px rgba(0,0,0,0.4);
+  animation:bentoFadeUp .4s ease both;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.b-card.hoverable:hover{transform:scale(1.02) translateY(-2px);box-shadow:0 10px 36px rgba(0,0,0,0.6);}
+/* 재진입 시 JS로 애니메이션 재실행 */
+.b-card.anim-reset{animation:none;}
+.b-card.anim-play {animation:bentoFadeUp .4s ease both;}
+
+/* ── 그리드 스팬 ── */
+.b-full {grid-column:span 6;}
+.b-half {grid-column:span 3;}
+.b-third{grid-column:span 2;}
+
+/* ── 헤더 카드 ── */
+.b-header{
+  background:linear-gradient(135deg,#13131a,#1a1a2e);
+  border-color:#2a2a3e;
+  padding:24px;
+}
+.b-brand{font-size:11px;color:#3b82f6;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:10px;}
+.b-title{font-size:26px;font-weight:900;color:#e2e8f0;line-height:1.2;font-family:'Inter',sans-serif;}
+.b-sep{width:36px;height:2px;background:#3b82f6;border-radius:2px;margin:12px 0;}
+.b-date{font-size:13px;color:#64748b;margin-bottom:4px;}
+.b-clock{
+  font-size:28px;font-weight:900;color:#3b82f6;
+  font-family:'Inter',sans-serif;font-variant-numeric:tabular-nums;
+  letter-spacing:-0.5px;
+}
+
+/* ── 카테고리 카드 ── */
+.b-cat{
+  cursor:pointer;
+  min-height:150px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.b-cat-icon{font-size:38px;margin-bottom:10px;display:block;}
+.b-cat-name{font-size:18px;font-weight:700;margin-bottom:5px;}
+.b-cat-desc{font-size:11px;color:#64748b;line-height:1.6;}
+.b-cat-arrow{
+  align-self:flex-end;font-size:18px;color:#64748b;
+  transition:color .2s, transform .2s;
+}
+.b-cat:hover .b-cat-arrow{transform:translateX(5px);}
+
+/* 주식 */
+.b-stock{
+  border-left:3px solid #3b82f6;
+  background:linear-gradient(135deg,#13131a 60%,rgba(59,130,246,.06));
+}
+.b-stock:hover{box-shadow:0 10px 36px rgba(59,130,246,.2)!important;}
+.b-stock .b-cat-name{color:#3b82f6;}
+.b-stock .b-cat-arrow{color:#3b82f6;}
+
+/* 부동산 */
+.b-realestate{
+  border-left:3px solid #f59e0b;
+  background:linear-gradient(135deg,#13131a 60%,rgba(245,158,11,.06));
+}
+.b-realestate:hover{box-shadow:0 10px 36px rgba(245,158,11,.2)!important;}
+.b-realestate .b-cat-name{color:#f59e0b;}
+.b-realestate .b-cat-arrow{color:#f59e0b;}
+
+/* 농산물 */
+.b-agri{
+  border-left:3px solid #22c55e;
+  background:linear-gradient(135deg,#13131a 60%,rgba(34,197,94,.06));
+  min-height:90px;
+  flex-direction:row;
+  align-items:center;
+  gap:18px;
+}
+.b-agri:hover{box-shadow:0 10px 36px rgba(34,197,94,.2)!important;}
+.b-agri .b-cat-icon{font-size:34px;margin-bottom:0;flex-shrink:0;}
+.b-agri .b-cat-name{color:#22c55e;}
+.b-agri .b-cat-arrow{color:#22c55e;margin-left:auto;align-self:center;}
+
+/* ── 소형 정보 카드 ── */
+.b-info{text-align:center;cursor:default;padding:18px 12px;}
+.b-info-icon{font-size:26px;margin-bottom:8px;}
+.b-info-label{font-size:9px;color:#64748b;font-weight:700;letter-spacing:.6px;text-transform:uppercase;}
+.b-info-value{font-size:12px;color:#e2e8f0;font-weight:600;margin-top:5px;line-height:1.5;}
+
+/* ── 푸터 카드 ── */
+.b-footer{text-align:center;padding:14px 20px;}
+.b-footer-brand{font-size:11px;color:#3b82f6;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;}
+.b-footer-sub{font-size:11px;color:#64748b;line-height:1.6;}
+
+/* 스태거 딜레이 */
+.b-card:nth-child(1){animation-delay:.00s;}
+.b-card:nth-child(2){animation-delay:.08s;}
+.b-card:nth-child(3){animation-delay:.16s;}
+.b-card:nth-child(4){animation-delay:.24s;}
+.b-card:nth-child(5){animation-delay:.30s;}
+.b-card:nth-child(6){animation-delay:.36s;}
+.b-card:nth-child(7){animation-delay:.42s;}
+.b-card:nth-child(8){animation-delay:.48s;}
 </style>
 </head>
 <body>
@@ -361,28 +489,80 @@ tr:last-child td{border-bottom:none;}
   <button class="stab" data-sheet="stock"     onclick="switchSheet('stock')">📈 주식</button>
 </div>
 
-<!-- 업로드 영역 -->
-<div id="uploadArea">
-  <div style="font-size:52px;">📂</div>
-  <h2>데이터를 선택하거나 CSV를 드래그하세요</h2>
-  <p>첫 번째 열: 날짜 (YYYY-MM)<br>나머지 열: 종목명 (빈 셀 = 해당 기간 없음)</p>
-  <div class="ubtn">
-    <button class="btn btn-stock" onclick="loadStockData()">📈 수집된 주식 데이터 로드</button>
-    <button class="btn btn-p" onclick="document.getElementById('fi').click()">📂 CSV 파일 선택</button>
-    <button class="btn btn-s" onclick="loadSample()">샘플 데이터</button>
-  </div>
-  <p style="margin-top:16px;font-size:11px;color:#444;">
-    삼성전자 · SK하이닉스 · LG에너지솔루션 &nbsp;|&nbsp; 2020-01 ~ 2024-12 &nbsp;|&nbsp; 월말 종가(원)
-  </p>
-</div>
+<!-- 업로드 영역 (숨김 — 현황 시트 미사용) -->
+<div id="uploadArea" style="display:none;"></div>
 
-<!-- ════ 현황 시트 ════ -->
+<!-- ════ 현황 시트 — 벤토 그리드 2.0 ════ -->
 <div class="sheet-panel active" id="sheet-dashboard">
-  <div class="section-label">📌 데이터 요약</div>
-  <div class="dash-grid" id="dashStats"></div>
-  <div class="section-label" style="margin-top:20px;">📈 종목별 현황</div>
-  <div class="series-grid" id="dashSeries"></div>
-  <div class="src-note" id="srcNote2"></div>
+  <div class="bento-container">
+    <div class="bento-grid" id="bentoDashGrid">
+
+      <!-- ① 헤더 카드 -->
+      <div class="b-card b-full b-header">
+        <div class="b-brand">Log of Choices</div>
+        <div class="b-title">현황 대시보드</div>
+        <div class="b-sep"></div>
+        <div class="b-date" id="bDashDate"></div>
+        <div class="b-clock" id="bDashClock"></div>
+      </div>
+
+      <!-- ② 주식 카드 (절반) -->
+      <div class="b-card b-half b-cat b-stock hoverable" onclick="switchSheet('stock')">
+        <div>
+          <span class="b-cat-icon">📈</span>
+          <div class="b-cat-name">주식</div>
+          <div class="b-cat-desc">코스피 · 코스닥<br>종목별 시세 추이</div>
+        </div>
+        <div class="b-cat-arrow">→</div>
+      </div>
+
+      <!-- ③ 부동산 카드 (절반) -->
+      <div class="b-card b-half b-cat b-realestate hoverable" onclick="switchSheet('realestate')">
+        <div>
+          <span class="b-cat-icon">🏠</span>
+          <div class="b-cat-name">부동산</div>
+          <div class="b-cat-desc">지역별 매매·전세<br>실거래가 분석</div>
+        </div>
+        <div class="b-cat-arrow">→</div>
+      </div>
+
+      <!-- ④ 농산물 카드 (전체 너비) -->
+      <div class="b-card b-full b-cat b-agri hoverable" onclick="switchSheet('agri')">
+        <span class="b-cat-icon">🌾</span>
+        <div>
+          <div class="b-cat-name">농산물</div>
+          <div class="b-cat-desc">품목별 가격 · 계절성 분석</div>
+        </div>
+        <div class="b-cat-arrow">→</div>
+      </div>
+
+      <!-- ⑤ 소형 정보 카드 x3 -->
+      <div class="b-card b-third b-info">
+        <div class="b-info-icon">🏛️</div>
+        <div class="b-info-label">데이터 출처</div>
+        <div class="b-info-value">금융위원회<br>공공데이터 포털</div>
+      </div>
+
+      <div class="b-card b-third b-info">
+        <div class="b-info-icon">🔄</div>
+        <div class="b-info-label">업데이트 주기</div>
+        <div class="b-info-value">일별 자동<br>갱신</div>
+      </div>
+
+      <div class="b-card b-third b-info">
+        <div class="b-info-icon">📅</div>
+        <div class="b-info-label">분석 기간</div>
+        <div class="b-info-value">최근 5년<br>시계열</div>
+      </div>
+
+      <!-- ⑥ 푸터 카드 -->
+      <div class="b-card b-full b-footer">
+        <div class="b-footer-brand">Log of Choices</div>
+        <div class="b-footer-sub">mannalkorean.com &nbsp;·&nbsp; 공공데이터 기반 데이터 시각화</div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 <!-- ════ 라인 차트 시트 ════ -->
@@ -710,66 +890,145 @@ tr:last-child td{border-bottom:none;}
 
 </div>
 
+<!-- Naver-style filter CSS -->
+<style>
+.nv-filter-wrap{background:#141828;border:1px solid #1e2538;border-radius:14px;padding:16px 18px;margin-bottom:6px;}
+.nv-filter-title{font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#4a5580;margin-bottom:12px;}
+.nv-filter-bar{position:relative;display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start;}
+/* 필터 버튼 */
+.nv-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 15px;
+  background:#1a1e30;border:1.5px solid #272d44;border-radius:22px;
+  color:#c0c8e0;font-size:13px;font-weight:500;cursor:pointer;white-space:nowrap;
+  transition:border-color .15s,color .15s,background .15s;user-select:none;position:relative;}
+.nv-btn:hover{border-color:#00C73C;color:#fff;}
+.nv-btn.nv-open{border-color:#00C73C;color:#00C73C;background:#0b1a10;}
+.nv-btn.nv-sel{background:#00C73C;border-color:#00C73C;color:#fff;font-weight:700;}
+.nv-btn.nv-sel .nv-chev{color:#c8f5d8;}
+.nv-chev{font-size:9px;transition:transform .2s;opacity:.7;}
+.nv-btn.nv-open .nv-chev,.nv-btn.nv-sel .nv-chev{opacity:1;}
+.nv-btn.nv-open .nv-chev{transform:rotate(180deg);}
+.nv-sel-badge{background:rgba(0,0,0,.2);border-radius:10px;padding:1px 6px;font-size:11px;font-weight:800;margin-left:2px;}
+/* 액션 버튼 */
+.nv-action-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 20px;
+  background:linear-gradient(90deg,#007A22,#00C73C);border:none;border-radius:22px;
+  color:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:opacity .15s;}
+.nv-action-btn:hover{opacity:.88;}
+.nv-action-btn:disabled{background:#2a3045;color:#555;cursor:not-allowed;opacity:1;}
+.nv-csv-btn{display:none;padding:9px 16px;background:#1a2a35;border:1.5px solid #1E88E5;
+  border-radius:22px;color:#42A5F5;font-size:13px;font-weight:700;cursor:pointer;}
+.nv-csv-btn:hover{background:#1E88E5;color:#fff;}
+/* 드롭다운 패널 */
+.nv-panel{display:none;position:absolute;z-index:300;top:calc(100% + 10px);left:0;
+  min-width:300px;background:#17192a;border:1px solid #272d44;
+  border-radius:16px;padding:20px;box-shadow:0 16px 48px rgba(0,0,0,.7);animation:nvFadeIn .15s ease;}
+.nv-panel.nv-panel-open{display:block;}
+@keyframes nvFadeIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.nv-panel-hd{display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid #1e2538;}
+.nv-panel-title{font-size:14px;font-weight:700;color:#e0e0e0;}
+.nv-reset{font-size:12px;color:#555;background:none;border:none;cursor:pointer;
+  display:flex;align-items:center;gap:4px;}
+.nv-reset:hover{color:#00C73C;}
+.nv-items{display:flex;flex-wrap:wrap;gap:8px;}
+.nv-item{padding:9px 18px;background:transparent;border:1.5px solid #272d44;
+  border-radius:10px;color:#b0bbd4;font-size:13px;cursor:pointer;transition:.15s;}
+.nv-item:hover{border-color:#00C73C;color:#fff;background:rgba(0,199,60,.06);}
+.nv-item.nv-item-sel{background:#00C73C;border-color:#00C73C;color:#fff;font-weight:700;}
+/* 기간 패널 내부 */
+.nv-period-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px;}
+.nv-period-sel{background:#1a1e30;border:1.5px solid #272d44;border-radius:8px;
+  color:#c0c8e0;font-size:13px;padding:7px 10px;outline:none;cursor:pointer;}
+.nv-period-sel:focus{border-color:#00C73C;}
+.nv-period-sep{color:#555;font-size:13px;}
+.nv-period-info{font-size:11px;color:#3d8a54;font-weight:600;margin-top:8px;}
+/* 상태 & 진행 */
+.nv-status-row{display:flex;align-items:center;gap:10px;margin-top:14px;flex-wrap:wrap;}
+.nv-status{font-size:12px;color:#888;flex:1;}
+.nv-prog{display:none;margin-top:8px;height:3px;background:rgba(255,255,255,0.08);border-radius:2px;}
+.nv-prog-fill{height:100%;background:linear-gradient(90deg,#007A22,#00C73C);border-radius:2px;width:0%;transition:width .3s;}
+.nv-src{font-size:11px;color:#3a4160;margin-top:10px;line-height:1.7;}
+.nv-src code{color:#3d8a54;}
+</style>
+
 <!-- ════ 부동산 시트 ════ -->
 <div class="sheet-panel" id="sheet-realestate">
 
-  <!-- 수집 설정 -->
-  <div class="req-block">
-    <div class="req-block-title">🏠 부동산 실거래가 수집</div>
+  <!-- ▣ Naver 스타일 필터 바 -->
+  <div class="nv-filter-wrap">
+    <div class="nv-filter-title">🏠 부동산 실거래가 수집</div>
+    <div class="nv-filter-bar" id="reFilterBar">
 
-    <!-- API 종류 -->
-    <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;margin-bottom:14px;">
-      <div>
-        <div style="font-size:11px;color:#90CAF9;font-weight:700;letter-spacing:.4px;margin-bottom:8px;">거래 유형</div>
-        <div style="display:flex;gap:6px;flex-wrap:wrap;" id="reApiTabs">
-          <button class="mkt-tab active" data-api="apt_trade"        onclick="setReApi(this)">아파트 매매</button>
-          <button class="mkt-tab"        data-api="apt_rent"         onclick="setReApi(this)">아파트 전월세</button>
-          <button class="mkt-tab"        data-api="commercial_trade" onclick="setReApi(this)">상업·업무용</button>
-          <button class="mkt-tab"        data-api="officetel_trade"  onclick="setReApi(this)">오피스텔 매매</button>
+      <!-- ① 거래·건물유형 -->
+      <button class="nv-btn" id="reTradeBtn" onclick="nvToggle(event,'re-fp-trade','reTradeBtn')">
+        <span id="reTradeLbl">거래유형</span>
+        <span class="nv-chev">▼</span>
+      </button>
+      <div class="nv-panel" id="re-fp-trade">
+        <div class="nv-panel-hd">
+          <span class="nv-panel-title">거래·건물 유형</span>
+          <button class="nv-reset" onclick="nvResetFilter('re-fp-trade','reTradeLbl','거래유형')">↺ 초기화</button>
+        </div>
+        <div class="nv-items">
+          <button class="nv-item nv-item-sel" data-api="apt_trade"        onclick="nvToggleItem(this,'re-fp-trade','reTradeLbl','거래유형')">아파트 매매</button>
+          <button class="nv-item"             data-api="apt_rent"         onclick="nvToggleItem(this,'re-fp-trade','reTradeLbl','거래유형')">아파트 전월세</button>
+          <button class="nv-item"             data-api="commercial_trade" onclick="nvToggleItem(this,'re-fp-trade','reTradeLbl','거래유형')">상업·업무용</button>
+          <button class="nv-item"             data-api="officetel_trade"  onclick="nvToggleItem(this,'re-fp-trade','reTradeLbl','거래유형')">오피스텔 매매</button>
         </div>
       </div>
-    </div>
 
-    <!-- 지역 선택 -->
-    <div style="margin-bottom:14px;">
-      <div style="font-size:11px;color:#90CAF9;font-weight:700;letter-spacing:.4px;margin-bottom:8px;">지역 선택 <span style="color:#555;font-weight:400;">(복수 선택)</span></div>
-      <div style="display:flex;flex-wrap:wrap;gap:7px;" id="reRegionPills">
-        <button class="sec-pill active" data-code="11110" onclick="toggleReRegion(this)"><span>서울 종로구</span></button>
-        <button class="sec-pill active" data-code="11140" onclick="toggleReRegion(this)"><span>서울 중구</span></button>
-        <button class="sec-pill active" data-code="11680" onclick="toggleReRegion(this)"><span>서울 강남구</span></button>
-        <button class="sec-pill active" data-code="26110" onclick="toggleReRegion(this)"><span>부산 중구</span></button>
-        <button class="sec-pill active" data-code="41135" onclick="toggleReRegion(this)"><span>경기 분당구</span></button>
+      <!-- ② 지역 -->
+      <button class="nv-btn nv-sel" id="reRegionBtn" onclick="nvToggle(event,'re-fp-region','reRegionBtn')">
+        <span id="reRegionLbl">서울 강남구 <span class="nv-sel-badge">+4</span></span>
+        <span class="nv-chev">▼</span>
+      </button>
+      <div class="nv-panel" id="re-fp-region">
+        <div class="nv-panel-hd">
+          <span class="nv-panel-title">지역 선택</span>
+          <button class="nv-reset" onclick="nvResetFilter('re-fp-region','reRegionLbl','지역','all')">↺ 전체 선택</button>
+        </div>
+        <div class="nv-items" id="reRegionPills">
+          <button class="nv-item nv-item-sel" data-code="11110" onclick="nvToggleItem(this,'re-fp-region','reRegionLbl','지역')"><span>서울 종로구</span></button>
+          <button class="nv-item nv-item-sel" data-code="11140" onclick="nvToggleItem(this,'re-fp-region','reRegionLbl','지역')"><span>서울 중구</span></button>
+          <button class="nv-item nv-item-sel" data-code="11680" onclick="nvToggleItem(this,'re-fp-region','reRegionLbl','지역')"><span>서울 강남구</span></button>
+          <button class="nv-item nv-item-sel" data-code="26110" onclick="nvToggleItem(this,'re-fp-region','reRegionLbl','지역')"><span>부산 중구</span></button>
+          <button class="nv-item nv-item-sel" data-code="41135" onclick="nvToggleItem(this,'re-fp-region','reRegionLbl','지역')"><span>경기 분당구</span></button>
+        </div>
       </div>
+
+      <!-- ③ 기간 -->
+      <button class="nv-btn" id="rePeriodBtn" onclick="nvToggle(event,'re-fp-period','rePeriodBtn')">
+        <span id="rePeriodLbl">기간</span>
+        <span class="nv-chev">▼</span>
+      </button>
+      <div class="nv-panel" id="re-fp-period" style="min-width:320px;">
+        <div class="nv-panel-hd">
+          <span class="nv-panel-title">수집 기간</span>
+        </div>
+        <div class="nv-period-row">
+          <select class="nv-period-sel" id="reStartY"></select>
+          <select class="nv-period-sel" id="reStartM"></select>
+          <span class="nv-period-sep">~</span>
+          <select class="nv-period-sel" id="reEndY"></select>
+          <select class="nv-period-sel" id="reEndM"></select>
+        </div>
+        <div class="nv-period-info" id="rePeriodInfo"></div>
+      </div>
+
+      <!-- ④ 수집 버튼 -->
+      <button class="nv-action-btn" id="reFetchBtn" onclick="fetchREData()">📥 수집 시작</button>
+      <button class="nv-csv-btn"    id="reCsvDlBtn" onclick="downloadRECsv()">💾 CSV 저장</button>
     </div>
 
-    <!-- 기간 -->
-    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px;">
-      <div style="font-size:11px;color:#90CAF9;font-weight:700;letter-spacing:.4px;">수집 기간</div>
-      <select class="period-sel" id="reStartY" style="width:90px;"></select>
-      <select class="period-sel" id="reStartM" style="width:72px;"></select>
-      <span class="period-sep">~</span>
-      <select class="period-sel" id="reEndY"   style="width:90px;"></select>
-      <select class="period-sel" id="reEndM"   style="width:72px;"></select>
-      <span style="font-size:11px;color:#555;" id="rePeriodInfo"></span>
+    <!-- 상태 & 진행 -->
+    <div class="nv-status-row">
+      <span class="nv-status" id="reFetchStatus"></span>
     </div>
-
-    <!-- 수집 버튼 & 상태 -->
-    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-      <button class="btn btn-p" id="reFetchBtn" style="font-size:13px;font-weight:700;padding:8px 20px;"
-              onclick="fetchREData()">📥 데이터 수집</button>
-      <button class="btn btn-s" id="reCsvDlBtn" style="font-size:13px;font-weight:700;padding:8px 16px;display:none;"
-              onclick="downloadRECsv()">💾 CSV 저장</button>
-      <span id="reFetchStatus" style="font-size:12px;color:#888;flex:1;"></span>
+    <div class="nv-prog" id="reProgressWrap">
+      <div class="nv-prog-fill" id="reProgressFill"></div>
     </div>
-
-    <!-- 진행 바 -->
-    <div id="reProgressWrap" style="display:none;margin-top:10px;height:4px;background:rgba(255,255,255,0.1);border-radius:2px;">
-      <div id="reProgressFill" style="height:100%;background:linear-gradient(90deg,#1E88E5,#42A5F5);border-radius:2px;width:0%;transition:width .3s;"></div>
-    </div>
-
-    <div class="src-note" style="margin-top:8px;">
-      ※ CORS 제한 시 Python 스크립트 사용: <code style="color:#90CAF9;">python scripts/02_fetch_realestate.py --mode test</code><br>
-      ※ 출처: 국토교통부 실거래가 공개시스템 (data.go.kr)
+    <div class="nv-src">
+      ※ CORS 제한 시: <code>python scripts/02_fetch_realestate.py --mode test</code> &nbsp;|&nbsp;
+      ※ 출처: 국토교통부 실거래가 공개시스템
     </div>
   </div>
 
@@ -876,74 +1135,104 @@ tr:last-child td{border-bottom:none;}
 ═══════════════════════════════════════════════════ -->
 <div class="sheet-panel" id="sheet-stock">
 
-  <!-- 수집 설정 -->
-  <div class="req-block">
-    <div class="req-block-title">📈 주식 시세 수집</div>
+  <!-- ▣ Naver 스타일 필터 바 — 주식 -->
+  <div class="nv-filter-wrap">
+    <div class="nv-filter-title">📈 주식 시세 수집</div>
+    <div class="nv-filter-bar" id="stFilterBar">
 
-    <!-- 지표 선택 -->
-    <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;margin-bottom:14px;">
-      <div>
-        <div style="font-size:11px;color:#90CAF9;font-weight:700;letter-spacing:.4px;margin-bottom:8px;">지표 선택</div>
-        <div style="display:flex;gap:6px;flex-wrap:wrap;" id="stMetricTabs">
-          <button class="mkt-tab active" data-metric="clpr"       onclick="setStMetric(this)">종가 (원)</button>
-          <button class="mkt-tab"        data-metric="mrktTotAmt" onclick="setStMetric(this)">시가총액 (억)</button>
-          <button class="mkt-tab"        data-metric="trqu"       onclick="setStMetric(this)">거래량</button>
-          <button class="mkt-tab"        data-metric="trPrc"      onclick="setStMetric(this)">거래대금 (억)</button>
+      <!-- ① 지표 -->
+      <button class="nv-btn nv-sel" id="stMetricBtn" onclick="nvToggle(event,'st-fp-metric','stMetricBtn')">
+        <span id="stMetricLbl">종가 (원)</span>
+        <span class="nv-chev">▼</span>
+      </button>
+      <div class="nv-panel" id="st-fp-metric">
+        <div class="nv-panel-hd">
+          <span class="nv-panel-title">지표 선택</span>
+          <span style="font-size:11px;color:#555;">하나만 선택</span>
+        </div>
+        <div class="nv-items" id="stMetricTabs">
+          <button class="nv-item nv-item-sel" data-metric="clpr"       onclick="nvRadioItem(this,'st-fp-metric','stMetricLbl','종가 (원)',   'stMetricBtn'); setStMetricFromNv()">종가 (원)</button>
+          <button class="nv-item"             data-metric="mrktTotAmt" onclick="nvRadioItem(this,'st-fp-metric','stMetricLbl','지표',        'stMetricBtn'); setStMetricFromNv()">시가총액 (억)</button>
+          <button class="nv-item"             data-metric="trqu"       onclick="nvRadioItem(this,'st-fp-metric','stMetricLbl','지표',        'stMetricBtn'); setStMetricFromNv()">거래량</button>
+          <button class="nv-item"             data-metric="trPrc"      onclick="nvRadioItem(this,'st-fp-metric','stMetricLbl','지표',        'stMetricBtn'); setStMetricFromNv()">거래대금 (억)</button>
         </div>
       </div>
-    </div>
 
-    <!-- 종목 선택 -->
-    <div style="margin-bottom:14px;">
-      <div style="font-size:11px;color:#90CAF9;font-weight:700;letter-spacing:.4px;margin-bottom:8px;">종목 선택 <span style="color:#555;font-weight:400;">(복수 선택)</span></div>
-      <div style="display:flex;flex-wrap:wrap;gap:7px;" id="stStockPills">
-        <button class="sec-pill active" data-code="005930" data-name="삼성전자"      onclick="toggleStStock(this)"><span>삼성전자</span></button>
-        <button class="sec-pill active" data-code="000660" data-name="SK하이닉스"    onclick="toggleStStock(this)"><span>SK하이닉스</span></button>
-        <button class="sec-pill active" data-code="035420" data-name="NAVER"         onclick="toggleStStock(this)"><span>NAVER</span></button>
-        <button class="sec-pill active" data-code="005380" data-name="현대차"        onclick="toggleStStock(this)"><span>현대차</span></button>
-        <button class="sec-pill"        data-code="068270" data-name="셀트리온"      onclick="toggleStStock(this)"><span>셀트리온</span></button>
-        <button class="sec-pill"        data-code="373220" data-name="LG에너지솔루션" onclick="toggleStStock(this)"><span>LG에너지솔루션</span></button>
-        <button class="sec-pill"        data-code="035720" data-name="카카오"        onclick="toggleStStock(this)"><span>카카오</span></button>
-        <button class="sec-pill"        data-code="000270" data-name="기아"          onclick="toggleStStock(this)"><span>기아</span></button>
-        <button class="sec-pill"        data-code="247540" data-name="에코프로비엠"  onclick="toggleStStock(this)"><span>에코프로비엠</span></button>
-        <button class="sec-pill"        data-code="259960" data-name="크래프톤"      onclick="toggleStStock(this)"><span>크래프톤</span></button>
+      <!-- ② 종목 -->
+      <button class="nv-btn nv-sel" id="stStockBtn" onclick="nvToggle(event,'st-fp-stock','stStockBtn')">
+        <span id="stStockLbl">삼성전자 <span class="nv-sel-badge">+3</span></span>
+        <span class="nv-chev">▼</span>
+      </button>
+      <div class="nv-panel" id="st-fp-stock" style="min-width:380px;">
+        <div class="nv-panel-hd">
+          <span class="nv-panel-title">종목 선택</span>
+          <button class="nv-reset" onclick="nvResetFilter('st-fp-stock','stStockLbl','종목','all')">↺ 전체 선택</button>
+        </div>
+        <div class="nv-items" id="stStockPills">
+          <button class="nv-item nv-item-sel" data-code="005930" data-name="삼성전자"       onclick="nvToggleItem(this,'st-fp-stock','stStockLbl','종목')"><span>삼성전자</span></button>
+          <button class="nv-item nv-item-sel" data-code="000660" data-name="SK하이닉스"     onclick="nvToggleItem(this,'st-fp-stock','stStockLbl','종목')"><span>SK하이닉스</span></button>
+          <button class="nv-item nv-item-sel" data-code="035420" data-name="NAVER"          onclick="nvToggleItem(this,'st-fp-stock','stStockLbl','종목')"><span>NAVER</span></button>
+          <button class="nv-item nv-item-sel" data-code="005380" data-name="현대차"         onclick="nvToggleItem(this,'st-fp-stock','stStockLbl','종목')"><span>현대차</span></button>
+          <button class="nv-item"             data-code="068270" data-name="셀트리온"       onclick="nvToggleItem(this,'st-fp-stock','stStockLbl','종목')"><span>셀트리온</span></button>
+          <button class="nv-item"             data-code="373220" data-name="LG에너지솔루션"  onclick="nvToggleItem(this,'st-fp-stock','stStockLbl','종목')"><span>LG에너지솔루션</span></button>
+          <button class="nv-item"             data-code="035720" data-name="카카오"         onclick="nvToggleItem(this,'st-fp-stock','stStockLbl','종목')"><span>카카오</span></button>
+          <button class="nv-item"             data-code="000270" data-name="기아"           onclick="nvToggleItem(this,'st-fp-stock','stStockLbl','종목')"><span>기아</span></button>
+          <button class="nv-item"             data-code="247540" data-name="에코프로비엠"   onclick="nvToggleItem(this,'st-fp-stock','stStockLbl','종목')"><span>에코프로비엠</span></button>
+          <button class="nv-item"             data-code="259960" data-name="크래프톤"       onclick="nvToggleItem(this,'st-fp-stock','stStockLbl','종목')"><span>크래프톤</span></button>
+        </div>
       </div>
+
+      <!-- ③ 기간 -->
+      <button class="nv-btn" id="stPeriodBtn" onclick="nvToggle(event,'st-fp-period','stPeriodBtn')">
+        <span id="stPeriodLbl">기간</span>
+        <span class="nv-chev">▼</span>
+      </button>
+      <div class="nv-panel" id="st-fp-period" style="min-width:320px;">
+        <div class="nv-panel-hd">
+          <span class="nv-panel-title">수집 기간</span>
+        </div>
+        <div class="nv-period-row">
+          <select class="nv-period-sel" id="stStartY"></select>
+          <select class="nv-period-sel" id="stStartM"></select>
+          <span class="nv-period-sep">~</span>
+          <select class="nv-period-sel" id="stEndY"></select>
+          <select class="nv-period-sel" id="stEndM"></select>
+        </div>
+        <div class="nv-period-info" id="stPeriodInfo"></div>
+      </div>
+
+      <!-- ④ 수집 버튼 -->
+      <button class="nv-action-btn" id="stFetchBtn" onclick="fetchStockData()">📥 수집 시작</button>
+      <button class="nv-csv-btn"    id="stCsvDlBtn" onclick="downloadStCsv()">💾 CSV 저장</button>
     </div>
 
-    <!-- 기간 -->
-    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px;">
-      <div style="font-size:11px;color:#90CAF9;font-weight:700;letter-spacing:.4px;">수집 기간</div>
-      <select class="period-sel" id="stStartY" style="width:90px;"></select>
-      <select class="period-sel" id="stStartM" style="width:72px;"></select>
-      <span class="period-sep">~</span>
-      <select class="period-sel" id="stEndY"   style="width:90px;"></select>
-      <select class="period-sel" id="stEndM"   style="width:72px;"></select>
-      <span style="font-size:11px;color:#555;" id="stPeriodInfo"></span>
+    <div class="nv-status-row">
+      <span class="nv-status" id="stFetchStatus"></span>
     </div>
-
-    <!-- 수집 버튼 -->
-    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-      <button class="btn btn-p" id="stFetchBtn" style="font-size:13px;font-weight:700;padding:8px 20px;"
-              onclick="fetchStockData()">📥 데이터 수집</button>
-      <button class="btn btn-s" id="stCsvDlBtn" style="font-size:13px;font-weight:700;padding:8px 16px;display:none;"
-              onclick="downloadStCsv()">💾 CSV 저장</button>
-      <span id="stFetchStatus" style="font-size:12px;color:#888;flex:1;"></span>
+    <div class="nv-prog" id="stProgressWrap">
+      <div class="nv-prog-fill" id="stProgressFill" style="background:linear-gradient(90deg,#9C27B0,#E91E63);"></div>
     </div>
-    <div id="stProgressWrap" style="display:none;margin-top:10px;height:4px;background:rgba(255,255,255,0.1);border-radius:2px;">
-      <div id="stProgressFill" style="height:100%;background:linear-gradient(90deg,#E91E63,#F48FB1);border-radius:2px;width:0%;transition:width .3s;"></div>
-    </div>
-    <div class="src-note" style="margin-top:8px;">
-      ※ 출처: 금융위원회 공공데이터포털 (data.go.kr) · 주식시세정보 API<br>
-      ※ 월별 마지막 거래일 기준 / CORS 제한 시 Python 스크립트 사용
+    <div class="nv-src">
+      ※ 출처: 금융위원회 공공데이터포털 (data.go.kr) · 주식시세정보 API &nbsp;|&nbsp;
+      ※ 월별 마지막 거래일 기준
     </div>
   </div>
 
   <!-- 차트 서브탭 -->
   <div style="display:flex;gap:6px;margin:14px 0 10px;flex-wrap:wrap;" id="stChartTabs">
-    <button class="mkt-tab active" data-sttab="race" onclick="switchStTab('race')">📊 바 차트 레이스</button>
-    <button class="mkt-tab"        data-sttab="line" onclick="switchStTab('line')">📈 라인 차트</button>
-    <button class="mkt-tab"        data-sttab="bar"  onclick="switchStTab('bar')">📉 막대 비교</button>
-    <button class="mkt-tab"        data-sttab="pie"  onclick="switchStTab('pie')">🥧 파이/도넛</button>
+    <button class="mkt-tab"        data-sttab="dashboard" onclick="switchStTab('dashboard')">📋 현황</button>
+    <button class="mkt-tab active" data-sttab="race"      onclick="switchStTab('race')">📊 바 차트 레이스</button>
+    <button class="mkt-tab"        data-sttab="line"      onclick="switchStTab('line')">📈 라인 차트</button>
+    <button class="mkt-tab"        data-sttab="bar"       onclick="switchStTab('bar')">📉 막대 비교</button>
+    <button class="mkt-tab"        data-sttab="pie"       onclick="switchStTab('pie')">🥧 파이/도넛</button>
+  </div>
+
+  <!-- ⓪ 현황 -->
+  <div id="st-panel-dashboard" style="display:none;">
+    <div class="section-label">📌 데이터 요약</div>
+    <div class="dash-grid" id="stDashStats"></div>
+    <div class="section-label" style="margin-top:20px;">📈 종목별 현황</div>
+    <div class="series-grid" id="stDashSeries"></div>
   </div>
 
   <!-- ① 바 차트 레이스 -->
@@ -1122,8 +1411,10 @@ function switchSheet(name){
   activeSheet=name;
   if(name==='realestate'){ initRESheet(); return; }
   if(name==='stock'){     initStockSheet(); return; }
-  if(!series.length) return;
-  if(name==='dashboard') renderDashboard();
+  if(name==='dashboard'){ renderDashboard(); return; }
+  /* 데이터 없을 때 다른 시트 전환 시 업로드 영역 복원 */
+  const ua=document.getElementById('uploadArea');
+  if(!series.length){ if(ua) ua.style.display=''; return; }
   if(name==='line')      rebuild();
   if(name==='sector')    initSectorSheet();
   if(name==='bar')       rebuildBar();
@@ -1235,46 +1526,48 @@ function initCSV(text,fname){
 /* ═══════════════════════════════════════════════════
    ① 현황 시트
 ═══════════════════════════════════════════════════ */
-function renderDashboard(){
-  const statsEl=document.getElementById('dashStats');
-  statsEl.innerHTML='';
-  const cards=[
-    {label:'데이터 기간', value:xLabels[0]+' ~ '+xLabels[maxStep], sub:'월말 종가 기준'},
-    {label:'데이터 포인트', value:xLabels.length+'개', sub:'월별 시계열'},
-    {label:'종목 수', value:series.length+'개', sub:'시리즈'},
-    {label:'파일명', value:fileName.replace(/\.csv$/i,''), sub:'.csv'},
-  ];
-  cards.forEach(c=>{
-    statsEl.insertAdjacentHTML('beforeend',
-      `<div class="stat-card">
-        <div class="sc-label">${c.label}</div>
-        <div class="sc-value">${c.value}</div>
-        <div class="sc-sub">${c.sub}</div>
-      </div>`);
-  });
+/* ── 벤토 대시보드 시계 타이머 ID ── */
+let _bentoClock = null;
 
-  const serEl=document.getElementById('dashSeries');
-  serEl.innerHTML='';
-  const fmt=d3.format(',.0f');
-  series.forEach(s=>{
-    const pts=s.values.filter(d=>d.y!=null&&d.y>0);
-    if(!pts.length) return;
-    const first=pts[0], last=pts[pts.length-1];
-    const mn=d3.min(pts,d=>d.y), mx=d3.max(pts,d=>d.y);
-    const chgPct=((last.y-first.y)/first.y*100);
-    const chgStr=(chgPct>=0?'+':'')+chgPct.toFixed(1)+'%';
-    const cls=chgPct>0?'chg-up':chgPct<0?'chg-dn':'chg-na';
-    serEl.insertAdjacentHTML('beforeend',
-      `<div class="ser-card" style="--c:${s.color}">
-        <div class="ser-name">${s.label}</div>
-        <div class="ser-stats">
-          <div class="ss-item">시작 (${first.xLabel})<div class="ss-val">${fmt(first.y)}원</div></div>
-          <div class="ss-item">최종 (${last.xLabel})<div class="ss-val">${fmt(last.y)}원</div></div>
-          <div class="ss-item">최저값<div class="ss-val">${fmt(mn)}원</div></div>
-          <div class="ss-item">최고값<div class="ss-val">${fmt(mx)}원</div></div>
-        </div>
-        <span class="chg-badge ${cls}">총 변화율 ${chgStr}</span>
-      </div>`);
+function renderDashboard(){
+  /* 대시보드 활성 시 업로드 영역 숨김 */
+  const ua = document.getElementById('uploadArea');
+  if(ua) ua.style.display = 'none';
+
+  /* 날짜 표시 */
+  const days = ['일','월','화','수','목','금','토'];
+  const now  = new Date();
+  const dateEl = document.getElementById('bDashDate');
+  if(dateEl){
+    dateEl.textContent =
+      `${now.getFullYear()}년 ${now.getMonth()+1}월 ${now.getDate()}일 (${days[now.getDay()]})`;
+  }
+
+  /* 실시간 시계 */
+  if(_bentoClock) clearInterval(_bentoClock);
+  const clockEl = document.getElementById('bDashClock');
+  function tickClock(){
+    if(!clockEl) return;
+    const t = new Date();
+    const hh = String(t.getHours()).padStart(2,'0');
+    const mm = String(t.getMinutes()).padStart(2,'0');
+    const ss = String(t.getSeconds()).padStart(2,'0');
+    clockEl.textContent = `${hh}:${mm}:${ss}`;
+  }
+  tickClock();
+  _bentoClock = setInterval(tickClock, 1000);
+
+  /* 카드 재진입 애니메이션 재실행 */
+  const cards = document.querySelectorAll('#bentoDashGrid .b-card');
+  cards.forEach(c => {
+    c.classList.remove('anim-play');
+    c.classList.add('anim-reset');
+  });
+  requestAnimationFrame(() => {
+    cards.forEach(c => {
+      c.classList.remove('anim-reset');
+      c.classList.add('anim-play');
+    });
   });
 }
 
@@ -1677,7 +1970,7 @@ window.addEventListener('resize',()=>{
 });
 
 /* 페이지 로드 시: 차트 데이터 + 요청 시트 초기화 + API 키 자동 읽기 */
-window.addEventListener('load', () => { loadStockData(); initRequest(); initApiKey(); });
+window.addEventListener('load', () => { loadStockData(); initRequest(); initApiKey(); renderDashboard(); });
 
 /* ═══════════════════════════════════════════════════
    ⑤ 요청 시트
@@ -5811,6 +6104,97 @@ function loadBarSettings() {
 }
 
 /* ═══════════════════════════════════════════════════
+   🟢 Naver 스타일 필터 공통 함수
+═══════════════════════════════════════════════════ */
+
+/* 패널 열기/닫기 — 다른 패널은 자동 닫힘 */
+function nvToggle(e, panelId, btnId) {
+  e.stopPropagation();
+  const panel = document.getElementById(panelId);
+  const btn   = document.getElementById(btnId);
+  const isOpen = panel.classList.contains('nv-panel-open');
+
+  /* 모든 패널 닫기 */
+  document.querySelectorAll('.nv-panel').forEach(p => p.classList.remove('nv-panel-open'));
+  document.querySelectorAll('.nv-btn').forEach(b => b.classList.remove('nv-open'));
+
+  if (!isOpen) {
+    panel.classList.add('nv-panel-open');
+    btn.classList.add('nv-open');
+  }
+}
+
+/* 문서 클릭 시 모든 패널 닫기 */
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nv-filter-bar')) {
+    document.querySelectorAll('.nv-panel').forEach(p => p.classList.remove('nv-panel-open'));
+    document.querySelectorAll('.nv-btn').forEach(b => b.classList.remove('nv-open'));
+  }
+});
+
+/* 다중 선택 토글 */
+function nvToggleItem(el, panelId, lblId, defaultLbl) {
+  el.classList.toggle('nv-item-sel');
+  nvUpdateLabel(panelId, lblId, defaultLbl);
+}
+
+/* 단일 선택(라디오) 토글 */
+function nvRadioItem(el, panelId, lblId, selectedText, btnId) {
+  document.querySelectorAll('#'+panelId+' .nv-item').forEach(b=>b.classList.remove('nv-item-sel'));
+  el.classList.add('nv-item-sel');
+  /* 버튼 레이블은 선택된 텍스트로 직접 업데이트 */
+  const lbl = document.getElementById(lblId);
+  if (lbl) lbl.textContent = el.textContent.trim();
+  const btn = document.getElementById(btnId);
+  if (btn) btn.classList.add('nv-sel');
+}
+
+/* 선택값 초기화 */
+function nvResetFilter(panelId, lblId, defaultLbl, mode) {
+  const items = document.querySelectorAll('#'+panelId+' .nv-item');
+  if (mode==='all') { items.forEach(b=>b.classList.add('nv-item-sel')); }
+  else              { items.forEach(b=>b.classList.remove('nv-item-sel')); }
+  nvUpdateLabel(panelId, lblId, defaultLbl);
+}
+
+/* 버튼 레이블 & 색상 업데이트 */
+function nvUpdateLabel(panelId, lblId, defaultLbl) {
+  const sel   = [...document.querySelectorAll('#'+panelId+' .nv-item.nv-item-sel')];
+  const lbl   = document.getElementById(lblId);
+  /* btnId 추론: panelId → btnId (re-fp-trade → reTradeBtn 등) */
+  const btn   = document.querySelector(`[onclick*="'${panelId}'"]`);
+
+  if (!sel.length) {
+    if (lbl) lbl.textContent = defaultLbl;
+    if (btn) btn.classList.remove('nv-sel');
+    return;
+  }
+
+  const first = (sel[0].dataset.name || sel[0].textContent).trim();
+  const extra = sel.length - 1;
+  if (lbl) {
+    lbl.innerHTML = extra > 0
+      ? `${first} <span class="nv-sel-badge">+${extra}</span>`
+      : first;
+  }
+  if (btn) btn.classList.add('nv-sel');
+}
+
+/* 선택값 배열 반환 (attr: 'data-api' | 'data-code' | 'data-metric') */
+function nvGetSelected(panelId, attr) {
+  return [...document.querySelectorAll(`#${panelId} .nv-item.nv-item-sel`)]
+    .map(b => b.getAttribute(attr)).filter(Boolean);
+}
+
+/* 기간 레이블 업데이트 헬퍼 */
+function nvUpdatePeriodLabel(lblId, btnId, sy, sm, ey, em) {
+  const lbl = document.getElementById(lblId);
+  const btn = document.getElementById(btnId);
+  if (lbl) lbl.textContent = `${sy}.${sm} ~ ${ey}.${em}`;
+  if (btn) btn.classList.add('nv-sel');
+}
+
+/* ═══════════════════════════════════════════════════
    📈 주식 시세 시트
 ═══════════════════════════════════════════════════ */
 const ST_EP  = 'https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService/getStockPriceInfo';
@@ -5861,10 +6245,11 @@ function initStockSheet() {
 }
 
 function updateStPeriodInfo() {
-  const sy=+document.getElementById('stStartY').value, sm=+document.getElementById('stStartM').value;
-  const ey=+document.getElementById('stEndY').value,   em=+document.getElementById('stEndM').value;
-  const n = (ey-sy)*12+(em-sm)+1;
+  const sy=document.getElementById('stStartY').value, sm=document.getElementById('stStartM').value;
+  const ey=document.getElementById('stEndY').value,   em=document.getElementById('stEndM').value;
+  const n = (+ey - +sy)*12 + (+em - +sm) + 1;
   document.getElementById('stPeriodInfo').textContent = n>0 ? `${n}개월` : '기간 오류';
+  nvUpdatePeriodLabel('stPeriodLbl','stPeriodBtn',sy,sm,ey,em);
 }
 
 function setStMetric(btn) {
@@ -5874,12 +6259,21 @@ function setStMetric(btn) {
   if (stRawData.length) { processStockData(); switchStTab(stActiveTab); }
 }
 
+function setStMetricFromNv() {
+  const sel = document.querySelector('#st-fp-metric .nv-item.nv-item-sel');
+  if (sel) {
+    stMetric = sel.dataset.metric;
+    if (stRawData.length) { processStockData(); switchStTab(stActiveTab); }
+  }
+}
+
 function toggleStStock(btn) { btn.classList.toggle('active'); }
 
 /* ── API 수집 ── */
 async function fetchStockData() {
-  const selected = [...document.querySelectorAll('#stStockPills .sec-pill.active')]
-    .map(b => ({code: b.dataset.code, name: b.dataset.name}));
+  const codes = nvGetSelected('st-fp-stock', 'data-code');
+  const names = nvGetSelected('st-fp-stock', 'data-name');
+  const selected = codes.map((code, i) => ({code, name: names[i] || code}));
   if (!selected.length) { alert('종목을 1개 이상 선택하세요.'); return; }
 
   const sy = document.getElementById('stStartY').value;
@@ -6029,7 +6423,7 @@ function switchStTab(tab) {
   stActiveTab = tab;
   document.querySelectorAll('#stChartTabs .mkt-tab').forEach(b=>
     b.classList.toggle('active', b.dataset.sttab===tab));
-  ['race','line','bar','pie'].forEach(t => {
+  ['dashboard','race','line','bar','pie'].forEach(t => {
     const el = document.getElementById(`st-panel-${t}`);
     if (el) el.style.display = t===tab ? '' : 'none';
   });
@@ -6044,11 +6438,62 @@ function switchStTab(tab) {
   document.getElementById('stRaceTitle').textContent = `종목별 ${lbl} 레이스`;
   document.getElementById('stLineTitle').textContent = `종목별 ${lbl} 추이`;
   document.getElementById('stBarTitle').textContent  = `종목별 ${lbl} 비교`;
+  if (tab==='dashboard') { renderStDashboard(); return; }
   if (!stMonths.length) return;
   if (tab==='race') { stRaceStep=stRaceStep||0; renderStRace(); }
   if (tab==='line') renderStLine();
   if (tab==='bar')  renderStBar();
   if (tab==='pie')  renderStPie();
+}
+
+function renderStDashboard() {
+  const statsEl = document.getElementById('stDashStats');
+  const serEl   = document.getElementById('stDashSeries');
+  if (!statsEl || !serEl) return;
+
+  if (!stMonths.length) {
+    statsEl.innerHTML = '<div style="color:#888;padding:20px;">아직 수집된 데이터가 없습니다. 필터에서 종목·기간을 선택하고 수집을 먼저 실행하세요.</div>';
+    serEl.innerHTML = '';
+    return;
+  }
+
+  const lbl = ST_METRIC_LABEL[stMetric] || stMetric;
+  const cards = [
+    { label:'데이터 기간',   value: stMonths[0]+' ~ '+stMonths[stMonths.length-1], sub:'월별 기준' },
+    { label:'월 수',         value: stMonths.length+'개월', sub:'시계열 길이' },
+    { label:'종목 수',       value: stStocks.length+'개',  sub:'수집 종목' },
+    { label:'수집 건수',     value: stRawData.length.toLocaleString()+'건', sub:'원시 데이터' },
+  ];
+  statsEl.innerHTML = cards.map(c=>
+    `<div class="stat-card">
+      <div class="sc-label">${c.label}</div>
+      <div class="sc-value">${c.value}</div>
+      <div class="sc-sub">${c.sub}</div>
+    </div>`
+  ).join('');
+
+  const fmt = d3.format(',.0f');
+  const unit = stMetric === 'clpr' ? '원' : stMetric === 'trqu' ? '주' : '억원';
+  serEl.innerHTML = stStocks.map((name, si) => {
+    const col = ST_PAL[si % ST_PAL.length];
+    const pts = stMonths.map(m => stMonthly[name]?.[m]).filter(v => v != null && v > 0);
+    if (!pts.length) return '';
+    const first = pts[0], last = pts[pts.length-1];
+    const mn = d3.min(pts), mx = d3.max(pts);
+    const chgPct = (last - first) / first * 100;
+    const chgStr = (chgPct >= 0 ? '+' : '') + chgPct.toFixed(1) + '%';
+    const cls = chgPct > 0 ? 'chg-up' : chgPct < 0 ? 'chg-dn' : 'chg-na';
+    return `<div class="ser-card" style="--c:${col}">
+      <div class="ser-name">${name}</div>
+      <div class="ser-stats">
+        <div class="ss-item">시작 (${stMonths[0]})<div class="ss-val">${fmt(first)}${unit}</div></div>
+        <div class="ss-item">최종 (${stMonths[stMonths.length-1]})<div class="ss-val">${fmt(last)}${unit}</div></div>
+        <div class="ss-item">최솟값<div class="ss-val">${fmt(mn)}${unit}</div></div>
+        <div class="ss-item">최댓값<div class="ss-val">${fmt(mx)}${unit}</div></div>
+      </div>
+      <span class="chg-badge ${cls}">총 변화율 ${chgStr}</span>
+    </div>`;
+  }).join('');
 }
 
 /* ══ ① 바 차트 레이스 ══ */
@@ -6337,10 +6782,11 @@ function initRESheet() {
 }
 
 function updateREPeriodInfo() {
-  const sy=+document.getElementById('reStartY').value, sm=+document.getElementById('reStartM').value;
-  const ey=+document.getElementById('reEndY').value,   em=+document.getElementById('reEndM').value;
-  const n = (ey-sy)*12+(em-sm)+1;
+  const sy=document.getElementById('reStartY').value, sm=document.getElementById('reStartM').value;
+  const ey=document.getElementById('reEndY').value,   em=document.getElementById('reEndM').value;
+  const n = (+ey - +sy)*12 + (+em - +sm) + 1;
   document.getElementById('rePeriodInfo').textContent = n>0 ? `${n}개월` : '기간 오류';
+  nvUpdatePeriodLabel('rePeriodLbl','rePeriodBtn',sy,sm,ey,em);
 }
 
 function setReApi(btn) {
@@ -6355,8 +6801,11 @@ function toggleReRegion(btn) {
 
 /* ── API 수집 ── */
 async function fetchREData() {
-  const selectedCodes = [...document.querySelectorAll('#reRegionPills .sec-pill.active')]
-    .map(b => b.dataset.code);
+  /* ── 필터에서 선택값 읽기 (Naver 스타일 UI) ── */
+  const selectedApis  = nvGetSelected('re-fp-trade',  'data-api');
+  const selectedCodes = nvGetSelected('re-fp-region', 'data-code');
+
+  if (!selectedApis.length)  { alert('거래유형을 1개 이상 선택하세요.'); return; }
   if (!selectedCodes.length) { alert('지역을 1개 이상 선택하세요.'); return; }
 
   const sy = document.getElementById('reStartY').value;
@@ -6364,7 +6813,6 @@ async function fetchREData() {
   const ey = document.getElementById('reEndY').value;
   const em = document.getElementById('reEndM').value;
 
-  /* 수집 기간 목록 */
   const periods = [];
   let cy=+sy, cm=+sm;
   while (cy < +ey || (cy===+ey && cm<=+em)) {
@@ -6373,10 +6821,9 @@ async function fetchREData() {
   }
   if (!periods.length) { alert('기간을 확인하세요.'); return; }
 
-  /* API 키 (공공데이터포털 공통) */
   let apiKey = '';
   try {
-    const r = await fetch('api_keys.json'); // 같은 폴더
+    const r = await fetch('api_keys.json');
     const j = await r.json();
     apiKey = j?.['국토교통부_실거래가']?.api_key || j?.['금융위원회']?.api_key || '';
   } catch(e) {}
@@ -6385,59 +6832,59 @@ async function fetchREData() {
     return;
   }
 
-  const ep    = RE_EP[reApiType];
-  const total = selectedCodes.length * periods.length;
+  const total = selectedApis.length * selectedCodes.length * periods.length;
   let   done  = 0;
   const rows  = [];
 
   const btn = document.getElementById('reFetchBtn');
   btn.disabled = true;
-  document.getElementById('reProgressWrap').style.display = '';
-  setREStatus('loading', `수집 시작… 0 / ${total}개월`);
+  document.getElementById('reProgressWrap').style.display = 'block';
+  setREStatus('loading', `수집 시작… 0 / ${total}건`);
 
   try {
-    for (const code of selectedCodes) {
-      const rname = RE_REGIONS[code] || code;
-      for (const ym of periods) {
-        setREStatus('loading', `[${rname}] ${ym} 수집 중… (${done}/${total})`);
-        let page=1;
-        while(true) {
-          const params = new URLSearchParams({
-            serviceKey: apiKey, LAWD_CD: code, DEAL_YMD: ym,
-            pageNo: page, numOfRows: 1000, type: 'json'
-          });
-          const r = await fetch(`${ep}?${params}`);
-          incApiCounter(1);
-          if (!r.ok) break;
-          const body = (await r.json())?.response?.body;
-          const totalCount = +(body?.totalCount||0);
-          if (!totalCount) break;
-          const raw   = body?.items?.item ?? [];
-          const items = Array.isArray(raw) ? raw : (raw ? [raw] : []);
-          items.forEach(it => {
-            const amount = reParseAmount(it.dealAmount || it.deposit || 0);
-            if (!amount) return;
-            rows.push({
-              지역코드: code, 지역명: rname, ym,
-              거래금액: amount,
-              건수: 1,
-              기타: it.aptNm || it.offiNm || it.umdNm || '',
+    for (const apiType of selectedApis) {
+      const ep = RE_EP[apiType];
+      for (const code of selectedCodes) {
+        const rname = RE_REGIONS[code] || code;
+        for (const ym of periods) {
+          setREStatus('loading', `[${apiType}·${rname}] ${ym} 수집 중… (${done}/${total})`);
+          let page=1;
+          while(true) {
+            const params = new URLSearchParams({
+              serviceKey: apiKey, LAWD_CD: code, DEAL_YMD: ym,
+              pageNo: page, numOfRows: 1000, type: 'json'
             });
-          });
-          if (items.length + (page-1)*1000 >= totalCount) break;
-          page++;
-          await new Promise(res=>setTimeout(res,150));
+            const r = await fetch(`${ep}?${params}`);
+            incApiCounter(1);
+            if (!r.ok) break;
+            const body = (await r.json())?.response?.body;
+            const totalCount = +(body?.totalCount||0);
+            if (!totalCount) break;
+            const raw   = body?.items?.item ?? [];
+            const items = Array.isArray(raw) ? raw : (raw ? [raw] : []);
+            items.forEach(it => {
+              const amount = reParseAmount(it.dealAmount || it.deposit || 0);
+              if (!amount) return;
+              rows.push({
+                거래유형: apiType, 지역코드: code,
+                지역명: rname, ym, 거래금액: amount, 건수: 1,
+                기타: it.aptNm || it.offiNm || it.umdNm || '',
+              });
+            });
+            if (items.length + (page-1)*1000 >= totalCount) break;
+            page++;
+            await new Promise(res=>setTimeout(res,150));
+          }
+          done++;
+          document.getElementById('reProgressFill').style.width = (done/total*100)+'%';
+          await new Promise(res=>setTimeout(res,200));
         }
-        done++;
-        document.getElementById('reProgressFill').style.width = (done/total*100)+'%';
-        await new Promise(res=>setTimeout(res,300));
       }
     }
 
     reRawData = rows;
     reCsvText = buildRECsv(rows);
     processREData();
-
     setREStatus('ok', `수집 완료 — ${rows.length.toLocaleString()}건`);
     document.getElementById('reCsvDlBtn').style.display='';
     switchRETab(reActiveTab);
@@ -6445,10 +6892,10 @@ async function fetchREData() {
   } catch(err) {
     const isCors = err.name==='TypeError';
     setREStatus('err', isCors
-      ? 'CORS 오류 — Python 스크립트로 수집 후 CSV 드래그&드롭 또는 조직의 CORS 프록시 필요'
+      ? 'CORS 오류 — 배포 환경(Cloudflare Pages)에서 실행하거나 Python 스크립트 이용'
       : `오류: ${err.message}`);
   } finally {
-    btn.disabled=false;
+    btn.disabled = false;
   }
 }
 
