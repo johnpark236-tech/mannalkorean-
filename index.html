@@ -160,7 +160,6 @@
   const CORRECT = 'mannal2025';
   const KEY = 'mc_auth';
 
-  // 이미 인증됐으면 바로 이동
   if (sessionStorage.getItem(KEY) === '1') {
     location.replace('/chart_viewer.html');
   }
@@ -184,12 +183,10 @@
     }
   }
 
-  // Enter 키 지원
   document.getElementById('pw').addEventListener('keydown', function(e) {
     if (e.key === 'Enter') checkPw();
   });
 
-  // 자동 포커스
   window.addEventListener('load', () => document.getElementById('pw').focus());
 </script>
 
