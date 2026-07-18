@@ -1,2 +1,17 @@
+# 인증키 — 절대 커밋 금지
 api_keys.json
-*.env
+*.key
+.env
+.env.*
+
+# 작업 산출물
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+.DS_Store
+Thumbs.db
+
+# 로컬 캐시
+data/.cache/

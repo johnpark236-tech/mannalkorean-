@@ -1,0 +1,1250 @@
+[
+  {
+    "basDt": "20200131",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 56400,
+    "mrktTotAmt": 336695735820000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20200228",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 54200,
+    "mrktTotAmt": 323562214210000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20200331",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 47750,
+    "mrktTotAmt": 285057116762500,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20200429",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 50000,
+    "mrktTotAmt": 298489127500000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20200529",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 50700,
+    "mrktTotAmt": 302667975285000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20200630",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 52800,
+    "mrktTotAmt": 315204518640000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20200731",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 57900,
+    "mrktTotAmt": 345650409645000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20200831",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 54000,
+    "mrktTotAmt": 322368257700000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20200929",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 58200,
+    "mrktTotAmt": 347441344410000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20201030",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 56600,
+    "mrktTotAmt": 337889692330000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20201130",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 66700,
+    "mrktTotAmt": 398184496085000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20201230",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 81000,
+    "mrktTotAmt": 483552386550000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20210129",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 82000,
+    "mrktTotAmt": 489522169100000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20210226",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 82500,
+    "mrktTotAmt": 492507060375000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20210331",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 81400,
+    "mrktTotAmt": 485940299570000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20210430",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 81500,
+    "mrktTotAmt": 486537277825000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20210531",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 80500,
+    "mrktTotAmt": 480567495275000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20210630",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 80700,
+    "mrktTotAmt": 481761451785000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20210730",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 78500,
+    "mrktTotAmt": 468627930175000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20210831",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 76700,
+    "mrktTotAmt": 457882321585000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20210930",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 74100,
+    "mrktTotAmt": 442360886955000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20211029",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 69800,
+    "mrktTotAmt": 416690821990000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20211130",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 71300,
+    "mrktTotAmt": 425645495815000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20211230",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 78300,
+    "mrktTotAmt": 467433973665000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20220128",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 73300,
+    "mrktTotAmt": 437585060915000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20220228",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 72100,
+    "mrktTotAmt": 430421321855000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20220331",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 69600,
+    "mrktTotAmt": 415496865480000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20220429",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 67400,
+    "mrktTotAmt": 402363343870000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20220531",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 67400,
+    "mrktTotAmt": 402363343870000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20220630",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 57000,
+    "mrktTotAmt": 340277605350000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20220729",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 61400,
+    "mrktTotAmt": 366544648570000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20220831",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 59700,
+    "mrktTotAmt": 356396018235000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20220930",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 53100,
+    "mrktTotAmt": 316995453405000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20221031",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 59400,
+    "mrktTotAmt": 354605083470000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20221130",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 62200,
+    "mrktTotAmt": 371320474610000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20221229",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 55300,
+    "mrktTotAmt": 330128975015000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20230131",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 61000,
+    "mrktTotAmt": 364156735550000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20230228",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 60600,
+    "mrktTotAmt": 361768822530000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20230331",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 64000,
+    "mrktTotAmt": 382066083200000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20230428",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 65500,
+    "mrktTotAmt": 391020757025000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20230531",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 71400,
+    "mrktTotAmt": 426242474070000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20230630",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 72200,
+    "mrktTotAmt": 431018300110000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20230731",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 69800,
+    "mrktTotAmt": 416690821990000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20230831",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 66900,
+    "mrktTotAmt": 399378452595000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20230927",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 68400,
+    "mrktTotAmt": 408333126420000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20231031",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 66900,
+    "mrktTotAmt": 399378452595000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20231130",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 72800,
+    "mrktTotAmt": 434600169640000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20231228",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 78500,
+    "mrktTotAmt": 468627930175000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20240131",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 72700,
+    "mrktTotAmt": 434003191385000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20240229",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 73400,
+    "mrktTotAmt": 438182039170000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20240329",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 82400,
+    "mrktTotAmt": 491910082120000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20240430",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 77500,
+    "mrktTotAmt": 462658147625000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20240531",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 73500,
+    "mrktTotAmt": 438779017425000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20240628",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 81500,
+    "mrktTotAmt": 486537277825000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20240731",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 83900,
+    "mrktTotAmt": 500864755945000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20240830",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 74300,
+    "mrktTotAmt": 443554843465000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20240930",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 61500,
+    "mrktTotAmt": 367141626825000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20241031",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 59200,
+    "mrktTotAmt": 353411126960000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20241129",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 54200,
+    "mrktTotAmt": 323562214210000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20241230",
+    "srtnCd": "005930",
+    "itmsNm": "삼성전자",
+    "clpr": 53200,
+    "mrktTotAmt": 317592431660000,
+    "stock_name": "삼성전자"
+  },
+  {
+    "basDt": "20200131",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 93500,
+    "mrktTotAmt": 68068221127500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20200228",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 87900,
+    "mrktTotAmt": 63991407883500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20200331",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 83300,
+    "mrktTotAmt": 60642597004500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20200429",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 83700,
+    "mrktTotAmt": 60933797950500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20200529",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 81500,
+    "mrktTotAmt": 59332192747500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20200630",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 85100,
+    "mrktTotAmt": 61953001261500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20200731",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 82800,
+    "mrktTotAmt": 60278595822000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20200831",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 75100,
+    "mrktTotAmt": 54672977611500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20200929",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 84000,
+    "mrktTotAmt": 61152198660000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20201030",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 79900,
+    "mrktTotAmt": 58167388963500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20201130",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 97500,
+    "mrktTotAmt": 70980230587500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20201230",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 118500,
+    "mrktTotAmt": 86268280252500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20210129",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 122500,
+    "mrktTotAmt": 89180289712500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20210226",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 141500,
+    "mrktTotAmt": 103012334647500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20210331",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 132500,
+    "mrktTotAmt": 96460313362500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20210430",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 128000,
+    "mrktTotAmt": 93184302720000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20210531",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 127000,
+    "mrktTotAmt": 92456300355000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20210630",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 127500,
+    "mrktTotAmt": 92820301537500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20210730",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 112500,
+    "mrktTotAmt": 81900266062500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20210831",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 106500,
+    "mrktTotAmt": 77532251872500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20210930",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 103000,
+    "mrktTotAmt": 74984243595000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20211029",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 103000,
+    "mrktTotAmt": 74984243595000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20211130",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 114000,
+    "mrktTotAmt": 82992269610000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20211230",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 131000,
+    "mrktTotAmt": 95368309815000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20220128",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 120500,
+    "mrktTotAmt": 87724284982500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20220228",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 123500,
+    "mrktTotAmt": 89908292077500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20220331",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 118000,
+    "mrktTotAmt": 85904279070000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20220429",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 112500,
+    "mrktTotAmt": 81900266062500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20220531",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 108000,
+    "mrktTotAmt": 78624255420000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20220630",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 91000,
+    "mrktTotAmt": 66248215215000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20220729",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 97900,
+    "mrktTotAmt": 71271431533500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20220831",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 95200,
+    "mrktTotAmt": 69305825148000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20220930",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 83100,
+    "mrktTotAmt": 60496996531500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20221031",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 82700,
+    "mrktTotAmt": 60205795585500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20221130",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 85000,
+    "mrktTotAmt": 61880201025000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20221229",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 75000,
+    "mrktTotAmt": 54600177375000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20230131",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 88500,
+    "mrktTotAmt": 64428209302500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20230228",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 89400,
+    "mrktTotAmt": 65083411431000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20230331",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 88600,
+    "mrktTotAmt": 64501009539000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20230428",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 89500,
+    "mrktTotAmt": 65156211667500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20230531",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 108600,
+    "mrktTotAmt": 79061056839000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20230630",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 115200,
+    "mrktTotAmt": 83865872448000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20230731",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 123400,
+    "mrktTotAmt": 89835491841000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20230831",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 121800,
+    "mrktTotAmt": 88670688057000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20230927",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 114700,
+    "mrktTotAmt": 83501871265500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20231031",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 116300,
+    "mrktTotAmt": 84666675049500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20231130",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 133900,
+    "mrktTotAmt": 97479516673500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20231228",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 141500,
+    "mrktTotAmt": 103012334647500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20240131",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 134700,
+    "mrktTotAmt": 98061918565500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20240229",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 156200,
+    "mrktTotAmt": 113713969413000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20240329",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 183000,
+    "mrktTotAmt": 133224432795000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20240430",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 174200,
+    "mrktTotAmt": 126818011983000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20240531",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 189200,
+    "mrktTotAmt": 137738047458000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20240628",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 236500,
+    "mrktTotAmt": 172172559322500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20240731",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 194600,
+    "mrktTotAmt": 141669260229000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20240830",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 173700,
+    "mrktTotAmt": 126454010800500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20240930",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 174600,
+    "mrktTotAmt": 127109212929000,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20241031",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 186300,
+    "mrktTotAmt": 135626840599500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20241129",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 159900,
+    "mrktTotAmt": 116407578163500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20241230",
+    "srtnCd": "000660",
+    "itmsNm": "SK하이닉스",
+    "clpr": 173900,
+    "mrktTotAmt": 126599611273500,
+    "stock_name": "SK하이닉스"
+  },
+  {
+    "basDt": "20220128",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 450000,
+    "mrktTotAmt": 105300000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20220228",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 412000,
+    "mrktTotAmt": 96408000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20220331",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 442000,
+    "mrktTotAmt": 103428000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20220429",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 417000,
+    "mrktTotAmt": 97578000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20220531",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 444000,
+    "mrktTotAmt": 103896000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20220630",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 371000,
+    "mrktTotAmt": 86814000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20220729",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 422000,
+    "mrktTotAmt": 98748000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20220831",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 462500,
+    "mrktTotAmt": 108225000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20220930",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 426500,
+    "mrktTotAmt": 99801000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20221031",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 528000,
+    "mrktTotAmt": 123552000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20221130",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 587000,
+    "mrktTotAmt": 137358000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20221229",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 435500,
+    "mrktTotAmt": 101907000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20230131",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 521000,
+    "mrktTotAmt": 121914000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20230228",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 523000,
+    "mrktTotAmt": 122382000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20230331",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 584000,
+    "mrktTotAmt": 136656000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20230428",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 581000,
+    "mrktTotAmt": 135954000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20230531",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 599000,
+    "mrktTotAmt": 140166000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20230630",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 553000,
+    "mrktTotAmt": 129402000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20230731",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 560000,
+    "mrktTotAmt": 131040000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20230831",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 544000,
+    "mrktTotAmt": 127296000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20230927",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 476500,
+    "mrktTotAmt": 111501000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20231031",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 385500,
+    "mrktTotAmt": 90207000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20231130",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 454500,
+    "mrktTotAmt": 106353000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20231228",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 427500,
+    "mrktTotAmt": 100035000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20240131",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 381000,
+    "mrktTotAmt": 89154000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20240229",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 401500,
+    "mrktTotAmt": 93951000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20240329",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 395000,
+    "mrktTotAmt": 92430000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20240430",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 389000,
+    "mrktTotAmt": 91026000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20240531",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 331000,
+    "mrktTotAmt": 77454000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20240628",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 326500,
+    "mrktTotAmt": 76401000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20240731",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 324000,
+    "mrktTotAmt": 75816000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20240830",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 388000,
+    "mrktTotAmt": 90792000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20240930",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 414500,
+    "mrktTotAmt": 96993000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20241031",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 407500,
+    "mrktTotAmt": 95355000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20241129",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 381500,
+    "mrktTotAmt": 89271000000000,
+    "stock_name": "LG에너지솔루션"
+  },
+  {
+    "basDt": "20241230",
+    "srtnCd": "373220",
+    "itmsNm": "LG에너지솔루션",
+    "clpr": 348000,
+    "mrktTotAmt": 81432000000000,
+    "stock_name": "LG에너지솔루션"
+  }
+]
