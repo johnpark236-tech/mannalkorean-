@@ -161,7 +161,7 @@
   const KEY = 'mc_auth';
 
   if (sessionStorage.getItem(KEY) === '1') {
-    location.replace('/chart_viewer.html');
+    location.replace('/chart_viewer_A.html');
   }
 
   function checkPw() {
@@ -170,7 +170,7 @@
 
     if (input.value === CORRECT) {
       sessionStorage.setItem(KEY, '1');
-      location.replace('/chart_viewer.html');
+      location.replace('/chart_viewer_A.html');
     } else {
       input.classList.add('error');
       err.classList.add('visible');
