@@ -831,6 +831,94 @@ tr:last-child td{border-bottom:none;}
   color: #e2e8f0;
   font-family: 'Inter','Noto Sans KR',sans-serif;
 }
+.race-title-wrap {
+  position: relative;
+  display: inline-block;
+}
+.race-title-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e2e8f0;
+  font-family: 'Inter','Noto Sans KR',sans-serif;
+  padding: 6px 12px;
+  border-radius: 10px;
+  transition: background 0.15s;
+}
+.race-title-btn:hover { background: rgba(255,255,255,0.07); }
+.race-title-arrow {
+  font-size: 11px;
+  color: #64748b;
+  transition: transform 0.2s;
+}
+.race-title-arrow.open { transform: rotate(180deg); }
+.race-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 320px;
+  background: #1a1a2e;
+  border: 1px solid #2d2d44;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+  z-index: 200;
+  overflow: hidden;
+  animation: raceMenuIn 0.15s ease;
+}
+@keyframes raceMenuIn {
+  from { opacity:0; transform: translateX(-50%) translateY(-6px); }
+  to   { opacity:1; transform: translateX(-50%) translateY(0); }
+}
+.race-menu-group {
+  padding: 8px 0;
+  border-bottom: 1px solid #2d2d44;
+}
+.race-menu-group:last-child { border-bottom: none; }
+.race-menu-group-label {
+  padding: 4px 16px 2px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #475569;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.race-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: #cbd5e1;
+  font-size: 13px;
+  font-family: 'Noto Sans KR','Inter',sans-serif;
+  transition: background 0.12s;
+}
+.race-menu-item:hover:not(:disabled) { background: rgba(255,255,255,0.06); color: #e2e8f0; }
+.race-menu-item.active { color: #3b82f6; font-weight: 700; }
+.race-menu-item:disabled { cursor: default; opacity: 0.45; }
+.race-menu-icon { font-size: 16px; width: 22px; text-align: center; flex-shrink: 0; }
+.race-menu-info { flex: 1; min-width: 0; }
+.race-menu-name { font-size: 13px; line-height: 1.3; }
+.race-menu-desc { font-size: 11px; color: #64748b; margin-top: 1px; }
+.race-menu-badge {
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 99px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.badge-live  { background: #1e3a5f; color: #60a5fa; }
+.badge-soon  { background: #1a1a2e; color: #475569; border: 1px solid #2d2d44; }
 .race-period {
   font-size: 12px;
   color: #64748b;
@@ -1487,7 +1575,13 @@ tr:last-child td{border-bottom:none;}
 
           <!-- 헤더 -->
           <div class="race-header">
-            <div class="race-title">국내 주식 시가총액 순위 변화</div>
+            <div class="race-title-wrap" id="raceTitleWrap">
+              <button class="race-title-btn" id="raceTitleBtn" onclick="raceToggleMenu(event)">
+                <span id="raceTitleText">국내 주식 시가총액 순위 변화</span>
+                <span class="race-title-arrow" id="raceTitleArrow">▼</span>
+              </button>
+              <div class="race-dropdown" id="raceDropdown" style="display:none;"></div>
+            </div>
             <div class="race-period" id="racePeriodLabel">2020 Q1 → 2026 Q2</div>
           </div>
 
@@ -2182,6 +2276,105 @@ window.addEventListener('resize',()=>{
    ⑥ 순위 레이스 패널
 ═══════════════════════════════════════════════════ */
 
+/* ── 레이스 카테고리 메뉴 ─────────────────────────────────────────────── */
+const RACE_MENU = [
+  {
+    group: '📊 시가총액',
+    items: [
+      { id: 'stock_marketcap',        icon: '🏆', name: '국내 주식 시가총액 순위',  desc: '20종목 · 분기별 · 2020~2026',           file: 'data/race/stock_marketcap.json',        live: true  },
+      { id: 'sector_marketcap',       icon: '🧩', name: '섹터별 시가총액 순위',      desc: '반도체·배터리·금융 등 12개 섹터',        file: 'data/race/sector_marketcap.json',       live: false },
+      { id: 'kospi_marketcap',        icon: '📈', name: '코스피 상위 종목 시총',     desc: '코스피 대형주 분기별 순위',               file: 'data/race/kospi_marketcap.json',        live: false },
+      { id: 'kosdaq_marketcap',       icon: '🚀', name: '코스닥 상위 종목 시총',     desc: '코스닥 성장주 분기별 순위',               file: 'data/race/kosdaq_marketcap.json',       live: false },
+    ]
+  },
+  {
+    group: '💹 수익률',
+    items: [
+      { id: 'stock_return_ytd',       icon: '📅', name: '연간 주가 수익률 순위',     desc: '20종목 YTD 수익률 · 연도별',             file: 'data/race/stock_return_ytd.json',       live: false },
+      { id: 'stock_return_3y',        icon: '🔁', name: '3년 누적 수익률 순위',      desc: '장기 투자 성과 비교',                     file: 'data/race/stock_return_3y.json',        live: false },
+    ]
+  },
+  {
+    group: '📦 거래 동향',
+    items: [
+      { id: 'stock_volume',           icon: '🔊', name: '거래량 순위',               desc: '분기 평균 일 거래량 비교',                file: 'data/race/stock_volume.json',           live: false },
+      { id: 'stock_tradevalue',       icon: '💰', name: '거래대금 순위',             desc: '분기 평균 일 거래대금(억원)',             file: 'data/race/stock_tradevalue.json',       live: false },
+    ]
+  },
+  {
+    group: '🏭 섹터별 내부 순위',
+    items: [
+      { id: 'sector_semi',            icon: '💾', name: '반도체·전자 섹터 순위',     desc: '삼성전자·SK하이닉스 등 내부 경쟁',       file: 'data/race/sector_semi.json',            live: false },
+      { id: 'sector_battery',         icon: '🔋', name: '배터리·에너지 섹터 순위',   desc: 'LG에너지솔루션·삼성SDI·SK이노',         file: 'data/race/sector_battery.json',         live: false },
+      { id: 'sector_bio',             icon: '🧬', name: '바이오·헬스케어 섹터 순위', desc: '삼성바이오·셀트리온 등',                 file: 'data/race/sector_bio.json',             live: false },
+      { id: 'sector_auto',            icon: '🚗', name: '자동차·모빌리티 섹터 순위', desc: '현대차·기아·현대모비스 등',              file: 'data/race/sector_auto.json',            live: false },
+      { id: 'sector_finance',         icon: '🏦', name: '금융·보험 섹터 순위',       desc: 'KB금융·신한지주·SK텔레콤 등',            file: 'data/race/sector_finance.json',         live: false },
+      { id: 'sector_internet',        icon: '🌐', name: '인터넷·플랫폼 섹터 순위',   desc: 'NAVER·카카오 등',                        file: 'data/race/sector_internet.json',        live: false },
+    ]
+  },
+];
+
+let _raceCurrentId = 'stock_marketcap';
+
+function _buildRaceMenu() {
+  const dd = document.getElementById('raceDropdown');
+  if (!dd) return;
+  dd.innerHTML = RACE_MENU.map(g => `
+    <div class="race-menu-group">
+      <div class="race-menu-group-label">${g.group}</div>
+      ${g.items.map(it => `
+        <button class="race-menu-item${it.id === _raceCurrentId ? ' active' : ''}"
+          ${it.live ? `onclick="raceSelectCategory('${it.id}','${it.file}',this)"` : 'disabled'}
+          title="${it.live ? it.name : '준비 중'}">
+          <span class="race-menu-icon">${it.icon}</span>
+          <span class="race-menu-info">
+            <div class="race-menu-name">${it.name}</div>
+            <div class="race-menu-desc">${it.desc}</div>
+          </span>
+          <span class="race-menu-badge ${it.live ? 'badge-live' : 'badge-soon'}">${it.live ? 'LIVE' : '준비 중'}</span>
+        </button>`).join('')}
+    </div>`).join('');
+}
+
+function raceToggleMenu(e) {
+  e.stopPropagation();
+  const dd = document.getElementById('raceDropdown');
+  const arrow = document.getElementById('raceTitleArrow');
+  const isOpen = dd.style.display !== 'none';
+  if (isOpen) {
+    dd.style.display = 'none';
+    arrow.classList.remove('open');
+  } else {
+    _buildRaceMenu();
+    dd.style.display = 'block';
+    arrow.classList.add('open');
+  }
+}
+
+function raceSelectCategory(id, file, btnEl) {
+  _raceCurrentId = id;
+  // 타이틀 갱신
+  const item = RACE_MENU.flatMap(g => g.items).find(it => it.id === id);
+  if (item) document.getElementById('raceTitleText').textContent = item.name + ' 변화';
+  // 드롭다운 닫기
+  document.getElementById('raceDropdown').style.display = 'none';
+  document.getElementById('raceTitleArrow').classList.remove('open');
+  // 데이터 교체 후 재로드
+  _raceLoaded = false;
+  _raceDataFile = file;
+  racePause(); _raceFrame = 0; _raceProgress = 0;
+  loadRaceData();
+}
+
+// 외부 클릭 시 드롭다운 닫기
+document.addEventListener('click', () => {
+  const dd = document.getElementById('raceDropdown');
+  if (dd && dd.style.display !== 'none') {
+    dd.style.display = 'none';
+    document.getElementById('raceTitleArrow')?.classList.remove('open');
+  }
+});
+
 /* 패널 전환 */
 function switchPanel(panel) {
   document.getElementById('st-panel-bento').style.display = panel === 'bento' ? '' : 'none';
@@ -2227,11 +2420,12 @@ let _raceOnComplete = null; // 재생 완료 콜백 (MP4 녹화 종료용)
 let _raceTopN     = 10;
 let _raceSpeed    = 1800;    // ms per frame (느림 기본값)
 let _raceLoaded   = false;
+let _raceDataFile = 'data/race/stock_marketcap.json';
 
 async function loadRaceData() {
   if (_raceLoaded) return;
   try {
-    const res = await fetch('data/race/stock_marketcap.json');
+    const res = await fetch(_raceDataFile);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     _raceData = await res.json();
     _raceLoaded = true;
