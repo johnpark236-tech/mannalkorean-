@@ -1,0 +1,401 @@
+{
+  "id": "sector_internet",
+  "title": "인터넷·플랫폼 섹터 내 시가총액 순위",
+  "mode": "ranking",
+  "type": "race_chart",
+  "unit": "조원",
+  "updated": "2026-07-20",
+  "source": "금융위원회_주식시세정보",
+  "timeline": [
+    {
+      "date": "20200331",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 27.9,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 13.5,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20200630",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 43.9,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 23.5,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20200930",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 48.7,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 32.1,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20201231",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 48.0,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 34.4,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20210331",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 61.9,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 44.2,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20210630",
+      "items": [
+        {
+          "name": "카카오",
+          "value": 72.4,
+          "code": "035720"
+        },
+        {
+          "name": "NAVER",
+          "value": 68.6,
+          "code": "035420"
+        }
+      ]
+    },
+    {
+      "date": "20210930",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 63.7,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 52.5,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20211231",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 62.1,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 50.2,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20220331",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 55.9,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 47.5,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20220630",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 39.4,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 31.1,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20220930",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 31.7,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 25.4,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20221231",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 29.1,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 23.7,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20230331",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 33.1,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 27.2,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20230630",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 30.0,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 21.8,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20230930",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 33.1,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 19.5,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20231231",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 36.4,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 24.1,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20240331",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 30.4,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 23.9,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20240630",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 27.1,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 18.0,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20240930",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 27.2,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 16.0,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20241231",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 31.5,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 16.9,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20250331",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 30.3,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 17.3,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20250630",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 41.6,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 26.5,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20250930",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 42.1,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 26.4,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20251231",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 38.0,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 26.6,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20260331",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 31.6,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 20.3,
+          "code": "035720"
+        }
+      ]
+    },
+    {
+      "date": "20260630",
+      "items": [
+        {
+          "name": "NAVER",
+          "value": 31.2,
+          "code": "035420"
+        },
+        {
+          "name": "카카오",
+          "value": 15.3,
+          "code": "035720"
+        }
+      ]
+    }
+  ]
+}

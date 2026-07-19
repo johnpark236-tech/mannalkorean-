@@ -33,7 +33,7 @@ jobs:
         run: python scripts/fetch_stock_daily.py
 
       - name: Build Race data
-        run: python scripts/build_race_marketcap.py
+        run: python scripts/build_all_race_data.py
 
       - name: Commit updated data
         run: |

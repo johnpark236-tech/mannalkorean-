@@ -2281,35 +2281,33 @@ const RACE_MENU = [
   {
     group: '📊 시가총액',
     items: [
-      { id: 'stock_marketcap',        icon: '🏆', name: '국내 주식 시가총액 순위',  desc: '20종목 · 분기별 · 2020~2026',           file: 'data/race/stock_marketcap.json',        live: true  },
-      { id: 'sector_marketcap',       icon: '🧩', name: '섹터별 시가총액 순위',      desc: '반도체·배터리·금융 등 12개 섹터',        file: 'data/race/sector_marketcap.json',       live: false },
-      { id: 'kospi_marketcap',        icon: '📈', name: '코스피 상위 종목 시총',     desc: '코스피 대형주 분기별 순위',               file: 'data/race/kospi_marketcap.json',        live: false },
-      { id: 'kosdaq_marketcap',       icon: '🚀', name: '코스닥 상위 종목 시총',     desc: '코스닥 성장주 분기별 순위',               file: 'data/race/kosdaq_marketcap.json',       live: false },
+      { id: 'stock_marketcap',   icon: '🏆', name: '국내 주식 시가총액 순위',  desc: '20종목 · 분기별 · 2020~2026',         file: 'data/race/stock_marketcap.json',   live: true },
+      { id: 'sector_marketcap',  icon: '🧩', name: '섹터별 시가총액 순위',      desc: '반도체·배터리·금융 등 8개 섹터',      file: 'data/race/sector_marketcap.json',  live: true },
     ]
   },
   {
     group: '💹 수익률',
     items: [
-      { id: 'stock_return_ytd',       icon: '📅', name: '연간 주가 수익률 순위',     desc: '20종목 YTD 수익률 · 연도별',             file: 'data/race/stock_return_ytd.json',       live: false },
-      { id: 'stock_return_3y',        icon: '🔁', name: '3년 누적 수익률 순위',      desc: '장기 투자 성과 비교',                     file: 'data/race/stock_return_3y.json',        live: false },
+      { id: 'stock_return_ytd',  icon: '📅', name: '연간 수익률 순위',          desc: '20종목 YTD · 연도별 · 2014~2026',     file: 'data/race/stock_return_ytd.json',  live: true },
+      { id: 'stock_return_3y',   icon: '🔁', name: '3년 누적 수익률 순위',      desc: '3년 보유 성과 · 분기별 · 2017~',      file: 'data/race/stock_return_3y.json',   live: true },
     ]
   },
   {
     group: '📦 거래 동향',
     items: [
-      { id: 'stock_volume',           icon: '🔊', name: '거래량 순위',               desc: '분기 평균 일 거래량 비교',                file: 'data/race/stock_volume.json',           live: false },
-      { id: 'stock_tradevalue',       icon: '💰', name: '거래대금 순위',             desc: '분기 평균 일 거래대금(억원)',             file: 'data/race/stock_tradevalue.json',       live: false },
+      { id: 'stock_volume',      icon: '🔊', name: '거래량 순위',               desc: '분기 평균 일 거래량 · 만주',           file: 'data/race/stock_volume.json',      live: true },
+      { id: 'stock_tradevalue',  icon: '💰', name: '거래대금 순위',             desc: '분기 평균 일 거래대금 · 억원',         file: 'data/race/stock_tradevalue.json',  live: true },
     ]
   },
   {
     group: '🏭 섹터별 내부 순위',
     items: [
-      { id: 'sector_semi',            icon: '💾', name: '반도체·전자 섹터 순위',     desc: '삼성전자·SK하이닉스 등 내부 경쟁',       file: 'data/race/sector_semi.json',            live: false },
-      { id: 'sector_battery',         icon: '🔋', name: '배터리·에너지 섹터 순위',   desc: 'LG에너지솔루션·삼성SDI·SK이노',         file: 'data/race/sector_battery.json',         live: false },
-      { id: 'sector_bio',             icon: '🧬', name: '바이오·헬스케어 섹터 순위', desc: '삼성바이오·셀트리온 등',                 file: 'data/race/sector_bio.json',             live: false },
-      { id: 'sector_auto',            icon: '🚗', name: '자동차·모빌리티 섹터 순위', desc: '현대차·기아·현대모비스 등',              file: 'data/race/sector_auto.json',            live: false },
-      { id: 'sector_finance',         icon: '🏦', name: '금융·보험 섹터 순위',       desc: 'KB금융·신한지주·SK텔레콤 등',            file: 'data/race/sector_finance.json',         live: false },
-      { id: 'sector_internet',        icon: '🌐', name: '인터넷·플랫폼 섹터 순위',   desc: 'NAVER·카카오 등',                        file: 'data/race/sector_internet.json',        live: false },
+      { id: 'sector_semi',       icon: '💾', name: '반도체·전자 섹터 순위',     desc: '삼성전자 · SK하이닉스 · LG전자',       file: 'data/race/sector_semi.json',       live: true },
+      { id: 'sector_battery',    icon: '🔋', name: '배터리·에너지 섹터 순위',   desc: 'LG에너지솔루션 · 삼성SDI · LG화학',   file: 'data/race/sector_battery.json',    live: true },
+      { id: 'sector_bio',        icon: '🧬', name: '바이오·헬스케어 섹터 순위', desc: '삼성바이오로직스 · 셀트리온',           file: 'data/race/sector_bio.json',        live: true },
+      { id: 'sector_auto',       icon: '🚗', name: '자동차·모빌리티 섹터 순위', desc: '현대차 · 기아 · 현대모비스',            file: 'data/race/sector_auto.json',       live: true },
+      { id: 'sector_finance',    icon: '🏦', name: '금융·보험 섹터 순위',       desc: 'KB금융 · 신한지주',                    file: 'data/race/sector_finance.json',    live: true },
+      { id: 'sector_internet',   icon: '🌐', name: '인터넷·플랫폼 섹터 순위',   desc: 'NAVER · 카카오',                       file: 'data/race/sector_internet.json',   live: true },
     ]
   },
 ];
