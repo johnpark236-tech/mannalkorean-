@@ -441,6 +441,27 @@ tr:last-child td{border-bottom:none;}
   color: #64748b;
   font-weight: 500;
 }
+.b-header-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.b-header-left { flex: 1; min-width: 0; }
+.b-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.b-header-period-label {
+  font-size: 10px;
+  color: #475569;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 
 /* 메인 차트 카드 */
 .b-chart-header {
@@ -1361,13 +1382,25 @@ tr:last-child td{border-bottom:none;}
         <div class="bento-grid" id="bentoGrid">
 
           <!-- 1. 헤더 카드 -->
-          <div class="b-card b-card-full">
-            <div class="b-header-brand">
-              <div class="b-header-dot"></div>
-              <div class="b-header-name">Log of Choices</div>
+          <div class="b-card b-card-full b-header-card">
+            <div class="b-header-left">
+              <div class="b-header-brand">
+                <div class="b-header-dot"></div>
+                <div class="b-header-name">Log of Choices</div>
+              </div>
+              <div class="b-header-sheet">주식 시세</div>
+              <div class="b-header-date" id="bentoDate">—</div>
             </div>
-            <div class="b-header-sheet">주식 시세</div>
-            <div class="b-header-date" id="bentoDate">—</div>
+            <div class="b-header-right">
+              <div class="b-header-period-label">기간</div>
+              <div class="b-period-btns">
+                <button class="b-period-btn" data-period="6"  onclick="bentoPeriod(6)">6M</button>
+                <button class="b-period-btn" data-period="12" onclick="bentoPeriod(12)">1Y</button>
+                <button class="b-period-btn" data-period="36" onclick="bentoPeriod(36)">3Y</button>
+                <button class="b-period-btn" data-period="60" onclick="bentoPeriod(60)">5Y</button>
+                <button class="b-period-btn active" data-period="0" onclick="bentoPeriod(0)">전체</button>
+              </div>
+            </div>
           </div>
 
           <!-- 검색 + 비교 바스켓 카드 -->
@@ -1391,18 +1424,9 @@ tr:last-child td{border-bottom:none;}
                 <div class="b-chart-title">종목별 종가 추이</div>
                 <div class="b-chart-sub" id="bentoChartSub">월말 종가 (원) · 금융위원회</div>
               </div>
-              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">
-                <div class="b-period-btns">
-                  <button class="b-period-btn" data-period="6"   onclick="bentoPeriod(6)">6M</button>
-                  <button class="b-period-btn" data-period="12"  onclick="bentoPeriod(12)">1Y</button>
-                  <button class="b-period-btn" data-period="36"  onclick="bentoPeriod(36)">3Y</button>
-                  <button class="b-period-btn" data-period="60"  onclick="bentoPeriod(60)">5Y</button>
-                  <button class="b-period-btn active" data-period="0" onclick="bentoPeriod(0)">전체</button>
-                </div>
-                <div class="b-norm-toggle">
-                  <button id="btnNormWon" class="b-norm-btn active" onclick="bentoSetNorm(false)">₩ 절대값</button>
-                  <button id="btnNormPct" class="b-norm-btn"        onclick="bentoSetNorm(true)">% 정규화</button>
-                </div>
+              <div class="b-norm-toggle">
+                <button id="btnNormWon" class="b-norm-btn active" onclick="bentoSetNorm(false)">₩ 절대값</button>
+                <button id="btnNormPct" class="b-norm-btn"        onclick="bentoSetNorm(true)">% 정규화</button>
               </div>
             </div>
             <div class="b-chart-canvas-wrap">
