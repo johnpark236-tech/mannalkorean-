@@ -2405,7 +2405,26 @@ const RACE_COLORS = {
   '003550': '#F57F17', // LG
   '018260': '#4527A0', // 삼성에스디에스
 };
+/* 섹터명 고정 색상 */
+const SECTOR_COLORS = {
+  '반도체·전자':    '#1E88E5',
+  '배터리·에너지':  '#22c55e',
+  '바이오·헬스케어':'#ec4899',
+  '자동차·모빌리티':'#f59e0b',
+  '인터넷·플랫폼':  '#8b5cf6',
+  '금융·보험':      '#ef4444',
+  '철강·소재':      '#94a3b8',
+  '화학·소재':      '#06b6d4',
+  '에너지·공공':    '#f97316',
+  '통신':           '#a78bfa',
+  '기타':           '#64748b',
+};
+
 const RACE_DEFAULT_COLOR = '#64748b';
+
+function _raceColor(code) {
+  return RACE_COLORS[code] || SECTOR_COLORS[code] || RACE_DEFAULT_COLOR;
+}
 
 /* Race 상태 변수 */
 let _raceData     = null;
@@ -2520,7 +2539,7 @@ function _raceRenderInterpolated(t) {
   _raceChart.data.labels = top.map(it => it.name);
   _raceChart.data.datasets[0].data  = top.map(it => it.value);
   _raceChart.data.datasets[0].backgroundColor = top.map(it =>
-    (RACE_COLORS[it.code] || RACE_DEFAULT_COLOR) + 'cc');
+    _raceColor(it.code) + 'cc');
   _raceChart.update('none'); // 직접 보간하므로 Chart.js 자체 애니메이션 불필요
 }
 
