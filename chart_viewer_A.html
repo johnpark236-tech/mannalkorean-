@@ -1514,9 +1514,9 @@ tr:last-child td{border-bottom:none;}
             <div class="race-opts">
               <div class="race-opt-group">
                 <span class="race-opt-label">속도</span>
-                <button class="race-opt-btn" onclick="raceSetSpeed(1500)">느림</button>
-                <button class="race-opt-btn active" id="raceSpeedMid" onclick="raceSetSpeed(800)">보통</button>
-                <button class="race-opt-btn" onclick="raceSetSpeed(300)">빠름</button>
+                <button class="race-opt-btn" onclick="raceSetSpeed(2400)">느림</button>
+                <button class="race-opt-btn active" id="raceSpeedMid" onclick="raceSetSpeed(1800)">보통</button>
+                <button class="race-opt-btn" onclick="raceSetSpeed(800)">빠름</button>
               </div>
               <div class="race-opt-group">
                 <span class="race-opt-label">상위</span>
@@ -2217,13 +2217,15 @@ const RACE_COLORS = {
 const RACE_DEFAULT_COLOR = '#64748b';
 
 /* Race 상태 변수 */
-let _raceData   = null;
-let _raceFrame  = 0;
-let _raceTimer  = null;
-let _raceChart  = null;
-let _raceTopN   = 10;
-let _raceSpeed  = 800;   // ms per frame
-let _raceLoaded = false;
+let _raceData     = null;
+let _raceFrame    = 0;       // 현재 기준 프레임 인덱스
+let _raceProgress = 0;       // 0→1: 현재 프레임 → 다음 프레임 진행도
+let _raceRafId    = null;
+let _raceLastTs   = null;
+let _raceChart    = null;
+let _raceTopN     = 10;
+let _raceSpeed    = 1800;    // ms per frame (느림 기본값)
+let _raceLoaded   = false;
 
 async function loadRaceData() {
   if (_raceLoaded) return;
@@ -2263,7 +2265,7 @@ function _initRaceChart() {
     data: { labels: [], datasets: [{ data: [], backgroundColor: [], borderRadius: 6, borderSkipped: false }] },
     options: {
       indexAxis: 'y',
-      animation: { duration: _raceSpeed * 0.7, easing: 'easeInOutQuart' },
+      animation: false,
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
@@ -2289,82 +2291,122 @@ function _initRaceChart() {
   });
 }
 
-function raceRenderFrame(idx) {
+/* 보간된 값으로 차트 업데이트 (rAF 루프에서 매 틱 호출) */
+function _raceRenderInterpolated(t) {
   if (!_raceData || !_raceChart) return;
-  const tl   = _raceData.timeline;
-  const frame = tl[idx];
-  if (!frame) return;
+  const tl = _raceData.timeline;
+  const frameA = tl[_raceFrame];
+  const frameB = tl[Math.min(_raceFrame + 1, tl.length - 1)];
 
-  // 날짜 표시
-  const d = frame.date;
+  // 날짜 표시: t=0.5 기준으로 전환
+  const d = (t < 0.5 ? frameA : frameB).date;
   const fmtDate = `${d.slice(0,4)}년 Q${Math.ceil(parseInt(d.slice(4,6))/3)}`;
   document.getElementById('raceDateDisplay').textContent = fmtDate;
-  document.getElementById('raceSlider').value = idx;
-  document.getElementById('raceChart').setAttribute('aria-label',
-    `${fmtDate} 시가총액 순위: ` + frame.items.slice(0, _raceTopN).map((it, i) => `${i+1}위 ${it.name} ${it.value}조원`).join(', '));
+  document.getElementById('raceSlider').value = _raceFrame + t;
 
-  const topItems = frame.items.slice(0, _raceTopN).reverse(); // Chart.js y축: 하단이 첫 항목
-  _raceChart.data.labels = topItems.map(it => it.name);
-  _raceChart.data.datasets[0].data = topItems.map(it => it.value);
-  _raceChart.data.datasets[0].backgroundColor = topItems.map(it =>
+  // 전체 종목 값 선형 보간
+  const aMap = new Map(frameA.items.map(i => [i.code, i]));
+  const bMap = new Map(frameB.items.map(i => [i.code, i]));
+  const allCodes = new Set([...aMap.keys(), ...bMap.keys()]);
+
+  const interpolated = [];
+  allCodes.forEach(code => {
+    const a = aMap.get(code);
+    const b = bMap.get(code);
+    const va = a ? a.value : 0;
+    const vb = b ? b.value : 0;
+    const val = va + (vb - va) * t;
+    const name = (a || b).name;
+    if (val > 0) interpolated.push({ code, name, value: val });
+  });
+
+  interpolated.sort((a, b) => b.value - a.value);
+  const top = interpolated.slice(0, _raceTopN).reverse(); // Chart.js y축: 아래→위
+
+  _raceChart.data.labels = top.map(it => it.name);
+  _raceChart.data.datasets[0].data  = top.map(it => it.value);
+  _raceChart.data.datasets[0].backgroundColor = top.map(it =>
     (RACE_COLORS[it.code] || RACE_DEFAULT_COLOR) + 'cc');
-  _raceChart.options.animation.duration = _raceSpeed * 0.7;
-  _raceChart.update();
+  _raceChart.update('none'); // 직접 보간하므로 Chart.js 자체 애니메이션 불필요
+}
+
+/* rAF 루프 */
+function _raceTick(ts) {
+  if (!_raceLastTs) _raceLastTs = ts;
+  const dt = ts - _raceLastTs;
+  _raceLastTs = ts;
+
+  _raceProgress += dt / _raceSpeed;
+
+  if (_raceProgress >= 1) {
+    _raceFrame++;
+    _raceProgress = 0;
+    const total = _raceData.timeline.length;
+    if (_raceFrame >= total - 1) {
+      _raceFrame = total - 1;
+      _raceRenderInterpolated(1);
+      racePause();
+      return;
+    }
+  }
+
+  _raceRenderInterpolated(_raceProgress);
+  _raceRafId = requestAnimationFrame(_raceTick);
+}
+
+/* 정지 상태에서 단일 프레임 렌더 (seek / reset 용) */
+function raceRenderFrame(idx) {
+  _raceFrame    = idx;
+  _raceProgress = 0;
+  _raceRenderInterpolated(0);
 }
 
 function racePlay() {
   if (!_raceData) return;
-  const tl = _raceData.timeline;
-  if (_raceFrame >= tl.length - 1) _raceFrame = 0;
+  const total = _raceData.timeline.length;
+  if (_raceFrame >= total - 1) { _raceFrame = 0; _raceProgress = 0; }
   document.getElementById('raceBtnPlay').textContent = '⏸ 일시정지';
-
-  _raceTimer = setInterval(() => {
-    raceRenderFrame(_raceFrame);
-    _raceFrame++;
-    if (_raceFrame >= tl.length) {
-      racePause();
-      _raceFrame = tl.length - 1;
-    }
-  }, _raceSpeed);
+  _raceLastTs = null;
+  _raceRafId = requestAnimationFrame(_raceTick);
 }
 
 function racePause() {
-  clearInterval(_raceTimer);
-  _raceTimer = null;
+  cancelAnimationFrame(_raceRafId);
+  _raceRafId  = null;
+  _raceLastTs = null;
   document.getElementById('raceBtnPlay').textContent = '▶ 재생';
 }
 
 function raceToggle() {
-  if (_raceTimer) racePause();
+  if (_raceRafId) racePause();
   else racePlay();
 }
 
 function raceReset() {
   racePause();
-  _raceFrame = 0;
-  if (_raceData) raceRenderFrame(0);
+  _raceFrame    = 0;
+  _raceProgress = 0;
+  if (_raceData) _raceRenderInterpolated(0);
 }
 
 function raceSeek(idx) {
   racePause();
-  _raceFrame = idx;
   raceRenderFrame(idx);
 }
 
 function raceSetSpeed(ms) {
   _raceSpeed = ms;
-  const wasPlaying = !!_raceTimer;
+  const wasPlaying = !!_raceRafId;
   if (wasPlaying) { racePause(); racePlay(); }
-  // 버튼 active 표시
+  const labelMap = { 2400: '느림', 1800: '보통', 800: '빠름' };
   document.querySelectorAll('.race-opt-group:first-child .race-opt-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.textContent === (ms === 1500 ? '느림' : ms === 800 ? '보통' : '빠름'));
+    btn.classList.toggle('active', btn.textContent === labelMap[ms]);
   });
 }
 
 function raceSetTopN(n) {
   _raceTopN = n;
-  if (_raceData) raceRenderFrame(_raceFrame);
-  // 버튼 active 표시
+  if (_raceData) _raceRenderInterpolated(_raceProgress);
   document.querySelectorAll('.race-opt-group:last-child .race-opt-btn').forEach(btn => {
     btn.classList.toggle('active', btn.textContent === String(n));
   });
