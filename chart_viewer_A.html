@@ -1526,8 +1526,8 @@ tr:last-child td{border-bottom:none;}
               </div>
             </div>
             <div class="race-action-btns">
-              <button class="race-btn" onclick="alert('MP4 다운로드는 곧 지원될 예정입니다.')">📥 MP4</button>
-              <button class="race-btn" onclick="bentoCopyLink()">🔗 공유</button>
+              <button class="race-btn" onclick="raceDownloadMP4()">📥 MP4</button>
+              <button class="race-btn" onclick="raceCopyLink()">🔗 공유</button>
             </div>
           </div>
 
@@ -2220,9 +2220,10 @@ const RACE_DEFAULT_COLOR = '#64748b';
 let _raceData     = null;
 let _raceFrame    = 0;       // 현재 기준 프레임 인덱스
 let _raceProgress = 0;       // 0→1: 현재 프레임 → 다음 프레임 진행도
-let _raceRafId    = null;
-let _raceLastTs   = null;
-let _raceChart    = null;
+let _raceRafId      = null;
+let _raceLastTs     = null;
+let _raceChart      = null;
+let _raceOnComplete = null; // 재생 완료 콜백 (MP4 녹화 종료용)
 let _raceTopN     = 10;
 let _raceSpeed    = 1800;    // ms per frame (느림 기본값)
 let _raceLoaded   = false;
@@ -2321,7 +2322,8 @@ function _raceRenderInterpolated(t) {
   });
 
   interpolated.sort((a, b) => b.value - a.value);
-  const top = interpolated.slice(0, _raceTopN).reverse(); // Chart.js y축: 아래→위
+  // Chart.js y축: index 0이 맨 위 → 내림차순 정렬 그대로 슬라이스하면 1위가 맨 위
+  const top = interpolated.slice(0, _raceTopN);
 
   _raceChart.data.labels = top.map(it => it.name);
   _raceChart.data.datasets[0].data  = top.map(it => it.value);
@@ -2346,6 +2348,7 @@ function _raceTick(ts) {
       _raceFrame = total - 1;
       _raceRenderInterpolated(1);
       racePause();
+      if (_raceOnComplete) { _raceOnComplete(); _raceOnComplete = null; }
       return;
     }
   }
@@ -2412,10 +2415,76 @@ function raceSetTopN(n) {
   });
 }
 
+/* ── MP4(WebM) 녹화 다운로드 ─────────────────────────────────────────── */
+async function raceDownloadMP4() {
+  if (!_raceData) return;
+  const canvas = document.getElementById('raceChart');
+  if (!canvas) return;
+
+  // MediaRecorder 지원 확인
+  const mimeType = ['video/webm;codecs=vp9','video/webm;codecs=vp8','video/webm']
+    .find(m => MediaRecorder.isTypeSupported(m));
+  if (!mimeType) { alert('이 브라우저는 영상 녹화를 지원하지 않습니다.'); return; }
+
+  const btn = document.querySelector('[onclick="raceDownloadMP4()"]');
+  if (btn) { btn.textContent = '⏺ 녹화 중…'; btn.disabled = true; }
+
+  // 처음부터 재생 (빠름 속도로)
+  racePause();
+  _raceFrame = 0; _raceProgress = 0;
+  _raceRenderInterpolated(0);
+
+  await new Promise(r => setTimeout(r, 100)); // 첫 프레임 렌더 대기
+
+  const savedSpeed = _raceSpeed;
+  _raceSpeed = 800;
+
+  const stream = canvas.captureStream(30);
+  const recorder = new MediaRecorder(stream, { mimeType });
+  const chunks = [];
+  recorder.ondataavailable = e => { if (e.data.size) chunks.push(e.data); };
+  recorder.onstop = () => {
+    const blob = new Blob(chunks, { type: mimeType.split(';')[0] });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href = url; a.download = '주식시가총액순위레이스.webm'; a.click();
+    URL.revokeObjectURL(url);
+    _raceSpeed = savedSpeed;
+    if (btn) { btn.textContent = '📥 MP4'; btn.disabled = false; }
+  };
+
+  recorder.start(100); // 100ms 단위로 chunk
+  _raceOnComplete = () => {
+    setTimeout(() => recorder.stop(), 300); // 마지막 프레임 여유
+  };
+  racePlay();
+}
+
+/* ── 공유 링크 복사 ──────────────────────────────────────────────────── */
+function raceCopyLink() {
+  const url = new URL(location.href);
+  url.searchParams.set('tab', 'race');
+  url.searchParams.delete('items'); // 시세 탭 파라미터 제거
+  const link = url.toString();
+  navigator.clipboard.writeText(link).then(() => {
+    const btn = document.querySelector('[onclick="raceCopyLink()"]');
+    if (!btn) return;
+    const orig = btn.textContent;
+    btn.textContent = '✓ 복사됨';
+    setTimeout(() => { btn.textContent = orig; }, 2000);
+  }).catch(() => {
+    prompt('아래 링크를 복사하세요:', link);
+  });
+}
+
 /* 페이지 로드 시: 차트 데이터 + 요청 시트 초기화 + API 키 자동 읽기 */
 window.addEventListener('load', () => {
   loadStockFromJSON(); // JSON 우선 로드, 실패 시 내장 CSV 폴백
   initApiKey();        // 레거시 직접 API 수집 UI 초기화 (보조)
+  // URL 파라미터로 레이스 탭 직접 진입 지원
+  if (new URLSearchParams(location.search).get('tab') === 'race') {
+    switchPanel('race');
+  }
 });
 
 /* ═══════════════════════════════════════════════════
