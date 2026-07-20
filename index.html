@@ -3,192 +3,339 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mannalkorean.com</title>
+  <title>MANNAL-HUB — 한국어 교육 × 데이터 시각화</title>
+  <meta name="description" content="한국어 학습 플랫폼과 데이터 시각화 스튜디오를 잇는 MANNAL-HUB. 6개 언어 지원, 12주 커리큘럼, 금융·경제 데이터 레이스.">
+  <meta property="og:title" content="MANNAL-HUB">
+  <meta property="og:description" content="한국어 교육 × 데이터 시각화 플랫폼">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
-      background: #1a1a2e;
+    :root {
+      --bg:        #0a0a0f;
+      --surface:   #0f1117;
+      --border:    #1e2334;
+      --text:      #e2e8f0;
+      --muted:     #64748b;
+      --subtle:    #1e293b;
+      --kr-blue:   #1a4fa0;
+      --kr-red:    #c60c30;
+      --accent:    #3b82f6;
+      --accent-dim:#1e3a5f;
+      --green:     #10b981;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Sans KR', 'Inter', sans-serif;
+    }
+
+    /* ── 배경 장식 ── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 15% 30%, rgba(26,79,160,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 85% 70%, rgba(59,130,246,0.07) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
       min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding: 20px;
+      padding: 60px 20px 40px;
     }
 
-    .card {
-      background: #16213e;
-      border: 1px solid #0f3460;
-      border-radius: 16px;
-      padding: 48px 40px;
-      width: 100%;
-      max-width: 400px;
+    /* ── 브랜드 영역 ── */
+    .brand {
       text-align: center;
-      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+      margin-bottom: 52px;
     }
-
-    .emoji {
-      font-size: 40px;
+    .brand-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .brand-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 8px var(--accent);
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity:1; transform:scale(1); }
+      50%      { opacity:0.5; transform:scale(0.85); }
+    }
+    .brand-name {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(42px, 10vw, 72px);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      color: #fff;
+      position: relative;
+      display: inline-block;
+    }
+    .brand-name::after {
+      content: '';
       display: block;
-      margin-bottom: 20px;
-      letter-spacing: 6px;
+      height: 4px;
+      border-radius: 2px;
+      margin-top: 10px;
+      background: linear-gradient(90deg, var(--kr-blue), var(--accent), var(--kr-red));
+    }
+    .brand-sub {
+      margin-top: 18px;
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .brand-sub strong { color: #94a3b8; font-weight: 600; }
+
+    /* ── 카드 ── */
+    .cards {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 48px;
     }
 
-    h1 {
-      font-size: 20px;
+    /* 메인 카드 — 한국어 학습 */
+    .card-main {
+      background: linear-gradient(145deg, #0d1b3e 0%, #0f1525 100%);
+      border: 1px solid #1a3a70;
+      border-radius: 20px;
+      padding: 32px 28px;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card-main:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(26,79,160,0.35);
+    }
+    .card-main::before {
+      content: '🇰🇷';
+      position: absolute;
+      right: 24px; top: 50%;
+      transform: translateY(-50%);
+      font-size: 56px;
+      opacity: 0.18;
+    }
+    .card-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #60a5fa;
+      margin-bottom: 10px;
+    }
+    .card-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+    .card-desc {
+      font-size: 13px;
+      color: #94a3b8;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .card-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 22px;
+      background: linear-gradient(135deg, #1a4fa0, #2563eb);
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.01em;
+      transition: filter 0.15s;
+    }
+    .card-main:hover .card-btn { filter: brightness(1.12); }
+
+    /* 보조 카드 — 데이터 스튜디오 */
+    .card-sub {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 24px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .card-sub:hover {
+      border-color: #334155;
+      background: #111827;
+    }
+    .card-sub-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+    .card-sub-text { flex: 1; min-width: 0; }
+    .card-sub-name {
+      font-size: 15px;
       font-weight: 700;
       color: #e2e8f0;
-      margin-bottom: 10px;
+      margin-bottom: 3px;
+    }
+    .card-sub-desc {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .card-sub-arrow {
+      font-size: 16px;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    /* ── 피처 그리드 ── */
+    .features {
+      width: 100%;
+      max-width: 480px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 48px;
+    }
+    .feat {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 14px;
+      text-align: center;
+    }
+    .feat-icon { font-size: 22px; margin-bottom: 8px; }
+    .feat-num {
+      font-family: 'Inter', sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.03em;
+      margin-bottom: 2px;
+    }
+    .feat-label {
+      font-size: 11px;
+      color: var(--muted);
       line-height: 1.4;
     }
 
-    .subtitle {
-      font-size: 13px;
-      color: #94a3b8;
-      margin-bottom: 32px;
-      line-height: 1.6;
-    }
-
-    .divider {
-      width: 40px;
-      height: 2px;
-      background: #0f3460;
-      margin: 0 auto 32px;
-    }
-
-    .input-wrap {
-      position: relative;
-      margin-bottom: 12px;
-    }
-
-    input[type="password"] {
-      width: 100%;
-      padding: 13px 16px;
-      background: #0d1b2a;
-      border: 1px solid #1e3a5f;
-      border-radius: 10px;
-      color: #e2e8f0;
-      font-family: 'Noto Sans KR', sans-serif;
-      font-size: 15px;
-      outline: none;
-      transition: border-color 0.2s;
-      letter-spacing: 0.05em;
-    }
-
-    input[type="password"]::placeholder {
-      color: #475569;
-      letter-spacing: 0;
-    }
-
-    input[type="password"]:focus {
-      border-color: #3b82f6;
-    }
-
-    input[type="password"].error {
-      border-color: #ef4444;
-    }
-
-    button {
-      width: 100%;
-      padding: 13px;
-      background: #3b82f6;
-      border: none;
-      border-radius: 10px;
-      color: #fff;
-      font-family: 'Noto Sans KR', sans-serif;
-      font-size: 15px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.1s;
-      margin-top: 4px;
-    }
-
-    button:hover { background: #2563eb; }
-    button:active { transform: scale(0.98); }
-
-    .error-msg {
-      font-size: 12.5px;
-      color: #f87171;
-      margin-top: 10px;
-      min-height: 18px;
-      opacity: 0;
-      transition: opacity 0.2s;
-    }
-
-    .error-msg.visible { opacity: 1; }
-
-    .footer {
-      margin-top: 28px;
+    /* ── 푸터 ── */
+    footer {
+      margin-top: auto;
+      text-align: center;
       font-size: 11px;
       color: #334155;
+      line-height: 1.8;
     }
+    footer a { color: #475569; text-decoration: none; }
+    footer a:hover { color: #64748b; }
 
-    @media (max-width: 480px) {
-      .card { padding: 36px 24px; }
-      h1 { font-size: 18px; }
+    /* ── 반응형 ── */
+    @media (max-width: 400px) {
+      .page { padding: 44px 16px 32px; }
+      .features { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      .feat { padding: 14px 10px; }
+      .feat-num { font-size: 18px; }
     }
   </style>
 </head>
 <body>
+<div class="page">
 
-<div class="card">
-  <span class="emoji">🚧</span>
-  <h1>만날 한국어 ♥ Mannal Korean 🚧</h1>
-  <p class="subtitle">준비 중인 공간입니다.<br>관리자만 입장 가능합니다.</p>
-  <div class="divider"></div>
-
-  <div class="input-wrap">
-    <input
-      type="password"
-      id="pw"
-      placeholder="비밀번호를 입력하세요"
-      autocomplete="current-password"
-    >
+  <!-- 브랜드 -->
+  <div class="brand">
+    <div class="brand-eyebrow">
+      <span class="brand-dot"></span>
+      johnpark236-tech
+    </div>
+    <div class="brand-name">MANNAL-HUB</div>
+    <p class="brand-sub">
+      <strong>한국어 교육</strong> × <strong>데이터 시각화</strong><br>
+      Korean Education × Data Visualization Platform
+    </p>
   </div>
 
-  <button id="btn" onclick="checkPw()">입장하기</button>
-  <div class="error-msg" id="errmsg">비밀번호가 틀렸습니다.</div>
+  <!-- 카드 영역 -->
+  <div class="cards">
 
-  <p class="footer">mannalkorean.com</p>
+    <!-- 메인: 한국어 학습 -->
+    <a class="card-main" href="https://johnpark236-tech.github.io/Mannal-Korean/" target="_blank" rel="noopener">
+      <div class="card-label">Main Service · 메인 서비스</div>
+      <div class="card-title">🇰🇷 한국어 학습</div>
+      <div class="card-desc">
+        6개 언어로 배우는 한국어 학습 플랫폼<br>
+        English · Tiếng Việt · O'zbek · Монгол · 中文
+      </div>
+      <span class="card-btn">학습 시작하기 →</span>
+    </a>
+
+    <!-- 보조: 데이터 스튜디오 -->
+    <a class="card-sub" href="/chart_viewer_A.html">
+      <span class="card-sub-icon">📊</span>
+      <div class="card-sub-text">
+        <div class="card-sub-name">데이터 시각화 스튜디오</div>
+        <div class="card-sub-desc">국내 주식 시세 · 시가총액 순위 레이스 · LOG OF CHOICES</div>
+      </div>
+      <span class="card-sub-arrow">›</span>
+    </a>
+
+  </div>
+
+  <!-- 피처 하이라이트 -->
+  <div class="features">
+    <div class="feat">
+      <div class="feat-icon">🌏</div>
+      <div class="feat-num">6</div>
+      <div class="feat-label">지원 언어</div>
+    </div>
+    <div class="feat">
+      <div class="feat-icon">📅</div>
+      <div class="feat-num">12</div>
+      <div class="feat-label">주차 커리큘럼</div>
+    </div>
+    <div class="feat">
+      <div class="feat-icon">📈</div>
+      <div class="feat-num">12</div>
+      <div class="feat-label">레이스 카테고리</div>
+    </div>
+  </div>
+
+  <!-- 푸터 -->
+  <footer>
+    © 2026 MANNAL-HUB · <a href="https://mannalkorean.com">mannalkorean.com</a><br>
+    Powered by LOG OF CHOICES Data Studio · by John Park
+  </footer>
+
 </div>
-
-<script>
-  const CORRECT = '@2040';
-  const KEY = 'mc_auth';
-
-  if (sessionStorage.getItem(KEY) === '1') {
-    location.replace('/chart_viewer_A.html');
-  }
-
-  function checkPw() {
-    const input = document.getElementById('pw');
-    const err = document.getElementById('errmsg');
-
-    if (input.value === CORRECT) {
-      sessionStorage.setItem(KEY, '1');
-      location.replace('/chart_viewer_A.html');
-    } else {
-      input.classList.add('error');
-      err.classList.add('visible');
-      input.value = '';
-      input.focus();
-      setTimeout(() => {
-        input.classList.remove('error');
-        err.classList.remove('visible');
-      }, 2500);
-    }
-  }
-
-  document.getElementById('pw').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') checkPw();
-  });
-
-  window.addEventListener('load', () => document.getElementById('pw').focus());
-</script>
-
 </body>
 </html>
