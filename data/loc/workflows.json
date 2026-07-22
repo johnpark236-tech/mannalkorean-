@@ -7,7 +7,7 @@
   "source": "LOG OF CHOICES 내부 설계",
   "quality_status": "verified",
   "record_count": 10,
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "maintainer": "LOG OF CHOICES",
   "items": [
     {
@@ -15,12 +15,36 @@
       "keyword": "유튜브 영상 만들기",
       "tags": ["유튜브", "영상", "콘텐츠"],
       "steps": [
-        { "order": 1, "task": "기획·대본", "tool": "Claude", "tier": "free", "cost": 0 },
-        { "order": 2, "task": "이미지 생성", "tool": "Midjourney", "tier": "paid", "cost": 12 },
-        { "order": 3, "task": "영상 생성", "tool": "Runway", "tier": "paid", "cost": 15 },
-        { "order": 4, "task": "음성 생성", "tool": "ElevenLabs", "tier": "freemium", "cost": 5 },
-        { "order": 5, "task": "편집", "tool": "CapCut", "tier": "free", "cost": 0 },
-        { "order": 6, "task": "업로드", "tool": "YouTube", "tier": "free", "cost": 0 }
+        { "order": 1, "task": "기획·대본", "tools": [
+          { "rank": 1, "tool": "Claude",   "tier": "free",     "cost": 0 },
+          { "rank": 2, "tool": "ChatGPT",  "tier": "free",     "cost": 0 },
+          { "rank": 3, "tool": "Gemini",   "tier": "free",     "cost": 0 }
+        ]},
+        { "order": 2, "task": "이미지 생성", "tools": [
+          { "rank": 1, "tool": "Midjourney",         "tier": "paid",     "cost": 10 },
+          { "rank": 2, "tool": "DALL-E 3",           "tier": "freemium", "cost": 0  },
+          { "rank": 3, "tool": "Stable Diffusion",   "tier": "free",     "cost": 0  }
+        ]},
+        { "order": 3, "task": "영상 생성", "tools": [
+          { "rank": 1, "tool": "Runway",  "tier": "paid",     "cost": 15 },
+          { "rank": 2, "tool": "Kling",   "tier": "paid",     "cost": 10 },
+          { "rank": 3, "tool": "Pika",    "tier": "freemium", "cost": 0  }
+        ]},
+        { "order": 4, "task": "음성 생성", "tools": [
+          { "rank": 1, "tool": "ElevenLabs",  "tier": "freemium", "cost": 5 },
+          { "rank": 2, "tool": "CLOVA Voice", "tier": "freemium", "cost": 0 },
+          { "rank": 3, "tool": "Murf",        "tier": "freemium", "cost": 0 }
+        ]},
+        { "order": 5, "task": "편집", "tools": [
+          { "rank": 1, "tool": "CapCut",          "tier": "free", "cost": 0  },
+          { "rank": 2, "tool": "DaVinci Resolve", "tier": "free", "cost": 0  },
+          { "rank": 3, "tool": "Adobe Premiere",  "tier": "paid", "cost": 55 }
+        ]},
+        { "order": 6, "task": "업로드", "tools": [
+          { "rank": 1, "tool": "YouTube", "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "Shorts",  "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "TikTok",  "tier": "free", "cost": 0 }
+        ]}
       ],
       "total_cost_usd": 32,
       "free_alternative": "Claude + Canva + CapCut = $0"
@@ -30,10 +54,26 @@
       "keyword": "주식 분석",
       "tags": ["주식", "투자", "데이터"],
       "steps": [
-        { "order": 1, "task": "시세 데이터", "tool": "LOG OF CHOICES", "tier": "free", "cost": 0 },
-        { "order": 2, "task": "차트 분석", "tool": "TradingView", "tier": "freemium", "cost": 0 },
-        { "order": 3, "task": "뉴스 분석", "tool": "Perplexity", "tier": "free", "cost": 0 },
-        { "order": 4, "task": "리포트 작성", "tool": "Claude", "tier": "free", "cost": 0 }
+        { "order": 1, "task": "시세 데이터", "tools": [
+          { "rank": 1, "tool": "LOG OF CHOICES", "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "TradingView",    "tier": "freemium", "cost": 0 },
+          { "rank": 3, "tool": "네이버증권",      "tier": "free", "cost": 0 }
+        ]},
+        { "order": 2, "task": "차트 분석", "tools": [
+          { "rank": 1, "tool": "TradingView",  "tier": "freemium", "cost": 0 },
+          { "rank": 2, "tool": "키움HTS",      "tier": "free",     "cost": 0 },
+          { "rank": 3, "tool": "미래에셋앱",   "tier": "free",     "cost": 0 }
+        ]},
+        { "order": 3, "task": "뉴스 분석", "tools": [
+          { "rank": 1, "tool": "Perplexity", "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "Claude",     "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "ChatGPT",    "tier": "free", "cost": 0 }
+        ]},
+        { "order": 4, "task": "리포트 작성", "tools": [
+          { "rank": 1, "tool": "Claude",   "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "ChatGPT",  "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "Gemini",   "tier": "free", "cost": 0 }
+        ]}
       ],
       "total_cost_usd": 0,
       "free_alternative": "전부 무료 가능"
@@ -43,10 +83,26 @@
       "keyword": "쇼츠 자동 제작",
       "tags": ["쇼츠", "유튜브", "자동화"],
       "steps": [
-        { "order": 1, "task": "트렌드 분석", "tool": "Claude", "tier": "free", "cost": 0 },
-        { "order": 2, "task": "스크립트", "tool": "Claude", "tier": "free", "cost": 0 },
-        { "order": 3, "task": "영상 생성", "tool": "Kling", "tier": "paid", "cost": 10 },
-        { "order": 4, "task": "자동 업로드", "tool": "n8n", "tier": "free", "cost": 0 }
+        { "order": 1, "task": "트렌드 분석", "tools": [
+          { "rank": 1, "tool": "Claude",     "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "Perplexity", "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "ChatGPT",    "tier": "free", "cost": 0 }
+        ]},
+        { "order": 2, "task": "스크립트", "tools": [
+          { "rank": 1, "tool": "Claude",   "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "ChatGPT",  "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "Gemini",   "tier": "free", "cost": 0 }
+        ]},
+        { "order": 3, "task": "영상 생성", "tools": [
+          { "rank": 1, "tool": "Kling",   "tier": "paid",     "cost": 10 },
+          { "rank": 2, "tool": "Runway",  "tier": "paid",     "cost": 15 },
+          { "rank": 3, "tool": "Pika",    "tier": "freemium", "cost": 0  }
+        ]},
+        { "order": 4, "task": "자동 업로드", "tools": [
+          { "rank": 1, "tool": "n8n",    "tier": "free",     "cost": 0 },
+          { "rank": 2, "tool": "Zapier", "tier": "freemium", "cost": 0 },
+          { "rank": 3, "tool": "Make",   "tier": "freemium", "cost": 0 }
+        ]}
       ],
       "total_cost_usd": 10,
       "free_alternative": "Claude + CapCut = $0 (수동 업로드)"
@@ -56,10 +112,26 @@
       "keyword": "한국어 교재 제작",
       "tags": ["한국어", "교육", "교재"],
       "steps": [
-        { "order": 1, "task": "커리큘럼 설계", "tool": "Claude", "tier": "free", "cost": 0 },
-        { "order": 2, "task": "교재 작성", "tool": "Claude", "tier": "free", "cost": 0 },
-        { "order": 3, "task": "PDF 변환", "tool": "Canva", "tier": "free", "cost": 0 },
-        { "order": 4, "task": "음성 녹음", "tool": "ElevenLabs", "tier": "freemium", "cost": 0 }
+        { "order": 1, "task": "커리큘럼 설계", "tools": [
+          { "rank": 1, "tool": "Claude",   "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "ChatGPT",  "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "Gemini",   "tier": "free", "cost": 0 }
+        ]},
+        { "order": 2, "task": "교재 작성", "tools": [
+          { "rank": 1, "tool": "Claude",     "tier": "free",     "cost": 0 },
+          { "rank": 2, "tool": "ChatGPT",    "tier": "free",     "cost": 0 },
+          { "rank": 3, "tool": "Notion AI",  "tier": "freemium", "cost": 0 }
+        ]},
+        { "order": 3, "task": "PDF 변환", "tools": [
+          { "rank": 1, "tool": "Canva",          "tier": "free",     "cost": 0 },
+          { "rank": 2, "tool": "Adobe Express",  "tier": "freemium", "cost": 0 },
+          { "rank": 3, "tool": "Google Docs",    "tier": "free",     "cost": 0 }
+        ]},
+        { "order": 4, "task": "음성 녹음", "tools": [
+          { "rank": 1, "tool": "ElevenLabs",  "tier": "freemium", "cost": 0 },
+          { "rank": 2, "tool": "CLOVA Voice", "tier": "freemium", "cost": 0 },
+          { "rank": 3, "tool": "Murf",        "tier": "freemium", "cost": 0 }
+        ]}
       ],
       "total_cost_usd": 0,
       "free_alternative": "전부 무료 가능"
@@ -69,9 +141,21 @@
       "keyword": "PPT 만들기",
       "tags": ["PPT", "프레젠테이션", "디자인"],
       "steps": [
-        { "order": 1, "task": "내용 기획", "tool": "Claude", "tier": "free", "cost": 0 },
-        { "order": 2, "task": "디자인", "tool": "Canva AI", "tier": "free", "cost": 0 },
-        { "order": 3, "task": "이미지", "tool": "DALL-E", "tier": "freemium", "cost": 0 }
+        { "order": 1, "task": "내용 기획", "tools": [
+          { "rank": 1, "tool": "Claude",   "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "ChatGPT",  "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "Gemini",   "tier": "free", "cost": 0 }
+        ]},
+        { "order": 2, "task": "슬라이드 디자인", "tools": [
+          { "rank": 1, "tool": "Canva AI",    "tier": "free",     "cost": 0 },
+          { "rank": 2, "tool": "Gamma",       "tier": "freemium", "cost": 0 },
+          { "rank": 3, "tool": "Beautiful.ai","tier": "freemium", "cost": 0 }
+        ]},
+        { "order": 3, "task": "이미지 삽입", "tools": [
+          { "rank": 1, "tool": "DALL-E 3",  "tier": "freemium", "cost": 0  },
+          { "rank": 2, "tool": "Midjourney","tier": "paid",     "cost": 10 },
+          { "rank": 3, "tool": "Canva AI",  "tier": "free",     "cost": 0  }
+        ]}
       ],
       "total_cost_usd": 0,
       "free_alternative": "전부 무료 가능"
@@ -81,10 +165,26 @@
       "keyword": "홈페이지 제작",
       "tags": ["홈페이지", "개발", "웹"],
       "steps": [
-        { "order": 1, "task": "기획·설계", "tool": "Claude", "tier": "free", "cost": 0 },
-        { "order": 2, "task": "코드 생성", "tool": "Cursor", "tier": "freemium", "cost": 0 },
-        { "order": 3, "task": "디자인", "tool": "v0", "tier": "freemium", "cost": 0 },
-        { "order": 4, "task": "배포", "tool": "Cloudflare Pages", "tier": "free", "cost": 0 }
+        { "order": 1, "task": "기획·설계", "tools": [
+          { "rank": 1, "tool": "Claude",   "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "ChatGPT",  "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "Gemini",   "tier": "free", "cost": 0 }
+        ]},
+        { "order": 2, "task": "코드 생성", "tools": [
+          { "rank": 1, "tool": "Cursor",          "tier": "freemium", "cost": 0 },
+          { "rank": 2, "tool": "Claude",          "tier": "free",     "cost": 0 },
+          { "rank": 3, "tool": "GitHub Copilot",  "tier": "freemium", "cost": 0 }
+        ]},
+        { "order": 3, "task": "UI 디자인", "tools": [
+          { "rank": 1, "tool": "v0",      "tier": "freemium", "cost": 0 },
+          { "rank": 2, "tool": "Webflow", "tier": "freemium", "cost": 0 },
+          { "rank": 3, "tool": "Framer",  "tier": "freemium", "cost": 0 }
+        ]},
+        { "order": 4, "task": "배포", "tools": [
+          { "rank": 1, "tool": "Cloudflare Pages", "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "Vercel",           "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "Netlify",          "tier": "free", "cost": 0 }
+        ]}
       ],
       "total_cost_usd": 0,
       "free_alternative": "전부 무료 가능"
@@ -94,10 +194,26 @@
       "keyword": "앱 개발",
       "tags": ["앱", "개발", "모바일"],
       "steps": [
-        { "order": 1, "task": "기획", "tool": "Claude", "tier": "free", "cost": 0 },
-        { "order": 2, "task": "코드 생성", "tool": "Cursor", "tier": "freemium", "cost": 0 },
-        { "order": 3, "task": "UI 디자인", "tool": "Figma AI", "tier": "freemium", "cost": 0 },
-        { "order": 4, "task": "테스트", "tool": "Claude", "tier": "free", "cost": 0 }
+        { "order": 1, "task": "기획", "tools": [
+          { "rank": 1, "tool": "Claude",   "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "ChatGPT",  "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "Gemini",   "tier": "free", "cost": 0 }
+        ]},
+        { "order": 2, "task": "코드 생성", "tools": [
+          { "rank": 1, "tool": "Cursor",         "tier": "freemium", "cost": 0 },
+          { "rank": 2, "tool": "Claude",         "tier": "free",     "cost": 0 },
+          { "rank": 3, "tool": "GitHub Copilot", "tier": "freemium", "cost": 0 }
+        ]},
+        { "order": 3, "task": "UI 디자인", "tools": [
+          { "rank": 1, "tool": "Figma AI",  "tier": "freemium", "cost": 0 },
+          { "rank": 2, "tool": "v0",        "tier": "freemium", "cost": 0 },
+          { "rank": 3, "tool": "Framer",    "tier": "freemium", "cost": 0 }
+        ]},
+        { "order": 4, "task": "테스트", "tools": [
+          { "rank": 1, "tool": "Claude",  "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "Postman", "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "Jest",    "tier": "free", "cost": 0 }
+        ]}
       ],
       "total_cost_usd": 0,
       "free_alternative": "전부 무료 가능"
@@ -107,10 +223,26 @@
       "keyword": "마케팅",
       "tags": ["마케팅", "광고", "SNS"],
       "steps": [
-        { "order": 1, "task": "전략 수립", "tool": "Claude", "tier": "free", "cost": 0 },
-        { "order": 2, "task": "카피라이팅", "tool": "Claude", "tier": "free", "cost": 0 },
-        { "order": 3, "task": "이미지 생성", "tool": "Canva AI", "tier": "free", "cost": 0 },
-        { "order": 4, "task": "스케줄링", "tool": "Buffer", "tier": "freemium", "cost": 0 }
+        { "order": 1, "task": "전략 수립", "tools": [
+          { "rank": 1, "tool": "Claude",     "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "ChatGPT",    "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "Perplexity", "tier": "free", "cost": 0 }
+        ]},
+        { "order": 2, "task": "카피라이팅", "tools": [
+          { "rank": 1, "tool": "Claude",  "tier": "free",     "cost": 0  },
+          { "rank": 2, "tool": "ChatGPT", "tier": "free",     "cost": 0  },
+          { "rank": 3, "tool": "Jasper",  "tier": "paid",     "cost": 39 }
+        ]},
+        { "order": 3, "task": "이미지 생성", "tools": [
+          { "rank": 1, "tool": "Canva AI",  "tier": "free",     "cost": 0  },
+          { "rank": 2, "tool": "DALL-E 3",  "tier": "freemium", "cost": 0  },
+          { "rank": 3, "tool": "Midjourney","tier": "paid",     "cost": 10 }
+        ]},
+        { "order": 4, "task": "SNS 스케줄링", "tools": [
+          { "rank": 1, "tool": "Buffer",    "tier": "freemium", "cost": 0 },
+          { "rank": 2, "tool": "Hootsuite", "tier": "freemium", "cost": 0 },
+          { "rank": 3, "tool": "Later",     "tier": "freemium", "cost": 0 }
+        ]}
       ],
       "total_cost_usd": 0,
       "free_alternative": "전부 무료 가능"
@@ -120,10 +252,26 @@
       "keyword": "웹소설 쓰기",
       "tags": ["웹소설", "글쓰기", "창작"],
       "steps": [
-        { "order": 1, "task": "세계관·기획", "tool": "Claude", "tier": "free", "cost": 0 },
-        { "order": 2, "task": "집필", "tool": "Claude", "tier": "free", "cost": 0 },
-        { "order": 3, "task": "교정", "tool": "Claude", "tier": "free", "cost": 0 },
-        { "order": 4, "task": "출판", "tool": "노벨피아", "tier": "free", "cost": 0 }
+        { "order": 1, "task": "세계관·기획", "tools": [
+          { "rank": 1, "tool": "Claude",   "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "ChatGPT",  "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "Gemini",   "tier": "free", "cost": 0 }
+        ]},
+        { "order": 2, "task": "집필", "tools": [
+          { "rank": 1, "tool": "Claude",   "tier": "free",     "cost": 0  },
+          { "rank": 2, "tool": "ChatGPT",  "tier": "free",     "cost": 0  },
+          { "rank": 3, "tool": "NovelAI",  "tier": "paid",     "cost": 10 }
+        ]},
+        { "order": 3, "task": "교정", "tools": [
+          { "rank": 1, "tool": "Claude",    "tier": "free",     "cost": 0 },
+          { "rank": 2, "tool": "ChatGPT",   "tier": "free",     "cost": 0 },
+          { "rank": 3, "tool": "Grammarly", "tier": "freemium", "cost": 0 }
+        ]},
+        { "order": 4, "task": "출판", "tools": [
+          { "rank": 1, "tool": "노벨피아",   "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "카카오페이지","tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "문피아",     "tier": "free", "cost": 0 }
+        ]}
       ],
       "total_cost_usd": 0,
       "free_alternative": "전부 무료 가능"
@@ -133,10 +281,26 @@
       "keyword": "데이터 분석",
       "tags": ["데이터", "분석", "차트"],
       "steps": [
-        { "order": 1, "task": "데이터 수집", "tool": "LOG OF CHOICES", "tier": "free", "cost": 0 },
-        { "order": 2, "task": "분석", "tool": "Claude", "tier": "free", "cost": 0 },
-        { "order": 3, "task": "시각화", "tool": "Chart.js", "tier": "free", "cost": 0 },
-        { "order": 4, "task": "리포트", "tool": "Claude", "tier": "free", "cost": 0 }
+        { "order": 1, "task": "데이터 수집", "tools": [
+          { "rank": 1, "tool": "LOG OF CHOICES", "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "공공데이터포털", "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "Kaggle",          "tier": "free", "cost": 0 }
+        ]},
+        { "order": 2, "task": "분석", "tools": [
+          { "rank": 1, "tool": "Claude",   "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "ChatGPT",  "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "Gemini",   "tier": "free", "cost": 0 }
+        ]},
+        { "order": 3, "task": "시각화", "tools": [
+          { "rank": 1, "tool": "Chart.js",  "tier": "free", "cost": 0 },
+          { "rank": 2, "tool": "Recharts",  "tier": "free", "cost": 0 },
+          { "rank": 3, "tool": "D3.js",     "tier": "free", "cost": 0 }
+        ]},
+        { "order": 4, "task": "리포트", "tools": [
+          { "rank": 1, "tool": "Claude",    "tier": "free",     "cost": 0 },
+          { "rank": 2, "tool": "ChatGPT",   "tier": "free",     "cost": 0 },
+          { "rank": 3, "tool": "Notion AI", "tier": "freemium", "cost": 0 }
+        ]}
       ],
       "total_cost_usd": 0,
       "free_alternative": "전부 무료 가능"
