@@ -649,14 +649,75 @@ function searchKeyword(kw) {
   doSearch();
 }
 
+function getSimilarWorkflows(query, excludeId, maxCount) {
+  const q = (query||'').toLowerCase();
+  const scored = workflows.filter(w => w.id !== excludeId).map(w => {
+    let score = 0;
+    if (w.keyword.toLowerCase().includes(q) || q.includes(w.keyword.toLowerCase())) score += 3;
+    (w.tags||[]).forEach(tag => { if (q.includes(tag) || tag.includes(q)) score += 2; });
+    // 카테고리 연관성: 비슷한 분야 키워드 매칭
+    const cats = [
+      ['영상','유튜브','쇼츠','편집','제작'],
+      ['주식','투자','데이터','분석','차트'],
+      ['마케팅','광고','SNS','홍보'],
+      ['개발','홈페이지','앱','코드','웹'],
+      ['글쓰기','소설','번역','교재','PPT'],
+    ];
+    cats.forEach(cat => {
+      const qMatch = cat.some(c => q.includes(c));
+      const wMatch = cat.some(c => w.keyword.toLowerCase().includes(c));
+      if (qMatch && wMatch) score += 2;
+    });
+    return { w, score };
+  }).filter(s => s.score > 0 || workflows.length <= 3);
+  scored.sort((a, b) => b.score - a.score);
+  const top = scored.slice(0, maxCount||3).map(s => s.w);
+  // 충분하지 않으면 랜덤으로 채움
+  if (top.length < (maxCount||3)) {
+    workflows.filter(w => w.id !== excludeId && !top.find(t => t.id===w.id))
+      .slice(0, (maxCount||3) - top.length).forEach(w => top.push(w));
+  }
+  return top;
+}
+
+function renderSimilarCards(similar) {
+  if (!similar.length) return '';
+  return `
+    <div style="margin-top:20px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+        color:var(--text-muted,#64748b);margin-bottom:12px;">💡 이런 Workflow는 어떠세요?</div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;">
+        ${similar.map(w => `
+        <button onclick="searchKeyword('${w.keyword.replace(/'/g,'&#39;')}')"
+          style="display:flex;align-items:center;gap:10px;padding:12px 16px;
+            background:rgba(255,255,255,0.04);border:1px solid var(--border,#1e2334);
+            border-radius:12px;cursor:pointer;text-align:left;transition:all .18s;
+            color:inherit;font-family:inherit;"
+          onmouseover="this.style.borderColor='var(--accent,#3b82f6)';this.style.background='rgba(59,130,246,0.08)'"
+          onmouseout="this.style.borderColor='var(--border,#1e2334)';this.style.background='rgba(255,255,255,0.04)'">
+          <span style="font-size:20px;">${(w.tags||[]).length?'🔹':'📌'}</span>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:var(--text-primary,#e2e8f0);">${w.keyword}</div>
+            <div style="font-size:11px;color:var(--text-muted,#64748b);margin-top:2px;">
+              ${w.steps.length}단계 · ${w.total_cost_usd===0?'무료 가능':'$'+w.total_cost_usd+'/월'}
+            </div>
+          </div>
+          <span style="margin-left:auto;font-size:14px;color:var(--text-muted,#64748b);">→</span>
+        </button>`).join('')}
+      </div>
+    </div>`;
+}
+
 function showComing(kw) {
   const panel = document.getElementById('workflowPanel');
   const box   = document.getElementById('workflowBox');
+  const similar = getSimilarWorkflows(kw, null, 3);
   box.innerHTML = `
     <div class="coming-soon-box">
-      <h3>🚧 "${kw}" — Workflow 준비 중</h3>
-      <p>곧 추가될 예정입니다. 다른 키워드를 검색해보세요.</p>
-    </div>`;
+      <h3>🚧 "${kw}" — 준비 중입니다</h3>
+      <p>빠른 시일 내에 업데이트하겠습니다.<br>관심 가져주셔서 감사합니다! 🙏</p>
+    </div>
+    ${renderSimilarCards(similar)}`;
   panel.classList.add('show');
   panel.scrollIntoView({behavior:'smooth',block:'start'});
 }
@@ -673,12 +734,15 @@ function showWorkflowPanel(wf, query) {
   const box   = document.getElementById('workflowBox');
 
   if (!wf) {
+    const similar = getSimilarWorkflows(query, null, 3);
     box.innerHTML = `
       <div class="coming-soon-box">
-        <h3>🔍 "${query}"</h3>
-        <p>아직 등록된 Workflow가 없습니다.<br>TOP20에서 인기 키워드를 선택해보세요.</p>
-      </div>`;
+        <h3>🚧 "${query}" — 준비 중입니다</h3>
+        <p>빠른 시일 내에 업데이트하겠습니다.<br>관심 가져주셔서 감사합니다! 🙏</p>
+      </div>
+      ${renderSimilarCards(similar)}`;
     panel.classList.add('show');
+    panel.scrollIntoView({behavior:'smooth',block:'start'});
     return;
   }
 
