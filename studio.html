@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOC Intelligence Studio — AI와 함께 무엇을 하고 싶으신가요?</title>
+<meta name="description" content="목적을 입력하면 최적의 AI Workflow를 추천합니다. 주식·유튜브·쇼츠·홈페이지·마케팅 등 20가지 분야.">
+<meta property="og:title" content="LOC Intelligence Studio">
+<meta property="og:description" content="AI와 함께 무엇을 하고 싶으신가요?">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mannalkorean.com/studio.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://mannalkorean.com/studio.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --bg-primary:#0a0a0f;
+  --bg-card:#13131a;
+  --bg-hover:#1a1a24;
+  --text-primary:#f1f5f9;
+  --text-sub:#94a3b8;
+  --text-dim:#475569;
+  --accent:#3b82f6;
+  --accent2:#8b5cf6;
+  --success:#22c55e;
+  --warning:#f59e0b;
+  --danger:#ef4444;
+  --up:#22c55e;
+  --down:#ef4444;
+  --border:rgba(255,255,255,0.08);
+  --radius:14px;
+  --radius-sm:8px;
+  --font:'Inter','Noto Sans KR',sans-serif;
+}
+html,body{
+  background:var(--bg-primary);
+  color:var(--text-primary);
+  font-family:var(--font);
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* ── 배경 그라디언트 ── */
+body::before{
+  content:'';
+  position:fixed;inset:0;
+  background:
+    radial-gradient(ellipse 60% 40% at 20% 20%,rgba(59,130,246,0.08) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 35% at 80% 70%,rgba(139,92,246,0.06) 0%,transparent 60%);
+  pointer-events:none;z-index:0;
+}
+.page{position:relative;z-index:1;}
+
+/* ── 헤더 ── */
+.header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 28px;
+  background:rgba(10,10,15,0.85);
+  border-bottom:1px solid var(--border);
+  backdrop-filter:blur(12px);
+  position:sticky;top:0;z-index:100;
+}
+.header-left,.header-right{display:flex;align-items:center;gap:10px;}
+.nav-home{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:7px 14px;border-radius:var(--radius-sm);
+  background:rgba(255,255,255,0.06);border:1px solid var(--border);
+  color:var(--text-sub);font-size:13px;font-weight:600;
+  text-decoration:none;transition:.2s;
+}
+.nav-home:hover{background:rgba(255,255,255,0.1);color:var(--text-primary);}
+.nav-current{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:7px 14px;border-radius:var(--radius-sm);
+  background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.3);
+  color:var(--accent);font-size:13px;font-weight:700;
+}
+.brand-logo{
+  font-family:'Inter',sans-serif;
+  font-size:14px;font-weight:900;
+  letter-spacing:0.06em;color:var(--text-sub);
+}
+.brand-logo span{color:var(--accent);}
+
+/* ── 히어로 ── */
+.hero{
+  text-align:center;
+  padding:64px 20px 40px;
+  max-width:720px;margin:0 auto;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:11px;font-weight:700;letter-spacing:0.16em;
+  text-transform:uppercase;color:var(--accent);
+  background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.2);
+  border-radius:20px;padding:4px 14px;margin-bottom:20px;
+}
+.hero-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.5;transform:scale(.85);}}
+.hero-title{
+  font-size:clamp(32px,6vw,54px);font-weight:900;
+  line-height:1.1;letter-spacing:-0.03em;
+  margin-bottom:12px;
+}
+.hero-title .highlight{
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-sub{font-size:16px;color:var(--text-sub);margin-bottom:36px;line-height:1.6;}
+
+/* ── 검색창 ── */
+.search-wrap{position:relative;margin-bottom:20px;}
+.search-input{
+  width:100%;padding:18px 56px 18px 22px;
+  background:var(--bg-card);
+  border:2px solid var(--border);
+  border-radius:18px;
+  color:var(--text-primary);
+  font-size:16px;font-family:var(--font);
+  outline:none;transition:.2s;
+}
+.search-input::placeholder{color:var(--text-dim);}
+.search-input:focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(59,130,246,0.12);}
+.search-btn{
+  position:absolute;right:14px;top:50%;transform:translateY(-50%);
+  background:var(--accent);border:none;
+  width:36px;height:36px;border-radius:10px;
+  color:#fff;font-size:16px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:.2s;
+}
+.search-btn:hover{background:#2563eb;}
+
+/* ── 자동완성 드롭다운 ── */
+.autocomplete{
+  position:absolute;top:calc(100% + 6px);left:0;right:0;
+  background:var(--bg-card);border:1px solid var(--border);
+  border-radius:var(--radius);overflow:hidden;
+  box-shadow:0 16px 40px rgba(0,0,0,0.4);
+  z-index:200;display:none;
+}
+.autocomplete.show{display:block;}
+.ac-item{
+  padding:12px 18px;cursor:pointer;
+  display:flex;align-items:center;gap:10px;
+  font-size:14px;color:var(--text-sub);
+  transition:.15s;
+}
+.ac-item:hover,.ac-item.selected{background:var(--bg-hover);color:var(--text-primary);}
+.ac-icon{font-size:16px;flex-shrink:0;}
+
+/* ── 추천 태그 ── */
+.quick-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
+.qtag{
+  padding:7px 15px;border-radius:20px;
+  background:var(--bg-card);border:1px solid var(--border);
+  color:var(--text-sub);font-size:13px;font-weight:500;
+  cursor:pointer;transition:.2s;
+}
+.qtag:hover{border-color:var(--accent);color:var(--accent);background:rgba(59,130,246,0.08);}
+
+/* ── TOP20 그리드 ── */
+.section{max-width:960px;margin:0 auto;padding:0 20px 48px;}
+.section-title{
+  font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--text-dim);margin-bottom:16px;
+  display:flex;align-items:center;gap:8px;
+}
+.section-title::after{content:'';flex:1;height:1px;background:var(--border);}
+
+.top20-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:10px;
+}
+.top20-card{
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:16px 12px 14px;
+  cursor:pointer;transition:.2s;
+  position:relative;text-align:center;
+}
+.top20-card:hover{border-color:var(--accent);background:var(--bg-hover);transform:translateY(-2px);}
+.top20-card.no-workflow{opacity:.65;}
+.top20-card.no-workflow:hover{border-color:var(--text-dim);transform:none;}
+.card-icon{font-size:24px;margin-bottom:8px;}
+.card-kw{font-size:12px;font-weight:700;color:var(--text-primary);line-height:1.3;margin-bottom:6px;}
+.card-meta{display:flex;align-items:center;justify-content:center;gap:5px;}
+.card-rank{font-size:10px;color:var(--text-dim);font-weight:600;}
+.card-trend{font-size:11px;font-weight:700;}
+.trend-up{color:var(--up);}
+.trend-stable{color:var(--text-dim);}
+.card-badge{
+  position:absolute;top:8px;right:8px;
+  font-size:9px;font-weight:700;
+  background:rgba(34,197,94,0.15);color:var(--success);
+  border-radius:4px;padding:2px 5px;
+}
+
+/* ── Workflow 결과 패널 ── */
+.workflow-panel{
+  max-width:960px;margin:0 auto 48px;padding:0 20px;
+  display:none;
+}
+.workflow-panel.show{display:block;animation:slideDown .3s ease;}
+@keyframes slideDown{from{opacity:0;transform:translateY(-12px);}to{opacity:1;transform:translateY(0);}}
+.wp-box{
+  background:var(--bg-card);
+  border:1px solid rgba(59,130,246,0.25);
+  border-radius:20px;padding:28px 32px;
+}
+.wp-title{
+  font-size:18px;font-weight:800;color:var(--text-primary);
+  margin-bottom:24px;display:flex;align-items:center;gap:10px;
+}
+.wp-keyword{color:var(--accent);}
+
+/* 스텝 라인 */
+.steps-wrap{
+  display:flex;align-items:flex-start;gap:0;
+  overflow-x:auto;padding-bottom:8px;margin-bottom:24px;
+}
+.step-item{
+  display:flex;flex-direction:column;align-items:center;
+  min-width:120px;flex:1;position:relative;
+}
+.step-item:not(:last-child)::after{
+  content:'→';
+  position:absolute;right:-12px;top:24px;
+  font-size:18px;color:var(--text-dim);z-index:1;
+}
+.step-circle{
+  width:48px;height:48px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;font-weight:900;
+  margin-bottom:10px;border:2px solid var(--border);
+  background:var(--bg-primary);color:var(--text-sub);
+  font-family:'Inter',sans-serif;
+}
+.step-task{font-size:11px;color:var(--text-dim);margin-bottom:4px;text-align:center;}
+.step-tool{
+  font-size:13px;font-weight:700;color:var(--text-primary);
+  text-align:center;margin-bottom:6px;
+}
+.tier-badge{
+  font-size:10px;font-weight:700;border-radius:6px;
+  padding:2px 8px;
+}
+.tier-free{background:rgba(34,197,94,0.15);color:var(--success);}
+.tier-freemium{background:rgba(59,130,246,0.15);color:var(--accent);}
+.tier-paid{background:rgba(245,158,11,0.15);color:var(--warning);}
+
+/* 비용 요약 */
+.wp-cost{
+  display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  padding:16px 20px;background:rgba(255,255,255,0.03);
+  border-radius:var(--radius-sm);border:1px solid var(--border);
+  margin-bottom:20px;
+}
+.cost-item{display:flex;align-items:center;gap:8px;}
+.cost-label{font-size:12px;color:var(--text-dim);}
+.cost-val{font-size:16px;font-weight:800;color:var(--text-primary);}
+.cost-sep{color:var(--border);font-size:20px;}
+.cost-free{font-size:13px;color:var(--success);}
+
+/* 버튼 */
+.wp-actions{display:flex;gap:10px;flex-wrap:wrap;}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 22px;border-radius:var(--radius-sm);
+  background:var(--accent);color:#fff;
+  font-size:14px;font-weight:700;border:none;cursor:pointer;
+  transition:.2s;text-decoration:none;
+}
+.btn-primary:hover{background:#2563eb;transform:translateY(-1px);}
+.btn-secondary{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 22px;border-radius:var(--radius-sm);
+  background:transparent;color:var(--text-sub);
+  font-size:14px;font-weight:600;
+  border:1px solid var(--border);cursor:pointer;transition:.2s;
+  text-decoration:none;
+}
+.btn-secondary:hover{border-color:var(--accent);color:var(--accent);}
+
+/* 준비중 메시지 */
+.coming-soon-box{
+  text-align:center;padding:32px;
+  background:var(--bg-card);border:1px solid var(--border);
+  border-radius:20px;
+}
+.coming-soon-box h3{font-size:16px;color:var(--text-sub);margin-bottom:8px;}
+.coming-soon-box p{font-size:13px;color:var(--text-dim);}
+
+/* ── 서비스 바로가기 ── */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+}
+.svc-card{
+  background:var(--bg-card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:20px 18px;
+  text-decoration:none;transition:.2s;display:block;
+}
+.svc-card:hover{border-color:var(--accent);transform:translateY(-2px);}
+.svc-card.disabled{opacity:.45;pointer-events:none;}
+.svc-icon{font-size:28px;margin-bottom:12px;}
+.svc-name{font-size:14px;font-weight:700;color:var(--text-primary);margin-bottom:4px;}
+.svc-desc{font-size:12px;color:var(--text-dim);}
+.svc-arrow{font-size:12px;color:var(--accent);font-weight:700;margin-top:10px;}
+.svc-coming{font-size:11px;color:var(--text-dim);margin-top:10px;font-weight:600;}
+
+/* ── 푸터 ── */
+footer{
+  text-align:center;padding:32px 20px;
+  border-top:1px solid var(--border);
+  font-size:12px;color:var(--text-dim);
+  line-height:1.9;
+}
+footer a{color:var(--accent);text-decoration:none;}
+
+/* ── 반응형 ── */
+@media(max-width:768px){
+  .header{padding:12px 16px;}
+  .hero{padding:40px 16px 28px;}
+  .hero-title{font-size:28px;}
+  .top20-grid{grid-template-columns:repeat(2,1fr);}
+  .services-grid{grid-template-columns:repeat(2,1fr);}
+  .steps-wrap{flex-direction:column;gap:12px;}
+  .step-item::after{display:none;}
+  .step-item{flex-direction:row;align-items:center;gap:12px;min-width:unset;width:100%;}
+  .step-circle{width:40px;height:40px;flex-shrink:0;}
+  .wp-box{padding:20px 18px;}
+  .section{padding:0 16px 36px;}
+}
+@media(max-width:400px){
+  .top20-grid{grid-template-columns:repeat(2,1fr);}
+  .services-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- A. 헤더 -->
+<header class="header">
+  <div class="header-left">
+    <a class="nav-home" href="https://mannalkorean.com">🏠 MANNAL-HUB</a>
+    <span class="nav-current">✦ LOC Studio</span>
+  </div>
+  <div class="header-right">
+    <span class="brand-logo">LOG OF <span>CHOICES</span></span>
+  </div>
+</header>
+
+<!-- B. 히어로 검색창 -->
+<section class="hero">
+  <div class="hero-badge">
+    <span class="hero-badge-dot"></span>
+    LOC Intelligence Studio
+  </div>
+  <h1 class="hero-title">
+    AI와 함께<br><span class="highlight">무엇을 하고 싶으신가요?</span>
+  </h1>
+  <p class="hero-sub">목적을 입력하면 최적의 AI Workflow를 단계별로 추천합니다</p>
+
+  <div class="search-wrap">
+    <input
+      type="text"
+      id="searchInput"
+      class="search-input"
+      autocomplete="off"
+      spellcheck="false"
+    >
+    <button class="search-btn" onclick="doSearch()" title="검색">🔍</button>
+    <div class="autocomplete" id="autocomplete"></div>
+  </div>
+
+  <div class="quick-tags" id="quickTags"></div>
+</section>
+
+<!-- C. TOP20 카드 그리드 -->
+<section class="section">
+  <div class="section-title">🔥 인기 TOP 20</div>
+  <div class="top20-grid" id="top20Grid"></div>
+</section>
+
+<!-- D. Workflow 결과 패널 -->
+<div class="workflow-panel" id="workflowPanel">
+  <div class="wp-box" id="workflowBox"></div>
+</div>
+
+<!-- E. 서비스 바로가기 -->
+<section class="section">
+  <div class="section-title">⚡ 서비스 바로가기</div>
+  <div class="services-grid">
+    <a class="svc-card" href="chart_viewer_A.html">
+      <div class="svc-icon">📈</div>
+      <div class="svc-name">주식 시세</div>
+      <div class="svc-desc">국내 주식 시가총액 레이스 · 시세 변천사</div>
+      <div class="svc-arrow">바로 시작 →</div>
+    </a>
+    <div class="svc-card disabled">
+      <div class="svc-icon">📺</div>
+      <div class="svc-name">유튜브 광고</div>
+      <div class="svc-desc">AI 광고 성과 분석 스튜디오</div>
+      <div class="svc-coming">🚧 준비 중</div>
+    </div>
+    <div class="svc-card disabled">
+      <div class="svc-icon">🎬</div>
+      <div class="svc-name">영상 제작</div>
+      <div class="svc-desc">AI 영상 Workflow 자동화 허브</div>
+      <div class="svc-coming">🚧 준비 중</div>
+    </div>
+    <div class="svc-card disabled">
+      <div class="svc-icon">🤖</div>
+      <div class="svc-name">AI 스튜디오</div>
+      <div class="svc-desc">나만의 AI 팀 구성 서비스</div>
+      <div class="svc-coming">🚧 준비 중</div>
+    </div>
+  </div>
+</section>
+
+<!-- F. 푸터 -->
+<footer>
+  © 2026 LOG OF CHOICES · <a href="https://mannalkorean.com">mannalkorean.com</a><br>
+  데이터 갱신: 매일 KST 07:00 자동 업데이트
+</footer>
+
+</div><!-- /.page -->
+
+<script>
+'use strict';
+
+// ── 상태 ──────────────────────────────────────────────────────────────────
+let workflows = [], top20 = [], aiTools = [];
+let placeholderIdx = 0, placeholderChar = 0, placeholderTimer = null, isDeleting = false;
+
+const PLACEHOLDERS = [
+  '유튜브 영상 만들기','주식 분석','광고 만들기',
+  '한국어 교재 제작','웹소설 쓰기','앱 개발','PPT 만들기','데이터 분석'
+];
+const QUICK_TAGS = ['주식 분석','유튜브 영상','쇼츠 제작','PPT 만들기','홈페이지'];
+
+// 초성 검색 맵
+const CHOSUNG_MAP = {
+  'ㄱ':/[가-깋]/,'ㄴ':/[나-닣]/,'ㄷ':/[다-딯]/,'ㄹ':/[라-맇]/,
+  'ㅁ':/[마-밓]/,'ㅂ':/[바-빟]/,'ㅅ':/[사-싷]/,'ㅇ':/[아-잏]/,
+  'ㅈ':/[자-짛]/,'ㅊ':/[차-칳]/,'ㅋ':/[카-킿]/,'ㅌ':/[타-팋]/,
+  'ㅍ':/[파-핗]/,'ㅎ':/[하-힣]/
+};
+
+// ── 데이터 로드 ───────────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const [wf, t20] = await Promise.all([
+      fetch('data/loc/workflows.json').then(r=>r.json()),
+      fetch('data/loc/top20.json').then(r=>r.json()),
+    ]);
+    workflows = wf.items || [];
+    top20     = t20.items || [];
+  } catch(e) {
+    // fallback — 인라인 데이터 (file:// 프로토콜 등)
+    console.warn('JSON fetch 실패, 인라인 데이터 사용');
+    workflows = INLINE_WORKFLOWS;
+    top20     = INLINE_TOP20;
+  }
+  renderTop20();
+  renderQuickTags();
+  startPlaceholder();
+  setupSearch();
+}
+
+// ── placeholder 타이핑 애니메이션 ─────────────────────────────────────────
+function startPlaceholder() {
+  const inp = document.getElementById('searchInput');
+  let cur = '', idx = 0, del = false;
+  function tick() {
+    const target = PLACEHOLDERS[idx];
+    if (!del) {
+      cur = target.slice(0, cur.length + 1);
+      if (cur === target) { del = true; placeholderTimer = setTimeout(tick, 1800); return; }
+    } else {
+      cur = cur.slice(0, -1);
+      if (!cur) { del = false; idx = (idx+1) % PLACEHOLDERS.length; placeholderTimer = setTimeout(tick, 400); return; }
+    }
+    inp.placeholder = cur + '|';
+    placeholderTimer = setTimeout(tick, del ? 60 : 90);
+  }
+  tick();
+}
+
+// ── 초성 검색 ─────────────────────────────────────────────────────────────
+function matchChosung(query, target) {
+  const isChosung = c => /[ㄱ-ㅎ]/.test(c);
+  if ([...query].every(isChosung)) {
+    let ti = 0;
+    for (let qi = 0; qi < query.length; qi++) {
+      const ch = query[qi];
+      const re = CHOSUNG_MAP[ch];
+      if (!re) continue;
+      let found = false;
+      while (ti < target.length) {
+        if (re.test(target[ti])) { found = true; ti++; break; }
+        ti++;
+      }
+      if (!found) return false;
+    }
+    return true;
+  }
+  return target.includes(query);
+}
+
+// ── 자동완성 ──────────────────────────────────────────────────────────────
+function getACItems(q) {
+  if (!q) return [];
+  const kws = [...new Set([
+    ...top20.map(t => t.keyword),
+    ...workflows.flatMap(w => [w.keyword, ...w.tags])
+  ])];
+  return kws.filter(k => matchChosung(q.toLowerCase(), k)).slice(0, 7);
+}
+
+function renderAC(items) {
+  const el = document.getElementById('autocomplete');
+  if (!items.length) { el.classList.remove('show'); return; }
+  el.innerHTML = items.map((kw,i) => {
+    const t20item = top20.find(t => t.keyword === kw);
+    const icon = t20item ? t20item.icon : '🔍';
+    return `<div class="ac-item" onclick="selectAC('${kw.replace(/'/g,"\\'")}')">
+      <span class="ac-icon">${icon}</span>${kw}
+    </div>`;
+  }).join('');
+  el.classList.add('show');
+}
+
+function selectAC(kw) {
+  const inp = document.getElementById('searchInput');
+  inp.value = kw;
+  document.getElementById('autocomplete').classList.remove('show');
+  doSearch();
+}
+
+// ── 검색 설정 ─────────────────────────────────────────────────────────────
+function setupSearch() {
+  const inp = document.getElementById('searchInput');
+  inp.addEventListener('input', () => {
+    clearTimeout(placeholderTimer);
+    inp.placeholder = '';
+    renderAC(getACItems(inp.value.trim()));
+  });
+  inp.addEventListener('keydown', e => {
+    if (e.key === 'Enter') { document.getElementById('autocomplete').classList.remove('show'); doSearch(); }
+    if (e.key === 'Escape') document.getElementById('autocomplete').classList.remove('show');
+  });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.search-wrap')) document.getElementById('autocomplete').classList.remove('show');
+  });
+}
+
+// ── 검색 실행 ─────────────────────────────────────────────────────────────
+function doSearch() {
+  const q = document.getElementById('searchInput').value.trim();
+  if (!q) return;
+  const matched = workflows.find(w =>
+    matchChosung(q, w.keyword) ||
+    w.tags.some(t => matchChosung(q, t))
+  );
+  showWorkflowPanel(matched, q);
+  document.getElementById('workflowPanel').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// ── TOP20 렌더 ────────────────────────────────────────────────────────────
+function renderTop20() {
+  const grid = document.getElementById('top20Grid');
+  grid.innerHTML = top20.map(item => {
+    const hasWF = !!item.workflow_id;
+    const trendHtml = item.trend === 'up'
+      ? `<span class="card-trend trend-up">↑</span>`
+      : `<span class="card-trend trend-stable">─</span>`;
+    return `
+    <div class="top20-card${hasWF?'':' no-workflow'}"
+         onclick="${hasWF ? `searchKeyword('${item.keyword.replace(/'/g,"\\'")}')` : `showComing('${item.keyword.replace(/'/g,"\\'")}')` }">
+      ${hasWF ? '<span class="card-badge">Workflow</span>' : ''}
+      <div class="card-icon">${item.icon}</div>
+      <div class="card-kw">${item.keyword}</div>
+      <div class="card-meta">
+        <span class="card-rank">#${item.rank}</span>
+        ${trendHtml}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function searchKeyword(kw) {
+  document.getElementById('searchInput').value = kw;
+  doSearch();
+}
+
+function showComing(kw) {
+  const panel = document.getElementById('workflowPanel');
+  const box   = document.getElementById('workflowBox');
+  box.innerHTML = `
+    <div class="coming-soon-box">
+      <h3>🚧 "${kw}" — Workflow 준비 중</h3>
+      <p>곧 추가될 예정입니다. 다른 키워드를 검색해보세요.</p>
+    </div>`;
+  panel.classList.add('show');
+  panel.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// ── 빠른 태그 ─────────────────────────────────────────────────────────────
+function renderQuickTags() {
+  document.getElementById('quickTags').innerHTML =
+    QUICK_TAGS.map(t => `<span class="qtag" onclick="searchKeyword('${t}')">${t}</span>`).join('');
+}
+
+// ── Workflow 패널 렌더 ─────────────────────────────────────────────────────
+function showWorkflowPanel(wf, query) {
+  const panel = document.getElementById('workflowPanel');
+  const box   = document.getElementById('workflowBox');
+
+  if (!wf) {
+    box.innerHTML = `
+      <div class="coming-soon-box">
+        <h3>🔍 "${query}"</h3>
+        <p>아직 등록된 Workflow가 없습니다.<br>TOP20에서 인기 키워드를 선택해보세요.</p>
+      </div>`;
+    panel.classList.add('show');
+    return;
+  }
+
+  const tierLabel = t => {
+    if(t==='free') return '<span class="tier-badge tier-free">🆓 무료</span>';
+    if(t==='freemium') return '<span class="tier-badge tier-freemium">🔵 프리미엄</span>';
+    return '<span class="tier-badge tier-paid">💰 유료</span>';
+  };
+
+  const stepsHtml = wf.steps.map(s => `
+    <div class="step-item">
+      <div class="step-circle">${s.order}</div>
+      <div>
+        <div class="step-task">${s.task}</div>
+        <div class="step-tool">${s.tool}</div>
+        ${tierLabel(s.tier)}
+      </div>
+    </div>`).join('');
+
+  box.innerHTML = `
+    <div class="wp-title">
+      <span class="wp-keyword">"${wf.keyword}"</span> AI Workflow
+    </div>
+    <div class="steps-wrap">${stepsHtml}</div>
+    <div class="wp-cost">
+      <div class="cost-item">
+        <span class="cost-label">예상 월 비용</span>
+        <span class="cost-val">${wf.total_cost_usd === 0 ? '무료 가능' : '$' + wf.total_cost_usd}</span>
+      </div>
+      <span class="cost-sep">|</span>
+      <div class="cost-item">
+        <span class="cost-label">무료 대체</span>
+        <span class="cost-free">✅ ${wf.free_alternative}</span>
+      </div>
+    </div>
+    <div class="wp-actions">
+      <button class="btn-primary" onclick="downloadWorkflow(workflows.find(w=>w.id==='${wf.id}'))">
+        📥 Workflow 가이드 다운로드
+      </button>
+      ${wf.id === 'stock-analysis' ? `<a class="btn-secondary" href="chart_viewer_A.html">📈 주식 시세 보기 →</a>` : ''}
+    </div>`;
+  panel.classList.add('show');
+}
+
+// ── Markdown 다운로드 ──────────────────────────────────────────────────────
+function downloadWorkflow(wf) {
+  if (!wf) return;
+  const md =
+    `# ${wf.keyword} AI Workflow\n\n` +
+    `> 생성일: ${new Date().toLocaleDateString('ko-KR')}\n\n` +
+    wf.steps.map(s =>
+      `## Step ${s.order}: ${s.task}\n- **Tool**: ${s.tool}\n- **티어**: ${s.tier}\n- **비용**: ${s.cost === 0 ? '무료' : '$' + s.cost + '/월'}\n`
+    ).join('\n') +
+    `\n## 예상 월 비용\n$${wf.total_cost_usd}\n\n## 무료 대체 방안\n${wf.free_alternative}\n`;
+
+  const blob = new Blob([md], {type:'text/markdown'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `${wf.id}-workflow.md`;
+  a.click();
+}
+
+// ── 인라인 폴백 데이터 ────────────────────────────────────────────────────
+const INLINE_WORKFLOWS = [
+  {id:'stock-analysis',keyword:'주식 분석',tags:['주식','투자','데이터'],steps:[{order:1,task:'시세 데이터',tool:'LOG OF CHOICES',tier:'free',cost:0},{order:2,task:'차트 분석',tool:'TradingView',tier:'freemium',cost:0},{order:3,task:'뉴스 분석',tool:'Perplexity',tier:'free',cost:0},{order:4,task:'리포트 작성',tool:'Claude',tier:'free',cost:0}],total_cost_usd:0,free_alternative:'전부 무료 가능'},
+  {id:'youtube-video',keyword:'유튜브 영상 만들기',tags:['유튜브','영상','콘텐츠'],steps:[{order:1,task:'기획·대본',tool:'Claude',tier:'free',cost:0},{order:2,task:'이미지 생성',tool:'Midjourney',tier:'paid',cost:12},{order:3,task:'영상 생성',tool:'Runway',tier:'paid',cost:15},{order:4,task:'음성 생성',tool:'ElevenLabs',tier:'freemium',cost:5},{order:5,task:'편집',tool:'CapCut',tier:'free',cost:0},{order:6,task:'업로드',tool:'YouTube',tier:'free',cost:0}],total_cost_usd:32,free_alternative:'Claude + Canva + CapCut = $0'},
+  {id:'shorts-auto',keyword:'쇼츠 자동 제작',tags:['쇼츠','유튜브','자동화'],steps:[{order:1,task:'트렌드 분석',tool:'Claude',tier:'free',cost:0},{order:2,task:'스크립트',tool:'Claude',tier:'free',cost:0},{order:3,task:'영상 생성',tool:'Kling',tier:'paid',cost:10},{order:4,task:'자동 업로드',tool:'n8n',tier:'free',cost:0}],total_cost_usd:10,free_alternative:'Claude + CapCut = $0 (수동 업로드)'},
+  {id:'ppt-create',keyword:'PPT 만들기',tags:['PPT','프레젠테이션','디자인'],steps:[{order:1,task:'내용 기획',tool:'Claude',tier:'free',cost:0},{order:2,task:'디자인',tool:'Canva AI',tier:'free',cost:0},{order:3,task:'이미지',tool:'DALL-E',tier:'freemium',cost:0}],total_cost_usd:0,free_alternative:'전부 무료 가능'},
+  {id:'web-develop',keyword:'홈페이지 제작',tags:['홈페이지','개발','웹'],steps:[{order:1,task:'기획·설계',tool:'Claude',tier:'free',cost:0},{order:2,task:'코드 생성',tool:'Cursor',tier:'freemium',cost:0},{order:3,task:'디자인',tool:'v0',tier:'freemium',cost:0},{order:4,task:'배포',tool:'Cloudflare Pages',tier:'free',cost:0}],total_cost_usd:0,free_alternative:'전부 무료 가능'},
+  {id:'marketing',keyword:'마케팅',tags:['마케팅','광고','SNS'],steps:[{order:1,task:'전략 수립',tool:'Claude',tier:'free',cost:0},{order:2,task:'카피라이팅',tool:'Claude',tier:'free',cost:0},{order:3,task:'이미지 생성',tool:'Canva AI',tier:'free',cost:0},{order:4,task:'스케줄링',tool:'Buffer',tier:'freemium',cost:0}],total_cost_usd:0,free_alternative:'전부 무료 가능'},
+  {id:'data-analysis',keyword:'데이터 분석',tags:['데이터','분석','차트'],steps:[{order:1,task:'데이터 수집',tool:'LOG OF CHOICES',tier:'free',cost:0},{order:2,task:'분석',tool:'Claude',tier:'free',cost:0},{order:3,task:'시각화',tool:'Chart.js',tier:'free',cost:0},{order:4,task:'리포트',tool:'Claude',tier:'free',cost:0}],total_cost_usd:0,free_alternative:'전부 무료 가능'}
+];
+const INLINE_TOP20 = [
+  {rank:1,keyword:'주식 분석',icon:'📈',workflow_id:'stock-analysis',trend:'up'},
+  {rank:2,keyword:'유튜브 영상 만들기',icon:'🎬',workflow_id:'youtube-video',trend:'up'},
+  {rank:3,keyword:'쇼츠 자동 제작',icon:'📱',workflow_id:'shorts-auto',trend:'up'},
+  {rank:4,keyword:'한국어 교재 제작',icon:'🇰🇷',workflow_id:'korean-teaching',trend:'stable'},
+  {rank:5,keyword:'PPT 만들기',icon:'📊',workflow_id:'ppt-create',trend:'stable'},
+  {rank:6,keyword:'홈페이지 제작',icon:'🌐',workflow_id:'web-develop',trend:'up'},
+  {rank:7,keyword:'앱 개발',icon:'📲',workflow_id:'app-develop',trend:'stable'},
+  {rank:8,keyword:'마케팅',icon:'📣',workflow_id:'marketing',trend:'up'},
+  {rank:9,keyword:'웹소설 쓰기',icon:'✍️',workflow_id:'novel-writing',trend:'stable'},
+  {rank:10,keyword:'데이터 분석',icon:'🔍',workflow_id:'data-analysis',trend:'up'},
+  {rank:11,keyword:'번역',icon:'🌍',workflow_id:null,trend:'stable'},
+  {rank:12,keyword:'논문 작성',icon:'📝',workflow_id:null,trend:'stable'},
+  {rank:13,keyword:'전자책 출판',icon:'📚',workflow_id:null,trend:'up'},
+  {rank:14,keyword:'광고 제작',icon:'📺',workflow_id:null,trend:'stable'},
+  {rank:15,keyword:'기업 분석',icon:'🏢',workflow_id:null,trend:'stable'},
+  {rank:16,keyword:'정부 지원사업',icon:'🏛️',workflow_id:null,trend:'up'},
+  {rank:17,keyword:'AI 학습 데이터',icon:'🤖',workflow_id:null,trend:'up'},
+  {rank:18,keyword:'공공데이터 활용',icon:'📂',workflow_id:null,trend:'stable'},
+  {rank:19,keyword:'Prompt 작성',icon:'💬',workflow_id:null,trend:'up'},
+  {rank:20,keyword:'AI Tool 찾기',icon:'🔎',workflow_id:null,trend:'up'}
+];
+
+// ── 초기화 ────────────────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+{
+  "dataset": "workflows",
+  "version": "2026.07.22",
+  "last_updated": "2026-07-22 09:00",
+  "next_update": null,
+  "update_policy": "manual",
+  "source": "LOG OF CHOICES 내부 설계",
+  "quality_status": "verified",
+  "record_count": 10,
+  "schema_version": "1.0",
+  "maintainer": "LOG OF CHOICES",
+  "items": [
+    {
+      "id": "youtube-video",
+      "keyword": "유튜브 영상 만들기",
+      "tags": ["유튜브", "영상", "콘텐츠"],
+      "steps": [
+        { "order": 1, "task": "기획·대본", "tool": "Claude", "tier": "free", "cost": 0 },
+        { "order": 2, "task": "이미지 생성", "tool": "Midjourney", "tier": "paid", "cost": 12 },
+        { "order": 3, "task": "영상 생성", "tool": "Runway", "tier": "paid", "cost": 15 },
+        { "order": 4, "task": "음성 생성", "tool": "ElevenLabs", "tier": "freemium", "cost": 5 },
+        { "order": 5, "task": "편집", "tool": "CapCut", "tier": "free", "cost": 0 },
+        { "order": 6, "task": "업로드", "tool": "YouTube", "tier": "free", "cost": 0 }
+      ],
+      "total_cost_usd": 32,
+      "free_alternative": "Claude + Canva + CapCut = $0"
+    },
+    {
+      "id": "stock-analysis",
+      "keyword": "주식 분석",
+      "tags": ["주식", "투자", "데이터"],
+      "steps": [
+        { "order": 1, "task": "시세 데이터", "tool": "LOG OF CHOICES", "tier": "free", "cost": 0 },
+        { "order": 2, "task": "차트 분석", "tool": "TradingView", "tier": "freemium", "cost": 0 },
+        { "order": 3, "task": "뉴스 분석", "tool": "Perplexity", "tier": "free", "cost": 0 },
+        { "order": 4, "task": "리포트 작성", "tool": "Claude", "tier": "free", "cost": 0 }
+      ],
+      "total_cost_usd": 0,
+      "free_alternative": "전부 무료 가능"
+    },
+    {
+      "id": "shorts-auto",
+      "keyword": "쇼츠 자동 제작",
+      "tags": ["쇼츠", "유튜브", "자동화"],
+      "steps": [
+        { "order": 1, "task": "트렌드 분석", "tool": "Claude", "tier": "free", "cost": 0 },
+        { "order": 2, "task": "스크립트", "tool": "Claude", "tier": "free", "cost": 0 },
+        { "order": 3, "task": "영상 생성", "tool": "Kling", "tier": "paid", "cost": 10 },
+        { "order": 4, "task": "자동 업로드", "tool": "n8n", "tier": "free", "cost": 0 }
+      ],
+      "total_cost_usd": 10,
+      "free_alternative": "Claude + CapCut = $0 (수동 업로드)"
+    },
+    {
+      "id": "korean-teaching",
+      "keyword": "한국어 교재 제작",
+      "tags": ["한국어", "교육", "교재"],
+      "steps": [
+        { "order": 1, "task": "커리큘럼 설계", "tool": "Claude", "tier": "free", "cost": 0 },
+        { "order": 2, "task": "교재 작성", "tool": "Claude", "tier": "free", "cost": 0 },
+        { "order": 3, "task": "PDF 변환", "tool": "Canva", "tier": "free", "cost": 0 },
+        { "order": 4, "task": "음성 녹음", "tool": "ElevenLabs", "tier": "freemium", "cost": 0 }
+      ],
+      "total_cost_usd": 0,
+      "free_alternative": "전부 무료 가능"
+    },
+    {
+      "id": "ppt-create",
+      "keyword": "PPT 만들기",
+      "tags": ["PPT", "프레젠테이션", "디자인"],
+      "steps": [
+        { "order": 1, "task": "내용 기획", "tool": "Claude", "tier": "free", "cost": 0 },
+        { "order": 2, "task": "디자인", "tool": "Canva AI", "tier": "free", "cost": 0 },
+        { "order": 3, "task": "이미지", "tool": "DALL-E", "tier": "freemium", "cost": 0 }
+      ],
+      "total_cost_usd": 0,
+      "free_alternative": "전부 무료 가능"
+    },
+    {
+      "id": "web-develop",
+      "keyword": "홈페이지 제작",
+      "tags": ["홈페이지", "개발", "웹"],
+      "steps": [
+        { "order": 1, "task": "기획·설계", "tool": "Claude", "tier": "free", "cost": 0 },
+        { "order": 2, "task": "코드 생성", "tool": "Cursor", "tier": "freemium", "cost": 0 },
+        { "order": 3, "task": "디자인", "tool": "v0", "tier": "freemium", "cost": 0 },
+        { "order": 4, "task": "배포", "tool": "Cloudflare Pages", "tier": "free", "cost": 0 }
+      ],
+      "total_cost_usd": 0,
+      "free_alternative": "전부 무료 가능"
+    },
+    {
+      "id": "app-develop",
+      "keyword": "앱 개발",
+      "tags": ["앱", "개발", "모바일"],
+      "steps": [
+        { "order": 1, "task": "기획", "tool": "Claude", "tier": "free", "cost": 0 },
+        { "order": 2, "task": "코드 생성", "tool": "Cursor", "tier": "freemium", "cost": 0 },
+        { "order": 3, "task": "UI 디자인", "tool": "Figma AI", "tier": "freemium", "cost": 0 },
+        { "order": 4, "task": "테스트", "tool": "Claude", "tier": "free", "cost": 0 }
+      ],
+      "total_cost_usd": 0,
+      "free_alternative": "전부 무료 가능"
+    },
+    {
+      "id": "marketing",
+      "keyword": "마케팅",
+      "tags": ["마케팅", "광고", "SNS"],
+      "steps": [
+        { "order": 1, "task": "전략 수립", "tool": "Claude", "tier": "free", "cost": 0 },
+        { "order": 2, "task": "카피라이팅", "tool": "Claude", "tier": "free", "cost": 0 },
+        { "order": 3, "task": "이미지 생성", "tool": "Canva AI", "tier": "free", "cost": 0 },
+        { "order": 4, "task": "스케줄링", "tool": "Buffer", "tier": "freemium", "cost": 0 }
+      ],
+      "total_cost_usd": 0,
+      "free_alternative": "전부 무료 가능"
+    },
+    {
+      "id": "novel-writing",
+      "keyword": "웹소설 쓰기",
+      "tags": ["웹소설", "글쓰기", "창작"],
+      "steps": [
+        { "order": 1, "task": "세계관·기획", "tool": "Claude", "tier": "free", "cost": 0 },
+        { "order": 2, "task": "집필", "tool": "Claude", "tier": "free", "cost": 0 },
+        { "order": 3, "task": "교정", "tool": "Claude", "tier": "free", "cost": 0 },
+        { "order": 4, "task": "출판", "tool": "노벨피아", "tier": "free", "cost": 0 }
+      ],
+      "total_cost_usd": 0,
+      "free_alternative": "전부 무료 가능"
+    },
+    {
+      "id": "data-analysis",
+      "keyword": "데이터 분석",
+      "tags": ["데이터", "분석", "차트"],
+      "steps": [
+        { "order": 1, "task": "데이터 수집", "tool": "LOG OF CHOICES", "tier": "free", "cost": 0 },
+        { "order": 2, "task": "분석", "tool": "Claude", "tier": "free", "cost": 0 },
+        { "order": 3, "task": "시각화", "tool": "Chart.js", "tier": "free", "cost": 0 },
+        { "order": 4, "task": "리포트", "tool": "Claude", "tier": "free", "cost": 0 }
+      ],
+      "total_cost_usd": 0,
+      "free_alternative": "전부 무료 가능"
+    }
+  ]
+}
