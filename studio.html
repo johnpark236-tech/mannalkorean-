@@ -675,22 +675,141 @@ function showWorkflowPanel(wf, query) {
   panel.classList.add('show');
 }
 
-// ── Markdown 다운로드 ──────────────────────────────────────────────────────
+// ── PDF 다운로드 ──────────────────────────────────────────────────────────
 function downloadWorkflow(wf) {
   if (!wf) return;
-  const md =
-    `# ${wf.keyword} AI Workflow\n\n` +
-    `> 생성일: ${new Date().toLocaleDateString('ko-KR')}\n\n` +
-    wf.steps.map(s =>
-      `## Step ${s.order}: ${s.task}\n- **Tool**: ${s.tool}\n- **티어**: ${s.tier}\n- **비용**: ${s.cost === 0 ? '무료' : '$' + s.cost + '/월'}\n`
-    ).join('\n') +
-    `\n## 예상 월 비용\n$${wf.total_cost_usd}\n\n## 무료 대체 방안\n${wf.free_alternative}\n`;
+  const today = new Date().toLocaleDateString('ko-KR', {year:'numeric',month:'long',day:'numeric'});
 
-  const blob = new Blob([md], {type:'text/markdown'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = `${wf.id}-workflow.md`;
-  a.click();
+  const tierColor = t => t==='free'?'#22c55e':t==='freemium'?'#3b82f6':'#f59e0b';
+  const tierLabel = t => t==='free'?'무료':t==='freemium'?'프리미엄':'유료';
+
+  const stepsHtml = wf.steps.map(s => `
+    <div class="step">
+      <div class="step-num">${s.order}</div>
+      <div class="step-body">
+        <div class="step-task">${s.task}</div>
+        <div class="step-tool">${s.tool}</div>
+        <span class="step-tier" style="background:${tierColor(s.tier)}22;color:${tierColor(s.tier)};border:1px solid ${tierColor(s.tier)}44;">
+          ${tierLabel(s.tier)}${s.cost > 0 ? ' · $'+s.cost+'/월' : ''}
+        </span>
+      </div>
+      ${s.order < wf.steps.length ? '<div class="step-arrow">→</div>' : ''}
+    </div>`).join('');
+
+  const html = `<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>${wf.keyword} AI Workflow — LOC Intelligence Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Noto Sans KR',sans-serif;background:#fff;color:#0f172a;padding:48px 56px;max-width:860px;margin:0 auto;}
+  @media print{body{padding:24px 32px;}}
+
+  /* 헤더 */
+  .doc-header{border-bottom:3px solid #3b82f6;padding-bottom:20px;margin-bottom:32px;}
+  .doc-brand{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#3b82f6;margin-bottom:8px;}
+  .doc-title{font-size:26px;font-weight:900;color:#0f172a;line-height:1.2;}
+  .doc-title span{color:#3b82f6;}
+  .doc-meta{margin-top:8px;font-size:12px;color:#94a3b8;}
+
+  /* 스텝 */
+  .steps-section{margin-bottom:32px;}
+  .section-label{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+    color:#64748b;margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+  .section-label::after{content:'';flex:1;height:1px;background:#e2e8f0;}
+  .steps-wrap{display:flex;flex-wrap:wrap;gap:0;align-items:stretch;}
+  .step{display:flex;align-items:center;gap:0;}
+  .step-num{width:44px;height:44px;border-radius:50%;background:#1e40af;color:#fff;
+    font-size:18px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .step-body{padding:0 14px;min-width:120px;}
+  .step-task{font-size:11px;color:#94a3b8;font-weight:600;margin-bottom:3px;}
+  .step-tool{font-size:15px;font-weight:800;color:#0f172a;margin-bottom:6px;}
+  .step-tier{font-size:10px;font-weight:700;border-radius:5px;padding:2px 8px;display:inline-block;}
+  .step-arrow{font-size:20px;color:#cbd5e1;margin:0 4px;flex-shrink:0;}
+
+  /* 비용 */
+  .cost-box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;
+    padding:20px 24px;margin-bottom:28px;display:flex;gap:32px;flex-wrap:wrap;}
+  .cost-group{}
+  .cost-label{font-size:11px;color:#94a3b8;font-weight:600;margin-bottom:4px;}
+  .cost-val{font-size:22px;font-weight:900;color:#0f172a;}
+  .cost-free-val{font-size:14px;font-weight:700;color:#16a34a;}
+
+  /* 도구 목록 */
+  .tools-table{width:100%;border-collapse:collapse;font-size:13px;}
+  .tools-table th{text-align:left;padding:10px 14px;border-bottom:2px solid #e2e8f0;
+    font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#64748b;}
+  .tools-table td{padding:11px 14px;border-bottom:1px solid #f1f5f9;color:#334155;}
+  .tools-table tr:last-child td{border-bottom:none;}
+  .tools-table tr:hover td{background:#f8fafc;}
+
+  /* 푸터 */
+  .doc-footer{margin-top:40px;padding-top:16px;border-top:1px solid #e2e8f0;
+    font-size:11px;color:#94a3b8;display:flex;justify-content:space-between;}
+
+  @page{size:A4;margin:20mm 18mm;}
+</style>
+</head>
+<body>
+
+<div class="doc-header">
+  <div class="doc-brand">LOG OF CHOICES · LOC Intelligence Studio</div>
+  <div class="doc-title">AI Workflow 가이드 — <span>${wf.keyword}</span></div>
+  <div class="doc-meta">생성일: ${today} &nbsp;·&nbsp; mannalkorean.com/studio.html</div>
+</div>
+
+<div class="steps-section">
+  <div class="section-label">AI Workflow 단계</div>
+  <div class="steps-wrap">${stepsHtml}</div>
+</div>
+
+<div class="cost-box">
+  <div class="cost-group">
+    <div class="cost-label">예상 월 비용</div>
+    <div class="cost-val">${wf.total_cost_usd === 0 ? '무료 가능' : '$' + wf.total_cost_usd}</div>
+  </div>
+  <div class="cost-group">
+    <div class="cost-label">무료 대체 방안</div>
+    <div class="cost-free-val">✅ ${wf.free_alternative}</div>
+  </div>
+</div>
+
+<div class="section-label" style="font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#64748b;margin-bottom:14px;display:flex;align-items:center;gap:8px;">
+  단계별 상세 안내 <span style="flex:1;height:1px;background:#e2e8f0;display:block;"></span>
+</div>
+<table class="tools-table">
+  <thead><tr><th>Step</th><th>작업</th><th>권장 도구</th><th>가격</th></tr></thead>
+  <tbody>
+    ${wf.steps.map(s => `
+    <tr>
+      <td style="font-weight:800;color:#3b82f6;">STEP ${s.order}</td>
+      <td>${s.task}</td>
+      <td style="font-weight:700;">${s.tool}</td>
+      <td style="color:${tierColor(s.tier)};font-weight:700;">${tierLabel(s.tier)}${s.cost>0?' · $'+s.cost+'/월':''}</td>
+    </tr>`).join('')}
+  </tbody>
+</table>
+
+<div class="doc-footer">
+  <span>© 2026 LOG OF CHOICES · mannalkorean.com</span>
+  <span>본 문서는 참고용이며 실제 가격은 각 서비스 공식 사이트에서 확인하세요.</span>
+</div>
+
+<script>
+window.onload = function() {
+  setTimeout(function() { window.print(); }, 400);
+};
+<\/script>
+</body>
+</html>`;
+
+  const win = window.open('', '_blank', 'width=900,height=700');
+  if (!win) { alert('팝업이 차단되었습니다. 팝업 허용 후 다시 시도해주세요.'); return; }
+  win.document.open();
+  win.document.write(html);
+  win.document.close();
 }
 
 // ── 인라인 폴백 데이터 ────────────────────────────────────────────────────
