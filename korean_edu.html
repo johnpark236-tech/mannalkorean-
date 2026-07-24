@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한국어 교육 지식 엔진 — LOG OF CHOICES</title>
+  <meta name="description" content="교원자격증 교재 8권 · 776차시 · 1,377개 개념어 · AI 교안 생성">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="./api/korean_edu.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #0a0a0f;
+      --surface:  #13131a;
+      --surface2: #1a1a26;
+      --border:   #1e2334;
+      --border2:  #2a3050;
+      --text:     #e2e8f0;
+      --muted:    #64748b;
+      --subtle:   #94a3b8;
+      --accent:   #3b82f6;
+      --accent-d: #1e3a5f;
+      --green:    #10b981;
+      --amber:    #f59e0b;
+      --purple:   #8b5cf6;
+      --r: 16px;
+    }
+
+    html, body { background: var(--bg); color: var(--text); font-family: 'Noto Sans KR', 'Inter', sans-serif; min-height: 100%; }
+
+    /* ── 헤더 ── */
+    .hdr {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 52px;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .hdr-home {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 5px 10px; border-radius: 8px;
+      background: rgba(255,255,255,0.07);
+      color: var(--subtle); font-size: 12px; font-weight: 600;
+      text-decoration: none; white-space: nowrap;
+      transition: background .15s;
+    }
+    .hdr-home:hover { background: rgba(255,255,255,0.12); color: var(--text); }
+    .hdr-sep { color: var(--border2); font-size: 16px; }
+    .hdr-title { font-size: 14px; font-weight: 700; color: var(--accent); flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .hdr-badge { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--border2); border-radius: 6px; padding: 2px 7px; white-space: nowrap; }
+
+    /* ── 히어로 ── */
+    .hero {
+      padding: 48px 20px 32px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(59,130,246,.06) 0%, transparent 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+    .hero-title { font-family: 'Inter', sans-serif; font-size: clamp(24px, 6vw, 42px); font-weight: 900; line-height: 1.1; letter-spacing: -.03em; color: #fff; margin-bottom: 12px; }
+    .hero-sub { font-size: 14px; color: var(--muted); line-height: 1.7; max-width: 440px; margin: 0 auto; }
+
+    /* ── 통계 배너 ── */
+    .stats {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .stat {
+      flex: 1; min-width: 90px; max-width: 160px;
+      padding: 18px 12px; text-align: center;
+      border-right: 1px solid var(--border);
+    }
+    .stat:last-child { border-right: none; }
+    .stat-num { font-family: 'Inter', sans-serif; font-size: 26px; font-weight: 900; color: #fff; letter-spacing: -.03em; margin-bottom: 3px; }
+    .stat-label { font-size: 11px; color: var(--muted); }
+
+    /* ── 탭 ── */
+    .tabs { display: flex; background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 16px; gap: 4px; }
+    .tab {
+      padding: 12px 16px; font-size: 13px; font-weight: 600;
+      color: var(--muted); border: none; background: none; cursor: pointer;
+      border-bottom: 2px solid transparent; transition: color .15s, border-color .15s;
+      white-space: nowrap;
+    }
+    .tab:hover { color: var(--subtle); }
+    .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+    /* ── 탭 패널 ── */
+    .panel { display: none; padding: 24px 16px; max-width: 800px; margin: 0 auto; }
+    .panel.active { display: block; }
+
+    /* ── 검색 ── */
+    .search-wrap { position: relative; margin-bottom: 20px; }
+    .search-input {
+      width: 100%; padding: 13px 16px 13px 42px;
+      background: var(--surface); border: 1px solid var(--border2);
+      border-radius: var(--r); color: var(--text); font-size: 15px;
+      font-family: inherit; outline: none;
+      transition: border-color .15s;
+    }
+    .search-input:focus { border-color: var(--accent); }
+    .search-input::placeholder { color: var(--muted); }
+    .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 17px; pointer-events: none; }
+    .search-clear { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--muted); font-size: 18px; cursor: pointer; display: none; padding: 2px 6px; }
+    .search-clear.show { display: block; }
+
+    /* 검색 힌트 칩 */
+    .hints { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 20px; }
+    .hint-chip {
+      padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;
+      background: var(--surface2); border: 1px solid var(--border2);
+      color: var(--subtle); cursor: pointer; transition: all .15s;
+    }
+    .hint-chip:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ── 결과 ── */
+    .result-meta { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+    .result-meta span { color: var(--accent); font-weight: 700; }
+
+    .concept-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r); padding: 18px; margin-bottom: 12px;
+      transition: border-color .15s, transform .15s;
+    }
+    .concept-card:hover { border-color: var(--border2); transform: translateY(-1px); }
+    .concept-name { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+    .concept-def { font-size: 13px; color: var(--subtle); line-height: 1.6; margin-bottom: 12px; }
+    .concept-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+    .badge {
+      font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 6px;
+      background: var(--surface2); color: var(--muted); border: 1px solid var(--border2);
+    }
+    .badge-book { background: var(--accent-d); color: #93c5fd; border-color: #1d4ed8; }
+    .badge-week { background: rgba(16,185,129,.12); color: #34d399; border-color: rgba(16,185,129,.25); }
+    .badge-method { background: rgba(139,92,246,.12); color: #a78bfa; border-color: rgba(139,92,246,.25); }
+    .concept-examples { font-size: 12px; color: var(--muted); margin-top: 8px; border-top: 1px solid var(--border); padding-top: 8px; }
+    .concept-examples em { color: var(--subtle); font-style: normal; }
+    .source-note { font-size: 11px; color: var(--muted); margin-top: 8px; }
+
+    /* ── 교재 그리드 ── */
+    .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-bottom: 24px; }
+    .book-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r); padding: 18px; cursor: pointer;
+      transition: border-color .2s, transform .2s;
+    }
+    .book-card:hover, .book-card.open { border-color: var(--accent); transform: translateY(-2px); }
+    .book-type { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+    .book-title { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 10px; line-height: 1.3; }
+    .book-prof { font-size: 12px; color: var(--muted); margin-bottom: 12px; }
+    .book-nums { display: flex; gap: 12px; }
+    .book-num { font-size: 12px; color: var(--subtle); }
+    .book-num strong { color: #fff; font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 900; display: block; }
+    .book-arrow { font-size: 11px; color: var(--accent); margin-top: 12px; font-weight: 700; }
+
+    /* 차시 목록 */
+    .unit-list-wrap {
+      background: var(--surface); border: 1px solid var(--accent);
+      border-radius: var(--r); padding: 20px; margin-bottom: 16px;
+      display: none;
+    }
+    .unit-list-wrap.open { display: block; }
+    .unit-list-title { font-size: 14px; font-weight: 700; color: var(--accent); margin-bottom: 14px; }
+    .unit-item {
+      padding: 10px 0; border-bottom: 1px solid var(--border);
+      display: flex; gap: 12px; align-items: flex-start;
+    }
+    .unit-item:last-child { border-bottom: none; }
+    .unit-week { font-size: 11px; font-weight: 700; color: var(--accent); min-width: 52px; padding-top: 1px; }
+    .unit-content { flex: 1; min-width: 0; }
+    .unit-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+    .unit-concepts { font-size: 11px; color: var(--muted); }
+
+    /* ── 교수법 ── */
+    .method-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin-bottom: 24px; }
+    .method-btn {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 14px 12px; text-align: center;
+      cursor: pointer; transition: all .15s;
+    }
+    .method-btn:hover, .method-btn.selected { border-color: var(--purple); background: rgba(139,92,246,.08); }
+    .method-name { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .method-count { font-size: 11px; color: var(--muted); }
+
+    .method-results { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 20px; display: none; }
+    .method-results.show { display: block; }
+    .method-result-title { font-size: 14px; font-weight: 700; color: var(--purple); margin-bottom: 14px; }
+    .method-unit { padding: 10px 0; border-bottom: 1px solid var(--border); }
+    .method-unit:last-child { border-bottom: none; }
+    .method-unit-book { font-size: 10px; color: var(--muted); font-weight: 700; text-transform: uppercase; margin-bottom: 2px; }
+    .method-unit-title { font-size: 13px; color: var(--text); font-weight: 600; }
+    .method-unit-concepts { font-size: 11px; color: var(--muted); margin-top: 3px; }
+
+    /* ── 참고자료 ── */
+    .ref-section { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); }
+    .ref-title { font-size: 13px; font-weight: 700; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 16px; }
+    .ref-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+    .ref-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+    .ref-card-title { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .ref-card-author { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
+    .ref-card-why { font-size: 11px; color: var(--subtle); line-height: 1.5; }
+
+    /* ── 로딩 ── */
+    .loading { text-align: center; padding: 48px 20px; color: var(--muted); font-size: 14px; }
+    .loading-dot { display: inline-block; animation: blink 1s infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+    /* ── 빈 결과 ── */
+    .empty { text-align: center; padding: 48px 20px; color: var(--muted); }
+    .empty-icon { font-size: 40px; margin-bottom: 12px; }
+    .empty-msg { font-size: 14px; }
+
+    /* ── 푸터 ── */
+    footer { padding: 32px 20px; text-align: center; font-size: 11px; color: var(--muted); border-top: 1px solid var(--border); line-height: 2; }
+    footer a { color: #475569; text-decoration: none; }
+    footer a:hover { color: var(--subtle); }
+
+    /* ── 반응형 ── */
+    @media (max-width: 480px) {
+      .stats { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; }
+      .stat { min-width: 80px; }
+      .book-grid { grid-template-columns: 1fr; }
+      .method-grid { grid-template-columns: repeat(2, 1fr); }
+      .panel { padding: 16px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 헤더 -->
+<div class="hdr">
+  <a class="hdr-home" href="https://johnpark236-tech.github.io/Mannal-Korean/" target="_blank" rel="noopener">🏠 홈</a>
+  <span class="hdr-sep">›</span>
+  <a class="hdr-home" href="./studio.html">📊 스튜디오</a>
+  <span class="hdr-sep">›</span>
+  <span class="hdr-title">🎓 한국어 교육 지식 엔진</span>
+  <span class="hdr-badge">Education Module</span>
+</div>
+
+<!-- 히어로 -->
+<div class="hero">
+  <div class="hero-eyebrow">Korean Education Knowledge Engine</div>
+  <h1 class="hero-title">교재 8권을 AI가 이해할 수 있는<br>지식으로</h1>
+  <p class="hero-sub">교원자격증 전공 교재를 분석해 개념·교수법·예시를 정규화했습니다.<br>원문 미포함 — 메타데이터만 제공합니다.</p>
+</div>
+
+<!-- 통계 배너 -->
+<div class="stats">
+  <div class="stat"><div class="stat-num" id="st-books">8</div><div class="stat-label">📚 교재</div></div>
+  <div class="stat"><div class="stat-num" id="st-units">776</div><div class="stat-label">🎯 차시</div></div>
+  <div class="stat"><div class="stat-num" id="st-concepts">1,377</div><div class="stat-label">💡 개념어</div></div>
+  <div class="stat"><div class="stat-num">14</div><div class="stat-label">📐 교수법</div></div>
+</div>
+
+<!-- 탭 -->
+<div class="tabs">
+  <button class="tab active" onclick="switchTab('search')">🔍 개념 검색</button>
+  <button class="tab" onclick="switchTab('books')">📋 교재별 보기</button>
+  <button class="tab" onclick="switchTab('methods')">📐 교수법 찾기</button>
+</div>
+
+<!-- 탭 1: 개념 검색 -->
+<div class="panel active" id="panel-search">
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input class="search-input" id="searchInput" type="text"
+      placeholder="다의어, 조사, 발음, 교수법..." autocomplete="off"
+      oninput="onSearchInput(this.value)">
+    <button class="search-clear" id="searchClear" onclick="clearSearch()">✕</button>
+  </div>
+  <div class="hints">
+    <span class="hint-chip" onclick="doSearch('다의어')">다의어</span>
+    <span class="hint-chip" onclick="doSearch('조사')">조사</span>
+    <span class="hint-chip" onclick="doSearch('발음')">발음</span>
+    <span class="hint-chip" onclick="doSearch('어휘')">어휘</span>
+    <span class="hint-chip" onclick="doSearch('문법')">문법</span>
+    <span class="hint-chip" onclick="doSearch('읽기')">읽기</span>
+    <span class="hint-chip" onclick="doSearch('말하기')">말하기</span>
+    <span class="hint-chip" onclick="doSearch('의미')">의미</span>
+  </div>
+  <div id="searchResults">
+    <div class="empty">
+      <div class="empty-icon">💡</div>
+      <div class="empty-msg">개념어를 검색하면 교재·차시·교수법이 함께 표시됩니다</div>
+    </div>
+  </div>
+</div>
+
+<!-- 탭 2: 교재별 보기 -->
+<div class="panel" id="panel-books">
+  <div id="bookGrid" class="book-grid">
+    <div class="loading"><span class="loading-dot">●</span> 로딩 중...</div>
+  </div>
+  <div id="unitListArea"></div>
+
+  <!-- 참고자료 -->
+  <div class="ref-section">
+    <div class="ref-title">더 깊이 공부하려면</div>
+    <div class="ref-grid" id="refGrid"></div>
+    <p style="margin-top:14px;font-size:11px;color:var(--muted);line-height:1.7;">
+      본 서비스는 교재 메타데이터(개념어·교수법 분류)만을 제공합니다.<br>
+      원문 내용은 각 교재를 직접 구입하시거나 도서관을 이용하세요.
+    </p>
+  </div>
+</div>
+
+<!-- 탭 3: 교수법 찾기 -->
+<div class="panel" id="panel-methods">
+  <div id="methodGrid" class="method-grid">
+    <div class="loading"><span class="loading-dot">●</span> 로딩 중...</div>
+  </div>
+  <div class="method-results" id="methodResults">
+    <div class="method-result-title" id="methodResultTitle"></div>
+    <div id="methodResultList"></div>
+  </div>
+</div>
+
+<footer>
+  © 2026 LOG OF CHOICES · <a href="https://mannalkorean.com">mannalkorean.com</a><br>
+  데이터: 내부 연구용 메타데이터 (원문 미포함)<br>
+  출처: 한국어의미론(김해미) · 한국어발음교육론(손상미) · 한국어교재론(오민수) · 언어교수이론 · 한국어문법교육론 · 한국어이해교육론(권화숙) · 한국어표현교육론 · 한국어어휘교육론(오민수)
+</footer>
+
+<script>
+const BOOK_META = {
+  SEM: { title:'한국어의미론',   professor:'김해미', type:'전공선택', why:'의미 분석·다의어·동음이의어·어휘 관계 핵심 이론' },
+  PHO: { title:'한국어발음교육론', professor:'손상미', type:'전공선택', why:'발음 교육 이론과 교수 방법론의 핵심 교재' },
+  MAT: { title:'한국어교재론',   professor:'오민수', type:'전공필수', why:'교재 분석·개발·평가 방법론 총론' },
+  THE: { title:'언어교수이론',   professor:'',       type:'전공필수', why:'CLT·과제중심·직접법 등 주요 교수법 비교' },
+  GRM: { title:'한국어문법교육론', professor:'',     type:'전공필수', why:'조사·어미·시제·피동 문법 교육 방법론' },
+  REC: { title:'한국어이해교육론', professor:'권화숙', type:'전공필수', why:'읽기·듣기 기술 교육 및 텍스트 이해 이론' },
+  EXP: { title:'한국어표현교육론', professor:'',      type:'전공필수', why:'말하기·쓰기 기술 교육 방법론' },
+  VOC: { title:'한국어어휘교육론', professor:'오민수', type:'전공선택', why:'어휘 선정·교수·평가의 체계적 접근' },
+};
+
+let _searchTimer = null;
+let _activeBookId = null;
+let _activeMethod = null;
+
+/* ── 탭 전환 ── */
+function switchTab(id) {
+  document.querySelectorAll('.tab').forEach((t,i) => {
+    t.classList.toggle('active', ['search','books','methods'][i] === id);
+  });
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('active');
+
+  if (id === 'books' && !document.querySelector('.book-card')) renderBooks();
+  if (id === 'methods' && !document.querySelector('.method-btn')) renderMethods();
+}
+
+/* ── 개념 검색 ── */
+function onSearchInput(val) {
+  document.getElementById('searchClear').classList.toggle('show', val.length > 0);
+  clearTimeout(_searchTimer);
+  if (!val.trim()) {
+    document.getElementById('searchResults').innerHTML = `
+      <div class="empty"><div class="empty-icon">💡</div>
+      <div class="empty-msg">개념어를 검색하면 교재·차시·교수법이 함께 표시됩니다</div></div>`;
+    return;
+  }
+  _searchTimer = setTimeout(() => doSearch(val), 350);
+}
+
+function clearSearch() {
+  document.getElementById('searchInput').value = '';
+  document.getElementById('searchClear').classList.remove('show');
+  document.getElementById('searchResults').innerHTML = `
+    <div class="empty"><div class="empty-icon">💡</div>
+    <div class="empty-msg">개념어를 검색하면 교재·차시·교수법이 함께 표시됩니다</div></div>`;
+}
+
+async function doSearch(kw) {
+  const input = document.getElementById('searchInput');
+  input.value = kw;
+  document.getElementById('searchClear').classList.add('show');
+  const box = document.getElementById('searchResults');
+  box.innerHTML = `<div class="loading"><span class="loading-dot">●</span> 검색 중...</div>`;
+  try {
+    const results = await KOREAN_EDU.searchConcept(kw);
+    if (!results.length) {
+      box.innerHTML = `<div class="empty"><div class="empty-icon">🔍</div>
+        <div class="empty-msg">"${kw}" 결과 없음 — 다른 키워드로 검색해보세요</div></div>`;
+      return;
+    }
+    box.innerHTML = `<div class="result-meta"><span>${results.length}개</span> 결과</div>` +
+      results.map(r => conceptCard(r)).join('');
+  } catch(e) {
+    box.innerHTML = `<div class="empty"><div class="empty-icon">⚠️</div><div class="empty-msg">검색 오류: ${e.message}</div></div>`;
+  }
+}
+
+function conceptCard(r) {
+  const methods = r.teaching_hints.slice(0,3).map(m =>
+    `<span class="badge badge-method">${m}</span>`).join('');
+  const exs = r.examples.slice(0,2).map(e => `<em>예)</em> ${escHtml(e)}`).join(' · ');
+  return `
+  <div class="concept-card">
+    <div class="concept-name">${escHtml(r.concept.name)}</div>
+    <div class="concept-def">${escHtml(r.concept.definition || '(정의 미추출)')}</div>
+    <div class="concept-badges">
+      <span class="badge badge-book">${escHtml(r.book_title)}</span>
+      <span class="badge badge-week">${r.week}주차 ${r.chasi}차시</span>
+      ${methods}
+    </div>
+    ${exs ? `<div class="concept-examples">${exs}</div>` : ''}
+    <div class="source-note">출처: ${escHtml(r.book_title)} — ${escHtml(r.unit_title || '')}</div>
+  </div>`;
+}
+
+/* ── 교재별 보기 ── */
+async function renderBooks() {
+  const grid = document.getElementById('bookGrid');
+  const refGrid = document.getElementById('refGrid');
+  try {
+    const books = await KOREAN_EDU.getBooks();
+    grid.innerHTML = books.map(b => {
+      const m = BOOK_META[b.id] || {};
+      return `<div class="book-card" id="bcard-${b.id}" onclick="toggleBook('${b.id}')">
+        <div class="book-type">${m.type || ''}</div>
+        <div class="book-title">${escHtml(m.title || b.title || b.id)}</div>
+        <div class="book-prof">${m.professor ? `교수: ${m.professor}` : '&nbsp;'}</div>
+        <div class="book-nums">
+          <div class="book-num"><strong>${b.units}</strong>차시</div>
+          <div class="book-num"><strong>${b.concepts}</strong>개념</div>
+        </div>
+        <div class="book-arrow">차시 목록 보기 →</div>
+      </div>`;
+    }).join('');
+
+    refGrid.innerHTML = books.map(b => {
+      const m = BOOK_META[b.id] || {};
+      return `<div class="ref-card">
+        <div class="ref-card-title">${escHtml(m.title || b.id)}</div>
+        <div class="ref-card-author">${m.professor ? `저자: ${m.professor}` : '저자 미상'}</div>
+        <div class="ref-card-why">${m.why || ''}</div>
+      </div>`;
+    }).join('');
+  } catch(e) {
+    grid.innerHTML = `<div class="empty"><div class="empty-icon">⚠️</div><div class="empty-msg">${e.message}</div></div>`;
+  }
+}
+
+async function toggleBook(bookId) {
+  const card = document.getElementById('bcard-' + bookId);
+  const area = document.getElementById('unitListArea');
+
+  // 같은 카드 재클릭 → 닫기
+  if (_activeBookId === bookId) {
+    card.classList.remove('open');
+    area.innerHTML = '';
+    _activeBookId = null;
+    return;
+  }
+
+  // 이전 카드 닫기
+  if (_activeBookId) document.getElementById('bcard-' + _activeBookId)?.classList.remove('open');
+  card.classList.add('open');
+  _activeBookId = bookId;
+
+  area.innerHTML = `<div class="unit-list-wrap open"><div class="loading"><span class="loading-dot">●</span> 로딩 중...</div></div>`;
+  card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  try {
+    const units = await KOREAN_EDU.getBookUnits(bookId);
+    const m = BOOK_META[bookId] || {};
+    area.innerHTML = `
+      <div class="unit-list-wrap open">
+        <div class="unit-list-title">${escHtml(m.title || bookId)} — 전체 ${units.length}차시</div>
+        ${units.map(u => `
+          <div class="unit-item">
+            <div class="unit-week">${u.week}주 ${u.chasi}차</div>
+            <div class="unit-content">
+              <div class="unit-title">${escHtml(u.title || '(제목 없음)')}</div>
+              <div class="unit-concepts">${(u.key_concepts||[]).slice(0,4).map(c => escHtml(c.name)).join(' · ') || '개념 미추출'}</div>
+            </div>
+          </div>`).join('')}
+      </div>`;
+  } catch(e) {
+    area.innerHTML = `<div class="empty"><div class="empty-icon">⚠️</div><div class="empty-msg">${e.message}</div></div>`;
+  }
+}
+
+/* ── 교수법 탭 ── */
+async function renderMethods() {
+  const grid = document.getElementById('methodGrid');
+  grid.innerHTML = `<div class="loading"><span class="loading-dot">●</span> 분석 중...</div>`;
+  try {
+    const methods = await KOREAN_EDU.getMethodsWithCount();
+    if (!methods.length) {
+      grid.innerHTML = `<div class="empty"><div class="empty-icon">📐</div><div class="empty-msg">교수법 데이터 없음</div></div>`;
+      return;
+    }
+    grid.innerHTML = methods.map(m => `
+      <div class="method-btn" id="mbtn-${btoa(m.name)}" onclick="selectMethod('${escHtml(m.name)}')">
+        <div class="method-name">${escHtml(m.name)}</div>
+        <div class="method-count">${m.count}개 차시</div>
+      </div>`).join('');
+  } catch(e) {
+    grid.innerHTML = `<div class="empty"><div class="empty-icon">⚠️</div><div class="empty-msg">${e.message}</div></div>`;
+  }
+}
+
+async function selectMethod(name) {
+  // 선택 토글
+  if (_activeMethod === name) {
+    document.querySelectorAll('.method-btn').forEach(b => b.classList.remove('selected'));
+    document.getElementById('methodResults').classList.remove('show');
+    _activeMethod = null;
+    return;
+  }
+  _activeMethod = name;
+  document.querySelectorAll('.method-btn').forEach(b => b.classList.remove('selected'));
+  const key = btoa(name);
+  document.getElementById('mbtn-' + key)?.classList.add('selected');
+
+  const res = document.getElementById('methodResults');
+  res.classList.add('show');
+  res.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document.getElementById('methodResultTitle').textContent = `"${name}" 교수법 적용 차시`;
+  document.getElementById('methodResultList').innerHTML =
+    `<div class="loading"><span class="loading-dot">●</span> 검색 중...</div>`;
+
+  try {
+    const units = await KOREAN_EDU.searchByMethod(name);
+    document.getElementById('methodResultList').innerHTML = units.map(u => `
+      <div class="method-unit">
+        <div class="method-unit-book">${escHtml(u.book_title)}</div>
+        <div class="method-unit-title">${u.week}주차 ${u.chasi}차시 — ${escHtml(u.unit_title || '')}</div>
+        <div class="method-unit-concepts">${(u.key_concepts||[]).slice(0,4).map(c => escHtml(c.name)).join(' · ')}</div>
+      </div>`).join('') || '<div class="empty"><div class="empty-msg">결과 없음</div></div>';
+  } catch(e) {
+    document.getElementById('methodResultList').innerHTML = `<div class="empty-msg">오류: ${e.message}</div>`;
+  }
+}
+
+/* ── 유틸 ── */
+function escHtml(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+/* ── 초기화 ── */
+window.addEventListener('load', async () => {
+  try {
+    await KOREAN_EDU.init();
+    const stats = await KOREAN_EDU.getStats();
+    document.getElementById('st-books').textContent    = stats.total_books;
+    document.getElementById('st-units').textContent    = stats.total_units.toLocaleString();
+    document.getElementById('st-concepts').textContent = stats.total_concepts.toLocaleString();
+  } catch(e) {
+    console.error('init failed:', e);
+  }
+});
+</script>
+</body>
+</html>

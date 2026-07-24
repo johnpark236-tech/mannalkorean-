@@ -1,0 +1,3023 @@
+{
+  "meta": {
+    "book_id": "GRM",
+    "title": "한국어문법교육론",
+    "professor": "",
+    "type": "전공필수",
+    "total_units": 139,
+    "total_concepts": 195,
+    "extracted": "2026-07-24",
+    "data_type": "메타데이터 — 내부 연구용"
+  },
+  "units": [
+    {
+      "id": "GRM_011",
+      "book_id": "GRM",
+      "week": 1,
+      "chasi": 1,
+      "title": "❚문법의 개념과 유형 ·················",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_012",
+      "book_id": "GRM",
+      "week": 1,
+      "chasi": 2,
+      "title": "❚문법 교육에 대한 찬성론 ··············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_013",
+      "book_id": "GRM",
+      "week": 1,
+      "chasi": 3,
+      "title": "❚문법 교육에 대한 비판론 ··············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_024",
+      "book_id": "GRM",
+      "week": 2,
+      "chasi": 4,
+      "title": "❚한국어의 특성 ····················",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_025",
+      "book_id": "GRM",
+      "week": 2,
+      "chasi": 5,
+      "title": "❚한국어의 체계 ····················",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_026",
+      "book_id": "GRM",
+      "week": 2,
+      "chasi": 6,
+      "title": "❚한국어 교육 문법의 개념과 특성 ··········",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_037",
+      "book_id": "GRM",
+      "week": 3,
+      "chasi": 7,
+      "title": "❚한국어 문법 교육의 범위 및 원리와 목표 ·····",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_038",
+      "book_id": "GRM",
+      "week": 3,
+      "chasi": 8,
+      "title": "❚문법 교수 이론(1) ················",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_039",
+      "book_id": "GRM",
+      "week": 3,
+      "chasi": 9,
+      "title": "❚문법 교수 이론(2) ················",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0410",
+      "book_id": "GRM",
+      "week": 4,
+      "chasi": 10,
+      "title": "❚문법 교수 이론(3) ················",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0411",
+      "book_id": "GRM",
+      "week": 4,
+      "chasi": 11,
+      "title": "❚품사별 문법 교수의 기초 ··············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0412",
+      "book_id": "GRM",
+      "week": 4,
+      "chasi": 12,
+      "title": "❚품사별 교수 방안(1) ···············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0513",
+      "book_id": "GRM",
+      "week": 5,
+      "chasi": 13,
+      "title": "❚품사별 교수 방안(2) ···············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0514",
+      "book_id": "GRM",
+      "week": 5,
+      "chasi": 14,
+      "title": "❚품사별 교수 방안(3) ···············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0515",
+      "book_id": "GRM",
+      "week": 5,
+      "chasi": 15,
+      "title": "❚문법 요소별 교수 방안(1) ············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0616",
+      "book_id": "GRM",
+      "week": 6,
+      "chasi": 16,
+      "title": "❚문법 요소별 교수 방안(2) ············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0617",
+      "book_id": "GRM",
+      "week": 6,
+      "chasi": 17,
+      "title": "❚문법 요소별 교수 방안 3 ·············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0618",
+      "book_id": "GRM",
+      "week": 6,
+      "chasi": 18,
+      "title": "❚한국어 문법 설명 방법 ···············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0719",
+      "book_id": "GRM",
+      "week": 7,
+      "chasi": 19,
+      "title": "❚조사 교수의 의미와 조사에 대한 언어 정보 ····",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0720",
+      "book_id": "GRM",
+      "week": 7,
+      "chasi": 20,
+      "title": "❚주요 조사의 교수 방안 ···············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0721",
+      "book_id": "GRM",
+      "week": 7,
+      "chasi": 21,
+      "title": "❚숙달도별 조사의 교수 제시 사례 ··········",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0822",
+      "book_id": "GRM",
+      "week": 8,
+      "chasi": 22,
+      "title": "❚어미와 문장 구성 ··················",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0823",
+      "book_id": "GRM",
+      "week": 8,
+      "chasi": 23,
+      "title": "❚어미의 제약과 문법 교수 ··············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0824",
+      "book_id": "GRM",
+      "week": 8,
+      "chasi": 24,
+      "title": "❚선어말 어미의 교수 ·················",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0925",
+      "book_id": "GRM",
+      "week": 9,
+      "chasi": 25,
+      "title": "❚어말 어미의 교수 ··················",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0926",
+      "book_id": "GRM",
+      "week": 9,
+      "chasi": 26,
+      "title": "❚유사 문법 ······················",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0927",
+      "book_id": "GRM",
+      "week": 9,
+      "chasi": 27,
+      "title": "❚한국어 문법 교육 항목의 선정과 배열 ·······",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1028",
+      "book_id": "GRM",
+      "week": 10,
+      "chasi": 28,
+      "title": "❚교육용 조사 선정 ··················",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1029",
+      "book_id": "GRM",
+      "week": 10,
+      "chasi": 29,
+      "title": "❚교육용 어미의 선정 ·················",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1030",
+      "book_id": "GRM",
+      "week": 10,
+      "chasi": 30,
+      "title": "❚문법 교육의 방법(1) ···············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1131",
+      "book_id": "GRM",
+      "week": 11,
+      "chasi": 31,
+      "title": "❚문법 교육의 방법(2) ···············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1132",
+      "book_id": "GRM",
+      "week": 11,
+      "chasi": 32,
+      "title": "❚문법 교육의 방법(3) ···············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1133",
+      "book_id": "GRM",
+      "week": 11,
+      "chasi": 33,
+      "title": "❚문법 연습 활동 ···················",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1234",
+      "book_id": "GRM",
+      "week": 12,
+      "chasi": 34,
+      "title": "❚문법 교수의 절차와 단계 ··············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1235",
+      "book_id": "GRM",
+      "week": 12,
+      "chasi": 35,
+      "title": "❚의사소통 기능과 문법(1) ·············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1236",
+      "book_id": "GRM",
+      "week": 12,
+      "chasi": 36,
+      "title": "❚의사소통 기능과 문법(2) ·············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1337",
+      "book_id": "GRM",
+      "week": 13,
+      "chasi": 37,
+      "title": "❚문법 교재와 교실 활동 ···············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1338",
+      "book_id": "GRM",
+      "week": 13,
+      "chasi": 38,
+      "title": "❚한국어 문법 평가(1) ···············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1339",
+      "book_id": "GRM",
+      "week": 13,
+      "chasi": 39,
+      "title": "❚한국어 문법 평가(2) ···············",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_011",
+      "book_id": "GRM",
+      "week": 1,
+      "chasi": 1,
+      "title": "1",
+      "learning_goals": [
+        "문법의 개념을 설명할 수 있다. 2. 문법의 유형을 설명할 수 있다",
+        "한국어 교육 문법의 개념을 이해",
+        "한국어 교육 문법의 범위와 원리를 알고 이를 활용하여 교수하는 방법을 설명할 수 있다. 3. 한국어의 형태·통사·의미 체계를 설명",
+        "문법의 교수 이론 적용 방안을 활용하여 문법을 설명"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_011",
+      "book_id": "GRM",
+      "week": 1,
+      "chasi": 1,
+      "title": "3",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "표준국어대사전",
+          "definition": "말의 구성 및 운용상의 규칙, 또는 그것을 연구하는 학문"
+        },
+        {
+          "name": "견해",
+          "definition": "체언 뒤에 결합하는 것을 중요하게 판단함"
+        },
+        {
+          "name": "견해",
+          "definition": "활용하는 성격을 중요하게 판단함"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_011",
+      "book_id": "GRM",
+      "week": 1,
+      "chasi": 1,
+      "title": "5",
+      "learning_goals": [
+        "문법 교육에 대한 찬성론을 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "보편문법",
+          "definition": "(변형 생성 문법 이론에서) 모든 언어에 공통적인 문법 구조, 또는 그 이론. Ÿ 개별문법：모든 언어가 아닌, 특정한 언어의 규칙을 밝히는 것을 목표로 하는 문법. Ÿ 기술문법：특정한 시기의 한 언어 상태를 있는 그대로 기술하는 문법"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_012",
+      "book_id": "GRM",
+      "week": 1,
+      "chasi": 2,
+      "title": "7",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류 문법 화석화 방지론 Ÿ 문법은 언어 능력이 더 이상 발전하지 않는 화석화를 막아주는 데 기여한다. Ÿ 나 이거 어렵잖아. 언니한테 물어보잖아. 언니가 나 도와주잖아. 나 논문 잘",
+        "오류 문법의 화석화) → ( 다양한 문법 습득) → 저는 이게",
+        "오류 문법의 화석화 해소)"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_012",
+      "book_id": "GRM",
+      "week": 1,
+      "chasi": 2,
+      "title": "9",
+      "learning_goals": [
+        "문법 교육에 대한 비판론을 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_013",
+      "book_id": "GRM",
+      "week": 1,
+      "chasi": 3,
+      "title": "11",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "구성",
+          "definition": "문법적 능력(문법적 지식)+ 담화적 능력+사회언어학적 능력"
+        },
+        {
+          "name": "분리",
+          "definition": "맛있다 + 어요) - 어서 오세요. (분리：어서 + 오다 + -(으)세요) - 이거 얼마예요? (분리：이거 + 얼마이다 + 예요)"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": [
+        "중국",
+        "일본",
+        "몽골"
+      ]
+    },
+    {
+      "id": "GRM_013",
+      "book_id": "GRM",
+      "week": 1,
+      "chasi": 3,
+      "title": "13",
+      "learning_goals": [
+        "한국어의 문자적 특성을 설명할 수 있다. 2. 한국어의 음운적ㆍ형태적 특성을 알 수 있다. 3. 한국어의 통사적ㆍ담화적 특성을 알 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_024",
+      "book_id": "GRM",
+      "week": 2,
+      "chasi": 4,
+      "title": "15",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": [
+        "중국",
+        "일본"
+      ]
+    },
+    {
+      "id": "GRM_024",
+      "book_id": "GRM",
+      "week": 2,
+      "chasi": 4,
+      "title": "17",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_025",
+      "book_id": "GRM",
+      "week": 2,
+      "chasi": 5,
+      "title": "19",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "형태소",
+          "definition": "혼자 쓰일 수 있는 형태소"
+        },
+        {
+          "name": "형태소",
+          "definition": "반드시 다른 말에 기대어 쓰이는 형태소"
+        },
+        {
+          "name": "형태소",
+          "definition": "구체적인 대상이나 구체적인 상태를 나타내는 실질적 의미를 가지고"
+        },
+        {
+          "name": "형태소",
+          "definition": "형식적인 의미만, 즉 문법적 의미만을 나타내는 형태소(조사, 어미, 접"
+        },
+        {
+          "name": "기준",
+          "definition": "기능, 의미, 형태"
+        },
+        {
+          "name": "명사",
+          "definition": "사람이나 사물의 이름을 나타내는 단어"
+        },
+        {
+          "name": "대명사",
+          "definition": "사람이나 사물의 이름을 대신하여 나타내는 단어"
+        },
+        {
+          "name": "수사",
+          "definition": "수량이나 순서를 나타내는 단어"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_025",
+      "book_id": "GRM",
+      "week": 2,
+      "chasi": 5,
+      "title": "21",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "주성분",
+          "definition": "문장이 성립하는 데 필수적으로 기능을 하는 성분(주어, 서술어, 목적어, 보어"
+        },
+        {
+          "name": "성분",
+          "definition": "주성분에 딸린 성분(관형어, 부사어 등) Ÿ 독립 성분：다른 성분과 직접적인 관련이 없는, 독립된 성분(독립어)"
+        },
+        {
+          "name": "시제법",
+          "definition": "과거 시제, 현재 시제, 미래 시제/절대 시제, 상대 시제"
+        },
+        {
+          "name": "부정법",
+          "definition": "단형 부정, 장형 부정/안 부정문, 못 부정문"
+        },
+        {
+          "name": "높임법",
+          "definition": "주체높임법, 객체높임법, 상대높임법"
+        },
+        {
+          "name": "의향법",
+          "definition": "의문문, 청유문, 평서문, 명령문, 감탄문 등"
+        },
+        {
+          "name": "홑문장",
+          "definition": "주어와 서술어의 관계가 한 번만 나타난다. ② 겹문장：주어와 서술어의 관계가 두 번 이상 나타난다. - 안은문장：홑문장이 다른 문장 속에서 한 문장 성분이 되는 문장 - 이어진 문장：홑문장과 홑문장이 대등하거나 종속적으로 이어진 문장"
+        },
+        {
+          "name": "남자",
+          "definition": "[+성인] [+남성] [+인간] / 여자：[+성인] [-남성] [+인간]"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_025",
+      "book_id": "GRM",
+      "week": 2,
+      "chasi": 5,
+      "title": "23",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "구정보",
+          "definition": "화자가 발화할 때 청자의 의식 속에 들어 있는 정보. ⇒ (보조사 ‘은/는’이 붙어 실현됨) Ÿ 문장의 중의성"
+        },
+        {
+          "name": "표현",
+          "definition": "말하는 이와 듣는 이가 대화를 나누는 시간적ㆍ공간적 장면 속에서 문장의"
+        },
+        {
+          "name": "대명사",
+          "definition": "이것, 그것, 저것, 여기, 거기, 저기 등"
+        },
+        {
+          "name": "부사",
+          "definition": "이렇게, 그렇게, 저렇게, 이리, 그리, 저리 등"
+        },
+        {
+          "name": "형용사",
+          "definition": "이렇다, 그렇다, 저렇다 Ÿ 높임 표현：담화에 등장하는 인물들 사이의 상하 관계와 친소 관계를 나타냄"
+        },
+        {
+          "name": "표현",
+          "definition": "듣는 이가 장면이나 맥락의 도움을 받아 생략된 표현을 복원함"
+        },
+        {
+          "name": "심리적태도",
+          "definition": "‘단정, 확신, 감탄, 사실의 전달, 사실의 추정’ 등을 다양한 방법으로 표현함"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_026",
+      "book_id": "GRM",
+      "week": 2,
+      "chasi": 6,
+      "title": "25",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_026",
+      "book_id": "GRM",
+      "week": 2,
+      "chasi": 6,
+      "title": "27",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "기준",
+          "definition": "문법의 전체적 실현 양상 기술하므로 ‘바라-’,‘바래-’ 모두의 사용"
+        },
+        {
+          "name": "기준",
+          "definition": "규범을 중시하므로 ‘바라’만 표준어로 판단함"
+        },
+        {
+          "name": "기준",
+          "definition": "규범적인 면을 고려하여 ‘바라’를 교육하되, 학습자의 실제"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_037",
+      "book_id": "GRM",
+      "week": 3,
+      "chasi": 7,
+      "title": "29",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "층위",
+          "definition": "문장 끝 억양(의향법 실현), 말소리의 길이, 높이, 세기(강조법 실현) Ÿ 어휘적 층위：사동법, 강조법, 주체높임법, 객체높임법"
+        },
+        {
+          "name": "층위",
+          "definition": "사동법, 피동법, 강조법"
+        },
+        {
+          "name": "층위",
+          "definition": "의향법, 시제법, 청자높임법, 주체높임법, 격"
+        },
+        {
+          "name": "층위",
+          "definition": "사동법, 피동법, 시제법, 강조법, 부정법"
+        },
+        {
+          "name": "순서",
+          "definition": "굴곡적 ＞ 어휘적 ＞ 파생적 ＞ 통사적 ＞ 음운적"
+        },
+        {
+          "name": "출처",
+          "definition": "방성원 외(2021), 문법 교육론, 한국문화사 ]"
+        },
+        {
+          "name": "이유",
+          "definition": "초급 학습자들은 반말에 비해 존댓말의 학습이 우선시 됨."
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의 실현"
+      ],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_037",
+      "book_id": "GRM",
+      "week": 3,
+      "chasi": 7,
+      "title": "31",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_038",
+      "book_id": "GRM",
+      "week": 3,
+      "chasi": 8,
+      "title": "33",
+      "learning_goals": [
+        "언어교육이론의 변천에 따른 문법 교육의 특징을 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "번역",
+          "definition": "모국어에서 한국어로, 한국어를 모국어로"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "직접 교수"
+      ],
+      "cautions": [
+        "주의 평가"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_038",
+      "book_id": "GRM",
+      "week": 3,
+      "chasi": 8,
+      "title": "35",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "직접 교수"
+      ],
+      "cautions": [
+        "오류 수정을 특징으로 하지 않음"
+      ],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_038",
+      "book_id": "GRM",
+      "week": 3,
+      "chasi": 8,
+      "title": "37",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "의사소통 교수법"
+      ],
+      "cautions": [
+        "주의적 학습 과정으로 얻기가 어려움"
+      ],
+      "topik_level": [
+        "고급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_039",
+      "book_id": "GRM",
+      "week": 3,
+      "chasi": 9,
+      "title": "39",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "고양",
+          "definition": "학습자들이 문법의 특징을 즉시 사용할 수 없어도 교수를 통해서 특정한 특징"
+        },
+        {
+          "name": "원인",
+          "definition": "언어 체계가 상당히 복잡하고 의미적, 어휘적, 구문, 실"
+        },
+        {
+          "name": "구어코퍼스",
+          "definition": "실제 통용되는 이야기, 일반적 서비스 상황, 직업 상황, 협상, 가족이나 동"
+        },
+        {
+          "name": "문어코퍼스",
+          "definition": "신문 기사, 사설과 같은 장르의 공식 문서와 화학 생물, 사회학, 공학 분야"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "의사소통 교수법"
+      ],
+      "cautions": [
+        "주의를 기울이는 것을 통하여 새로운 형식들을 인지하는 것이"
+      ],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_039",
+      "book_id": "GRM",
+      "week": 3,
+      "chasi": 9,
+      "title": "41",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류를 파악할 수 있음"
+      ],
+      "topik_level": [],
+      "related_countries": [
+        "일본"
+      ]
+    },
+    {
+      "id": "GRM_0410",
+      "book_id": "GRM",
+      "week": 4,
+      "chasi": 10,
+      "title": "43",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "짝 활동",
+        "토론",
+        "게임"
+      ],
+      "cautions": [
+        "주의를 언어 형태로 유도하기 위해 사용되는 교수학적 활동"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0410",
+      "book_id": "GRM",
+      "week": 4,
+      "chasi": 10,
+      "title": "45",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "문제점",
+          "definition": "일련의 특정 문법 형태들만을 가르치는 것은 문"
+        },
+        {
+          "name": "문제점",
+          "definition": "화석화를 생산해 내어 부적절하고 정확성이"
+        },
+        {
+          "name": "요소",
+          "definition": "형태, 의미, 사용"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "의사소통 교수법"
+      ],
+      "cautions": [
+        "주의 교수요목의 문제점：일련의 특정 문법 형태들만을 가르치는 것은 문"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0411",
+      "book_id": "GRM",
+      "week": 4,
+      "chasi": 11,
+      "title": "47",
+      "learning_goals": [
+        "품사별 문법 교수의 기초에 대해 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "직접 교수"
+      ],
+      "cautions": [
+        "혼동을 일으"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0411",
+      "book_id": "GRM",
+      "week": 4,
+      "chasi": 11,
+      "title": "49",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0411",
+      "book_id": "GRM",
+      "week": 4,
+      "chasi": 11,
+      "title": "51",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "항목",
+          "definition": "단어보다 작은 형태소 단위인 어미 + 단어 + 단어보다 큰"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0412",
+      "book_id": "GRM",
+      "week": 4,
+      "chasi": 12,
+      "title": "53",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "때문",
+          "definition": "이유 만큼：같은 수량이나 정도"
+        },
+        {
+          "name": "마련",
+          "definition": "당연함 대로：같은 방식으로"
+        },
+        {
+          "name": "바람",
+          "definition": "사건의 여파 듯：비슷한 모양"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0412",
+      "book_id": "GRM",
+      "week": 4,
+      "chasi": 12,
+      "title": "55",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "혼동",
+        "오류 등이 발생함) Ÿ 고유어 수사는 고유어 간의 경합으로 나타나는 일이 많음"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0513",
+      "book_id": "GRM",
+      "week": 5,
+      "chasi": 13,
+      "title": "57",
+      "learning_goals": [
+        "동사의 교수에 대해 설명할 수 있다. 2. 형용사의 교수에 대해 설명할 수 있다. 3. 관형사의 교수에 대해 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "혼동을 주는 일부 단어에 유의하여 교수해야"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0513",
+      "book_id": "GRM",
+      "week": 5,
+      "chasi": 13,
+      "title": "59",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "동사",
+          "definition": "자라나는 변화에 대한 설명)"
+        },
+        {
+          "name": "어느",
+          "definition": "일정한 범위의 사물 중에서 일부 사물에 한정됨을 나타냄. Ÿ 무슨：‘무엇’이라고 지적하는 방식으로 사물을 한정함. Ÿ 어떤：‘어떻다’라고 묘사하는 방식으로 사물을 한정함. Ÿ 웬：상황과의 관련성을 모름을 나타냄. Ÿ 아무：모든 사물에 관련됨을 나타냄. 부정문에 쓰임."
+        },
+        {
+          "name": "아무런",
+          "definition": "다양한 상태의 모든 사물에 관련됨을 나타냄. 부정문에 쓰임. 3) 관형사의 특성"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0513",
+      "book_id": "GRM",
+      "week": 5,
+      "chasi": 13,
+      "title": "61",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0514",
+      "book_id": "GRM",
+      "week": 5,
+      "chasi": 14,
+      "title": "63",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의하여 교수해야 함"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0514",
+      "book_id": "GRM",
+      "week": 5,
+      "chasi": 14,
+      "title": "65",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": [
+        "중국"
+      ]
+    },
+    {
+      "id": "GRM_0515",
+      "book_id": "GRM",
+      "week": 5,
+      "chasi": 15,
+      "title": "67",
+      "learning_goals": [
+        "높임법의 교수에 대해 알 수 있다. 2. 양태의 교수에 대해 알 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "명사",
+          "definition": "밥-진지, 나이-연세, 이-치아, 말-말씀, 이름-성함, 집-댁, 생일-생"
+        },
+        {
+          "name": "동사",
+          "definition": "자다-주무시다, 먹다-잡수시다/드시다, 있다-계시다, 죽다-돌아가시"
+        },
+        {
+          "name": "높임",
+          "definition": "말하는 이가 주어와 관련된 신체 부분, 소유물, 생각 등을 높임"
+        },
+        {
+          "name": "압존법",
+          "definition": "주체가 청자보다 낮은 지위에 있는 경우에는 높임 표지 ‘-(으)시-‘를 넣을"
+        },
+        {
+          "name": "완화",
+          "definition": "국립국어원의 표준언어예절에서 가정, 회사 내의"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0515",
+      "book_id": "GRM",
+      "week": 5,
+      "chasi": 15,
+      "title": "69",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "격식체",
+          "definition": "해라체, 하게체, 하오체, 하십시오체"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0515",
+      "book_id": "GRM",
+      "week": 5,
+      "chasi": 15,
+      "title": "71",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0616",
+      "book_id": "GRM",
+      "week": 6,
+      "chasi": 16,
+      "title": "73",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "어미",
+          "definition": "'-았-/-었-' ⇒ 나는 빵을 먹었다. Ÿ 대과거：'-았었-/-었었-' 나는 옛날에 그곳에 갔었다. ↳ ’-았었-/-었었-‘도 과거를 나타내는 표현이며, 발화시(發話時)보다 훨씬 전에"
+        },
+        {
+          "name": "어미",
+          "definition": "'-(으)ㄴ-' ⇒ 나는 커피를 마신 후에 사탕을 먹었다. Ÿ 과거 회상 시제 선어말 어미：'-던-' ⇒ 나는 여기서 놀던 기억이 떠올랐다. Ÿ 시간 부사어：어제, 옛날 등 ⇒ 나는 어제 영화를 봤다. Ÿ 선어말 어미：’-더-‘"
+        },
+        {
+          "name": "어미",
+          "definition": "'-는-/-ㄴ-' ⇒ 회의를 한다. Ÿ 관형사형 어미：'-ㄴ(형용사)', '-는(동사)' ⇒ 고양이가 자는 모습을 보았다. Ÿ 선어말 어미 없이 (형용사 기본형) ⇒ 리사는 참 아름답다. Ÿ 시간 부사어：지금, 오늘 ⇒ 우리는 지금 출발한다. 3) 미래 시제"
+        },
+        {
+          "name": "어미",
+          "definition": "'-리-' ⇒ 오늘 오후 4시에 다시 전화하리다.(의지) Ÿ 관형사형 어미：'-ㄹ-' ⇒ 그는 내일 올 거야.(추정) Ÿ 시간 부사어 ⇒ 우리는 내일 만날 것이다."
+        },
+        {
+          "name": "시제",
+          "definition": "발화시를 기준으로 하는 시제"
+        },
+        {
+          "name": "시제",
+          "definition": "발화시가 아닌 어떤 다른 상황의 사건시를 기준으로 하는 시제"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0616",
+      "book_id": "GRM",
+      "week": 6,
+      "chasi": 16,
+      "title": "75",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0617",
+      "book_id": "GRM",
+      "week": 6,
+      "chasi": 17,
+      "title": "77",
+      "learning_goals": [
+        "사동법의 교수에 대해 알 수 있다. 2. 피동법의 교수에 대해 알 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의 사동 행위와 피사동주의 피사동 행위 간의 인과 관계에 대한 언어적 표현 양식"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0617",
+      "book_id": "GRM",
+      "week": 6,
+      "chasi": 17,
+      "title": "79",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "참고",
+          "definition": "사동법의 오류 ] *그를 보자 가슴이 설레이기 시작했다.(×) → 그를 보자 가슴이 설레기 시작했다.(○)"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의해 주시기 바랍니다.(×) → 우리",
+        "주의해 주시기 바랍니다.(○)",
+        "오류 ] *그를 보자 가슴이 설레이기 시작했다.(×) → 그를 보자 가슴이 설레기 시작했다.(○)"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0617",
+      "book_id": "GRM",
+      "week": 6,
+      "chasi": 17,
+      "title": "81",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "피동",
+          "definition": "파생적 피동이나 통사적 피동을 겹쳐 사용하는 것은 바람직하지 않다. ⇒ *이 기사는 정부의 정책을 비판하는 것으로 보여진다(보+이+어지+ㄴ+"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0618",
+      "book_id": "GRM",
+      "week": 6,
+      "chasi": 18,
+      "title": "83",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "어렵기만 함을 의미한다. ‘저는 말하라고 해서 말했"
+      ],
+      "topik_level": [
+        "중급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0618",
+      "book_id": "GRM",
+      "week": 6,
+      "chasi": 18,
+      "title": "85",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "교사",
+          "definition": "왕밍 씨, 주말에 주로 뭐 해요?"
+        },
+        {
+          "name": "학생",
+          "definition": "저는 영화를 봐요. 교사：그래요? 왕밍 씨는 영화를 정말 좋아하나 봐요. 선생님은 주로 청소를 해요. 그렇지"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류를 줄일 수 있다고 판단되는 제약 정보 내용을 기술함",
+        "오류와 관계가 없다면 [형태 정보]에서 기술함"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0618",
+      "book_id": "GRM",
+      "week": 6,
+      "chasi": 18,
+      "title": "87",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "웹사이트",
+          "definition": "한국어교수학습샘터 https：//kcenter.korean.go.kr/kcenter/index.do"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류를 보이는 문법 항목을 비교, 대조함"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0719",
+      "book_id": "GRM",
+      "week": 7,
+      "chasi": 19,
+      "title": "89",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "기준",
+          "definition": "조사의 빈도, 조사의 결합 제약 등 다양한 요인 고려 필요"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "혼동에 대한 정보도 제공될 필요가 있음"
+      ],
+      "topik_level": [
+        "고급"
+      ],
+      "related_countries": [
+        "일본"
+      ]
+    },
+    {
+      "id": "GRM_0719",
+      "book_id": "GRM",
+      "week": 7,
+      "chasi": 19,
+      "title": "91",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "혼동이 생기는 경우가 있음"
+      ],
+      "topik_level": [],
+      "related_countries": [
+        "중국"
+      ]
+    },
+    {
+      "id": "GRM_0720",
+      "book_id": "GRM",
+      "week": 7,
+      "chasi": 20,
+      "title": "93",
+      "learning_goals": [
+        "주요 조사의 교수 방안을 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "서술어",
+          "definition": "‘되다, 아니다, 좋다, 싫다, 무섭다’ 등의 심리형용사"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "혼동하기 쉬움"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0720",
+      "book_id": "GRM",
+      "week": 7,
+      "chasi": 20,
+      "title": "95",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0720",
+      "book_id": "GRM",
+      "week": 7,
+      "chasi": 20,
+      "title": "97",
+      "learning_goals": [
+        "초급 조사의 교수 제시 사례를 알 수 있다. 2. 중급 조사의 교수 제시 사례를 알 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0721",
+      "book_id": "GRM",
+      "week": 7,
+      "chasi": 21,
+      "title": "99",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "교사",
+          "definition": "(앞으로 가는 모습을 보이며) 선생님이 지금 어느 쪽 가요?"
+        },
+        {
+          "name": "학생",
+          "definition": "앞 가요. 교사：네. 선생님이 앞으로 가요. 교사：(뒷걸음질 치는 모습을 보이며) 선생님이 지금 어느 쪽 가요?"
+        },
+        {
+          "name": "학생",
+          "definition": "뒤 가요. 교사：네. 선생님이 뒤로 가요. (4) 형태 정보"
+        },
+        {
+          "name": "교사",
+          "definition": "(학생의 책을 달라고 해서 들고) 이 책 누구 거예요?"
+        },
+        {
+          "name": "학생",
+          "definition": "미도리요. 교사：네, 이 책은 미도리의 책이에요. (다른 학생의 책을 달라고 해서 또 물어본다) 이"
+        },
+        {
+          "name": "학생",
+          "definition": "왕밍요. 교사：네, 이 책은 왕밍의 책이에요. (교사의 책을 들고) 이 책은 누구 거예요?"
+        },
+        {
+          "name": "학생",
+          "definition": "선생님의 책이에요. (4) 형태 정보"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0721",
+      "book_id": "GRM",
+      "week": 7,
+      "chasi": 21,
+      "title": "101",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "교사",
+          "definition": "(티셔츠 그림이나 사진을 보이면서) 이 옷은 50만 원이에요. 싸요, 비싸요?"
+        },
+        {
+          "name": "학생",
+          "definition": "티셔츠인데 오십만 원이요? 너무 비싸요. 교사：(가격이 가려진 더 비싸 보이는 티셔츠 사진 보이면서) 이 옷은 얼마일까요?"
+        },
+        {
+          "name": "학생",
+          "definition": "오십만 원이요. 교사：(가격표 48만 원을 보이면서) 맞아요. 이 옷은 비싸요. 이 옷도 아까 그 옷만큼"
+        },
+        {
+          "name": "교사",
+          "definition": "여러분 한국 음식 만들 줄 아세요?"
+        },
+        {
+          "name": "학생",
+          "definition": "네, 불고기를 만들 줄 알아요. 학생：김치찌개를 만들어 봤어요. 교사：우와, 대단해요. 선생님은 한국 사람인데도 김치찌개를 못 만들어요. 당연히 불고"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0721",
+      "book_id": "GRM",
+      "week": 7,
+      "chasi": 21,
+      "title": "103",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0822",
+      "book_id": "GRM",
+      "week": 8,
+      "chasi": 22,
+      "title": "105",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "평서형어미",
+          "definition": "아기가 먹는다. 학교에 갑니다. 감탄형어미：아기가 먹는구나! 학교에 가는군요!"
+        },
+        {
+          "name": "의문형어미",
+          "definition": "아기가 먹니? 학교에 가요?"
+        },
+        {
+          "name": "명령형어미",
+          "definition": "아기야, 먹어. 학교에 가오. 청유형어미：아기야, 먹자. 학교에 가자. (2) 비종결어미"
+        },
+        {
+          "name": "어미",
+          "definition": "본용언과 뒤따르는 보조용언이 어울려 하나의 서술어가 되게 하"
+        },
+        {
+          "name": "어미",
+          "definition": "선행절과 후행절이 서로 맞섬의 성격을 나타내게 하는 형태이"
+        },
+        {
+          "name": "어미",
+          "definition": "선행절과 후행절을 주종 관계로 연결하는 형태이다. 선행절과"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0822",
+      "book_id": "GRM",
+      "week": 8,
+      "chasi": 22,
+      "title": "107",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "개념",
+          "definition": "이어지는 단순문들의 의미 관계가 대등함. Ÿ 실현：대등적 연결 어미 ‘-고, -며 ’(나열), ‘-지만, -든지, -나’(대조) 등으로 실현"
+        },
+        {
+          "name": "개념",
+          "definition": "앞 절과 뒤 절의 의미 관계가 독립적이지 못하고 종속적임(국어에서 종속적"
+        },
+        {
+          "name": "실현",
+          "definition": "앞 절과 뒤 절이 어떠한 의미 관계를 가지느냐에 따라 다양한 종속적 연결"
+        },
+        {
+          "name": "문장",
+          "definition": "안긴 문장을 포함한 문장"
+        },
+        {
+          "name": "문장",
+          "definition": "다른 문장 속에 들어가 하나의 성분처럼 쓰이는 단순문"
+        },
+        {
+          "name": "개념",
+          "definition": "절 전체가 문장에서 명사처럼 쓰이는 문장으로 주어, 목적어, 보어, 부사어"
+        },
+        {
+          "name": "실현",
+          "definition": "명사형 어미 ‘-(으)ㅁ, -기’가 붙어서 이루어진다. (-(으)ㅁ →완료의 의미 / -기 →미완료의 의미) Ÿ 그 일은 하기가 쉽지 않다. (명사절이 주어 기능) Ÿ 우리는 그가 정당했음을 깨달았다. (명사절이 목적어 기능) Ÿ 지금은 집에 가기에 이른 시간이다. ("
+        },
+        {
+          "name": "개념",
+          "definition": "절 전체가 문장에서 관형어의 기능을 함"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0822",
+      "book_id": "GRM",
+      "week": 8,
+      "chasi": 22,
+      "title": "109",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "실현",
+          "definition": "서술절은 절 표지가 따로 없다는 점에서 다른 안긴 문장과 차이를 보임"
+        },
+        {
+          "name": "개념",
+          "definition": "다른 사람의 말을 인용한 것이 절의 형식으로 안김"
+        },
+        {
+          "name": "개념",
+          "definition": "주어진 문장을 그대로 직접 인용하는 것"
+        },
+        {
+          "name": "실현",
+          "definition": "인용격 조사 ‘라고’, ‘하고’로 실현"
+        },
+        {
+          "name": "개념",
+          "definition": "말하는 사람의 표현으로 바꾸어서 간접 인용한 것"
+        },
+        {
+          "name": "실현",
+          "definition": "인용격 조사 ‘고’가 붙어 실현. 서술격 조사 ‘이다’로 끝난 간접 인용절에서"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0823",
+      "book_id": "GRM",
+      "week": 8,
+      "chasi": 23,
+      "title": "111",
+      "learning_goals": [
+        "어미의 제약을 알 수 있다. 2. 어미의 제약을 고려한 문법 교수를 할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "어미",
+          "definition": "-고, -게, -겠-, -지…"
+        },
+        {
+          "name": "어미",
+          "definition": "-어/-아, -었-/-았-, -어서/-아서…"
+        },
+        {
+          "name": "어미",
+          "definition": "-(으)니, -(으)면, -(으)ㄴ, -(으)ㅁ, -(으)시…"
+        },
+        {
+          "name": "가다",
+          "definition": "가- + -아요 → *(가아요) → 가요"
+        },
+        {
+          "name": "서다",
+          "definition": "서- + -어요 → *(서어요) → 서요"
+        },
+        {
+          "name": "보다",
+          "definition": "보- + -어요 → *(보아요) → 봐요"
+        },
+        {
+          "name": "주다",
+          "definition": "주- + -어요 → 주어요 → 줘요"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0823",
+      "book_id": "GRM",
+      "week": 8,
+      "chasi": 23,
+      "title": "113",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0823",
+      "book_id": "GRM",
+      "week": 8,
+      "chasi": 23,
+      "title": "115",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0824",
+      "book_id": "GRM",
+      "week": 8,
+      "chasi": 24,
+      "title": "117",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "참고",
+          "definition": "선어말 어미 ‘-시-’의 구체적 문법 교수 내용 ]"
+        },
+        {
+          "name": "교사",
+          "definition": "(책 읽는 그림을 보여 주며) 앤디 씨는 무엇을 해요?"
+        },
+        {
+          "name": "학생",
+          "definition": "앤디 씨가 책을 읽어요. 교사：선생님은 지금 무엇을 해요?"
+        },
+        {
+          "name": "학생",
+          "definition": "선생님은 책을 읽어요. 교사：선생님은 책을 읽어요. 선생님께서 책을 읽으세요. * ‘-으시-’를 도입할 때는 높임을 받지 않는 대상과 높임을 받는 대상을 비교하여 도입"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0824",
+      "book_id": "GRM",
+      "week": 8,
+      "chasi": 24,
+      "title": "119",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "참고",
+          "definition": "선어말 어미 ‘-었-’의 구체적 문법 교수 내용 ]"
+        },
+        {
+          "name": "교사",
+          "definition": "어제 무엇을 해요?"
+        },
+        {
+          "name": "학생",
+          "definition": "공부를 해요. 교사：어제 공부를 해요. 어제 공부를 했어요. (2) 교사：수지 씨, 고등학교 때 키가 커요? 작아요?"
+        },
+        {
+          "name": "학생",
+          "definition": "키가 작아요. 교사：키가 작아요. 수지 씨는 고등학교 때 키가 작았어요. * ‘-었-’은 (1), (2)와 같이 ‘어제, 지난 주말’과 같은 가까운 과거에서부터 ‘작년, 고등학"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "노래"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0824",
+      "book_id": "GRM",
+      "week": 8,
+      "chasi": 24,
+      "title": "121",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0925",
+      "book_id": "GRM",
+      "week": 9,
+      "chasi": 25,
+      "title": "123",
+      "learning_goals": [
+        "어말 어미의 교수를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "연결어미",
+          "definition": "어간에 붙어 다음 말에 연결하는 역할을 함"
+        },
+        {
+          "name": "종결어미",
+          "definition": "문장을 끝맺는 기능을 함"
+        },
+        {
+          "name": "전성어미",
+          "definition": "용언의 어간에 붙어 다른 품사의 기능을 수행하게 하는 어미"
+        },
+        {
+          "name": "참고",
+          "definition": "종결어미를 교육할 때 유의할 사항]"
+        },
+        {
+          "name": "표현",
+          "definition": "-냐니(요), -냐고(요), -냐니까(요), -냐면서(요), -는다고(요), -는"
+        },
+        {
+          "name": "표현",
+          "definition": "-네(요), -는군(요), -는구나"
+        },
+        {
+          "name": "표현",
+          "definition": "-거든(요), -는단다, -잖아(요), -더라고(요), 는답니다"
+        },
+        {
+          "name": "표현",
+          "definition": "-을게(요), -을래(요), -을테다"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0925",
+      "book_id": "GRM",
+      "week": 9,
+      "chasi": 25,
+      "title": "125",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0925",
+      "book_id": "GRM",
+      "week": 9,
+      "chasi": 25,
+      "title": "127",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0926",
+      "book_id": "GRM",
+      "week": 9,
+      "chasi": 26,
+      "title": "129",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0926",
+      "book_id": "GRM",
+      "week": 9,
+      "chasi": 26,
+      "title": "131",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "노래"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0927",
+      "book_id": "GRM",
+      "week": 9,
+      "chasi": 27,
+      "title": "133",
+      "learning_goals": [
+        "한국어 교육 문법 항목의 등급화를 설명할 수 있다. 2. 한국어 교육 문법 항목의 선정 기준을 설명할 수 있다. 3. 한국어 교육 문법 항목의 배열 기준을 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0927",
+      "book_id": "GRM",
+      "week": 9,
+      "chasi": 27,
+      "title": "135",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "교사",
+          "definition": "어떤 문법이 가르치기 쉬운 항목일까?"
+        },
+        {
+          "name": "학습자",
+          "definition": "어떤 항목이 배우기 쉬운 항목일까?"
+        },
+        {
+          "name": "문법",
+          "definition": "핵심적인 문법을 우선으로 교육함"
+        },
+        {
+          "name": "학습자요구",
+          "definition": "학습자가 자주 부딪히는 의사소통 상황에서 쓰이는 문법 항목을 우선으로"
+        },
+        {
+          "name": "가능성",
+          "definition": "일반화 가능성이 높은 문법을 우선으로 교육함"
+        },
+        {
+          "name": "효과",
+          "definition": "선수 학습 효과가 커서 다른 문법 항목의 학습에 적용할 수 있는 것을"
+        },
+        {
+          "name": "난이도",
+          "definition": "학습자가 이해하고 사용할 수 있는 정도의 어려움을 뜻하는 난이도를 고려하여"
+        },
+        {
+          "name": "복잡도",
+          "definition": "간단한 구조의 문법을 먼저, 복잡한 것을 나중에 교육함"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0927",
+      "book_id": "GRM",
+      "week": 9,
+      "chasi": 27,
+      "title": "137",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "고급",
+        "중급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_0927",
+      "book_id": "GRM",
+      "week": 9,
+      "chasi": 27,
+      "title": "139",
+      "learning_goals": [
+        "교육용 조사 선정에 대해 설명할 수 있다. 2. 교육용 조사의 쟁점을 알 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1028",
+      "book_id": "GRM",
+      "week": 10,
+      "chasi": 28,
+      "title": "141",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1028",
+      "book_id": "GRM",
+      "week": 10,
+      "chasi": 28,
+      "title": "143",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "구성",
+          "definition": "은/는, 로, 조차"
+        },
+        {
+          "name": "구성",
+          "definition": "~에서 ~까지, ~부터 ~까지"
+        },
+        {
+          "name": "구성",
+          "definition": "만으로는, 로부터, 에서만"
+        },
+        {
+          "name": "표현",
+          "definition": "에 대해서, 에 따르면"
+        },
+        {
+          "name": "조사",
+          "definition": "아무 ~도, 아무 ~이나"
+        },
+        {
+          "name": "서술어",
+          "definition": "에 가다, 이/가 아니다"
+        },
+        {
+          "name": "조사",
+          "definition": "-음으로써, -기에는"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1028",
+      "book_id": "GRM",
+      "week": 10,
+      "chasi": 28,
+      "title": "145",
+      "learning_goals": [
+        "교육용 어미의 선정에 대해 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1029",
+      "book_id": "GRM",
+      "week": 10,
+      "chasi": 29,
+      "title": "147",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "평서",
+          "definition": "-습니다, -어(요), -는다 + -던데(요), -지(요), -잖아(요), -을걸, -을게(요) Ÿ 의문：-습니까, -어(요) + -을까(요), -을래요, -지(요) Ÿ 명령：-으세요, -으십시오, -어 + -(으)시겠어요"
+        },
+        {
+          "name": "제안",
+          "definition": "-을까요, -을래요, -읍시다, -자"
+        },
+        {
+          "name": "금지",
+          "definition": "-(으)렴, -(으)려무나, -어도 좋아(요), -(으)면 안 돼(요) Ÿ 약속：-(으)마, -을게요(요)"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1029",
+      "book_id": "GRM",
+      "week": 10,
+      "chasi": 29,
+      "title": "149",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1029",
+      "book_id": "GRM",
+      "week": 10,
+      "chasi": 29,
+      "title": "151",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "기타",
+          "definition": "독립된 연결 어미이지만 큰 의미 차이 없이 바꿔 쓸 수 있는 것들은 대체 표현"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1030",
+      "book_id": "GRM",
+      "week": 10,
+      "chasi": 30,
+      "title": "153",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "교사",
+          "definition": "겨울이에요. 날씨가 어때요?"
+        },
+        {
+          "name": "학생",
+          "definition": "춥습니다. 교사：네, 춥습니다. 겨울은 추워요."
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "문법번역식"
+      ],
+      "cautions": [
+        "오류가 고착되는 것을 막을 수 있음"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1030",
+      "book_id": "GRM",
+      "week": 10,
+      "chasi": 30,
+      "title": "155",
+      "learning_goals": [
+        "과제 보조 모형(PPP 모형)을 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의를 기울이도록 해야 함"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1131",
+      "book_id": "GRM",
+      "week": 11,
+      "chasi": 31,
+      "title": "157",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1131",
+      "book_id": "GRM",
+      "week": 11,
+      "chasi": 31,
+      "title": "159",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류들을 보완하고 수정",
+        "오류를 지적하고 수정함",
+        "주의를 기울이지 않"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1132",
+      "book_id": "GRM",
+      "week": 11,
+      "chasi": 32,
+      "title": "161",
+      "learning_goals": [
+        "형태 초점 기법(Focus on form)을 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의 수업을 하는 중에 의미를 이해하거나 표현을 하는 데 있어서"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1132",
+      "book_id": "GRM",
+      "week": 11,
+      "chasi": 32,
+      "title": "163",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "학습자",
+          "definition": "저는 7월 6일에 제주도에 갔습니다. 교 사：네. 7월 6일에 제주도에 갔어요?"
+        },
+        {
+          "name": "학습자",
+          "definition": "네…7월 6일에 제주도에 갔어요. (6) 출력 강화"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류 유도(=가든 패스)",
+        "주의적 집중이",
+        "주의를 기울이게 함"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1132",
+      "book_id": "GRM",
+      "week": 11,
+      "chasi": 32,
+      "title": "165",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [
+        "오류를 수정해 보게",
+        "주의를 집중하는 인지적 과정을 거치면서 문법에",
+        "오류 유도하기(=가든 패스) Ÿ 교사가 의도적으로 학습자의 과잉 일반화 오류를 유도한 후에 이를 고쳐 주고 문법"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1133",
+      "book_id": "GRM",
+      "week": 11,
+      "chasi": 33,
+      "title": "167",
+      "learning_goals": [
+        "문법 연습 활동 유형을 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "문형",
+          "definition": "( )에 ( )이/가 있습니다. 교사：교실 / 의자 교실에 의자가 있습니다. 책상 위 / 지우개 책상 위에 지우개가 있습니다. 학생：교사가 제시한 어휘 등을 바탕으로 교체 연습"
+        },
+        {
+          "name": "문형",
+          "definition": "-(으)ㄴ/는 가운데"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1133",
+      "book_id": "GRM",
+      "week": 11,
+      "chasi": 33,
+      "title": "169",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "문형",
+          "definition": "-았/었/했으면 합니다. 교사：돈을 많이 벌고 싶어요. 학생：돈을 많이 벌었으면 합니다. 내일은 쉬고 싶어요. → ( )"
+        },
+        {
+          "name": "문형",
+          "definition": "-지 마세요. 교사：교실 문을 닫으세요. 창문을 여세요. 학생：교실 문을 닫지 마세요. 창문을 열지 마세요. 불을 끄세요. → ( )"
+        },
+        {
+          "name": "문형",
+          "definition": "-(으)ㄴ/는 가운데"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1133",
+      "book_id": "GRM",
+      "week": 11,
+      "chasi": 33,
+      "title": "171",
+      "learning_goals": [
+        "문법 교수의 절차를 알 수 있다. 2. 문법 교수의 단계를 알 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "문형",
+          "definition": "-으면/면 + ( )"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "게임"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1234",
+      "book_id": "GRM",
+      "week": 12,
+      "chasi": 34,
+      "title": "173",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "교사",
+          "definition": "어제 왜 학교에 안 왔어요?"
+        },
+        {
+          "name": "학생",
+          "definition": "아팠어요. 교사：아, 아파서 못 왔어요. 따라하세요. ‘아파서 학교에 못 왔어요.’ Ÿ 교사가 문장 속에 목표 문법을 맥락에 넣어 말함 + 학생이 목표 문법이 들어 있는"
+        },
+        {
+          "name": "교사",
+          "definition": "이 사진은 무엇을 하는 것 같아요?"
+        },
+        {
+          "name": "학생",
+          "definition": "공부를 해요. 교사：공부를 하는 것 같아요. 따라하세요. ‘공부하는 것 같아요.’"
+        },
+        {
+          "name": "교사",
+          "definition": "저 사진에서 날씨가 어떤 것 같아요?"
+        },
+        {
+          "name": "학생",
+          "definition": "비가 와요. 교사：비가 오는 것 같아요. 따라하세요. ‘비가 오는 것 같아요.’ Ÿ 교재를 제작할 때 시각 자료를 이용한 도입 방법을 많이 사용함"
+        },
+        {
+          "name": "교사",
+          "definition": "(책과 연필이 놓인 책상을 가리키며) 책상 위에 무엇이 있어요?"
+        },
+        {
+          "name": "학생",
+          "definition": "책, 연필이 있어요. 교사：네, 책하고 연필이 있어요. 교실에 무엇이 있어요?"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의를 잘 끌 수 있고 학습자가 관심을 가질 법한 내용을 담"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1234",
+      "book_id": "GRM",
+      "week": 12,
+      "chasi": 34,
+      "title": "175",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "연습",
+          "definition": "구조적 연습을 마치면 이 문법이 사용되는 실제적인 상황을 제공하"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1235",
+      "book_id": "GRM",
+      "week": 12,
+      "chasi": 35,
+      "title": "177",
+      "learning_goals": [
+        "말하기와 문법 교육에 대해 설명할 수 있다. 2. 쓰기와 문법 교육에 대해 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1235",
+      "book_id": "GRM",
+      "week": 12,
+      "chasi": 35,
+      "title": "179",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "구조",
+          "definition": "연결어미 '-아/어' + 동사 '가지다/갖다' + 연결어미 '-고'"
+        },
+        {
+          "name": "의미",
+          "definition": "선행절의 행위를 하여 그것을 보유하고, 또는 지니고 그 다음에 후행절의"
+        },
+        {
+          "name": "구조",
+          "definition": "의도를 나타내는 '-(으)려고 하다'와 당위성을 나타내는 연결어미 '-아/어야' 가 결합한 '-(으)려고 해야'의 준말이다. 후행절에는 부정 형태의 문형, '이/가 없"
+        },
+        {
+          "name": "의미",
+          "definition": "화자가 의지를 가지고 아무리 노력해도 더 이상 어떻게 할 수 없음을 나타"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "어렵기 때문에 문장 내의"
+      ],
+      "topik_level": [
+        "중급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1235",
+      "book_id": "GRM",
+      "week": 12,
+      "chasi": 35,
+      "title": "181",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "어렵다고 피할 수 있는 일은 아니다. * 비싸다고 해서 다 좋은 것은 아니다. * 돈이 많다고 해서 마음도 살 수 있는 건 아니야!"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1236",
+      "book_id": "GRM",
+      "week": 12,
+      "chasi": 36,
+      "title": "183",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "구조",
+          "definition": "연결어미 '-아/어서' + 동사 '그러하다' + 연결어미 '-(으)ㄴ지'"
+        },
+        {
+          "name": "의미",
+          "definition": "'선행절 때문에 후행절과 같은 결과가 생겼다고 단정할 수는 없지만' ㉢ 예문"
+        },
+        {
+          "name": "종결어미",
+          "definition": "평서문, 의문문, 명령문, 청유문 등의 문장 유형을 표시함"
+        },
+        {
+          "name": "청자대우법",
+          "definition": "해라체, 해체, 하게체, 하오체, 해요체"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의해야 한다. 시원한 카페가 참 좋다. (형) / 꽃이 예쁘다. (형)"
+      ],
+      "topik_level": [
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1236",
+      "book_id": "GRM",
+      "week": 12,
+      "chasi": 36,
+      "title": "185",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "읽기",
+          "definition": "이해에 필수적인 개별 문법 요소나 구 단위 문법 항목의 의미와 용법을 파악"
+        },
+        {
+          "name": "참고",
+          "definition": "학문 목적의 학습자 대상 교육 ]"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1337",
+      "book_id": "GRM",
+      "week": 13,
+      "chasi": 37,
+      "title": "187",
+      "learning_goals": [
+        "교재 속 문법의 역할을 알 수 있다. 2. 문법 교재의 선정 및 개발에 대해 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1337",
+      "book_id": "GRM",
+      "week": 13,
+      "chasi": 37,
+      "title": "189",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "참고",
+          "definition": "연습 문제가 지향하는 척도의 정도성"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1338",
+      "book_id": "GRM",
+      "week": 13,
+      "chasi": 38,
+      "title": "191",
+      "learning_goals": [
+        "문법 평가의 필요성에 대해 설명할 수 있다. 2. 문법 평가의 요소를 알 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1338",
+      "book_id": "GRM",
+      "week": 13,
+      "chasi": 38,
+      "title": "193",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "요소들",
+          "definition": "연결 표현, 전성 표현, 조사의 기능"
+        },
+        {
+          "name": "파악하기",
+          "definition": "의문사, 대명사, 부정법, 종결법 등"
+        },
+        {
+          "name": "파악하기",
+          "definition": "경어법, 부정법, 사동법, 피동법, 시제 표현, 간접 화법"
+        },
+        {
+          "name": "찾기",
+          "definition": "비문 찾기, 불규칙 활용"
+        },
+        {
+          "name": "요소",
+          "definition": "접속 표현, 응집 표현 등"
+        },
+        {
+          "name": "관계",
+          "definition": "의존 명사 결합형, 부사와 용언 공기, 보조동사의 용법 등"
+        },
+        {
+          "name": "정확성",
+          "definition": "그 문법 형태를 정확하게 사용하는가"
+        },
+        {
+          "name": "정확성",
+          "definition": "사회적 기능, 담화적 기능을 모두 포함하는가"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류 찾기：비문 찾기, 불규칙 활용"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1339",
+      "book_id": "GRM",
+      "week": 13,
+      "chasi": 39,
+      "title": "195",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "출처",
+          "definition": "제 83회 한국어능력시험Ⅰ B형 | https："
+        },
+        {
+          "name": "남자",
+          "definition": "① 네. 책을 싫어해요. → ‘책을 싫어해요?’의 대답으로 적절"
+        },
+        {
+          "name": "출처",
+          "definition": "제 83회 한국어능력시험Ⅰ B형 | https："
+        },
+        {
+          "name": "여자",
+          "definition": "공항에 어떻게 갔어요?"
+        },
+        {
+          "name": "남자",
+          "definition": "① 어제 갔어요. → ‘공항에 언제 갔어요?’의 대답으로 적절"
+        },
+        {
+          "name": "출처",
+          "definition": "제 83회 한국어능력시험Ⅰ B형 | https："
+        },
+        {
+          "name": "출처",
+          "definition": "제 83회 한국어능력시험Ⅰ B형 | https："
+        },
+        {
+          "name": "출처",
+          "definition": "제 83회 한국어능력시험Ⅰ B형 | https："
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "초급",
+        "TOPIK1",
+        "TOPIK 1",
+        "TOPIK 2",
+        "중급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1339",
+      "book_id": "GRM",
+      "week": 13,
+      "chasi": 39,
+      "title": "197",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "출처",
+          "definition": "국립국제교육원 제25회 한국어능력시험 고급 1교시 B형"
+        },
+        {
+          "name": "출처",
+          "definition": "국립국제교육원 제25회 한국어능력시험 중급 1교시 B형"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "고급",
+        "TOPIK2"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "GRM_1339",
+      "book_id": "GRM",
+      "week": 13,
+      "chasi": 39,
+      "title": "199",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    }
+  ]
+}

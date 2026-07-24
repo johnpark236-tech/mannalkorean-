@@ -1,0 +1,4151 @@
+{
+  "meta": {
+    "book_id": "EXP",
+    "title": "한국어표현교육론",
+    "professor": "",
+    "type": "전공필수",
+    "total_units": 191,
+    "total_concepts": 220,
+    "extracted": "2026-07-24",
+    "data_type": "메타데이터 — 내부 연구용"
+  },
+  "units": [
+    {
+      "id": "EXP_011",
+      "book_id": "EXP",
+      "week": 1,
+      "chasi": 1,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_012",
+      "book_id": "EXP",
+      "week": 1,
+      "chasi": 2,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_013",
+      "book_id": "EXP",
+      "week": 1,
+      "chasi": 3,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_024",
+      "book_id": "EXP",
+      "week": 2,
+      "chasi": 4,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_025",
+      "book_id": "EXP",
+      "week": 2,
+      "chasi": 5,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_026",
+      "book_id": "EXP",
+      "week": 2,
+      "chasi": 6,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_037",
+      "book_id": "EXP",
+      "week": 3,
+      "chasi": 7,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_038",
+      "book_id": "EXP",
+      "week": 3,
+      "chasi": 8,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_039",
+      "book_id": "EXP",
+      "week": 3,
+      "chasi": 9,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0410",
+      "book_id": "EXP",
+      "week": 4,
+      "chasi": 10,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0411",
+      "book_id": "EXP",
+      "week": 4,
+      "chasi": 11,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0412",
+      "book_id": "EXP",
+      "week": 4,
+      "chasi": 12,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0513",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 13,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0514",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 14,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0515",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 15,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0616",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 16,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0617",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 17,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0618",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 18,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0719",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 19,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0720",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 20,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0721",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 21,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0822",
+      "book_id": "EXP",
+      "week": 8,
+      "chasi": 22,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0823",
+      "book_id": "EXP",
+      "week": 8,
+      "chasi": 23,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0824",
+      "book_id": "EXP",
+      "week": 8,
+      "chasi": 24,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0925",
+      "book_id": "EXP",
+      "week": 9,
+      "chasi": 25,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0926",
+      "book_id": "EXP",
+      "week": 9,
+      "chasi": 26,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0927",
+      "book_id": "EXP",
+      "week": 9,
+      "chasi": 27,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1028",
+      "book_id": "EXP",
+      "week": 10,
+      "chasi": 28,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1029",
+      "book_id": "EXP",
+      "week": 10,
+      "chasi": 29,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1030",
+      "book_id": "EXP",
+      "week": 10,
+      "chasi": 30,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1131",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 31,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1132",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 32,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1133",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 33,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1234",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 34,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1235",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 35,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1236",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 36,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1337",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 37,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1338",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 38,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1339",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 39,
+      "title": "·····························",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_011",
+      "book_id": "EXP",
+      "week": 1,
+      "chasi": 1,
+      "title": "1",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_011",
+      "book_id": "EXP",
+      "week": 1,
+      "chasi": 1,
+      "title": "",
+      "learning_goals": [
+        "말하기란 무엇인지 이해한다. 2. 말하기의 특성을 파악한다"
+      ],
+      "key_concepts": [
+        {
+          "name": "의사소통",
+          "definition": "음성 언어를 의미의 매체로 활용"
+        },
+        {
+          "name": "의사소통",
+          "definition": "음성 언어를 제외한 모든 의사소통, 다양한 의미의 매체 활용"
+        },
+        {
+          "name": "반언어",
+          "definition": "억양, 어조, 강세, 속도, 휴지, 침묵 등"
+        },
+        {
+          "name": "언어",
+          "definition": "표정, 시선, 손짓, 몸자세, 의상, 스트레오타입 등"
+        },
+        {
+          "name": "언어",
+          "definition": "시간, 공간, 거리, 좌석 배치, 기후, 실내 배경 등"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "어렵다. ④ 일반적인 모국어 화자의 경우, 듣기와 말하기는 특별한 가르침 없이 모국어 환경에서 자연스럽"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_011",
+      "book_id": "EXP",
+      "week": 1,
+      "chasi": 1,
+      "title": "3",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "정의",
+          "definition": "의미를 언어로 변형하는 인지적 작용 과정"
+        },
+        {
+          "name": "정의",
+          "definition": "개인의 내재 동기를 충족할 수 있게 언어적 또는 비언어적으로 표현하는 것"
+        },
+        {
+          "name": "정의",
+          "definition": "화자가 의사소통 상황에서 언어적, 비언어적 표현을 통해 청자에게 변화를"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "어렵게 하는 요인이기도 하지만, 적절히 고려하면 오히려"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_012",
+      "book_id": "EXP",
+      "week": 1,
+      "chasi": 2,
+      "title": "5",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_012",
+      "book_id": "EXP",
+      "week": 1,
+      "chasi": 2,
+      "title": "",
+      "learning_goals": [
+        "한국어 말하기 교육의 필요성이 무엇인지 안다. 2. 의사소통 능력과 한국어 말하기 능력의 관계를 이해한다"
+      ],
+      "key_concepts": [
+        {
+          "name": "능력",
+          "definition": "화자의 언어에 대한 지식으로 언어 사용에 내재된 문법적 능력"
+        },
+        {
+          "name": "수행",
+          "definition": "구체적 상황에서 실제로 언어를 사용할 수 있는 능력"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_012",
+      "book_id": "EXP",
+      "week": 1,
+      "chasi": 2,
+      "title": "7",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "능력",
+          "definition": "의사소통에 필요한 지식과 기술의 기저 체계"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "고급",
+        "중급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_013",
+      "book_id": "EXP",
+      "week": 1,
+      "chasi": 3,
+      "title": "9",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_013",
+      "book_id": "EXP",
+      "week": 1,
+      "chasi": 3,
+      "title": "",
+      "learning_goals": [
+        "등급별 한국어 말하기 교육의 목표를 파악하여 이를 설명할 수 있다. 2. 목적별 한국어 말하기 교육의 목표를 파악하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "한국어",
+          "definition": "학업을 수행하는 데 필요한 한국어"
+        },
+        {
+          "name": "한국어",
+          "definition": "직장 생활을 유지하는 데 필요한 한국어"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류가 나타날 수 있으며, 억양이 부자연스러운 경우가 많다. 고급"
+      ],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_013",
+      "book_id": "EXP",
+      "week": 1,
+      "chasi": 3,
+      "title": "11",
+      "learning_goals": [
+        "자신의 관심사(일상적 영역 등)에 대해 유창하게 말할 수 있다. 2. 친숙한 사회적 소재(직업, 사랑, 결혼 등)에 대해 간단하게 말할 수 있다",
+        "업무 맥락에서 요구되는 기본적인 의사소통 기능을 수행할 수 있다. 2. 대상과 상황에 따라 격식과 비격식을 구별해서 말할 수 있다",
+        "자신의 전문분야(직업적, 학문적 영역 등)에 대해 의견을 말할 수 있다. 2. 전반적인 사회적, 추상적 주제에 대해 자신의 의견을 최소한으로 말할 수 있다",
+        "전반적인 사회적, 추상적 주제에 관해 자신의 의견을 말할 수 있다. 2. 상황에 따라 한국어 담화구조를 이용해 자연스럽게 말할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "유창성",
+          "definition": "한국어를 사용하여 막힘없이 자연스럽게 사용하는 능력이나 정도"
+        },
+        {
+          "name": "정확성",
+          "definition": "명확하고 또렷하게 발음하며, 문법적이나 음운적으로 하자없는 한국어를"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_013",
+      "book_id": "EXP",
+      "week": 1,
+      "chasi": 3,
+      "title": "13",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "짝 활동"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_024",
+      "book_id": "EXP",
+      "week": 2,
+      "chasi": 4,
+      "title": "",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "교수법",
+          "definition": "행동주의 심리학과 구조주의 언어학이 바탕"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "직접 교수"
+      ],
+      "cautions": [
+        "주의 심리학과 구조주의 언어학이 바탕"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_024",
+      "book_id": "EXP",
+      "week": 2,
+      "chasi": 4,
+      "title": "15",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "직접 교수"
+      ],
+      "cautions": [
+        "주의 심리학과 구조주의 언어학을 토대로 1940년대 미국에서 시작된 교수법이다. ② 제2차 세계대전 중 정치적, 군사적 목적으로 적국의 언어에 능통한 사람이 필요하게 되자, 미 육군에"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_024",
+      "book_id": "EXP",
+      "week": 2,
+      "chasi": 4,
+      "title": "17",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "게임"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_025",
+      "book_id": "EXP",
+      "week": 2,
+      "chasi": 5,
+      "title": "",
+      "learning_goals": [
+        "교수법과 말하기 교육의 관계를 이해하여 설명할 수 있다. 2. 연구사를 통해 말하기 교육의 방향을 이해하여 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "교수법",
+          "definition": "학습자들의 신체적 반응을 통한 외국어 습득 방법"
+        },
+        {
+          "name": "교수법",
+          "definition": "습득-학습 가설, 모니터 가설, 자연적 순서 가설, 입력 가설, 감정 여과기 가설"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "자연 교수법"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_025",
+      "book_id": "EXP",
+      "week": 2,
+      "chasi": 5,
+      "title": "19",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "게임"
+      ],
+      "cautions": [
+        "어렵기도 하다. ② 추상적 어휘에 대한 설명은 제한적일 수 밖에 없어, 중/고급 학습자에게는 부적절하다. ③ 학습자마다 말하기를 위한 준비시점이 다를 수 있어, 이러한 활동을 어느 시",
+        "어렵다.",
+        "주의적 원리를 바탕으로 언어학자 Terrell과 응용언어학자인 Krashen에 의해"
+      ],
+      "topik_level": [
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_025",
+      "book_id": "EXP",
+      "week": 2,
+      "chasi": 5,
+      "title": "21",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "어렵고 복잡한 과정을 수반한다는 점에서 ʻ이해"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_026",
+      "book_id": "EXP",
+      "week": 2,
+      "chasi": 6,
+      "title": "",
+      "learning_goals": [
+        "교수법과 말하기 교육의 관계를 이해하여 설명할 수 있다. 2. 연구사를 통해 말하기 교육의 방향을 이해하여 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "활동",
+          "definition": "서로 다른 정보를 활용하는 활동"
+        },
+        {
+          "name": "수행",
+          "definition": "학습자 중심 수업을 위해 수행"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_026",
+      "book_id": "EXP",
+      "week": 2,
+      "chasi": 6,
+      "title": "23",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "놀이",
+          "definition": "극도로 통제된 대화쌍이 아닌 상황 자체가 의사소통적 요구를 충족시키기 위한"
+        },
+        {
+          "name": "수행",
+          "definition": "교사가 더 이상 수업을 주도하거나 통제하지 않고 학습 효과를 부여한다. 학습자가"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "직접 교수"
+      ],
+      "cautions": [
+        "주의 언어학과 사회언어학의 영향으로 전개된 교수 접근",
+        "주의 교육에서 탈피한 언어 사용(use) 위주의 교육, 맥락 의존성을 바탕으"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_026",
+      "book_id": "EXP",
+      "week": 2,
+      "chasi": 6,
+      "title": "25",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "짝 활동"
+      ],
+      "cautions": [
+        "오류는 의사소통에 방해가 될 경우에만 지적한다. ⑥ 교실은 교육적 과제와 실세계를 연결하는 다리의 역할을 해야 하므로 학습자들의 상호작용을"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_037",
+      "book_id": "EXP",
+      "week": 3,
+      "chasi": 7,
+      "title": "",
+      "learning_goals": [
+        "한국어 음성 언어의 통사적, 음운적 특징을 이해하여 이를 설명할 수 있다. 2. 한국어 음성 언어의 담화 화용론적 특징을 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "성분",
+          "definition": "주어, 목적어, 서술어 등"
+        },
+        {
+          "name": "현실음",
+          "definition": "실제로 발음되는 음"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_037",
+      "book_id": "EXP",
+      "week": 3,
+      "chasi": 7,
+      "title": "27",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_038",
+      "book_id": "EXP",
+      "week": 3,
+      "chasi": 8,
+      "title": "29",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_038",
+      "book_id": "EXP",
+      "week": 3,
+      "chasi": 8,
+      "title": "",
+      "learning_goals": [
+        "한국어 말하기 교육에서 어떤 내용을 가르쳐야 하는지 파악하여 설명할 수 있다. 2. 한국어 말하기 교육의 내용 선정 기준을 이해하여 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "정확성",
+          "definition": "문법적으로 오류가 없는 것"
+        },
+        {
+          "name": "유창성",
+          "definition": "막힘이 없이 물 흐르듯이 이어지는 것"
+        },
+        {
+          "name": "독백",
+          "definition": "연설, 강의, 뉴스 보도 등과 같이 화자가 일정 시간 혼자 말하는"
+        },
+        {
+          "name": "독백",
+          "definition": "즉석 강의나 대화 도중 혼자 말하는 긴 이야기 등을 가리킴"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류가 없는 것"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_038",
+      "book_id": "EXP",
+      "week": 3,
+      "chasi": 8,
+      "title": "31",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "토론",
+        "의사소통 교수법"
+      ],
+      "cautions": [
+        "오류가 없는 정확한 문장을 생성하도록 하는 것에 목표를 둘",
+        "어렵고 틀린 표현이 화석화되는",
+        "오류에 민감해지면서 자신감을 잃게 되고 새로운"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_038",
+      "book_id": "EXP",
+      "week": 3,
+      "chasi": 8,
+      "title": "33",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_039",
+      "book_id": "EXP",
+      "week": 3,
+      "chasi": 9,
+      "title": "",
+      "learning_goals": [
+        "등급별 말하기 교육의 내용을 이해하여 설명할 수 있다. 2. 한국어 말하기 교육에서 활용 가능한 말하기 전략을 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "음소",
+          "definition": "말소리의 최소 단위"
+        },
+        {
+          "name": "변이음",
+          "definition": "음운이 그것이 나타는 자리에 따라 다른 음성으로 실현되는 음"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_039",
+      "book_id": "EXP",
+      "week": 3,
+      "chasi": 9,
+      "title": "35",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [
+        "주의 끌기"
+      ],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_039",
+      "book_id": "EXP",
+      "week": 3,
+      "chasi": 9,
+      "title": "37",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류 등을 피하고 유창하게 대화를 유지하는 법"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0410",
+      "book_id": "EXP",
+      "week": 4,
+      "chasi": 10,
+      "title": "",
+      "learning_goals": [
+        "한국어 말하기 교육을 위한 원리를 이해하여 이를 설명할 수 있다. 2. 한국어 말하기 수업을 구성하는 원리를 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "정확성",
+          "definition": "정확성은 언어의 형식에 초점을 두는 것이다. 2. 유창성：유창성이란 언어의 사용에 초점을 두는 것이다."
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0410",
+      "book_id": "EXP",
+      "week": 4,
+      "chasi": 10,
+      "title": "39",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [
+        "어렵게 만드는 한국어 구어의 특성을 이해하고",
+        "오류를 피하면서도",
+        "어렵다. ㉡ 일상적 대화와 토론, 면접, 연설 등에서 쓰는 표현 형식은 차이가 있다. ㉢ 교사는 학습자가 처한 사적이고 공적인 상황에 맞게 의사소통을 할 수 있도록 담화의"
+      ],
+      "topik_level": [
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0410",
+      "book_id": "EXP",
+      "week": 4,
+      "chasi": 10,
+      "title": "41",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0411",
+      "book_id": "EXP",
+      "week": 4,
+      "chasi": 11,
+      "title": "",
+      "learning_goals": [
+        "실제성：언어 사용의 맥락과 생성된 언어 표현이 실제 의사소통 상황을 반영해야 한다",
+        "통합적 언어 교육：말하기, 듣기, 읽기, 쓰기의 네 가지 기능을 동시에 가르치는 것을 뜻한다",
+        "말하기의 특성을 고려해 어떻게 수업을 구성해야 하는지 이해하여 이를 설명할 수 있다. 2. 한국어 말하기 지도 방법을 구안할 때 고려해야 할 원리를 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "실제성",
+          "definition": "언어 사용의 맥락과 생성된 언어 표현이 실제 의사소통 상황을 반영해야 한다는 것을"
+        },
+        {
+          "name": "교육",
+          "definition": "말하기, 듣기, 읽기, 쓰기의 네 가지 기능을 동시에 가르치는 것을 뜻한다."
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0411",
+      "book_id": "EXP",
+      "week": 4,
+      "chasi": 11,
+      "title": "43",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "실제성",
+          "definition": "언어 사용의 맥락과 생성된 언어 표현이 실제 의사소통 상황을 반영해야 한다는 것"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류나 수정이 여과 없이 그대로 상대방에게 전달된다. 그러므로 구어는 머뭇",
+        "어렵다. 따라서 순서를 정하여 체계적으로 교육할 필요가 있다."
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0411",
+      "book_id": "EXP",
+      "week": 4,
+      "chasi": 11,
+      "title": "45",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의해야 할 점",
+        "오류를 지적할 때 상처를 받지 않도록 조심해야 한다. Ⓐ 학습자의 말하기에 나타난 잘못된 부분을 고쳐줄 때는 그러한 문제가 학습자에게"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0412",
+      "book_id": "EXP",
+      "week": 4,
+      "chasi": 12,
+      "title": "47",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0412",
+      "book_id": "EXP",
+      "week": 4,
+      "chasi": 12,
+      "title": "",
+      "learning_goals": [
+        "말하기 수업을 위한 교실 배치 방법을 이해하여 이를 설명할 수 있다. 2. 한국어 말하기 교수-학습 모형을 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "모형",
+          "definition": "교수 학습의 과정에 필요한 내용이나 형식을 정해진 틀에 따라 형식화한 것을"
+        },
+        {
+          "name": "단계",
+          "definition": "학습자의 흥미를 유발하고 학습 동기를 부여하는 단계이다."
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0412",
+      "book_id": "EXP",
+      "week": 4,
+      "chasi": 12,
+      "title": "49",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "단계",
+          "definition": "학습자의 흥미를 유발하고 학습 동기를 부여하는 단계"
+        },
+        {
+          "name": "단계",
+          "definition": "학습 목표가 실제적인 문맥 속에서 제시되는 단계"
+        },
+        {
+          "name": "단계",
+          "definition": "다양한 형태의 연습을 통해 목표 내용을 내재화하는 단계"
+        },
+        {
+          "name": "단계",
+          "definition": "이전 단계의 연습을 종합하여 학습 목표에 맞는 실제적인 상황에서 과제를 수행하"
+        },
+        {
+          "name": "단계",
+          "definition": "최종적으로 교사의 피드백을 통해 오류를 수정하고, 그 날의 학습 내용을 정리하"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "짝 활동"
+      ],
+      "cautions": [
+        "오류를 교정한다. ⑤ 마무리 단계：최종적으로 교사의 피드백을 통해 오류를 수정하고, 그 날의 학습 내용을 정리하"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0412",
+      "book_id": "EXP",
+      "week": 4,
+      "chasi": 12,
+      "title": "51",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "짝 활동",
+        "게임"
+      ],
+      "cautions": [
+        "주의 깊게 관찰해야 한다. ㉣ 학습자가 이해할 수 있는 쉬운 표현으로 설명하고, 주어진 학습 내용이 한국어 말하기의"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0412",
+      "book_id": "EXP",
+      "week": 4,
+      "chasi": 12,
+      "title": "53",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0513",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 13,
+      "title": "",
+      "learning_goals": [
+        "모방 활동：녹음기가 돌아가듯 기계적으로 따라 하는 것을 말한다. 2. 집중 활동：특정 음운적 요소나 문법적 요소를 연습하는 것을 말한다",
+        "교실 말하기 활동을 학자들은 어떻게 유형화했는지 이해하여 이를 설명할 수 있다. 2. 한국어 말하기 활동의 예를 통하여 유형을 이해하고 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "활동",
+          "definition": "녹음기가 돌아가듯 기계적으로 따라 하는 것을 말한다. 2. 집중 활동：특정 음운적 요소나 문법적 요소를 연습하는 것을 말한다."
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0513",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 13,
+      "title": "55",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "활동",
+          "definition": "문법 구조를 중심으로 언어 항목들을 결합하는 전형적인 연습에"
+        },
+        {
+          "name": "활동",
+          "definition": "대화와 같은 고정된 형식의 연습 방법을 통해 특정 의미, 의사소통 기능, 사회적 상황과 연계된 표현을 반복 연습하는 활동을 한다. 문법이나"
+        },
+        {
+          "name": "활동",
+          "definition": "목표어를 사용하면서 문제 해결을 해 나가는 활동으로"
+        },
+        {
+          "name": "활동",
+          "definition": "역할극과 같은 활동을 통해 일상 생활에서 접할 수 있는"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "역할극"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0513",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 13,
+      "title": "57",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "교사",
+          "definition": "영화를 봤어요. 학생：영화를 안 봤어요. 교사：수영을 했어요. 학생：수영을 안 했어요. ③ 교사의 지시에 따라 기계적으로 모방과 반복하는 것에서 벗어나 의사소통 기능을 고려한"
+        },
+        {
+          "name": "교사",
+          "definition": "어제 영화를 봤어요?"
+        },
+        {
+          "name": "학생",
+          "definition": "아니요. 영화를 안 봤어요. 교사：그럼 어제 수영을 했어요?"
+        },
+        {
+          "name": "학생",
+          "definition": "아니요. 수영을 안 했어요. ㉡ 상황 제시"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "짝 활동",
+        "토론",
+        "게임"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0513",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 13,
+      "title": "59",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "고급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0513",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 13,
+      "title": "61",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [
+        "주의할 점은 너무 한 사람에게 기회가 치우치지 않도록 전체 학생들에게 골고루 기회가",
+        "주의한다."
+      ],
+      "topik_level": [
+        "고급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0514",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 14,
+      "title": "",
+      "learning_goals": [
+        "구조적 활동, 준의사소통적 활동을 학습하여 효과적인 말하기 활동을 할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "활동",
+          "definition": "정보의 차이를 극복하고 서로 정보를 공유하는 것이다. 2. 직소 활동：양방향 정보 격차 활동이다."
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0514",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 14,
+      "title": "63",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "학생들",
+          "definition": "이것은 시계입니다. 교 사：이것은 책입니다. (책 그림 카드를 보이며)"
+        },
+        {
+          "name": "학생들",
+          "definition": "이것은 책입니다. 교 사：이것은 공책입니다. (공책 그림 카드를 보이며)"
+        },
+        {
+          "name": "학생들",
+          "definition": "이것은 공책입니다."
+        },
+        {
+          "name": "유형",
+          "definition": "구조적 활동, 준의사소통적 활동, 기능적 의사소통 활동, 사회적 상호작용 활동"
+        },
+        {
+          "name": "따라하기",
+          "definition": "원어민의 발음을 모델로 듣고 정확히 따라하기"
+        },
+        {
+          "name": "연습",
+          "definition": "문제가 되는 한국어 발음을 구분할 수 있게 함"
+        },
+        {
+          "name": "학생들",
+          "definition": "이것은 책상입니다. 교 사：저것은 무엇입니까?"
+        },
+        {
+          "name": "학생들",
+          "definition": "저것은 시계입니다. 교 사：도와주셔서 감사합니다. 학생들：아니요. 괜찮습니다. ※ 학생들은 들은 질문에 대해 대답을 하나로 고정시켜 말하지 않고 여러 개 중에서 선택하여 말할 수"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0514",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 14,
+      "title": "65",
+      "learning_goals": [
+        "미미는 뚱뚱하지만 소라는 날씬하다. 2. 소라는 춤을 잘 추지만 다나까는 노래를 못 한다"
+      ],
+      "key_concepts": [
+        {
+          "name": "공유하기",
+          "definition": "그림철로부터 그림을 한 장 찾아내기,"
+        },
+        {
+          "name": "공유하기",
+          "definition": "의사소통을 하는 유형과 그림, 의사소통"
+        },
+        {
+          "name": "처리하기",
+          "definition": "이야기 연결을 재구성하기, 문제를 풀기 위해 정보를"
+        },
+        {
+          "name": "처리하기",
+          "definition": "중요도에 따라 항목 배치하기, 여행 일정 고정하기, 선물을 위해 금액"
+        },
+        {
+          "name": "물건",
+          "definition": "신발, 휴지통, 가방, 컴퓨터"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "노래"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0514",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 14,
+      "title": "67",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "자료",
+          "definition": "연세대 B4급 자료집"
+        },
+        {
+          "name": "준비물",
+          "definition": "사진(풍경, 인물 등), 빈 종이, 색연필"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "짝 활동",
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0514",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 14,
+      "title": "69",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "등장인물",
+          "definition": "옷가게 주인, 손님1, 손님2"
+        },
+        {
+          "name": "상황",
+          "definition": "친구 사이인 손님1과 손님2가 옷가게에서 옷을 사려고 한다. 주 인：어서 오세요. 무엇을 도와드릴까요?"
+        },
+        {
+          "name": "초급",
+          "definition": "간단한 자기소개, 가족 소개, 주말 이야기 등"
+        },
+        {
+          "name": "고급",
+          "definition": "인물에 대한 조사 발표, 신문 기사 발표, 주제 연구 발표 등"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "토론",
+        "게임"
+      ],
+      "cautions": [
+        "어렵거나 관심을 끌기 어려운 것은 학습자의 흥미를 떨어뜨릴 수 있음"
+      ],
+      "topik_level": [
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0515",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 15,
+      "title": "71",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0515",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 15,
+      "title": "",
+      "learning_goals": [
+        "정확성에 중점을 둔 말하기 연습 활동들을 이해하여 이를 설명할 수 있다",
+        "유창성에 중점을 둔 말하기 연습 활동들을 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "짝활동",
+          "definition": "옆에 앉은 학생이나 주위에 앉은 학생과 함께 진행하는 활동이다. 2. 역할극：실제 언어 상황이나 인물을 가정하여 연습하는 활동이다."
+        },
+        {
+          "name": "있다",
+          "definition": "의사결정하기, 의견"
+        },
+        {
+          "name": "있다",
+          "definition": "연극, 프로젝트, 게임"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "짝 활동",
+        "토론",
+        "게임"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0515",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 15,
+      "title": "73",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "학생",
+          "definition": "교사가 말하고 학생들이 따라하는 코러스 형태의 교수가 이루어지기"
+        },
+        {
+          "name": "학생",
+          "definition": "교사의 지식에 따라 학생들은 옆에 앉은 학생, 앞에 앉은 학생과 서로"
+        },
+        {
+          "name": "따라하기",
+          "definition": "목표로 하는 문법이나 구조에 대한 설명이나 어휘 설명 후 필요하다고 생각하는"
+        },
+        {
+          "name": "활동",
+          "definition": "학습 목표에 따라 학생들을 둘 또는 몇 개의 그룹으로 나눌 수 있음"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "짝 활동",
+        "게임"
+      ],
+      "cautions": [
+        "주의해",
+        "주의사항",
+        "오류를 수정해 주는 것을 잘 들어야 한다."
+      ],
+      "topik_level": [],
+      "related_countries": [
+        "중국"
+      ]
+    },
+    {
+      "id": "EXP_0515",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 15,
+      "title": "75",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "짝 활동",
+        "토론",
+        "게임"
+      ],
+      "cautions": [
+        "주의 깊게 선택한다. ㉢ 교사는 연습 활동을 상세히 제시한다. ㉣ 교사는 뭔가 심각한 문제가 있지 않는 한 그룹 활동에 간섭하지 않는다. ㉤ 오류를 수정하지 않는다. ㉥ 적절한 순간에",
+        "주의사항"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0515",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 15,
+      "title": "77",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "드릴",
+          "definition": "단어나 그림 카드를 사용해 교사가 예문을 제시하고 학생들은 반복하거나"
+        },
+        {
+          "name": "교사",
+          "definition": "저는 김재민입니다. 저는 선생님입니다."
+        },
+        {
+          "name": "학생",
+          "definition": "저는 마이클입니다. 저는 의사입니다. ㉡ 유의미한 드릴：학생들의 대답을 하나로 고정해 놓지 않고 자신의 정보를 사용하여"
+        },
+        {
+          "name": "교사",
+          "definition": "마이클 씨는 미국에서 왔어요. 다나카 씨는요?"
+        },
+        {
+          "name": "학생",
+          "definition": "저는 일본에서 왔어요. ② 대화 활동"
+        },
+        {
+          "name": "장점",
+          "definition": "학생들에게 흥미를 유발할 수 있고, 기억에 오래 남을 수 있음"
+        },
+        {
+          "name": "대상",
+          "definition": "언어 게임, 추측 게임, 빙고 게임"
+        },
+        {
+          "name": "활동",
+          "definition": "그림 카드 게임, 주사위 이용 게임"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "짝 활동",
+        "게임"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": [
+        "일본"
+      ]
+    },
+    {
+      "id": "EXP_0515",
+      "book_id": "EXP",
+      "week": 5,
+      "chasi": 15,
+      "title": "79",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "오주연",
+          "definition": "여 25세, 대학에서 국어국문학 전공, 대학 시절 신문사 기자로 활동함, 진취적이고 외향적인"
+        },
+        {
+          "name": "장점",
+          "definition": "학습자가 미리 질문해야 할 내용을 준비할 수 있으며, 여러 사람을 인터뷰할"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "역할극"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "중급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0616",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 16,
+      "title": "",
+      "learning_goals": [
+        "과제：학습자가 의사소통을 목적으로 형태가 아닌 의미에 중점을 두고 언어를 이해",
+        "한국어 말하기 과제의 정의와 유형을 이해하여 이를 설명할 수 있다. 2. 학습자 수준에 따라 말하기 과제 활동이 차이가 있음을 이해하고 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "과제",
+          "definition": "학습자가 의사소통을 목적으로 형태가 아닌 의미에 중점을 두고 언어를 이해, 처리, 생산"
+        },
+        {
+          "name": "목표",
+          "definition": "과제를 통해 달성하고자 하는 구체적인 목표이다."
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0616",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 16,
+      "title": "81",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "토론",
+        "게임"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "중급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0616",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 16,
+      "title": "83",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "과제",
+          "definition": "자기 자신이나 다른 사람을 위해서 수행하는 작업"
+        },
+        {
+          "name": "과제",
+          "definition": "단순하고 간단한 연습 활동과 문제 해결 활동, 모의 상황 설정, 의사 결정 활동"
+        },
+        {
+          "name": "과제",
+          "definition": "학습자가 의사소통을 목적으로, 형태가 아닌 의미에 중점을 두고 언어를 이해, 처리, 생산하는 모든 활동"
+        },
+        {
+          "name": "과제",
+          "definition": "교실 밖의 세계에서 일어나고 있는 과제를 교실 활동으로 도입한 것"
+        },
+        {
+          "name": "과제",
+          "definition": "실생활에서 발생할 가능성은 없으나 교육적 목적에서 교실 활동으로"
+        },
+        {
+          "name": "요소",
+          "definition": "과제는 목표, 입력, 연습 활동, 교사와 학습자의 역할, 배경으로 구성됨"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "게임"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0616",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 16,
+      "title": "85",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "목표",
+          "definition": "식당에서 모르는 음식에 대해 정보를 얻고, 음식을 주문할 수 있다. ㉡ 과제 활동：한 식당에서 음식 주문하기"
+        },
+        {
+          "name": "목표",
+          "definition": "전화로 호텔에 대한 정보를 묻고, 호텔을 예약할 수 있다. ㉡ 과제 활동：전화로 호텔 예약하기"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "짝 활동",
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0617",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 17,
+      "title": "87",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류 수정"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0617",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 17,
+      "title": "",
+      "learning_goals": [
+        "말하기 오류의 유형과 원인을 이해하고 이를 설명할 수 있다. 2. 말하기 오류 수정의 방법을 파악하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "오류",
+          "definition": "학습자가 그 언어를 정확하게 몰라서 잘못 표현하는 것이다. 2. 생략 오류：목표 언어를 더 단순하게 사용해서 생기는 오류."
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류：학습자가 그 언어를 정확하게 몰라서 잘못 표현하는 것이다. 2. 생략 오류：목표 언어를 더 단순하게 사용해서 생기는 오류.",
+        "오류 수정",
+        "오류의 유형과 원인"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0617",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 17,
+      "title": "89",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "오류",
+          "definition": "목표 언어를 더 단순하게 사용해서 생기는 오류, 한국어 학습자가"
+        },
+        {
+          "name": "오류",
+          "definition": "목표 언어를 학습자가 처리하기 쉬운 형태로 생성하므"
+        },
+        {
+          "name": "오류",
+          "definition": "학습자의 모국어에 있는 언어 지식을 목표 언어에 적용하여 생기는"
+        },
+        {
+          "name": "유형",
+          "definition": "어휘, 문법, 발음, 담화 화용, 사회 문화"
+        },
+        {
+          "name": "원인",
+          "definition": "모국어, 목표어, 교사, 다른 학습자 외부로부터 들은 목표어 입력 등"
+        },
+        {
+          "name": "복잡성",
+          "definition": "처치가 복잡한가 간단한가"
+        },
+        {
+          "name": "상태",
+          "definition": "언어적 자아가 강한가 약한가, 불안감 자신감은 어떠한가, 수용적인가"
+        },
+        {
+          "name": "단계",
+          "definition": "언어가 체계화되기 이전인가, 진행 단계인가, 이후인가"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류：목표 언어를 더 단순하게 사용해서 생기는 오류, 한국어 학습자가",
+        "오류：목표 언어를 학습자가 처리하기 쉬운 형태로 생성하므",
+        "오류, 한국어 학습자가 주어에 상관없이 모든 서술어에 존대 표현을 사용하는 경우"
+      ],
+      "topik_level": [],
+      "related_countries": [
+        "일본"
+      ]
+    },
+    {
+      "id": "EXP_0617",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 17,
+      "title": "91",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류와 그에 대한 대처 방법",
+        "오류인 경우는 고쳐주기보다는 모델을 자꾸 제시해 보여주는 관찰할",
+        "오류는 오히려 고쳐주기보다는 편안하고 덜 위협적이며"
+      ],
+      "topik_level": [
+        "중급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0618",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 18,
+      "title": "93",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0618",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 18,
+      "title": "",
+      "learning_goals": [
+        "닫힌 질문：ʻ예, 아니요ʼ와 같은 간단한 대답만 하면 되는 질문이다. 2. 열린 질문：길게 설명",
+        "말하기 수업에서 교사는 어떻게 발화해야 하는지 이해하고 이를 설명할 수 있다. 2. 말하기 수업에서 교사의 역할이 무엇인지 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "질문",
+          "definition": "ʻ예, 아니요ʼ와 같은 간단한 대답만 하면 되는 질문이다. 2. 열린 질문：길게 설명하는 형식으로 대답해야 하는 질문이다."
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0618",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 18,
+      "title": "95",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "방법",
+          "definition": "학습 효과 강화 방법, 이해 정도 측정 방법, 오류 수정 방법 등"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류 수정 방법 등"
+      ],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0618",
+      "book_id": "EXP",
+      "week": 6,
+      "chasi": 18,
+      "title": "97",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "토론"
+      ],
+      "cautions": [
+        "오류를 일으키는 경우가 많다. 또 개인적",
+        "오류와 습관 등에 늘 관심을 기울이면서 관찰해 둠으로써 필요할 때 적절한",
+        "오류 수정"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0719",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 19,
+      "title": "99",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0719",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 19,
+      "title": "",
+      "learning_goals": [
+        "한국어 말하기 평가의 목적 및 기능을 이해하여 이를 설명할 수 있다. 2. 한국어 말하기 평가의 범주 및 내용을 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "평가",
+          "definition": "언어 사용 능력을 통한 가치 판단의 기준을 결정하기 위한 일련의 행위"
+        },
+        {
+          "name": "범주",
+          "definition": "측정하고자 하는 평가의 구성 요소 또는 구성 요인"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "어렵다. 수행 연습 또한"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0719",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 19,
+      "title": "101",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "어렵고 애매한 표현들을 회피한다거나 좀 더 쉬운 말로"
+      ],
+      "topik_level": [
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0719",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 19,
+      "title": "103",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0719",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 19,
+      "title": "105",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "고급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0720",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 20,
+      "title": "107",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0720",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 20,
+      "title": "",
+      "learning_goals": [
+        "한국어 말하기 평가의 유형들을 이해하여 이를 설명할 수 있다. 2. 한국어 말하기 평가의 예를 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "평가자",
+          "definition": "시험관 또는 평가관이라고도 하며 피평가자의 평가 내용을 관찰하고 판단하는 자"
+        },
+        {
+          "name": "피평가자",
+          "definition": "수험자 또는 평가 대상이라고도 하며 실제 평가에 임하는 자"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0720",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 20,
+      "title": "109",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "평가",
+          "definition": "말하기 교육과정에 근거하여 이루어지는 교실 내의 말하기 수업에서 가장"
+        },
+        {
+          "name": "평가",
+          "definition": "수업 후 한국어 학습자의 말하기 능력에 대해 실시하는 평가"
+        },
+        {
+          "name": "평가",
+          "definition": "학습자가 평가 시점에 가지고 있는 언어 능력을 평가하기 위한 것"
+        },
+        {
+          "name": "평가",
+          "definition": "학습자가 지닌 전반적인 언어 능력을 측정하는 평가"
+        },
+        {
+          "name": "수행",
+          "definition": "한국어 학습자에게 요구되는 기능이나 과제 수행을 측정하는 것"
+        },
+        {
+          "name": "주제",
+          "definition": "학습자에게 요구되는 내용에 대한 체계적인 범주의 처리 능력을 평가하는 기준"
+        },
+        {
+          "name": "구성",
+          "definition": "적절한 발화 단위로 결속성, 응집성을 충족시키는 담화를 구성하는지에 대한"
+        },
+        {
+          "name": "문법",
+          "definition": "한국어 학습자가 어휘나 문법을 정확하게 사용하는지에 대한 기준"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의 처리 능력을 평가하는 기준"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0720",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 20,
+      "title": "111",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "인터뷰",
+          "definition": "학습자들이 짝이 되어 미리 정해져 있는 하나의 주제 상황에 대해"
+        },
+        {
+          "name": "인터뷰하기",
+          "definition": "수동적으로 대답만 하는 개인적 인터뷰하기의 단점을 보완하여"
+        },
+        {
+          "name": "장소",
+          "definition": "② 잃어버린 시간："
+        },
+        {
+          "name": "연락처",
+          "definition": "(5) 그림이나 자료를 활용한 말하기 평가"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0720",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 20,
+      "title": "113",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0720",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 20,
+      "title": "115",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "단계",
+          "definition": "학생 스스로 자신의 수행을 모으고 자기 평가를 하며 교사도 학생의"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0721",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 21,
+      "title": "117",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0721",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 21,
+      "title": "",
+      "learning_goals": [
+        "한국어 말하기 평가를 위한 기획 및 문항 준비 방법을 이해하여 이를 설명할 수 있다. 2. 한국어 말하기 평가의 시행 방법을 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "출제구상표",
+          "definition": "출제 계획표라고도 하며 출제와 관련된 제반 사항을 제시해 놓은 자료이다. 2. 평가 도구：평가에 필요한 도구를 말하며, 일반적으로 시험 문제를 일컫는다."
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "어렵고, 너무 길면 신뢰로운 평가가 이루어지기 어렵다. 영역 학습 단계 평가 목적 평가 범주 평가 형태 평가 문항 시간"
+      ],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0721",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 21,
+      "title": "119",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "기준",
+          "definition": "말하기 자료의 실제성 여부, 교육 목표와의 연계성, 자료의 실제성 여부, 학생 수준과 문항 수준과의 일치 여부, 과제와 지시, 제시 자료의 명확성, 문항 수의 적절성, 시간 배분의 문제"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의사항"
+      ],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0721",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 21,
+      "title": "121",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "활동",
+          "definition": "발표하기, 토론하기"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [
+        "오류를 최소화할 수 있는 장치를",
+        "오류 - 1회 1점 감점",
+        "오류 - 1회 1점 감점"
+      ],
+      "topik_level": [
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0721",
+      "book_id": "EXP",
+      "week": 7,
+      "chasi": 21,
+      "title": "123",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "짝 활동",
+        "토론"
+      ],
+      "cautions": [
+        "주의해야 할 사항들이 있다. ① 평가자는 평가 환경이 편안하고 평가에 적절한 환경이 되도록 분위기를 조성해야 한다. 학습자들은 평가 상황에서 긴장을 많이 하게 되어 자신의 실력을 제대",
+        "오류를 최소화할",
+        "주의해야 한다. 학습자가 스스로"
+      ],
+      "topik_level": [
+        "고급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0822",
+      "book_id": "EXP",
+      "week": 8,
+      "chasi": 22,
+      "title": "125",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0822",
+      "book_id": "EXP",
+      "week": 8,
+      "chasi": 22,
+      "title": "",
+      "learning_goals": [
+        "쓰기의 개념과 특성을 이해하여 이를 설명할 수 있다. 2. 한국어 쓰기 학습의 어려움을 파악하고 해결 방안을 제시할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "고급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0822",
+      "book_id": "EXP",
+      "week": 8,
+      "chasi": 22,
+      "title": "127",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "어렵게 생각한다. ㉠ 말하기와 듣기는 누구나 언어 환경에 노출되기만 하면 자연스럽게 습득이 가능함",
+        "오류가 더 많고 글쓰기 목적에"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0822",
+      "book_id": "EXP",
+      "week": 8,
+      "chasi": 22,
+      "title": "129",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": [
+        "영어권"
+      ]
+    },
+    {
+      "id": "EXP_0823",
+      "book_id": "EXP",
+      "week": 8,
+      "chasi": 23,
+      "title": "",
+      "learning_goals": [
+        "쓰기를 구성하는 요소를 이해하여 이를 설명할 수 있다. 2. 쓰기를 하는 데 필요한 지식을 파악하고 이를 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0823",
+      "book_id": "EXP",
+      "week": 8,
+      "chasi": 23,
+      "title": "131",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "내용",
+          "definition": "적절성, 명료성, 창의성, 논리성 등"
+        },
+        {
+          "name": "과정",
+          "definition": "아이디어 구상, 초고, 수정 등"
+        },
+        {
+          "name": "선택",
+          "definition": "어휘, 관용어, 어조 등"
+        },
+        {
+          "name": "구성",
+          "definition": "문단 구성, 주제, 응집성, 통일성 등"
+        },
+        {
+          "name": "문법",
+          "definition": "동사 규칙, 관형사, 대명사 등"
+        },
+        {
+          "name": "한국어쓰기능력",
+          "definition": "자신의생각을논리적인언어로정확하고설득력있게전달하는의사소통"
+        },
+        {
+          "name": "구문",
+          "definition": "문장을 구성하고 언어를 효과적으로 조작하는 능력 (문장 조작 능력)."
+        },
+        {
+          "name": "능력",
+          "definition": "적절하고 다양한 어휘와 구문 사용, 적절한 관용적 표현 사용 및"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0823",
+      "book_id": "EXP",
+      "week": 8,
+      "chasi": 23,
+      "title": "133",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0824",
+      "book_id": "EXP",
+      "week": 8,
+      "chasi": 24,
+      "title": "",
+      "learning_goals": [
+        "자유 작문 접근법(The Free-Writing Approach)：쓰기의 질보다는 양을 중시하는 접근법. 주제를 주고 무조건 되든 안 되든 자꾸 써보게 하면 쓰기 능력이 발전한다",
+        "쓰기 교육 접근법의 변천 과정을 이해하여 이를 설명할 수 있다. 2. 쓰기 교육에 대한 접근법들이 어떤 특성이 있는지 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0824",
+      "book_id": "EXP",
+      "week": 8,
+      "chasi": 24,
+      "title": "135",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "교수법",
+          "definition": "문법의 숙지 여부를 검증하는 과정으로 독해나 문장 수준의 쓰기"
+        },
+        {
+          "name": "교수법",
+          "definition": "문자를 이차적인 것으로 간주하고 구어체의 지도에 중점을"
+        },
+        {
+          "name": "교수법",
+          "definition": "학습 초기부터 듣기, 말하기, 쓰기, 읽기의 기능 통합 지도를 제안함"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "토론",
+        "직접 교수"
+      ],
+      "cautions": [
+        "오류를 교정해 주는 것을 쓰기 지도로",
+        "오류를 저지르지 않음. 중급 후반이나 고급에 이르러서야 약간의 자유 작문을",
+        "주의를 기울여야 하며 그러다보면 자연스럽"
+      ],
+      "topik_level": [
+        "고급",
+        "중급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0824",
+      "book_id": "EXP",
+      "week": 8,
+      "chasi": 24,
+      "title": "137",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "전략",
+          "definition": "자유 작문 기법을 적용하여 시작하기, 자신의"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [
+        "오류 수정을 위한 작문을 제출할 필요가 없음. 대신 쓰기를 통해 주제를 탐구하고 교사와 반"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0925",
+      "book_id": "EXP",
+      "week": 9,
+      "chasi": 25,
+      "title": "",
+      "learning_goals": [
+        "한국어 쓰기 교육에 대한 접근법의 변화 과정을 이해하여 이를 설명할 수 있다. 2. 결과 중심 접근법과 과정 중심 접근법을 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의 접근(cognitive approach), 사회구성주의 접근(social constructive approach),",
+        "주의에 따르는 쓰기 교육 원리"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0925",
+      "book_id": "EXP",
+      "week": 9,
+      "chasi": 25,
+      "title": "139",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의 접근(cognitive approach), 사회구성주의 접근(social constructive approach),",
+        "주의에 따르는 쓰기 교육 원리",
+        "오류를 적극적으로 수정해 줌"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0925",
+      "book_id": "EXP",
+      "week": 9,
+      "chasi": 25,
+      "title": "141",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "단계",
+          "definition": "글의 내용 구상을 위해 생각을 정리하고 정보를 수집하는 단계, 토의와"
+        },
+        {
+          "name": "단계",
+          "definition": "학습자가 초고를 작성"
+        },
+        {
+          "name": "단계",
+          "definition": "교사나 다른 학습자들로부터 받은 피드백을 바탕으로 초고를 수정하는"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류가 있는지를 중심으로 평가함",
+        "오류가"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0926",
+      "book_id": "EXP",
+      "week": 9,
+      "chasi": 26,
+      "title": "143",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0926",
+      "book_id": "EXP",
+      "week": 9,
+      "chasi": 26,
+      "title": "",
+      "learning_goals": [
+        "결과 중심 접근법과 과정 중심 접근법의 차이를 이해하여 이를 설명할 수 있다. 2. 장르 중심 접근법을 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "장르",
+          "definition": "특정 의사소통의 목적을 공유하는 담화 공동체 구성원들 간의 대화를 통해 사회적으로"
+        },
+        {
+          "name": "특징",
+          "definition": "장르에서 구성하는 글의 구조는 명제 단위에서 의미를 구성하는 미시 구조, 문단"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의 학습",
+        "주의 사회언어학"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0926",
+      "book_id": "EXP",
+      "week": 9,
+      "chasi": 26,
+      "title": "145",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0927",
+      "book_id": "EXP",
+      "week": 9,
+      "chasi": 27,
+      "title": "147",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0927",
+      "book_id": "EXP",
+      "week": 9,
+      "chasi": 27,
+      "title": "",
+      "learning_goals": [
+        "구두언어：구두 언어란 ʻ듣기ʼ에서 시작하여 ʻ말하기ʼ를 포함하는 언어활동을 의미한다",
+        "문자언어：문자(文字)를 매개로 한 언어. 문어라고도 한다",
+        "한국어 쓰기 교육의 필요성을 이해하여 이를 설명할 수 있다. 2. 한국어 쓰기 교육이 중요한 이유를 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "구두언어",
+          "definition": "구두 언어란 ʻ듣기ʼ에서 시작하여 ʻ말하기ʼ를 포함하는 언어활동을 의미한다"
+        },
+        {
+          "name": "문자언어",
+          "definition": "문자(文字)를 매개로 한 언어. 문어라고도 한다."
+        },
+        {
+          "name": "쓰기",
+          "definition": "자모를 정확하게 쓰는 것에서부터 시작하여 궁극적으로는 자신의 느낌이나 생각을 문자"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_0927",
+      "book_id": "EXP",
+      "week": 9,
+      "chasi": 27,
+      "title": "149",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "학습자",
+          "definition": "언어 발달과 인지 발달이 동시에 이루어짐. 그러므로 쓰기를 통해 작문"
+        },
+        {
+          "name": "학습자",
+          "definition": "쓰기 능력 향상을 위해 모국어에서 학습한 인지 능력을 활용하는"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1028",
+      "book_id": "EXP",
+      "week": 10,
+      "chasi": 28,
+      "title": "151",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1028",
+      "book_id": "EXP",
+      "week": 10,
+      "chasi": 28,
+      "title": "",
+      "learning_goals": [
+        "한국어 쓰기 교육의 등급별 목표를 이해하여 이를 설명할 수 있다. 2. 쓰기 유형에 따른 한국어 쓰기 교육의 목표를 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1028",
+      "book_id": "EXP",
+      "week": 10,
+      "chasi": 28,
+      "title": "153",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "목표",
+          "definition": "개인에 관한 내용을 작성하도록 함으로써 흥미를 유발할 수 있음. 간단한"
+        },
+        {
+          "name": "목표",
+          "definition": "개인적인 목적의 글로서 탐구 목적의 글을 작성하는 기술을 습득할 수"
+        },
+        {
+          "name": "목표",
+          "definition": "필자 자신을 위한 것이지만 다른 사람과 공유하기 위한 형태의 글쓰기로 주관적인"
+        },
+        {
+          "name": "목표",
+          "definition": "기관이나 조직에 대응하는 공식적인 형태의 글을 작성할 수 있음"
+        },
+        {
+          "name": "목표",
+          "definition": "사회적인 관계 형성과 유지를 위해 쓰는 형태. 형식적인 틀에 맞추어 쓸"
+        },
+        {
+          "name": "목표",
+          "definition": "전문적인 역할에 관련되는 형태의 쓰기로 전문화된 텍스트를 작성해 낼"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "고급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1028",
+      "book_id": "EXP",
+      "week": 10,
+      "chasi": 28,
+      "title": "155",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1029",
+      "book_id": "EXP",
+      "week": 10,
+      "chasi": 29,
+      "title": "",
+      "learning_goals": [
+        "한국어 숙달도에 따른 한국어 쓰기 교육의 목표를 이해하여 이를 설명할 수 있다. 2. 한국어 쓰기 교육의 내용을 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "쓰기",
+          "definition": "1급과 2급에 해당하며, 학습 시간이 각각 200시간 내외, 200~400시간"
+        },
+        {
+          "name": "쓰기",
+          "definition": "일반적인 영역의 사회 생활에 필요한 쓰기 능력 함양을 목표로, 3급은"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1029",
+      "book_id": "EXP",
+      "week": 10,
+      "chasi": 29,
+      "title": "157",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "목표",
+          "definition": "쓰기 능력 + 언어적 사고력 신장"
+        },
+        {
+          "name": "숙달도",
+          "definition": "언어에 대한 지식이라기보다 목표 언어로 무엇을 어떻게 어느 정도로"
+        },
+        {
+          "name": "목표",
+          "definition": "외운 문장을 이용하거나 문장의 기본 구조를 이해하여 간단한 문장을 생성할"
+        },
+        {
+          "name": "소재",
+          "definition": "자신, 일상생활, 물건, 장소, 위치, 시간, 음식, 취미, 교통, 운동, 가족, 쇼핑, 날씨"
+        },
+        {
+          "name": "유형",
+          "definition": "문장, 문장의 연쇄, 대화문, 서술문"
+        },
+        {
+          "name": "목표",
+          "definition": "자주 쓰이는 문장의 종결형과 연결형을 사용하여 간단한 문장을 구성할 수 있음. 일상생활에서 요구되는 평이한 대화나 생활문을 쓸 수 있고 자주 접하는 실용문을"
+        },
+        {
+          "name": "소재",
+          "definition": "자신, 일상생활, 물건, 장소, 방향, 시간, 음식, 취미, 교통, 운동, 가족, 날씨, 직업, 쇼핑, 집, 약속, 편지, 옷, 전화, 우체국, 은행, 계획, 감정"
+        },
+        {
+          "name": "목표",
+          "definition": "일상생활과 관련된 친숙한 소재에 관하여 정확하고 유창하게 글을 쓸 수 있으며, 생활과 밀접한 관련이 있는 사회적 소재에 대해서도 어느 정도 글을 쓸 수 있음. 설명, 비교의 기능을 수행할 수 있으며 문단 단위로 글을 쓸 수 있음"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1029",
+      "book_id": "EXP",
+      "week": 10,
+      "chasi": 29,
+      "title": "159",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "목표",
+          "definition": "표현할 수 있는 추상적 소재의 범위가 넓어지며, 보다 정확하고 유창하게 표현할"
+        },
+        {
+          "name": "소재",
+          "definition": "가족, 직업, 근황, 학교 생활, 직장 생활, 업무, 사건, 사고, 모양, 외모, 복장, 성격, 사회, 문화, 경제, 언어, 유행, 교육, 인간"
+        },
+        {
+          "name": "목표",
+          "definition": "정치, 경제, 사회, 문화 전반에 걸쳐 친숙하지 않은 주제에 대해 어느 정도 표현할"
+        },
+        {
+          "name": "소재",
+          "definition": "업무, 사건, 사고, 사회, 문화, 경제, 언어, 교육, 과학, 인간, 사랑, 가치관, 성"
+        },
+        {
+          "name": "목표",
+          "definition": "정치, 경제, 사회, 문화 전반에 걸쳐 친숙하지 않은 주제에 대해 표현할 수"
+        },
+        {
+          "name": "소재",
+          "definition": "업무, 사회 현상, 문화 비평, 가치관, 의학 기술, 정치구조, 경제현상, 제도, 관념"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류가 나타날 수 있으나, 의미 파악에는 지장을 주지 않음"
+      ],
+      "topik_level": [
+        "고급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1030",
+      "book_id": "EXP",
+      "week": 10,
+      "chasi": 30,
+      "title": "161",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1030",
+      "book_id": "EXP",
+      "week": 10,
+      "chasi": 30,
+      "title": "",
+      "learning_goals": [
+        "쓰기 수업의 일반 원리를 이해하여 이를 설명할 수 있다. 2. 한국어 쓰기 수업을 위한 설계 원리가 무엇인지 파악하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1030",
+      "book_id": "EXP",
+      "week": 10,
+      "chasi": 30,
+      "title": "163",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "과제",
+          "definition": "엽서나 편지 쓰기, 축하 카드 쓰기, 신상 정보를 묻는 양식"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "고급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1131",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 31,
+      "title": "165",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1131",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 31,
+      "title": "",
+      "learning_goals": [
+        "과정 중심 쓰기 교육 방법에 대해 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "전략",
+          "definition": "띄어쓰기, 맞춤법 등 글의 형식적인 측면은 신경쓰지"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1131",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 31,
+      "title": "167",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "전략",
+          "definition": "내용의 흐름을 놓치지 않기 위해 앞에 쓴 글을 계속 읽어"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류가 없도록 글을 깔끔하게 다듬어 나가는"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1131",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 31,
+      "title": "169",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1132",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 32,
+      "title": "",
+      "learning_goals": [
+        "언어 능력에 따른 쓰기 활동의 유형을 이해하여 이를 설명할 수 있다. 2. 목적에 따른 쓰기 활동의 유형을 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "과제",
+          "definition": "부모님께 한국어로 안부 편지 보내기와 같이 학습자의 장르에 대한 지식과 작문"
+        },
+        {
+          "name": "과제",
+          "definition": "학습자의 필요에 기초한 것으로 학문 목적 학습자가 대학 강의에서 제출하는 보고"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1132",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 32,
+      "title": "171",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "과제",
+          "definition": "부모님께 한국어로 안부 편지 보내기와 같이 학습자의 장르에 대한 지식과"
+        },
+        {
+          "name": "과제",
+          "definition": "학습자의 필요에 기초한 것으로 학문 목적 학습자가 대학 강의에서 제출하는"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1132",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 32,
+      "title": "173",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1132",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 32,
+      "title": "175",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1133",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 33,
+      "title": "",
+      "learning_goals": [
+        "쓰기 활동의 유형을 이해하여 이를 설명할 수 있다. 2. 쓰기 활동의 구체적인 예를 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "방법",
+          "definition": "점선 위에 글자를 덧쓰게 하는 방법, 전체 글을 보고 베껴 쓰는 방법, 문장의 일부를"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1133",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 33,
+      "title": "177",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "방법",
+          "definition": "점선 위에 글자를 덧쓰게 하는 방법, 전체 글을 보고 베껴 쓰는 방법, 문장의"
+        },
+        {
+          "name": "방법",
+          "definition": "전체를 다 받아쓰게 하는 방법, 빈칸에 들어갈 말 받아쓰기, 부분 받아쓰기 등"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "노래"
+      ],
+      "cautions": [
+        "어렵다는 한계점이 있음",
+        "오류를 줄이고 쓰기를 보다 쉽게 하기 위해서 초급 또는 중급에서 많이 활용하는 방법"
+      ],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1133",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 33,
+      "title": "179",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": [
+        "중국",
+        "일본"
+      ]
+    },
+    {
+      "id": "EXP_1133",
+      "book_id": "EXP",
+      "week": 11,
+      "chasi": 33,
+      "title": "181",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류의 수정을 지양함"
+      ],
+      "topik_level": [
+        "고급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1234",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 34,
+      "title": "",
+      "learning_goals": [
+        "단계별 교수-학습 방법을 이해하여 이를 설명할 수 있다. 2. 쓰기 능력을 길러 주는 연습 영역을 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "연상표",
+          "definition": "단어, 문장, 사진, 그림, 소리, 음악, 사물 등을 출발점으로 연상의 고리를 만듦 → 주제에 따른 구성 → 줄거리의 밑그림"
+        },
+        {
+          "name": "브레인스토밍",
+          "definition": "사고의 폭풍을 모두 함께 일으키는 그룹 활동. 주제에 대해 생각나는 모든 것을"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1234",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 34,
+      "title": "183",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "단계",
+          "definition": "교사는 교과서에서 잘 조직되고 한 가지 텍스트 구조를 가진 적당한 표지가 있는 텍스트를"
+        },
+        {
+          "name": "단계",
+          "definition": "교사는 텍스트 구조에 맞는 도식 준비"
+        },
+        {
+          "name": "단계",
+          "definition": "교사는 텍스트 구조의 개념을 소개"
+        },
+        {
+          "name": "단계",
+          "definition": "교사가 내용에 맞게 구성한 도식 제시"
+        },
+        {
+          "name": "단계",
+          "definition": "학생은 도식을 보고 구조 표지를 사용하여 구조에 맞게 쓰기 활동"
+        },
+        {
+          "name": "단계",
+          "definition": "교사와 학습자의 텍스트 비교"
+        },
+        {
+          "name": "단계",
+          "definition": "각 구조에 대한 학습 후에 복합적 구조 학습"
+        },
+        {
+          "name": "연습",
+          "definition": "말끝 이어가기, 문장 이어 나가기, 단어로"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "짝 활동"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1234",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 34,
+      "title": "185",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "과제",
+          "definition": "요약문 쓰기, 그림 묘사하기, 특정 주제를 대화로 쓰기, 생일을 맞은 친구에게"
+        },
+        {
+          "name": "단계",
+          "definition": "주제, 독자, 글의 종류, 전달에 관한 문제, 정보, 표현 수단 등을"
+        },
+        {
+          "name": "보기",
+          "definition": "글의 구조를 스케치하거나 글의 흐름도를 그리기"
+        },
+        {
+          "name": "표현하기",
+          "definition": "글에 대한 계획에 따라 글토막을 연결하여 텍스트를 형성"
+        },
+        {
+          "name": "초안",
+          "definition": "처음 쓴 글을 다시 읽고 철자나 문법 오류를 수정하기, 정확한 표현 찾기, 문체가"
+        },
+        {
+          "name": "수정",
+          "definition": "순차적으로가 아니고 ʻ순환적ʼ으로 후진과 전진을 반복하는 걸음. 외국어로 글을"
+        },
+        {
+          "name": "점검형",
+          "definition": "교사가 학생들에게 주제를 제시하고 학생이 쓴 글을 모아서"
+        },
+        {
+          "name": "방임형",
+          "definition": "과제 제시 오류 점검형에서는 학생이 능동적인 입장이 되지 못하고 학습자에게"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류를 수정하기, 정확한 표현 찾기, 문체가",
+        "오류 점검형과 방임형이 있음",
+        "오류 점검형：교사가 학생들에게 주제를 제시하고 학생이 쓴 글을 모아서"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1234",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 34,
+      "title": "187",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "고급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1235",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 35,
+      "title": "189",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류와 수정"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1235",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 35,
+      "title": "",
+      "learning_goals": [
+        "쓰기 오류의 분류와 원인을 이해하여 이를 설명할 수 있다. 2. 쓰기 오류를 수정하는 방법에는 어떤 것이 있는지 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "분류",
+          "definition": "음성/음운 오류, 형태․ 통사론적 오류, 어휘․ 의미론적 오류, 화용론적"
+        },
+        {
+          "name": "분류",
+          "definition": "표현 잘못, 관사 사용 틀림, 접속사 틀림, 화법 틀림, 정서법"
+        },
+        {
+          "name": "분류",
+          "definition": "수행 오류(mistakes, lapses)와 능력 오류(error)"
+        },
+        {
+          "name": "분류",
+          "definition": "실수(slip), 착각(errors), 시도(attempts)"
+        },
+        {
+          "name": "분류",
+          "definition": "음성/음운 오류, 형태․ 통사론적 오류, 어휘․ 의미론적 오류, 화용론"
+        },
+        {
+          "name": "분류",
+          "definition": "표현 잘못, 관사 사용 틀림, 접속사 틀림, 화법 틀림, 정서법"
+        },
+        {
+          "name": "분류",
+          "definition": "옳다고 확신하지만 사실은 오류인 것, 다행히도 발생"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류, 형태․ 통사론적 오류, 어휘․ 의미론적 오류, 화용론적",
+        "오류, 내용 오류",
+        "오류 표시 기호를 사용한 분류：표현 잘못, 관사 사용 틀림, 접속사 틀림, 화법 틀림, 정서법"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1235",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 35,
+      "title": "191",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "영향",
+          "definition": "과잉 일반화, 규칙화, 단순화"
+        },
+        {
+          "name": "수정",
+          "definition": "언어 능력 측정이 중심, 학습자가 가능하면 적게 틀리도록"
+        },
+        {
+          "name": "수정",
+          "definition": "학습 과정 및 학습의 진보가 중심, 오류는 학습을 위한 좋은"
+        },
+        {
+          "name": "표시",
+          "definition": "오류의 위치, 오류의 종류에 따른 표시 색깔(예 파랑색_ 정서법"
+        },
+        {
+          "name": "잡음",
+          "definition": "수정하거나 대안을 써 줌"
+        },
+        {
+          "name": "형태",
+          "definition": "밑줄 긋기(부주의나 실수인 경우), 수정 기호 사용(약간의 도움이 필요한"
+        },
+        {
+          "name": "가능성",
+          "definition": "수정 연습(오류 찾아내기, 오류의 원인 찾기 등)"
+        },
+        {
+          "name": "방법",
+          "definition": "학습자들이 교사의 수정을 어떻게 받아들"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류의 원인 (카린 클레핀, 2007：45-61)",
+        "오류 수정의 문제",
+        "오류 수정은 말하기에서보다 덜 복합적이 될 것임"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1235",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 35,
+      "title": "193",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류 수정의 예",
+        "오류 수정을 위해서 사용되는 부호를 보면 다음과 같음",
+        "오류를 수정한 예"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1235",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 35,
+      "title": "195",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류를 수정받은 좋은 기억이 있다. 그 때 교수는 틀린 것을 고쳐 주고 나서 \"괜찮습니",
+        "오류는 대가를 만든다.\"고 덧붙였다. → 쓰기에서도 오류 수정에 임하는 교사의 태도에 대해 의미있는 지침이 될 것임."
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1236",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 36,
+      "title": "",
+      "learning_goals": [
+        "쓰기 수업에서 일반적인 교사의 역할을 이해하여 이를 설명할 수 있다. 2. 학습 단계와 목적에 따른 교사의 역할을 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류만 집중하다 보면 감상보다는 형태에 중점을 두게 됨"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1236",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 36,
+      "title": "197",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류를 중심으로 지도하는 것이 좋음",
+        "오류를 지적한다면 학습자가 쓰기를 기피하게 될 수도 있음",
+        "오류만 집중하다 보면 감상보다는 형태에 중점을 두게 됨"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1236",
+      "book_id": "EXP",
+      "week": 12,
+      "chasi": 36,
+      "title": "199",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류나 부적합한 표현 등에 대한 고민 때문에 정작 그들이 글을"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1337",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 37,
+      "title": "",
+      "learning_goals": [
+        "한국어 쓰기 평가의 목적 및 기능을 이해"
+      ],
+      "key_concepts": [
+        {
+          "name": "평가",
+          "definition": "수업과 연계하여 반복적이고 계속적으로 텍스트를 생산해 냄으로써 결과"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류를 정확히 파악하고 수정할 수 있으며 교사와 학습자 모두 성취를 높이기 위한 다양한"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1337",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 37,
+      "title": "201",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "목표",
+          "definition": "한국어의 어휘, 문법, 문장 구조를 정확하게 익혀서 원어민 화자 수준으로"
+        },
+        {
+          "name": "평가",
+          "definition": "수업과 연계하여 반복적이고 계속적으로 텍스트를 생산해 냄으로써"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류를 발견하여 그것이 수정되는 과정을 통해 한국어의 구문 원칙을 보다",
+        "오류에만 집착하지 말고 전체적인 글의 조직과 내용의 풍부성과"
+      ],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1337",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 37,
+      "title": "203",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "있음",
+          "definition": "각 단계에서 수행한 활동과 전략 사용을 점검할 수 있"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류를 정확히 파악하고 수정할 수 있으며 교사와 학습자 모두 성취를 높이기"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1338",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 38,
+      "title": "205",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1338",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 38,
+      "title": "",
+      "learning_goals": [
+        "수준에 따른 쓰기 평가의 목표와 내용을 이해하여 이를 설명할 수 있다. 2. 한국어 쓰기 평가의 문항 유형을 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1338",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 38,
+      "title": "207",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "고급",
+        "중급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1338",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 38,
+      "title": "209",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1338",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 38,
+      "title": "211",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1338",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 38,
+      "title": "213",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1338",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 38,
+      "title": "215",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1338",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 38,
+      "title": "217",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1338",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 38,
+      "title": "219",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1339",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 39,
+      "title": "221",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1339",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 39,
+      "title": "",
+      "learning_goals": [
+        "쓰기 평가를 위한 구체적인 설계 절차를 이해하여 이를 설명할 수 있다. 2. 쓰기 평가 문항 개발을 위한 유의점을 이해하여 이를 설명할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "방법",
+          "definition": "정확성을 측정하는 방법"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류의 수를 세어 채점하는 방법"
+      ],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1339",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 39,
+      "title": "223",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의해야 함",
+        "주의해야 할 점",
+        "오류에 어떤 식으로 감점을 할 것인지, 정답 이외의 다른 답들에 어느 정도"
+      ],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "EXP_1339",
+      "book_id": "EXP",
+      "week": 13,
+      "chasi": 39,
+      "title": "225",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류의 수를 세어 채점하는 방법"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    }
+  ]
+}

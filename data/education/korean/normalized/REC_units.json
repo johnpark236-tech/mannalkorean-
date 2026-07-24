@@ -1,0 +1,1135 @@
+{
+  "meta": {
+    "book_id": "REC",
+    "title": "한국어이해교육론",
+    "professor": "권화숙",
+    "type": "전공필수",
+    "total_units": 42,
+    "total_concepts": 99,
+    "extracted": "2026-07-24",
+    "data_type": "메타데이터 — 내부 연구용"
+  },
+  "units": [
+    {
+      "id": "REC_011",
+      "book_id": "REC",
+      "week": 1,
+      "chasi": 1,
+      "title": "언어의 이해 활동과 최근의",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의적 관점이 부각되고 있다. 5) 학습 내용으로서 전략을 강조하고 있다."
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_012",
+      "book_id": "REC",
+      "week": 1,
+      "chasi": 2,
+      "title": "언어 교육과 교수법의 변천",
+      "learning_goals": [
+        "이해 과정의 모형에 대해 이해"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "청각구두",
+        "문법번역식"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_013",
+      "book_id": "REC",
+      "week": 1,
+      "chasi": 3,
+      "title": "이해 과정의 모형",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "모형",
+          "definition": "인지 심리학적 정보 처리 과정"
+        },
+        {
+          "name": "문제점",
+          "definition": "상향식 모형에 있어서의 문제점은 텍스트에 포함된 어휘나 문법 등을 알고 있"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_021",
+      "book_id": "REC",
+      "week": 2,
+      "chasi": 1,
+      "title": "듣기 교육의 중요성",
+      "learning_goals": [
+        "듣기 개념의 변천 양상을 교수 학습에 활용할 수 있다. 2. 듣기의 정의를 효율적으로 교수 학습할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_022",
+      "book_id": "REC",
+      "week": 2,
+      "chasi": 2,
+      "title": "듣기의 정의",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "견해",
+          "definition": "듣기를 인지 작용으로 이해"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_023",
+      "book_id": "REC",
+      "week": 2,
+      "chasi": 3,
+      "title": "듣기의 특성과 듣기 학습 시",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "음운",
+          "definition": "ㄱ/ㅋ/ㄲ, ㄷ/ㅌ/ㄸ, ㅂ/ㅍ/ㅃ, ㅗ/ㅓ, ㅡ/ㅜ"
+        },
+        {
+          "name": "규칙",
+          "definition": "먹어[머거], 손을[소늘], 그렇죠?[그러쵸]"
+        },
+        {
+          "name": "억양",
+          "definition": "밥 먹어요.(평서/의문/청유/명령/감탄)"
+        },
+        {
+          "name": "못함",
+          "definition": "화제 전환, 일단락 등"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "어렵지만, 말하기와는 다른 독자적인"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_031",
+      "book_id": "REC",
+      "week": 3,
+      "chasi": 1,
+      "title": "듣기의 이해 과정",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "경우",
+          "definition": "구체적이고 상세한 정보를 얻기 위해 상향식 과정을 활용"
+        },
+        {
+          "name": "경우",
+          "definition": "전반적인 흐름을 파악하거나 확인하는 정도의 이해를 위해"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_032",
+      "book_id": "REC",
+      "week": 3,
+      "chasi": 2,
+      "title": "듣기 교육의 내용과 목표",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "초급",
+          "definition": "일상생활에서 자주 접하는 친숙한 주제, 단순한 주제, 개인적이고 비공식"
+        },
+        {
+          "name": "중급",
+          "definition": "좀 더 복잡한 개인적인 상황에서의 담화, 자주 접하는 공식적인 상황에서"
+        },
+        {
+          "name": "고급",
+          "definition": "공시적이고 전문적인 주제에 대한 다단락 구조의 담화, 복잡한 의미 협상"
+        }
+      ],
+      "examples": [
+        "수식어와 피수식어의 순서"
+      ],
+      "teaching_methods": [
+        "토론",
+        "게임"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "REC_033",
+      "book_id": "REC",
+      "week": 3,
+      "chasi": 3,
+      "title": "듣기 교육의 방법",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "단계",
+          "definition": "들려 줄 내용에 대한 간단한 소개"
+        },
+        {
+          "name": "방법",
+          "definition": "관련 배경 지식(예: 우체국/명절/한국의 경제 등), 관련 자료(책자, 그림),"
+        },
+        {
+          "name": "단계",
+          "definition": "듣기에 집중하여 정확하게 들을 수 있도록 흥미 유발"
+        },
+        {
+          "name": "방법",
+          "definition": "내용에 맞는 그림 배열/완성/그리기, 표 또는 차트 완성하기, 참/거짓 문"
+        },
+        {
+          "name": "단계",
+          "definition": "듣기 활동 단계의 연속, 과제 부여"
+        },
+        {
+          "name": "방법",
+          "definition": "듣기가 끝난 후, 표 또는 차트 완성하기, 순서 매기기, 문장의 인과 관계"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "역할극"
+      ],
+      "cautions": [
+        "어렵기 때",
+        "어렵기 때문에",
+        "오류 찾기, 특정 정보 찾기, 내용의 목록표 만들기 등"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_041",
+      "book_id": "REC",
+      "week": 4,
+      "chasi": 1,
+      "title": "듣기 자료(1)",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "REC_042",
+      "book_id": "REC",
+      "week": 4,
+      "chasi": 2,
+      "title": "듣기 자료(2)",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [
+        "어렵거나 너무 쉽거나 하지 않아야 함"
+      ],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "REC_043",
+      "book_id": "REC",
+      "week": 4,
+      "chasi": 3,
+      "title": "듣기 전략",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "단계",
+          "definition": "그림 제시, 사전 질문, 의미 연결망 만들기 등"
+        },
+        {
+          "name": "단계",
+          "definition": "내용의 진위 파악하기, 들으면서 지도에서 경로를 추적하기, 그림으로"
+        },
+        {
+          "name": "단계",
+          "definition": "들은 내용의 세부 사항 관련짓기, 화자의 의도, 태도를 파악할 수 있는"
+        },
+        {
+          "name": "단계",
+          "definition": "듣기 과제를 위해 계획하기"
+        },
+        {
+          "name": "단계",
+          "definition": "이해 파악 정도 점검하기"
+        },
+        {
+          "name": "단계",
+          "definition": "이해 내용과 사용된 전략 평가하기"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "그림 제시"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_051",
+      "book_id": "REC",
+      "week": 5,
+      "chasi": 1,
+      "title": "듣기 활동 구성",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "정의",
+          "definition": "학습자들이 배운 지식을 충분히 활용하여 듣기 기능, 전략, 태도 등을 잘 습득할"
+        },
+        {
+          "name": "의미",
+          "definition": "교실 밖 상황에서 학습자들의 수행을 요구하는 활동까지 모두 포괄"
+        },
+        {
+          "name": "의미",
+          "definition": "교실 상황에서 사용되는 활동 과제"
+        },
+        {
+          "name": "이름",
+          "definition": "_____________________ 듣기 종류 : _____ 예상 소요 시간 : _____ 구성원 수 : _____ 1. 목적 :"
+        },
+        {
+          "name": "준비물",
+          "definition": "4. 진행 방법 :"
+        },
+        {
+          "name": "유의점",
+          "definition": "6. 평가 기준 :"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_052",
+      "book_id": "REC",
+      "week": 5,
+      "chasi": 2,
+      "title": "듣기 활동의 유형",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_053",
+      "book_id": "REC",
+      "week": 5,
+      "chasi": 3,
+      "title": "듣기 활동의 실제",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "REC_061",
+      "book_id": "REC",
+      "week": 6,
+      "chasi": 1,
+      "title": "과정 중심적 듣기/ 듣기 전",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "이해도",
+          "definition": "맥락과 배경지식 제공, 들을 내용을 예측하여 보다 쉽게, 더 정확하게 이해할"
+        },
+        {
+          "name": "자신감",
+          "definition": "듣기 전 정보를 통해 듣기가 좋아진 학습자들은 큰 자신감을 가짐"
+        },
+        {
+          "name": "역동성",
+          "definition": "수동적 수업이 될 가능성이 큰 듣기를 말하기, 읽기와 연계하여 수업에 참여할"
+        },
+        {
+          "name": "유형",
+          "definition": "배경 지식 활성화 활동/정보 강화 활"
+        },
+        {
+          "name": "활동",
+          "definition": "들을 내용 속에 나오는 어휘, 문화, 사회적 정보를 미리 학습하는 활동"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의해서 들어야 할 것이 무엇인가를",
+        "주의 사항>",
+        "주의 사항>"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_062",
+      "book_id": "REC",
+      "week": 6,
+      "chasi": 2,
+      "title": "듣기 활동/ 듣기 후 활동",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "파악하기",
+          "definition": "텍스트, 그림, 그래프"
+        },
+        {
+          "name": "표시하기",
+          "definition": "텍스트, 그림, 도표"
+        },
+        {
+          "name": "완성하기",
+          "definition": "텍스트, 그림, 도표, 지도"
+        },
+        {
+          "name": "단계",
+          "definition": "학생들의 성취도를 파악하고, 듣기 활동 점검하는 단계"
+        },
+        {
+          "name": "보기",
+          "definition": "교사-학생, 짝 활동, 모둠 활동"
+        },
+        {
+          "name": "활동",
+          "definition": "단어나 문법 학습하기, 요약하기 등"
+        },
+        {
+          "name": "활동",
+          "definition": "논평하기, 토론하기, 문제 해결하기 등"
+        },
+        {
+          "name": "활동",
+          "definition": "듣고 개인적인 경험으로 확장시켜 말하기와 쓰기,"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "짝 활동",
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_063",
+      "book_id": "REC",
+      "week": 6,
+      "chasi": 3,
+      "title": "듣기 수업 구성의 실제",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "실제",
+          "definition": "숙달도에 따른 단계별 듣기 수업 구성"
+        },
+        {
+          "name": "기능",
+          "definition": "환경 관련 정보 얻기"
+        },
+        {
+          "name": "과제",
+          "definition": "환경오염 관련 뉴스 이해하기"
+        },
+        {
+          "name": "활동",
+          "definition": "들을 내용 추측하기 / 그림이나 사진 제시"
+        },
+        {
+          "name": "말하기",
+          "definition": "환경오염의 실태를 조사하여 발표한다. 아울러 자기 나라의 환경 보호 방법들"
+        },
+        {
+          "name": "읽기",
+          "definition": "생활 정보지에 나와 있는 재활용, 중고 물건 판매 광고문을 읽는다. 또는 환경"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "역할극"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "고급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "REC_071",
+      "book_id": "REC",
+      "week": 7,
+      "chasi": 1,
+      "title": "듣기 평가의 목적과 방향/",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "목표",
+          "definition": "한국어를 이해하고, 이를 사용하여 의사소통할 수 있다. (2) 의사소통: 언어적, 또는 비언어적 기호를 사용하여 정보를 교환하고 유통하는 과정"
+        },
+        {
+          "name": "능력",
+          "definition": "실제 의사소통 상황에서의 언어 사용 능력의 기본 요소"
+        },
+        {
+          "name": "목표",
+          "definition": "듣기 능력을 포함한 진정한 의사소통 능력의 진단"
+        },
+        {
+          "name": "능력",
+          "definition": "대화 상황에서 어떤 내용을 듣고 얼마나 잘 이해하고 논리적이고 정"
+        },
+        {
+          "name": "단계",
+          "definition": "문장 단위의 이해, 짧은 문단의 내용 이해"
+        },
+        {
+          "name": "단계",
+          "definition": "하나의 이야기가 있는 담화 이해"
+        },
+        {
+          "name": "단계",
+          "definition": "복합적인 문장 담화 이해"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의 질문이 되지 않도록 유의"
+      ],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "REC_072",
+      "book_id": "REC",
+      "week": 7,
+      "chasi": 2,
+      "title": "듣기 평가 자료",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "자료",
+          "definition": "상황과 발화를 모두 자연스럽게 이해할 수 있게 구성된 자료"
+        },
+        {
+          "name": "남자",
+          "definition": "수미 씨 어느 옷이 더 좋아요? 골라 보세요. 여자 : 음... 저는 이게 더 좋은 거 같아요. 남자 : 그래요? 저는 이것도 좋은 거 같은데... 여자 : 저는 그래도 이게 더 좋아요. 이걸로 할래요."
+        },
+        {
+          "name": "초급",
+          "definition": "어떤 소리인지를 판별할 수 있는지를 묻는 유형"
+        },
+        {
+          "name": "이상",
+          "definition": "소리만으로 어떤 상황인지를 추론하는 유형"
+        },
+        {
+          "name": "초급",
+          "definition": "보통 7개의 단어로 이루어진 단문 또는 두 절 단위(연결어미가 하나인 문장) 문"
+        },
+        {
+          "name": "고급",
+          "definition": "길이가 길어지고 복합한 문장"
+        },
+        {
+          "name": "초급",
+          "definition": "10문장 내외의 대화 참여자가 두세 사람 정도인 담화"
+        },
+        {
+          "name": "중급",
+          "definition": "텍스트의 길이가 길어지면서 복잡해짐"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "REC_073",
+      "book_id": "REC",
+      "week": 7,
+      "chasi": 3,
+      "title": "평가 유형/ 평가의 관리/",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "형식",
+          "definition": "명확한 지시문과 보기"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_091",
+      "book_id": "REC",
+      "week": 9,
+      "chasi": 1,
+      "title": "읽기의 정의와 특성",
+      "learning_goals": [
+        "언어 교수 이론에서의 읽기 교육을 이해"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_092",
+      "book_id": "REC",
+      "week": 9,
+      "chasi": 2,
+      "title": "언어 교수 이론에서의 읽기",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "게임"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_093",
+      "book_id": "REC",
+      "week": 9,
+      "chasi": 3,
+      "title": "읽기 교육의 이론적 배경",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "활성화",
+          "definition": "읽기 이해에 중요한 영향을 미침"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "REC_101",
+      "book_id": "REC",
+      "week": 10,
+      "chasi": 1,
+      "title": "수준별 읽기 교육의 목표",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "REC_102",
+      "book_id": "REC",
+      "week": 10,
+      "chasi": 2,
+      "title": "읽기 이해의 영향 요인",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "사용됨",
+          "definition": "글을 보다 압축적이고 경제적으"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_103",
+      "book_id": "REC",
+      "week": 10,
+      "chasi": 3,
+      "title": "읽기 교육의 방법",
+      "learning_goals": [
+        "메뉴 21.스케줄 22.광고 23.초대장 24.목록 25.제품의 설명"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "REC_111",
+      "book_id": "REC",
+      "week": 11,
+      "chasi": 1,
+      "title": "읽기 과제",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "과제",
+          "definition": "학습자들이 실생활의 여러 상황에서 언어를 사용할 수 있도록 실생"
+        },
+        {
+          "name": "과제",
+          "definition": "교실 밖의 실생활에서 요구하는 것이라기보다는 교실에서 교육의 목적"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_112",
+      "book_id": "REC",
+      "week": 11,
+      "chasi": 2,
+      "title": "읽기 자료(1)",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_113",
+      "book_id": "REC",
+      "week": 11,
+      "chasi": 3,
+      "title": "읽기 자료(2)",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "경우",
+          "definition": "많은 그림 속 간단한 어휘와 문법을 사용한 자료를 사용해야 함"
+        },
+        {
+          "name": "경우",
+          "definition": "많은 지문과 기존 지식을 요하는 자료들을 구성함"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "REC_121",
+      "book_id": "REC",
+      "week": 12,
+      "chasi": 1,
+      "title": "읽기 전략의 유형",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "구별",
+          "definition": "소개, 정의, 예증, 결론 등"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_122",
+      "book_id": "REC",
+      "week": 12,
+      "chasi": 2,
+      "title": "읽기 전략(2)",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "언어능력",
+          "definition": "고립된 단어, 구의 식별로부터 점차 문맥화된 단어, 구를 인식하면서 텍스트"
+        },
+        {
+          "name": "능력",
+          "definition": "기본적인 개인적, 사회적 필요를 다루는 아주 간단하게 연결된 텍스트에 대"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "REC_123",
+      "book_id": "REC",
+      "week": 12,
+      "chasi": 3,
+      "title": "읽기 전략(3)",
+      "learning_goals": [
+        "과정 중심적 읽기 교수․학습 모형을 교수 학습에 적용할 수 있다. 2. 읽기 전 활동에 대해 이해하고 적용할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_131",
+      "book_id": "REC",
+      "week": 13,
+      "chasi": 1,
+      "title": "읽기 전 활동",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "예시",
+          "definition": "“동물들의 나이 자랑”"
+        },
+        {
+          "name": "어휘장",
+          "definition": "동물이름 - 쥐, 소, 호랑이, 토끼, 용, 뱀, 말, 양, 원숭이, 개, 닭, 돼지,"
+        },
+        {
+          "name": "예시",
+          "definition": "시의 이해 - “직녀에게”"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_132",
+      "book_id": "REC",
+      "week": 13,
+      "chasi": 2,
+      "title": "읽기 활동",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_133",
+      "book_id": "REC",
+      "week": 13,
+      "chasi": 3,
+      "title": "읽기 후 활동",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "유형",
+          "definition": "텍스트의 내용을 반복하도록 질문하는 유형"
+        },
+        {
+          "name": "유형",
+          "definition": "학습자가 자신의 생각으로 정리해서 진술하는 유형"
+        },
+        {
+          "name": "유형",
+          "definition": "텍스트에 있는 한두 개의 어휘로 문맥적인 유추를 하도록 하는 유형"
+        },
+        {
+          "name": "유형",
+          "definition": "텍스트의 어휘 항목에 대한 상황적 전제를 묻는 유형"
+        },
+        {
+          "name": "유형",
+          "definition": "학생 자신의 경험과 연결시켜 대답하는 개방형 질문 유형"
+        },
+        {
+          "name": "유형",
+          "definition": "교재의 내용이나 교재의 효과에 대한 학습자의 평가를 요구하는 질문 유"
+        },
+        {
+          "name": "정리하기",
+          "definition": "단락별 중심 내용을 한 단어 혹은 한 문장으로 쓰거나 밑줄을 긋"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "역할극",
+        "토론",
+        "게임"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_142",
+      "book_id": "REC",
+      "week": 14,
+      "chasi": 2,
+      "title": "노인상담방법 & 세대 간 노인교육",
+      "learning_goals": [
+        "효율적인 읽기 수업을 구성하여 교수 학습에 적용할 수 있다"
+      ],
+      "key_concepts": [
+        {
+          "name": "실제",
+          "definition": "“대학은 어떤 곳인가?”"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_141",
+      "book_id": "REC",
+      "week": 14,
+      "chasi": 1,
+      "title": "읽기 수업 구성의 실제",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "실제",
+          "definition": "“대학은 어떤 곳인가?”>"
+        },
+        {
+          "name": "과목",
+          "definition": "교양과목, 전공과목, 필수과목, 선택과목"
+        },
+        {
+          "name": "학점",
+          "definition": "이수학점, 졸업학점, 학점을 따다"
+        },
+        {
+          "name": "학위",
+          "definition": "학위 취득, 학위수여식, 학위를 따다"
+        },
+        {
+          "name": "취업",
+          "definition": "취업자, 취업률, 취업 설명회, 구직, 구인, 취업(을)하다"
+        },
+        {
+          "name": "동아리",
+          "definition": "동아리 방, 대학생 동아리 연합회, 동아리에 가입하다"
+        },
+        {
+          "name": "연구",
+          "definition": "연구원, 연구소, -을 연구하다"
+        },
+        {
+          "name": "강의",
+          "definition": "강의실, 강의계획서, 강의평가, 강사, -을 강의하다, 강의를 듣다"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "토론"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_142",
+      "book_id": "REC",
+      "week": 14,
+      "chasi": 2,
+      "title": "노인상담방법 & 세대 간 노인교육",
+      "learning_goals": [
+        "읽기 수업에서의 효율적인 어휘 지도에 대해 이해"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_142",
+      "book_id": "REC",
+      "week": 14,
+      "chasi": 2,
+      "title": "읽기 수업에서의 어휘 지도",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "단계",
+          "definition": "글을 이해하는 데 필수적인 어휘에 국한함"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "주의해야 함"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_142",
+      "book_id": "REC",
+      "week": 14,
+      "chasi": 2,
+      "title": "노인상담방법 & 세대 간 노인교육",
+      "learning_goals": [
+        "읽기 평가의 기준과 유형을 교수 학습에 적용할 수 있다. 2. 어휘 능력 평가 유형을 교수 학습에 효율적으로 활용할 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "REC_143",
+      "book_id": "REC",
+      "week": 14,
+      "chasi": 3,
+      "title": "읽기 평가",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "능력",
+          "definition": "이야기나 문장을 이루는 기본 단위인 단어나 관용 표현(속담, 숙어)의 의미"
+        },
+        {
+          "name": "능력",
+          "definition": "명시적, 즉 명확하게 나와 있는 내용들을 사실 그대로 이해하거나 사"
+        },
+        {
+          "name": "능력",
+          "definition": "글의 구조를 이해하여 정보가 배열되어 있는 방식을 올바르게 파악"
+        },
+        {
+          "name": "능력",
+          "definition": "글 속에 나타나 있는 정보를 근거로 해서 분명히 언급되지 않은 내"
+        },
+        {
+          "name": "능력",
+          "definition": "정확하고 타당한 진술을 하기 위해 갖추어야 할 일정한 언어적 조건"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    }
+  ]
+}

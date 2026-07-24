@@ -35,6 +35,14 @@ jobs:
       - name: Build Race data
         run: python scripts/build_all_race_data.py
 
+      - name: Check Korean Education DB
+        run: |
+          if [ -f data/education/korean/db/korean_edu.db ]; then
+            echo "Korean Education DB: $(du -h data/education/korean/db/korean_edu.db | cut -f1)"
+          else
+            echo "Korean Education DB: not found (skip)"
+          fi
+
       - name: Commit updated data
         run: |
           git config user.name  "github-actions[bot]"

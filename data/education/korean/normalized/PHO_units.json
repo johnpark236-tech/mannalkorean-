@@ -1,0 +1,1960 @@
+{
+  "meta": {
+    "book_id": "PHO",
+    "title": "한국어발음교육론",
+    "professor": "손상미",
+    "type": "전공선택",
+    "total_units": 78,
+    "total_concepts": 151,
+    "extracted": "2026-07-24",
+    "data_type": "메타데이터 — 내부 연구용"
+  },
+  "units": [
+    {
+      "id": "PHO_011",
+      "book_id": "PHO",
+      "week": 1,
+      "chasi": 1,
+      "title": "한국어 발음 교육론 개괄 ········································································ 1",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_012",
+      "book_id": "PHO",
+      "week": 1,
+      "chasi": 2,
+      "title": "한국어 발음 교육과 한국어 교사 ····························································· 5",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_013",
+      "book_id": "PHO",
+      "week": 1,
+      "chasi": 3,
+      "title": "제2 언어 습득이론과 발음 교육 ······························································· 9",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_021",
+      "book_id": "PHO",
+      "week": 2,
+      "chasi": 1,
+      "title": "외국어 교수 이론의 사조와 발음 교육 ··················································· 14",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_022",
+      "book_id": "PHO",
+      "week": 2,
+      "chasi": 2,
+      "title": "음성학의 이해 ······················································································· 17",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_023",
+      "book_id": "PHO",
+      "week": 2,
+      "chasi": 3,
+      "title": "음운론의 이해 ······················································································· 20",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_031",
+      "book_id": "PHO",
+      "week": 3,
+      "chasi": 1,
+      "title": "음운 현상 ····························································································· 23",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_032",
+      "book_id": "PHO",
+      "week": 3,
+      "chasi": 2,
+      "title": "자음 ····································································································· 26",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_033",
+      "book_id": "PHO",
+      "week": 3,
+      "chasi": 3,
+      "title": "자음의 교수 방법 ·················································································· 30",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_041",
+      "book_id": "PHO",
+      "week": 4,
+      "chasi": 1,
+      "title": "모음 ··································································································· 33",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_042",
+      "book_id": "PHO",
+      "week": 4,
+      "chasi": 2,
+      "title": "이중모음 ····························································································· 36",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_043",
+      "book_id": "PHO",
+      "week": 4,
+      "chasi": 3,
+      "title": "모음 교수 방법 ··················································································· 39",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_051",
+      "book_id": "PHO",
+      "week": 5,
+      "chasi": 1,
+      "title": "음절 구조와 음절말 자음 ····································································· 42",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_052",
+      "book_id": "PHO",
+      "week": 5,
+      "chasi": 2,
+      "title": "음절 단위 교수 방법1 ········································································· 44",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_053",
+      "book_id": "PHO",
+      "week": 5,
+      "chasi": 3,
+      "title": "음절 단위 교수 방법2 ········································································· 47",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_061",
+      "book_id": "PHO",
+      "week": 6,
+      "chasi": 1,
+      "title": "연음화 ································································································ 50",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_062",
+      "book_id": "PHO",
+      "week": 6,
+      "chasi": 2,
+      "title": "격음화 ································································································ 53",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_063",
+      "book_id": "PHO",
+      "week": 6,
+      "chasi": 3,
+      "title": "비음화1 ······························································································ 56",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_071",
+      "book_id": "PHO",
+      "week": 7,
+      "chasi": 1,
+      "title": "비음화2 ······························································································ 59",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_072",
+      "book_id": "PHO",
+      "week": 7,
+      "chasi": 2,
+      "title": "유음화 ································································································ 62",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_073",
+      "book_id": "PHO",
+      "week": 7,
+      "chasi": 3,
+      "title": "구개음화 ····························································································· 65",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_091",
+      "book_id": "PHO",
+      "week": 9,
+      "chasi": 1,
+      "title": "경음화1 ······························································································ 68",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_092",
+      "book_id": "PHO",
+      "week": 9,
+      "chasi": 2,
+      "title": "경음화2 ······························································································ 71",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_093",
+      "book_id": "PHO",
+      "week": 9,
+      "chasi": 3,
+      "title": "ㄴ첨가1 ······························································································ 73",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_101",
+      "book_id": "PHO",
+      "week": 10,
+      "chasi": 1,
+      "title": "ㄴ첨가2 ···························································································· 76",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_102",
+      "book_id": "PHO",
+      "week": 10,
+      "chasi": 2,
+      "title": "모음의 음운 현상1 ············································································ 79",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_103",
+      "book_id": "PHO",
+      "week": 10,
+      "chasi": 3,
+      "title": "모음의 음운 현상 2 ··········································································· 82",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_111",
+      "book_id": "PHO",
+      "week": 11,
+      "chasi": 1,
+      "title": "초분절음1 ························································································· 85",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_112",
+      "book_id": "PHO",
+      "week": 11,
+      "chasi": 2,
+      "title": "초분절음2 ························································································· 88",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_113",
+      "book_id": "PHO",
+      "week": 11,
+      "chasi": 3,
+      "title": "초분절음3 ························································································· 91",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_121",
+      "book_id": "PHO",
+      "week": 12,
+      "chasi": 1,
+      "title": "초분절음 교수 방안 ··········································································· 94",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_122",
+      "book_id": "PHO",
+      "week": 12,
+      "chasi": 2,
+      "title": "한국어 억양의 기능1 ········································································· 97",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_123",
+      "book_id": "PHO",
+      "week": 12,
+      "chasi": 3,
+      "title": "한국어 억양의 기능2 ······································································· 100",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_131",
+      "book_id": "PHO",
+      "week": 13,
+      "chasi": 1,
+      "title": "한국어 억양 교수 방법 ···································································· 103",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_132",
+      "book_id": "PHO",
+      "week": 13,
+      "chasi": 2,
+      "title": "발음 교수의 기본 원리1 ··································································· 106",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_133",
+      "book_id": "PHO",
+      "week": 13,
+      "chasi": 3,
+      "title": "발음 교수의 기본 원리2 ··································································· 109",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_141",
+      "book_id": "PHO",
+      "week": 14,
+      "chasi": 1,
+      "title": "발음 평가 ························································································ 112",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_142",
+      "book_id": "PHO",
+      "week": 14,
+      "chasi": 2,
+      "title": "발음 교정1 ······················································································ 116",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_143",
+      "book_id": "PHO",
+      "week": 14,
+      "chasi": 3,
+      "title": "발음 교정2 ······················································································ 119",
+      "learning_goals": [
+        "한국어 발음 교육의 목적을 이해할 수 있다. 2. 한국어 발음 교육의 필요성을 알 수 있다"
+      ],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_011",
+      "book_id": "PHO",
+      "week": 1,
+      "chasi": 1,
+      "title": "한국어 발음 교육론 개괄",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "발음",
+          "definition": "L1 발음의 흔적이 없으며 L2 모국어 화자와 구분되지 않을 정도로 정확한 발음."
+        },
+        {
+          "name": "발음",
+          "definition": "의미 전달에 문제가 없는 정도의 정확성을 갖춘 발음."
+        },
+        {
+          "name": "발음",
+          "definition": "화자의 발화를 이해하는 데 어려움이 없는 발음. <표1> 발음 교육의 목적 유형에 따른 발음"
+        },
+        {
+          "name": "교육과정",
+          "definition": "국제 통용 한국어 표준 모형"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "어렵지만 개별 음운은 정확하게 발음할 수",
+        "어렵지만 개별 음운은 정확하게 발음할 수"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_012",
+      "book_id": "PHO",
+      "week": 1,
+      "chasi": 2,
+      "title": "한국어 발음 교육과 한국어 교사",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "결정",
+          "definition": "발음의 정확성과 유창성이 떨어지면 의사소통 불가능. 발음이 부정"
+        },
+        {
+          "name": "이해",
+          "definition": "한국어 음성음운론, 표준발음법"
+        },
+        {
+          "name": "중간언어이해",
+          "definition": "학습자 모어 발음 체계, 한국어와 학습자 모어간 발음 대조 정보, 제2 언어"
+        },
+        {
+          "name": "방법론",
+          "definition": "발음 교육 내용, 교수·학습 이론, 교육 방법"
+        },
+        {
+          "name": "발음",
+          "definition": "산출 차원에서 교육하는 것이 아니라 이해 차원에서 지도해야 함."
+        },
+        {
+          "name": "초급",
+          "definition": "개별 음소 중심 교육"
+        },
+        {
+          "name": "고급",
+          "definition": "초분절음(자연스러운 발음)"
+        }
+      ],
+      "examples": [
+        "과자[가자]",
+        "좀[쫌], 소주[쏘주]",
+        "부엌에[부어게] 무릎을[무르블], 꽃이[꼬시]",
+        "가려고[갈려고]",
+        "네가[니가]"
+      ],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_013",
+      "book_id": "PHO",
+      "week": 1,
+      "chasi": 3,
+      "title": "제2 언어 습득이론과 발음 교육",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "전이",
+          "definition": "이전에 형성된 지식이나 경험이 이후의 학습에 영향을 미치는 현상. 긍정적 전이와 부"
+        },
+        {
+          "name": "현상",
+          "definition": "조음 전이, 청취 전이, 자소 전이"
+        },
+        {
+          "name": "전이",
+          "definition": "L1을 발음하면서 고착된 L1의 조음 습관을 L2를 조음할 때 부정적으로 전이"
+        },
+        {
+          "name": "전이",
+          "definition": "L2 발음을 들을 때 L1의 음운 체계를 적용하여, L1 체계를 바탕으로 L2를"
+        },
+        {
+          "name": "전이",
+          "definition": "L1과 L2의 정서법 혹은 자소 체계 차이로 인해 음운 체계의 부정적 전이가"
+        },
+        {
+          "name": "유표적",
+          "definition": "하나의 자질에 어떤 자질이 더해진 더 복잡하고 덜 보편적인 것. 유무의 이분법."
+        },
+        {
+          "name": "음성범주동화",
+          "definition": "L1과 L2의 음성 간에 인지할 수 있는 차이가 존재함에도 불구하고 새로운"
+        },
+        {
+          "name": "음성범주이화",
+          "definition": "L2 음성을 위한 새로운 범주가 수립될 때 작동이 되는 기제. 음성범주이"
+        }
+      ],
+      "examples": [
+        "영어의 'rice' - 청취 전이 : L2 발음을 들을 때 L1의 음운 체계를 적용하여, L1 체계를 바탕으로 L2를",
+        "영어의 'Thank you'를 들을 때 한국인은 [ㄸ]나 [ㅆ]로 지각하여 [땡큐], [쌩큐]로 들",
+        "스페인어 'hola'"
+      ],
+      "teaching_methods": [
+        "청각구두",
+        "직접 교수",
+        "문법번역식"
+      ],
+      "cautions": [
+        "오류를 예측하는 데 효용성을 지님. - 대조분석 관점에서 L1으로 인한 간섭은 예측이 가능함. - 대조분석에 의해 발견되는 상이점들이 학습자 오류로 나타날 가능성은 높으나 상이점이 모",
+        "오류로 나타나는 것은 아님. 2) 전이",
+        "오류를 발생시킴. ③ 음성·음운 간섭 현상 : 조음 전이, 청취 전이, 자소 전이"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_021",
+      "book_id": "PHO",
+      "week": 2,
+      "chasi": 1,
+      "title": "외국어 교수 이론의 사조와",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [
+        "청각구두",
+        "직접 교수",
+        "문법번역식"
+      ],
+      "cautions": [
+        "어렵고 쉽게 지루해질 수 있음",
+        "주의적 접근법"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_022",
+      "book_id": "PHO",
+      "week": 2,
+      "chasi": 2,
+      "title": "음성학의 이해",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "말소리",
+          "definition": "폐에서 만들어 내는 기류가 성대를 지나 성도를 거치면서 다양한 소리로 조음이 되"
+        },
+        {
+          "name": "유성음",
+          "definition": "성대 사이의 간격이 매우 좁고 두 성대가 빠른 속도로 붙었다 떨졌다가를 반복하"
+        },
+        {
+          "name": "무성음",
+          "definition": "성대 사이의 간격이 기류가 쉽게 빠져나올 정도로 벌어져 있고 성대의 진동은 없"
+        },
+        {
+          "name": "무기음",
+          "definition": "두 성대가 거의 밀착되어 있어 유성음보다 성대 간 거리가 더 가까워 기류가 거"
+        },
+        {
+          "name": "유기음",
+          "definition": "무성음에 비해 성대 간 간격이 커 기류가 빠져나가는 양이 무성음보다 많음"
+        },
+        {
+          "name": "조음체",
+          "definition": "조음에 관여하는 기관들 중 입 안 아래쪽에 있는 움직일 수 있는 기관들. 아랫입"
+        },
+        {
+          "name": "조음점",
+          "definition": "조음체들이 가서 닿는 기관들. 윗입술, 윗니, 입천장"
+        },
+        {
+          "name": "공명음",
+          "definition": "폐에서 올라온 기류가 후두를 지나 성도인 구강, 비강, 인강을 거쳐 아무런 장애"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_023",
+      "book_id": "PHO",
+      "week": 2,
+      "chasi": 3,
+      "title": "음운론의 이해",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "음운",
+          "definition": "단어의 뜻을 구별하게 해 주는 소리의 최소 단위. - 하나의 음운은 다양한 음성적 환경에서 여러 가지 음성형으로 실현됨, 이때 실현된 음성들의"
+        },
+        {
+          "name": "변이음",
+          "definition": "한 음소에 속하지만 환경에 따라 다르게 실현되는 소리들. 모음에 비해 자음의 변"
+        },
+        {
+          "name": "음절",
+          "definition": "하나 이상의 분절음으로 구성된 소리 단위. 독립적으로 안정된 소리를 낼 수 있는"
+        },
+        {
+          "name": "요소",
+          "definition": "두음, 핵, 말음"
+        },
+        {
+          "name": "한국어",
+          "definition": "(C)V(C) - 영어 : (CCC)V(CCCC)"
+        },
+        {
+          "name": "제약",
+          "definition": "특정 음소와 음소의 연쇄를 제한하는 제약"
+        },
+        {
+          "name": "제약",
+          "definition": "한국어에는 초성, 중성, 종성에 올 수 있는 음소의 수나 종류를 제한"
+        },
+        {
+          "name": "제약",
+          "definition": "초성에 올 수 있는 자음의 수는 한 개다. 초성에 자음군이 올 수 없다. - 종성 제약 : 종성에 올 수 있는 자음의 수는 한 개다. 종성에 자음군에 올 수 없다. 종성에"
+        }
+      ],
+      "examples": [
+        "‘ㄹ+ㄴ’의 연쇄는 올 수 없다.",
+        "비음 앞에 장애음이 올 수 없다. 국물, 닫는",
+        "파열음의 불파음화 : 파열음 /ㄱ, ㄷ, ㅂ/는 어말 종성에서 불파음으로 실현된다. 지갑, 솥"
+      ],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": [
+        "일본"
+      ]
+    },
+    {
+      "id": "PHO_031",
+      "book_id": "PHO",
+      "week": 3,
+      "chasi": 1,
+      "title": "음운 현상",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "현상",
+          "definition": "한 형태소를 구성하던 소리들이 다른 형태소들과 어울리는 과정에서 변화를 겪"
+        },
+        {
+          "name": "양순음",
+          "definition": "신발⇒[신발], [심발]"
+        },
+        {
+          "name": "연구개음",
+          "definition": "한겨울⇒[한겨울], [항겨울]"
+        },
+        {
+          "name": "연구개음",
+          "definition": "밥공기⇒[밥꽁기], [바꽁기]"
+        }
+      ],
+      "examples": [
+        "달나라[달라라], 잎[입], 겉으로[거트로], 겉옷[거돋]"
+      ],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_032",
+      "book_id": "PHO",
+      "week": 3,
+      "chasi": 2,
+      "title": "자음",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "자음",
+          "definition": "조음 기관이 막히거나 좁혀지는 과정에서 공기의 흐름이 장애를 받아서 만들어지는"
+        },
+        {
+          "name": "파열음",
+          "definition": "막힌 공기를 터뜨려 발음"
+        },
+        {
+          "name": "파열음",
+          "definition": "막힌 공기가 터지지 않은 채 발음이 끝남"
+        },
+        {
+          "name": "설측음",
+          "definition": "‘ㄹ[l]’. 혀끝을 윗잇몸에 붙이고 혀의 옆이 입안의 볼 쪽 벽에 닿지 않게 하여 통로"
+        },
+        {
+          "name": "탄설음",
+          "definition": "‘ㄹ[ɾ]’은 혀끝을 윗잇몸에 한 번 잠깐 댔다 떼어 발음하는 소리. 접촉이 순간이 짧"
+        },
+        {
+          "name": "전동음",
+          "definition": "‘ㄹ[r]’은 혀끝을 윗잇몸에 여러 번 댔다 떼며 혀끝을 떨어서 발음"
+        },
+        {
+          "name": "자음",
+          "definition": "평음, 경음, 격음"
+        },
+        {
+          "name": "장애음",
+          "definition": "성도에서 기류의 장애를 받아서 조음되는 소리"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_033",
+      "book_id": "PHO",
+      "week": 3,
+      "chasi": 3,
+      "title": "자음의 교수 방법",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [
+        "사다/싸다, 자다/차다, 딸이 있다/달이 있다"
+      ],
+      "teaching_methods": [],
+      "cautions": [
+        "오류 생성"
+      ],
+      "topik_level": [],
+      "related_countries": [
+        "중국",
+        "일본",
+        "영어권"
+      ]
+    },
+    {
+      "id": "PHO_041",
+      "book_id": "PHO",
+      "week": 4,
+      "chasi": 1,
+      "title": "모음",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "단모음",
+          "definition": "하나의 소리로 구성되어 발음할 때 혀의 위치나 입모양에 변화가 일어나지 않는 모"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_042",
+      "book_id": "PHO",
+      "week": 4,
+      "chasi": 2,
+      "title": "이중모음",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "이중모음",
+          "definition": "발음할 때 입의 모양이 바뀜"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_043",
+      "book_id": "PHO",
+      "week": 4,
+      "chasi": 3,
+      "title": "모음 교수 방법",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "구별",
+          "definition": "반드시 구별해서 발음하도록 지도해야 하는 것은 아니지만 둘의 차이를"
+        }
+      ],
+      "examples": [
+        "/ㅗ/와 /ㅓ/, /ㅡ/와 /ㅜ/, /ㅡ/와 /ㅓ/",
+        "가을[*가얼], 그림[*거림]",
+        "머리[*머리~모리], 건강[*건강~곤강]",
+        "어머니[*오모니], 서울[*소울]",
+        "사무실[*사므실], 요즘[요줌]"
+      ],
+      "teaching_methods": [],
+      "cautions": [
+        "주의하도록 지도",
+        "혼동하기 쉬운 발음들을 변별시키는 설명 필요. 예) /ㅗ/와 /ㅓ/, /ㅡ/와 /ㅜ/, /ㅡ/와 /ㅓ/",
+        "어렵기 때문에 /ㅢ/를 /ㅟ/처럼 발음"
+      ],
+      "topik_level": [],
+      "related_countries": [
+        "중국",
+        "일본",
+        "영어권"
+      ]
+    },
+    {
+      "id": "PHO_051",
+      "book_id": "PHO",
+      "week": 5,
+      "chasi": 1,
+      "title": "음절 구조와 음절말 자음",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "음절",
+          "definition": "안정적으로 발음할 수 있는 최소의 음성 단위. 자음이나 모음 같은 음소보다 한"
+        },
+        {
+          "name": "개음절",
+          "definition": "종성이 없는 음절"
+        },
+        {
+          "name": "폐음절",
+          "definition": "종성이 있는 음절"
+        },
+        {
+          "name": "제약",
+          "definition": "초성에 올 수 있는 자음의 수는 한 개다."
+        },
+        {
+          "name": "제약",
+          "definition": "종성에 올 수 있는 자음의 수는 한 개다."
+        },
+        {
+          "name": "제약",
+          "definition": "중성에 이중모음 ‘의’가 오면 종성에는 자음이 올 수 없"
+        },
+        {
+          "name": "규칙",
+          "definition": "‘ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅇ’의 7개 외의 자음이 음절말에 오게 되면 이"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_052",
+      "book_id": "PHO",
+      "week": 5,
+      "chasi": 2,
+      "title": "음절 단위 교수 방법1",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "중급",
+        "초급"
+      ],
+      "related_countries": [
+        "중국",
+        "일본",
+        "영어권"
+      ]
+    },
+    {
+      "id": "PHO_053",
+      "book_id": "PHO",
+      "week": 5,
+      "chasi": 3,
+      "title": "음절 단위 교수 방법2",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "연습",
+          "definition": "음절말 자음-들은 것을 찾게 한다. ① [간] 간/감/강"
+        },
+        {
+          "name": "읽기",
+          "definition": "홑받침 연습- 각 받침의 발음에 유의하며 소리 내어 읽게 한다. ① 한국, 책, 학생, 부엌"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": [
+        "베트남",
+        "중국",
+        "일본"
+      ]
+    },
+    {
+      "id": "PHO_061",
+      "book_id": "PHO",
+      "week": 6,
+      "chasi": 1,
+      "title": "연음화",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "연음",
+          "definition": "자음으로 끝나는 음절 뒤에 모음이 올 때. 앞 음절의 종성이 뒤 음절의 초성으로 옮"
+        },
+        {
+          "name": "조사",
+          "definition": "옷이[오세], 낮이[나지], 꽃을[꼬출]. 부엌에[부어케]. 밭에[바테] • 어미 : 먹으면[머그면], 감아도[가마도]. 있어요[이씨요]. 먹은[머근] • 접사 : 먹이[머기], 손잡이[손자비], 깊이[기피]"
+        },
+        {
+          "name": "조사",
+          "definition": "값이[갑씨], 닭을[달글]. 삶을[살믈] • 어미 . 읽어요[일거요], 맑은[말근], 앉은[안즌]. 없어요[업써요], 굶어도[굴머도], 핥은"
+        },
+        {
+          "name": "옷이",
+          "definition": "옷+ㅣ ⇒ [오시]"
+        },
+        {
+          "name": "입어오",
+          "definition": "입+어요 ⇒ [이버요]"
+        },
+        {
+          "name": "오류",
+          "definition": "영어권 학습자들은 한국어를 볼 때 시각적으로 선행 음절의"
+        },
+        {
+          "name": "오류",
+          "definition": "영어 w는 자음으로 인식"
+        }
+      ],
+      "examples": [
+        "• 단어 내 : 직업[지겁], 만약[마냑], 얼음[어름〕, 할아비지[하라버지〕. 금요일[그묘일], 입원[이붠〕, 웃어요[우서요], 찾아요[자자요",
+        "① 홑자음+형식 형태소",
+        "① 홑받침+실질 형태소",
+        "옷이 : 옷+ㅣ ⇒ [오시]"
+      ],
+      "teaching_methods": [],
+      "cautions": [
+        "오류 : 영어권 학습자들은 한국어를 볼 때 시각적으로 선행 음절의",
+        "오류 : 영어 w는 자음으로 인식"
+      ],
+      "topik_level": [],
+      "related_countries": [
+        "베트남",
+        "중국",
+        "일본",
+        "영어권"
+      ]
+    },
+    {
+      "id": "PHO_062",
+      "book_id": "PHO",
+      "week": 6,
+      "chasi": 2,
+      "title": "격음화",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "규칙",
+          "definition": "ㅎ + ㄱ, ㄷ, ㅂ, ㅈ ⇒ ㅋ, ㅌ, ㅍ, ㅊ"
+        },
+        {
+          "name": "예시",
+          "definition": "어떻게, 좋고, 낳지, 잃지, 끊고"
+        },
+        {
+          "name": "규칙",
+          "definition": "ㄱ, ㄷ, ㅂ, ㅈ + ㅎ ⇒ ㅋ, ㅌ, ㅍ, ㅊ"
+        },
+        {
+          "name": "예시",
+          "definition": "입학, 생각하고, 읽히다, 못해요, 따뜻해요"
+        },
+        {
+          "name": "격음화",
+          "definition": "영어의 격음화는 단어 내에서 일어나지 않고 단어와 단어 간에서 발생하"
+        },
+        {
+          "name": "쓰기",
+          "definition": "강세구 단위> 하나의 강세구로 읽었을 때 격음화가 일어나는 표현"
+        }
+      ],
+      "examples": [
+        "입학[*입학]"
+      ],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": [
+        "중국",
+        "일본",
+        "영어권"
+      ]
+    },
+    {
+      "id": "PHO_063",
+      "book_id": "PHO",
+      "week": 6,
+      "chasi": 3,
+      "title": "비음화1",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "이유",
+          "definition": "‘ㄱ’의 공명도가 ‘ㄴ’보다 낮음. ⇒ ㄱ의 공명도를 한 단계 높여 ㅇ으로"
+        },
+        {
+          "name": "이유",
+          "definition": "‘ㅁ’의 공명도가 ‘ㄹ’보다 낮음. ⇒ 공명도를 높일 수 없으므로 ‘ㄹ’의 공명도를 한 단계 낮추어 ㄴ으로. ⇒ 담력[담녁] • 장애음+유음 : 국력"
+        },
+        {
+          "name": "이유",
+          "definition": "‘ㄱ’의 공명도가 ‘ㄹ‘보다 두 단계 낮음. - ’ㄱ‘의 공명도를 높여 ㅇ으로, ’ㄹ‘의 공명도를 한 단계 낮추어 ㄴ으로. - 국력[궁녁]"
+        }
+      ],
+      "examples": [
+        "학년[항년]-비음 앞에 장애음이 올 수 없다. 국력[궁녁]-‘ㄹ’ 앞에는 ‘ㄹ’ 이외의 어떠한 자음도 올 수 없다. ② 공명도 조정의 관점에서"
+      ],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_071",
+      "book_id": "PHO",
+      "week": 7,
+      "chasi": 1,
+      "title": "비음화2",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "규칙",
+          "definition": "/ㄱ, ㄴ, ㄷ, ㅁ, ㅂ, ㅇ/, /ㄹ/ ⇒ /ㄱ, ㄴ, ㄷ, ㅁ, ㅂ, ㅇ/, /ㄴ/"
+        },
+        {
+          "name": "제시",
+          "definition": "/ㄱ/ ⇒ /ㅇ/, /ㅂ/ ⇒ /ㅁ/, /ㄷ/ ⇒ /ㄴ/"
+        },
+        {
+          "name": "제시",
+          "definition": "단어 내 ⇒ 단어와 단어 간"
+        }
+      ],
+      "examples": [
+        "정리, 종로, 경력, 음운론",
+        "매운 라면 좋아한다고 그랬지?",
+        "국물, 빗물, 앞문 ⇒ 한국 남자, 어학 능력, 추억 만들기 ⇒ 책 넣으세요. 밥 먹었어? 실컷",
+        "식물[*식물], 막내[*막내]",
+        "몰라요[*모라요], 엄마[*어마]"
+      ],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": [
+        "베트남",
+        "중국",
+        "일본",
+        "영어권"
+      ]
+    },
+    {
+      "id": "PHO_072",
+      "book_id": "PHO",
+      "week": 7,
+      "chasi": 2,
+      "title": "유음화",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "칼날",
+          "definition": "'ㄹ+ㄴ‘은 연쇄될 수 없다 ⇒ 후행하는 ㄴ이 ㄹ이 된다."
+        },
+        {
+          "name": "신라",
+          "definition": "’ㄹ‘ 앞에 ’ㄹ‘ 이외의 어떠한 음절말 자음도 허용하지 않는다. ⇒ 선행하는 ㄴ이 ㄹ"
+        },
+        {
+          "name": "사이",
+          "definition": "오늘 산 라디오[오늘산라디오./*오늘살라디오], 새로 나온 라면[새로나온"
+        }
+      ],
+      "examples": [
+        "· 칼날 : 'ㄹ+ㄴ‘은 연쇄될 수 없다 ⇒ 후행하는 ㄴ이 ㄹ이 된다.",
+        "/ㄹ/, /ㄴ/ ⇒ /ㄹ/, /ㄹ/ : 설날, 실내, 잃는, 끓는",
+        "관리실[*관리실], 한라산[*할라산], 끓는[*끌는]"
+      ],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": [
+        "중국",
+        "일본"
+      ]
+    },
+    {
+      "id": "PHO_073",
+      "book_id": "PHO",
+      "week": 7,
+      "chasi": 3,
+      "title": "구개음화",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "규칙",
+          "definition": "/ㄷ, ㅌ/, /ㅣ/ 또는 반모음 ⇒ /ㅈ, ㅊ/, /ㅣ/ 또는 반모음"
+        },
+        {
+          "name": "예시",
+          "definition": "맏이, 굳이, 해돋이, 같이, 밭이, 닫히다, 묻히다, 갇히다, 붙여, - 후행하는 요소가 문법 형태소가 아닌 경우 구개음화가 일어나지 않음. 예) 끝인사[끄딘사], 밭이랑[반니랑]"
+        },
+        {
+          "name": "쓰기",
+          "definition": "발음표 채우기-학생들에게 소리 나는 대로 써서 발음표를 완성하게"
+        }
+      ],
+      "examples": [
+        "끝인사[끄딘사], 밭이랑[반니랑]"
+      ],
+      "teaching_methods": [],
+      "cautions": [
+        "오류를 범할 수 있음"
+      ],
+      "topik_level": [
+        "중급",
+        "초급"
+      ],
+      "related_countries": [
+        "중국",
+        "일본",
+        "영어권"
+      ]
+    },
+    {
+      "id": "PHO_091",
+      "book_id": "PHO",
+      "week": 9,
+      "chasi": 1,
+      "title": "경음화1",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "규칙",
+          "definition": "/ㅂ, ㄷ, ㄱ/, /ㅂ, ㄷ, ㄱ, ㅅ, ㅈ/ ⇒ /ㅂ, ㄷ, ㄱ/, /ㅃ, ㄸ, ㄲ, ㅆ, ㅉ/"
+        },
+        {
+          "name": "예시",
+          "definition": "ㅂ ⇒ ㅃ : 국밥, 숯불"
+        },
+        {
+          "name": "규칙",
+          "definition": "단어 내부에서 종성 /ㄹ/ 뒤에 오는 /ㄷ, ㅅ, ㅈ/가 /ㄸ, ㅆ, ㅉ/로 소리남"
+        },
+        {
+          "name": "예시",
+          "definition": "결석, 발달, 발전, 결정, 활성화,"
+        },
+        {
+          "name": "규칙",
+          "definition": "/ㄴ, ㅁ/, /ㄱ, ㄷ, ㅂ, ㅅ, ㅈ/ ⇒ /ㄴ, ㅁ/, /ㄲ, ㄸ, ㅃ, ㅆ, ㅉ/"
+        },
+        {
+          "name": "예시",
+          "definition": "안고, 신도록, 숨다, 젊고, 닮지"
+        },
+        {
+          "name": "규칙",
+          "definition": "/ㄹ/, /ㄱ, ㄷ, ㅂ, ㅅ, ㅈ/ ⇒ /ㄹ/, /ㄲ, ㄸ, ㅃ, ㅆ, ㅉ/"
+        },
+        {
+          "name": "예시",
+          "definition": "갈 데, 갈 곳, 만날 사람, 먹을 거야, 할걸, 할게, 할수록, 할지라도"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_092",
+      "book_id": "PHO",
+      "week": 9,
+      "chasi": 2,
+      "title": "경음화2",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "보기",
+          "definition": "갈등, 발굴, 할부, 갈증, 발달, 출발, 율동, 발견, 발전, 갈대, 발성"
+        }
+      ],
+      "examples": [
+        "ㄱ, ㄷ, ㅂ+ㄱ, ㄷ, ㅂ, ㅅ, ㅈ ⇒ [ㄲ, ㄸ, ㅃ, ㅆ, ㅉ] : 학교, 듣기, 태극기, 걷다, 식",
+        "-(으)ㄹ 것 : 먹을 것[머글껃]"
+      ],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_093",
+      "book_id": "PHO",
+      "week": 9,
+      "chasi": 3,
+      "title": "ㄴ첨가1",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "규칙",
+          "definition": "자음, /ㅣ, y/ ⇒ 자음, /ㄴ/, /ㅣ, y/ · 예시 : 집안일 ⇒ [지반닐]"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_101",
+      "book_id": "PHO",
+      "week": 10,
+      "chasi": 1,
+      "title": "ㄴ첨가2",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "단어",
+          "definition": "야금야금, 얄긋얄긋"
+        },
+        {
+          "name": "체언",
+          "definition": "이런 일 저런일, 지난 여름, 재미있는 이야기"
+        },
+        {
+          "name": "결합",
+          "definition": "열여섯, 스물일곱"
+        },
+        {
+          "name": "명사",
+          "definition": "일 야드, 열 일 제쳐놓다"
+        },
+        {
+          "name": "예외",
+          "definition": "‘검열, 금융’은 ‘ㄴ’이 첨가된 [검녈]과 [금늉]이 표준 발음으로 인정됨"
+        },
+        {
+          "name": "보기",
+          "definition": "‘ㄴ첨가’ 현상이 일어나는 표현을 주고 소리 나는 대로 써 보게 한"
+        },
+        {
+          "name": "읽기",
+          "definition": "문장 내에 ‘ㄴ첨가’ 현상이 일어나는 표현을 넣고 자연스럽게 읽도록 한다. 작년에는 늦여름까지 비가 많이 왔다. 친구들과 부평역 앞에서 만나기로 했다. 아이패드를 학생용으로 구입하니까 30%정도 쌌다. 병원에서 처방 받은 눈약을 잃어버렸다. 지금까지 한 것이 모두 헛일"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류를 일으키기도 함. - ㄴ 첨가가 일어나는 단어가 나올 때 발음을 제시하여 예시별로 학습하도록 함."
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_102",
+      "book_id": "PHO",
+      "week": 10,
+      "chasi": 2,
+      "title": "모음의 음운 현상1",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "탈락",
+          "definition": "두 개의 음소가 만났을 때 한 음소가 없어지는 음운 현상"
+        }
+      ],
+      "examples": [
+        "먹어, 집어, 입어, 웃어, 읽어 좁아, 찾아, 알아, 맑아",
+        "이겨, 비벼, 둬, 봐, 돌봐, 져, 쪄, 쳐",
+        "아기 ­ 애기, ­ 두드레기, 고기 ­ 괴기, 도련님 ­ 되련님, 끓이다 ­ 낋이다",
+        "크+어서 ­ 커서, 쓰+어도 ­ 써도, 담그+아도 ­ 담가도, 모으+아라 ­ 모아라",
+        "알+으면 →알면, 풀+으면 → 풀면, 헐+으면 → 헐면, 배우+으니 → 배우니, 쪼개+으면 ­ 쪼개면, 사+으면 ­ 사면"
+      ],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_103",
+      "book_id": "PHO",
+      "week": 10,
+      "chasi": 3,
+      "title": "모음의 음운 현상 2",
+      "learning_goals": [],
+      "key_concepts": [],
+      "examples": [
+        "시어[시여], 꿰어[꿰여], 뛰어[뛰여], 되뇌어[뒈눼여],",
+        "사이 > 새",
+        "며느리 > 메느리"
+      ],
+      "teaching_methods": [],
+      "cautions": [
+        "오류를 최소화해서 듣고 이해할 수 있음. 그러나 때로 자음과 자음의 연쇄, 모음과 모음의 연쇄가 일어나는 경우가 있는데 이를 충돌이라고 함. 이 중 모음끼리 결합하면",
+        "오류를 생성할 수 있으므로 교수자는 언어학"
+      ],
+      "topik_level": [
+        "초급"
+      ],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_111",
+      "book_id": "PHO",
+      "week": 11,
+      "chasi": 1,
+      "title": "초분절음1",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "장단",
+          "definition": "모음의 길이가 길고 짧음"
+        },
+        {
+          "name": "강세",
+          "definition": "조음의 힘의 정도. 얼마나 강하고 약하게 발음하는지를 가리키는 것"
+        }
+      ],
+      "examples": [
+        "말(語)[말 : ], 말(⾺)[말] / 눈(雪)[눈 : ], 눈(⽬)[눈] / 밤(栗)[밤 : ], 밤(夜)[밤] /",
+        "말(語)[말 : ] - 거짓말 / 눈(雪)[눈 : ] - 함박눈, 밤(栗)[밤 : ] - 군밤",
+        "멀 : 리 간다고?",
+        "1음절을 높게 발음하는 あめ/ame/ = 비",
+        "present(선물), present(제시하다) : 강세가 1음절인지, 2음절인지에 따라 의미가 달"
+      ],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": [
+        "일본"
+      ]
+    },
+    {
+      "id": "PHO_112",
+      "book_id": "PHO",
+      "week": 11,
+      "chasi": 2,
+      "title": "초분절음2",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "아버지",
+          "definition": "키가 작은 아버지"
+        },
+        {
+          "name": "못하다",
+          "definition": "능숙하지 않다. - 한국어 운율 체계에서는 강약보다는 고저를 더 민감하게 인지"
+        },
+        {
+          "name": "성조",
+          "definition": "음의 높낮이 유형"
+        },
+        {
+          "name": "성조",
+          "definition": "어휘의 의미를 변별하는 기능을 하는 음의 높낮이 유형"
+        },
+        {
+          "name": "성조",
+          "definition": "어휘의 의미를 변별하는 기능을 하지 않는 성조"
+        },
+        {
+          "name": "아님",
+          "definition": "미영이는 불고기를 좋아해."
+        },
+        {
+          "name": "억양",
+          "definition": "음조, 음의 높낮이"
+        },
+        {
+          "name": "음역",
+          "definition": "발화 중 가장 낮은 저점에서 최고점 사이의 폭"
+        }
+      ],
+      "examples": [
+        "작은아버지 : 아버지의 동생",
+        "① T가 고성조군(격음, 경음, 마찰음)이 아님 :"
+      ],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": [
+        "베트남",
+        "중국"
+      ]
+    },
+    {
+      "id": "PHO_113",
+      "book_id": "PHO",
+      "week": 11,
+      "chasi": 3,
+      "title": "초분절음3",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "단위",
+          "definition": "발화 - 억양구 - 강세구 - (음운 단어) - 음절"
+        },
+        {
+          "name": "음절",
+          "definition": "안정적으로 발음할 수 있는 최소 단위. 한국어 운율 구조의 최소 운율 단위이며, 성"
+        },
+        {
+          "name": "단어",
+          "definition": "하나 이상의 음절이 모여서 이루는 음절보다 상위의 운율 단위. 발화에서 하나"
+        },
+        {
+          "name": "강세구",
+          "definition": "하나 이상의 음운 단어가 모여 이루는 음운 단어보다 상위의 운율 단위"
+        }
+      ],
+      "examples": [
+        "꽃다발 누가/ 사올래?//[꼳따발루가 사올래]"
+      ],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_121",
+      "book_id": "PHO",
+      "week": 12,
+      "chasi": 1,
+      "title": "초분절음 교수 방안",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "생선구이",
+          "definition": "HHLH/HHLL"
+        },
+        {
+          "name": "야채김밥",
+          "definition": "LHLH/LHLL"
+        },
+        {
+          "name": "연습",
+          "definition": "고성조군 변별하기> 고성조군 골라내기, 어두음이 고성조군인 단어"
+        }
+      ],
+      "examples": [
+        "H : ㄲ, ㄸ ㅃ, ㅆ, ㅉ, ㅋ, ㅌ, ㅍ, ㅊ, ㅅ, ㅎ",
+        "아직 한국어로 글을 쓰는 것이 익숙하지 않다.",
+        "떡볶이를 좋아하는 사람들도 많아요.",
+        "아직 한국어로 글을 쓰는 것이 익숙하지 않다."
+      ],
+      "teaching_methods": [],
+      "cautions": [
+        "오류 발생"
+      ],
+      "topik_level": [],
+      "related_countries": [
+        "중국",
+        "일본",
+        "영어권",
+        "태국"
+      ]
+    },
+    {
+      "id": "PHO_122",
+      "book_id": "PHO",
+      "week": 12,
+      "chasi": 2,
+      "title": "한국어 억양의 기능1",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "실현",
+          "definition": "문말 억양. 강세구 억양. 강세구 형성. 억양구 형성 등"
+        },
+        {
+          "name": "실현",
+          "definition": "문말 억양, 전체적인 높낮이, 세기, 속도 등"
+        },
+        {
+          "name": "표시",
+          "definition": "신·구 정보 초점 표시"
+        },
+        {
+          "name": "조절",
+          "definition": "말차례, 맞장구 등 표시"
+        },
+        {
+          "name": "실현",
+          "definition": "문법 표현의 억양, 강세구 형성, 억양구 경계 억양, 문말 억"
+        },
+        {
+          "name": "실현",
+          "definition": "전체적인 높낮이, 문말 억양, 강세구 억양 등"
+        }
+      ],
+      "examples": [
+        "가 : 토요일에도 회사에 가요?",
+        "가 : 어디 가요?",
+        "가 : 걔가 아직도 공부하고 있겠어?"
+      ],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_123",
+      "book_id": "PHO",
+      "week": 12,
+      "chasi": 3,
+      "title": "한국어 억양의 기능2",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "초점",
+          "definition": "문장 내 한 요소가 새로운 정보를 담고 있거나 다른 요소와 대조되어 강조되면서"
+        }
+      ],
+      "examples": [
+        "가 : 마이클이 불고기를 먹었어요?"
+      ],
+      "teaching_methods": [],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": [
+        "일본"
+      ]
+    },
+    {
+      "id": "PHO_131",
+      "book_id": "PHO",
+      "week": 13,
+      "chasi": 1,
+      "title": "한국어 억양 교수 방법",
+      "learning_goals": [
+        "결과/연속 설명 : 어떤 사실을 설명"
+      ],
+      "key_concepts": [
+        {
+          "name": "이유",
+          "definition": "어떤 일 혹은 행위의 결과에 대한 이유를 나타내는 것으로, 화자 자신이 한"
+        },
+        {
+          "name": "설명",
+          "definition": "어떤 사실을 설명할 때 위에 이어서 관계있는 내용을 전달하고자 함을"
+        },
+        {
+          "name": "초급",
+          "definition": "문장 유형에 따른 기본적인 억양 교육"
+        },
+        {
+          "name": "고급",
+          "definition": "의미 기능에 따른 억양 교수"
+        },
+        {
+          "name": "순서",
+          "definition": "문장 유형 결정 억양 ⇒ 강세구 억양 / 의미 용법 결정 억"
+        }
+      ],
+      "examples": [
+        "첫음절 상승, 빈번한 억양 변화 등"
+      ],
+      "teaching_methods": [],
+      "cautions": [
+        "오류"
+      ],
+      "topik_level": [
+        "중급",
+        "고급",
+        "초급"
+      ],
+      "related_countries": [
+        "중국",
+        "일본",
+        "영어권"
+      ]
+    },
+    {
+      "id": "PHO_132",
+      "book_id": "PHO",
+      "week": 13,
+      "chasi": 2,
+      "title": "발음 교수의 기본 원리1",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "인지",
+          "definition": "청각적인 구분 ⇒ 인지와 이해(음성 변별, 조음법 이해)"
+        },
+        {
+          "name": "산출",
+          "definition": "발음(산출) ⇒ 오류 확인 ⇒ 교정 후 발음(재산출)"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류 확인 ⇒ 교정 후 발음(재산출)",
+        "오류 교정"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_133",
+      "book_id": "PHO",
+      "week": 13,
+      "chasi": 3,
+      "title": "발음 교수의 기본 원리2",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "기타",
+          "definition": "소리 내면서 읽기, 빙고 게임, 인터뷰 하기"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [
+        "게임"
+      ],
+      "cautions": [],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_141",
+      "book_id": "PHO",
+      "week": 14,
+      "chasi": 1,
+      "title": "발음 평가",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "요소",
+          "definition": "음운론적 오류, 음성적 오류, 억양, 문법 오류, 발화 속"
+        },
+        {
+          "name": "산출법",
+          "definition": "이해 가능성(%) = 맞게 전사한 수 / 총 발생 횟수 X 100"
+        },
+        {
+          "name": "평가",
+          "definition": "말하기 전반에 나타나는 발음이 얼마나 정확하고 자연스러운지를 평가"
+        },
+        {
+          "name": "평가",
+          "definition": "발음의 세부 구성 요소인 분절음(자음, 모음), 음절, 음운 규칙, 억양 등이 얼마"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류, 음성적 오류, 억양, 문법 오류, 발화 속"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_142",
+      "book_id": "PHO",
+      "week": 14,
+      "chasi": 2,
+      "title": "발음 교정1",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "피드백",
+          "definition": "학습자 발화에 나타나는 특정한 오류를 교정하기 위해 부가적인 실연이나"
+        },
+        {
+          "name": "측면",
+          "definition": "학습자가 맞고 틀린 것을 헷갈릴 수 있다. 화석화 측면 : 그 오류를 반복할 것이다. 직업적 측면 : 학습자들은 교사가 모든 오류를 수정해 줄 것으로 기대한다. - 모든 오류를 수정할 필요가 없는 이유"
+        },
+        {
+          "name": "이유",
+          "definition": "모든 오류를 교정해 줄 경우, 학습자의 자신감이 떨어짐"
+        },
+        {
+          "name": "측면",
+          "definition": "시간을 너무 많이 할애해 수업 운영에 차질이 생김"
+        },
+        {
+          "name": "측면",
+          "definition": "학습자 혼동. 모든 오류를 고쳐줄 것이 아니라 지금 학습 중인 것에 초"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류를 교정하기 위해 부가적인 실연이나",
+        "오류가 효율적으로 교정될 수 있도록 몇 가지 조건을 충족시",
+        "오류 유형은 물론 피드백을 학습자가 어떻게 받"
+      ],
+      "topik_level": [],
+      "related_countries": []
+    },
+    {
+      "id": "PHO_143",
+      "book_id": "PHO",
+      "week": 14,
+      "chasi": 3,
+      "title": "발음 교정2",
+      "learning_goals": [],
+      "key_concepts": [
+        {
+          "name": "피드백",
+          "definition": "명시적 수정, 메타 언어 피드백, 유도하기"
+        },
+        {
+          "name": "피드백",
+          "definition": "고쳐 말하기, 반복, 명료화 요구"
+        },
+        {
+          "name": "수정",
+          "definition": "교사가 학습자의 틀린 발음을 직접적으로 지적하고 수정된 형태 제공"
+        },
+        {
+          "name": "말하기",
+          "definition": "교사가 학습자 발화에서 발음 오류 부분을 제거하고 수정된 발음을 넣어서"
+        },
+        {
+          "name": "반복",
+          "definition": "교사가 학습자 발화를 오류가 포함된 채 그대로 반복한다. 반복할 때 오류 부분에"
+        },
+        {
+          "name": "요구",
+          "definition": "발음 오류 때문에 학습자의 발화가 어색할 때 교사가 학습자에게 다시 발음"
+        },
+        {
+          "name": "피드백",
+          "definition": "교사는 학습자의 발화에 발음 오류가 있을 때 메타 언어를 사용해 코"
+        },
+        {
+          "name": "유도",
+          "definition": "교사가 완성되지 않은 발화나 공백을 활용해 학습자가 스스로 오류를 수정할 수 있"
+        }
+      ],
+      "examples": [],
+      "teaching_methods": [],
+      "cautions": [
+        "오류 부분을 제거하고 수정된 발음을 넣어서",
+        "오류가 포함된 채 그대로 반복한다. 반복할 때 오류 부분에",
+        "오류 때문에 학습자의 발화가 어색할 때 교사가 학습자에게 다시 발음"
+      ],
+      "topik_level": [],
+      "related_countries": [
+        "중국",
+        "일본"
+      ]
+    }
+  ]
+}

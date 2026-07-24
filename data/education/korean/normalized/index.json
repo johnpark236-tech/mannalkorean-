@@ -1,0 +1,75 @@
+{
+  "platform": "LOC Intelligence Studio",
+  "module": "Korean Education",
+  "version": "1.0",
+  "created": "2026-07-24",
+  "total_books": 8,
+  "total_units": 776,
+  "total_concepts": 1377,
+  "books": [
+    {
+      "id": "SEM",
+      "title": "한국어의미론",
+      "professor": "김해미",
+      "type": "전공선택",
+      "units": 39,
+      "concepts": 286
+    },
+    {
+      "id": "PHO",
+      "title": "한국어발음교육론",
+      "professor": "손상미",
+      "type": "전공선택",
+      "units": 78,
+      "concepts": 151
+    },
+    {
+      "id": "MAT",
+      "title": "한국어교재론",
+      "professor": "오민수",
+      "type": "전공필수",
+      "units": 39,
+      "concepts": 169
+    },
+    {
+      "id": "THE",
+      "title": "언어교수이론",
+      "professor": "",
+      "type": "전공필수",
+      "units": 206,
+      "concepts": 63
+    },
+    {
+      "id": "GRM",
+      "title": "한국어문법교육론",
+      "professor": "",
+      "type": "전공필수",
+      "units": 139,
+      "concepts": 195
+    },
+    {
+      "id": "REC",
+      "title": "한국어이해교육론",
+      "professor": "권화숙",
+      "type": "전공필수",
+      "units": 42,
+      "concepts": 99
+    },
+    {
+      "id": "EXP",
+      "title": "한국어표현교육론",
+      "professor": "",
+      "type": "전공필수",
+      "units": 191,
+      "concepts": 220
+    },
+    {
+      "id": "VOC",
+      "title": "한국어어휘교육론",
+      "professor": "오민수",
+      "type": "전공선택",
+      "units": 42,
+      "concepts": 194
+    }
+  ]
+}
