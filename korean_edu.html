@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -498,7 +498,7 @@ async function renderMethods() {
       return;
     }
     grid.innerHTML = methods.map(m => `
-      <div class="method-btn" id="mbtn-${btoa(m.name)}" onclick="selectMethod('${escHtml(m.name)}')">
+      <div class="method-btn" id="mbtn-${encodeURIComponent(m.name)}" onclick="selectMethod('${escHtml(m.name)}')">
         <div class="method-name">${escHtml(m.name)}</div>
         <div class="method-count">${m.count}개 차시</div>
       </div>`).join('');
@@ -517,7 +517,7 @@ async function selectMethod(name) {
   }
   _activeMethod = name;
   document.querySelectorAll('.method-btn').forEach(b => b.classList.remove('selected'));
-  const key = btoa(name);
+  const key = encodeURIComponent(name);
   document.getElementById('mbtn-' + key)?.classList.add('selected');
 
   const res = document.getElementById('methodResults');
