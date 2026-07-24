@@ -15,3 +15,9 @@ Thumbs.db
 
 # 로컬 캐시
 data/.cache/
+
+# 교재 원문 (저작권 — 절대 커밋 금지)
+data/education/korean/raw/
+
+# Education DB (로컬 전용)
+data/education/korean/db/

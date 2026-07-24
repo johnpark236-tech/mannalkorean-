@@ -70,6 +70,33 @@ python scripts/fetch_stock_daily.py   # 로컬 실행 (api_keys.json 사용)
 
 신규 카테고리 추가 시 동일 스키마를 따른다. (엔진 재사용 목적)
 
+## 📚 Education Module 규칙 (v6.0 추가)
+
+- 이 프로젝트는 Universal Knowledge Intelligence Platform이다
+- 한국어 교육은 첫 번째 Domain Module이다
+- 교재 원문은 `data/education/korean/raw/` 에만 보관 (외부 공개 금지)
+- 메타데이터·정규화 결과만 서비스에 사용
+- 사용자에게는 Level 3 (AI 생성) 결과만 제공
+- 출처는 항상 기록: source_book, source_chapter
+- 개념 카드 스키마(EDU_CONCEPT_XXX)는 Contract — 변경 금지
+
+### Core vs Module 판단
+- ETL, Knowledge DB, AI Comparison = Core (변경 금지)
+- 한국어교육, 주식, 부동산 = Module (추가·교체 가능)
+
+### Education 파일 작업 규칙
+```
+data/education/korean/raw/        ← 교재 원문 (gitignore, 비공개)
+data/education/korean/normalized/ ← 정규화 JSON (메타데이터)
+data/education/korean/markdown/   ← Markdown 검토용
+data/education/korean/db/         ← SQLite DB (gitignore)
+scripts/extract_korean_edu.py     ← ETL 스크립트
+scripts/build_korean_edu_db.py    ← DB 구축
+scripts/generate_lesson_plan.py   ← AI 교안 생성
+```
+
+---
+
 ## 🖥️ 로컬 개발 서버
 
 `file://` 직접 열기 시 fetch CORS 실패. 반드시 아래로 접속:
