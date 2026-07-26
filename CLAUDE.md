@@ -97,6 +97,50 @@ scripts/generate_lesson_plan.py   ← AI 교안 생성
 
 ---
 
+## 🤖 Automation Engine v2.0 (2026-07-27 추가)
+
+### 디렉토리 구조
+```
+D:\loc-news\                        ← GitHub Pages 발행 저장소
+├── articles\YYYYMMDD_TICKER.html   ← 발행된 기사
+├── assets\style.css                ← 다크 테마 CSS
+├── data\published_log.json         ← 발행 이력
+├── index.html                      ← 자동 재생성
+└── sitemap.xml                     ← 자동 재생성
+
+D:\loc_automation\                  ← 파이프라인 (비공개)
+├── engine\publisher.py             ← HTML 생성 + git push
+├── engine\processor.py             ← Claude API 기사 생성
+├── scripts\run_pipeline.py         ← 실행 진입점
+└── drafts\YYYYMMDD_TICKER.json     ← 수동 작성 기사 (선택)
+```
+
+### 파이프라인 우선순위
+1. `drafts/YYYYMMDD_TICKER.json` 존재 → 해당 파일 사용
+2. `api_keys.json`에 `anthropic.api_key` 존재 → Claude API 자동 생성
+3. 둘 다 없음 → 더미 데이터로 파이프라인 테스트
+
+### 실행 방법
+```bash
+cd D:\loc_automation
+python scripts/run_pipeline.py --dry   # 미리보기
+python scripts/run_pipeline.py         # 실제 발행
+```
+
+### 발행 타겟 종목
+`TARGETS = ["005930", "000660", "035420", "035720"]`  (삼성전자·하이닉스·네이버·카카오)
+
+### 절대 규칙
+- 기사 수치는 ETL 데이터 값만 사용 (AI 창작 금지)
+- 쿠팡 고지문구 자동 삽입 (publisher.py 내장)
+- 투자 주의사항·AI 생성 표시 의무 (publisher.py 내장)
+- `loc-news` 저장소에 `api_keys.json` 절대 커밋 금지
+
+### GitHub Pages URL
+`https://johnpark236-tech.github.io/loc-news/`
+
+---
+
 ## 🖥️ 로컬 개발 서버
 
 `file://` 직접 열기 시 fetch CORS 실패. 반드시 아래로 접속:
