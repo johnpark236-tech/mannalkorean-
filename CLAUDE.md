@@ -132,9 +132,30 @@ python scripts/run_pipeline.py         # 실제 발행
 
 ### 절대 규칙
 - 기사 수치는 ETL 데이터 값만 사용 (AI 창작 금지)
+- **approve.py 승인 없이 직접 발행 금지** (run_pipeline → queue → approve.py 순서)
 - 쿠팡 고지문구 자동 삽입 (publisher.py 내장)
 - 투자 주의사항·AI 생성 표시 의무 (publisher.py 내장)
 - `loc-news` 저장소에 `api_keys.json` 절대 커밋 금지
+
+### Review Engine (E22) — 발행 흐름
+```
+run_pipeline.py → L0 검사 6종 → review/queue/ 저장
+→ approve.py --list   # 대기 확인
+→ approve.py --all    # 전체 승인·발행
+→ approve.py --only 005930  # 선택 승인
+→ approve.py --reject 035720 --reason "사유"  # 거부
+```
+
+### L0 자동 차단 6종
+1. 면책조항 ("투자 권유가 아니며") — 하드 차단
+2. 금지어 없음 (매수 추천·목표가 등) — 하드 차단
+3. 고지문구 (쿠팡 링크 있을 때만)
+4. AI 표시 ("자동화 시스템" 등)
+5. 수치 ETL 대조 — 소프트 경고
+6. 쿠팡 링크 유효성 (링크 있을 때만)
+
+### 금지어 목록 위치
+`D:\loc_automation\policies\compliance.md`
 
 ### GitHub Pages URL
 `https://johnpark236-tech.github.io/loc-news/`
