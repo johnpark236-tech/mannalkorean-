@@ -1583,6 +1583,22 @@ tr:last-child td{border-bottom:none;}
     </div>
   </div>
 
+  <!-- LOC 뉴스 섹션 -->
+  <div id="locNewsSection" style="max-width:960px;margin:0 auto;padding:0 20px 32px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+      <div style="font-size:12px;color:#90CAF9;font-weight:700;letter-spacing:.5px;text-transform:uppercase;">
+        📰 LOC 뉴스 — 최신 주식 기사
+      </div>
+      <a href="https://johnpark236-tech.github.io/loc-news/" target="_blank"
+         style="font-size:12px;color:#90CAF9;opacity:.7;text-decoration:none;">
+        전체 보기 →
+      </a>
+    </div>
+    <div id="locNewsGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;">
+      <div style="color:#555;font-size:13px;padding:20px 0;">뉴스 불러오는 중...</div>
+    </div>
+  </div>
+
   <!-- 순위 레이스 패널 -->
   <div id="st-panel-race" style="display:none;">
     <div class="bento-wrapper">
@@ -8397,6 +8413,57 @@ loadRESettings();
   if (ywm && ys && yo) {
     ywm.style.fontSize = ys.value + 'px';
     ywm.style.color    = 'rgba(0,0,0,' + (yo.value / 100) + ')';
+  }
+})();
+
+// ── LOC 뉴스 로드 ──────────────────────────────────
+(async () => {
+  const LOG_URL = 'https://johnpark236-tech.github.io/loc-news/data/published_log.json';
+  const grid    = document.getElementById('locNewsGrid');
+  if (!grid) return;
+
+  const esc = s => String(s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+  const fmtDate = d => {
+    if (!d || d.length < 8) return d;
+    return d.slice(0,4) + '.' + d.slice(4,6) + '.' + d.slice(6,8);
+  };
+
+  try {
+    const res  = await fetch(LOG_URL, { cache: 'no-cache' });
+    const log  = await res.json();
+    const items = log.filter(a => a.title && !a.title.includes('[TEST]')).slice(0, 8);
+
+    if (!items.length) {
+      grid.innerHTML = '<div style="color:#555;font-size:13px;padding:20px 0;">등록된 기사가 없습니다.</div>';
+      return;
+    }
+
+    const BASE = 'https://johnpark236-tech.github.io/loc-news/';
+    grid.innerHTML = items.map(a => {
+      const up = a.summary && (a.summary.includes('+') || a.summary.match(/상승/));
+      const clr = up ? '#22c55e' : '#ef4444';
+      return `
+        <a href="${BASE}${esc(a.path)}" target="_blank" style="
+          display:block;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);
+          border-radius:12px;padding:16px;text-decoration:none;color:#eee;
+          transition:border-color .2s;" onmouseover="this.style.borderColor='#1E88E5'"
+          onmouseout="this.style.borderColor='rgba(255,255,255,0.08)'">
+          <div style="font-size:11px;color:#555;margin-bottom:6px;">
+            ${esc(fmtDate(a.date))} · ${esc(a.name || a.ticker)}
+          </div>
+          <div style="font-size:13px;font-weight:700;line-height:1.5;margin-bottom:8px;">
+            ${esc(a.title)}
+          </div>
+          <div style="font-size:11px;color:#777;line-height:1.6;">
+            ${esc((a.summary || '').slice(0, 60))}${a.summary && a.summary.length > 60 ? '…' : ''}
+          </div>
+        </a>`;
+    }).join('');
+  } catch(e) {
+    grid.innerHTML = `<div style="color:#555;font-size:12px;padding:16px 0;">뉴스를 불러올 수 없습니다.</div>`;
   }
 })();
 </script>
