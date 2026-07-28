@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MANNAL-HUB — 한국어 교육 × 데이터 시각화</title>
-  <meta name="description" content="한국어 학습 플랫폼과 데이터 시각화 스튜디오를 잇는 MANNAL-HUB. 6개 언어 지원, 12주 커리큘럼, 금융·경제 데이터 레이스.">
+  <meta name="description" content="MANNAL-KOREAN 한국어 교육 포털과 LOG OF CHOICES 데이터 시각화 스튜디오를 잇는 MANNAL-HUB.">
   <meta property="og:title" content="MANNAL-HUB">
   <meta property="og:description" content="한국어 교육 × 데이터 시각화 플랫폼">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -112,17 +112,15 @@
     /* ── 카드 ── */
     .cards {
       width: 100%;
-      max-width: 480px;
+      max-width: 560px;
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 18px;
       margin-bottom: 48px;
     }
 
-    /* 메인 카드 — 한국어 학습 */
-    .card-main {
-      background: linear-gradient(145deg, #0d1b3e 0%, #0f1525 100%);
-      border: 1px solid #1a3a70;
+    /* 서비스 카드 공통 */
+    .card-svc {
       border-radius: 20px;
       padding: 32px 28px;
       text-decoration: none;
@@ -132,91 +130,76 @@
       overflow: hidden;
       transition: transform 0.2s, box-shadow 0.2s;
     }
-    .card-main:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 40px rgba(26,79,160,0.35);
+    .card-svc:hover { transform: translateY(-3px); }
+
+    /* 메인 카드 — 한국어 교육 포털 */
+    .card-korean {
+      background: linear-gradient(145deg, #0d1b3e 0%, #0f1525 100%);
+      border: 1px solid #1a3a70;
     }
-    .card-main::before {
+    .card-korean:hover { box-shadow: 0 12px 40px rgba(26,79,160,0.35); }
+    .card-korean::before {
       content: '🇰🇷';
       position: absolute;
       right: 24px; top: 50%;
       transform: translateY(-50%);
-      font-size: 56px;
-      opacity: 0.18;
+      font-size: 64px;
+      opacity: 0.15;
     }
+
+    /* 보조 카드 — 데이터 스튜디오 */
+    .card-data {
+      background: linear-gradient(145deg, #0a1a10 0%, #0f1a12 100%);
+      border: 1px solid #1a3a24;
+    }
+    .card-data:hover { box-shadow: 0 12px 40px rgba(16,185,129,0.2); }
+    .card-data::before {
+      content: '📊';
+      position: absolute;
+      right: 24px; top: 50%;
+      transform: translateY(-50%);
+      font-size: 64px;
+      opacity: 0.15;
+    }
+
     .card-label {
       font-size: 10px;
       font-weight: 700;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: #60a5fa;
       margin-bottom: 10px;
     }
+    .card-korean .card-label { color: #60a5fa; }
+    .card-data .card-label { color: #34d399; }
+
     .card-title {
-      font-size: 24px;
+      font-size: 26px;
       font-weight: 700;
       color: #fff;
       margin-bottom: 8px;
       line-height: 1.2;
     }
     .card-desc {
-      font-size: 13px;
+      font-size: 14px;
       color: #94a3b8;
       line-height: 1.6;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
     .card-btn {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 10px 22px;
-      background: linear-gradient(135deg, #1a4fa0, #2563eb);
+      padding: 12px 24px;
       border-radius: 10px;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 700;
       color: #fff;
-      letter-spacing: 0.01em;
+      min-height: 48px;
       transition: filter 0.15s;
     }
-    .card-main:hover .card-btn { filter: brightness(1.12); }
-
-    /* 보조 카드 — 데이터 스튜디오 */
-    .card-sub {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 20px 24px;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      transition: border-color 0.2s, background 0.2s;
-    }
-    .card-sub:hover {
-      border-color: #334155;
-      background: #111827;
-    }
-    .card-sub-icon {
-      font-size: 28px;
-      flex-shrink: 0;
-    }
-    .card-sub-text { flex: 1; min-width: 0; }
-    .card-sub-name {
-      font-size: 15px;
-      font-weight: 700;
-      color: #e2e8f0;
-      margin-bottom: 3px;
-    }
-    .card-sub-desc {
-      font-size: 12px;
-      color: var(--muted);
-    }
-    .card-sub-arrow {
-      font-size: 16px;
-      color: var(--muted);
-      flex-shrink: 0;
-    }
+    .card-korean .card-btn { background: linear-gradient(135deg, #1a4fa0, #2563eb); }
+    .card-data .card-btn { background: linear-gradient(135deg, #065f46, #059669); }
+    .card-svc:hover .card-btn { filter: brightness(1.12); }
 
     /* ── 피처 그리드 ── */
     .features {
@@ -288,25 +271,26 @@
   <!-- 카드 영역 -->
   <div class="cards">
 
-    <!-- 메인: 한국어 학습 -->
-    <a class="card-main" href="https://johnpark236-tech.github.io/Mannal-Korean/" target="_blank" rel="noopener">
-      <div class="card-label">Main Service · 메인 서비스</div>
-      <div class="card-title">🇰🇷 한국어 학습</div>
+    <!-- 서비스 1: 한국어 교육 포털 -->
+    <a class="card-svc card-korean" href="/korean.html">
+      <div class="card-label">Korean Education Portal · 한국어 교육 포털</div>
+      <div class="card-title">🇰🇷 MANNAL-KOREAN</div>
       <div class="card-desc">
-        6개 언어로 배우는 한국어 학습 플랫폼<br>
-        English · Tiếng Việt · O'zbek · Монгол · 中文
+        외국인을 위한 한국어 학습 종합 포털<br>
+        강의 · TOPIK · 어학원 · 정부지원 — 한 곳에서
       </div>
-      <span class="card-btn">학습 시작하기 →</span>
+      <span class="card-btn">포털 방문하기 →</span>
     </a>
 
-    <!-- 보조: 데이터 스튜디오 -->
-    <a class="card-sub" href="/studio.html">
-      <span class="card-sub-icon">📊</span>
-      <div class="card-sub-text">
-        <div class="card-sub-name">데이터 시각화 스튜디오</div>
-        <div class="card-sub-desc">국내 주식 시세 · 시가총액 순위 레이스 · LOG OF CHOICES</div>
+    <!-- 서비스 2: 데이터 시각화 스튜디오 -->
+    <a class="card-svc card-data" href="/studio.html">
+      <div class="card-label">Data Visualization Studio · 데이터 시각화</div>
+      <div class="card-title">📊 LOG OF CHOICES</div>
+      <div class="card-desc">
+        국내 주식 시세 · 시가총액 순위 레이스<br>
+        금융·경제 공공데이터 시각화 스튜디오
       </div>
-      <span class="card-sub-arrow">›</span>
+      <span class="card-btn">스튜디오 열기 →</span>
     </a>
 
   </div>
